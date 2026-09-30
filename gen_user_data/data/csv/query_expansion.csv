@@ -1,0 +1,333 @@
+﻿attr,related,weight,group
+garage,parking,0.85,amenity
+parking,garage,0.85,amenity
+parking,elevator,0.25,amenity
+balcony,terrace,0.65,amenity
+terrace,balcony,0.65,amenity
+garden,near_park,0.4,amenity
+garden,park,0.35,amenity
+near_park,park,0.52,amenity
+near_park,garden,0.4,amenity
+near_park,near_school,0.28,amenity
+park,kids_playground,0.78,amenity
+park,near_park,0.52,amenity
+park,gym,0.45,amenity
+park,bbq,0.42,amenity
+park,sports_court,0.38,amenity
+park,garden,0.35,amenity
+park,pool,0.32,amenity
+gym,sports_court,0.9,amenity
+gym,park,0.45,amenity
+gym,pool,0.35,amenity
+sports_court,gym,0.9,amenity
+sports_court,park,0.38,amenity
+pool,gym,0.35,amenity
+pool,park,0.32,amenity
+kids_playground,park,0.78,amenity
+kids_playground,bbq,0.3,amenity
+kids_playground,near_school,0.3,amenity
+bbq,park,0.42,amenity
+bbq,kids_playground,0.3,amenity
+security_24h,reception,0.55,amenity
+reception,security_24h,0.55,amenity
+near_metro,near_bus,0.68,amenity
+near_metro,near_highway,0.44,amenity
+near_bus,near_metro,0.68,amenity
+near_bus,near_highway,0.4,amenity
+near_highway,near_metro,0.44,amenity
+near_highway,near_bus,0.4,amenity
+near_mall,near_market,0.74,amenity
+near_market,near_mall,0.74,amenity
+near_school,kids_playground,0.3,amenity
+near_school,near_park,0.28,amenity
+river_view,park_view,0.54,amenity
+park_view,river_view,0.54,amenity
+park_view,city_view,0.26,amenity
+city_view,park_view,0.26,amenity
+elevator,parking,0.25,amenity
+gia_thap,don_gia_thap,0.7,criteria
+gia_thap,dien_tich_nho,0.55,criteria
+gia_thap,vi_tri_ngoai_thanh,0.55,criteria
+gia_thap,gia_trung_binh,0.5,criteria
+gia_thap,noi_that_co_ban,0.45,criteria
+gia_thap,hop_dong_mua_ban,0.4,criteria
+gia_thap,dang_cho_so,0.35,criteria
+gia_trung_binh,gia_thap,0.5,criteria
+gia_trung_binh,gia_cao,0.5,criteria
+gia_trung_binh,dien_tich_vua,0.45,criteria
+gia_trung_binh,don_gia_thap,0.4,criteria
+gia_cao,vi_tri_trung_tam,0.55,criteria
+gia_cao,gia_trung_binh,0.5,criteria
+gia_cao,gia_rat_cao,0.5,criteria
+gia_cao,don_gia_cao,0.5,criteria
+gia_cao,dien_tich_lon,0.5,criteria
+gia_cao,so_hong_rieng,0.35,criteria
+gia_cao,huong_tot,0.25,criteria
+gia_rat_cao,don_gia_cao,0.7,criteria
+gia_rat_cao,vi_tri_trung_tam,0.6,criteria
+gia_rat_cao,gia_cao,0.5,criteria
+gia_rat_cao,dien_tich_rat_lon,0.5,criteria
+gia_rat_cao,noi_that_day_du,0.5,criteria
+gia_rat_cao,view_dep,0.5,criteria
+gia_rat_cao,co_ho_boi,0.45,criteria
+gia_rat_cao,co_gym,0.4,criteria
+don_gia_thap,gia_thap,0.7,criteria
+don_gia_thap,gia_trung_binh,0.4,criteria
+don_gia_cao,gia_rat_cao,0.7,criteria
+don_gia_cao,vi_tri_trung_tam,0.6,criteria
+don_gia_cao,gia_cao,0.5,criteria
+dien_tich_nho,it_phong_ngu,0.75,criteria
+dien_tich_nho,gia_thap,0.55,criteria
+dien_tich_nho,dien_tich_vua,0.5,criteria
+dien_tich_vua,dien_tich_nho,0.5,criteria
+dien_tich_vua,dien_tich_lon,0.5,criteria
+dien_tich_vua,gia_trung_binh,0.45,criteria
+dien_tich_vua,it_phong_ngu,0.4,criteria
+dien_tich_vua,nhieu_phong_ngu,0.35,criteria
+dien_tich_lon,nhieu_phong_ngu,0.75,criteria
+dien_tich_lon,dien_tich_vua,0.5,criteria
+dien_tich_lon,dien_tich_rat_lon,0.5,criteria
+dien_tich_lon,gia_cao,0.5,criteria
+dien_tich_lon,vi_tri_ngoai_thanh,0.5,criteria
+dien_tich_rat_lon,nhieu_phong_ngu,0.8,criteria
+dien_tich_rat_lon,dien_tich_lon,0.5,criteria
+dien_tich_rat_lon,gia_rat_cao,0.5,criteria
+it_phong_ngu,dien_tich_nho,0.75,criteria
+it_phong_ngu,dien_tich_vua,0.4,criteria
+nhieu_phong_ngu,dien_tich_rat_lon,0.8,criteria
+nhieu_phong_ngu,dien_tich_lon,0.75,criteria
+nhieu_phong_ngu,dien_tich_vua,0.35,criteria
+vi_tri_trung_tam,tien_ich_thuong_mai,0.65,criteria
+vi_tri_trung_tam,don_gia_cao,0.6,criteria
+vi_tri_trung_tam,tien_ich_giao_thong,0.6,criteria
+vi_tri_trung_tam,gia_rat_cao,0.6,criteria
+vi_tri_trung_tam,tien_ich_giai_tri,0.55,criteria
+vi_tri_trung_tam,gia_cao,0.55,criteria
+vi_tri_trung_tam,tien_ich_y_te,0.5,criteria
+vi_tri_trung_tam,tien_ich_giao_duc,0.45,criteria
+vi_tri_trung_tam,vi_tri_can_trung_tam,0.45,criteria
+vi_tri_trung_tam,an_ninh_tot,0.4,criteria
+gan_truong_hoc,tien_ich_giao_duc,0.85,criteria
+tien_ich_giao_duc,gan_truong_hoc,0.85,criteria
+tien_ich_giao_duc,vi_tri_trung_tam,0.45,criteria
+tien_ich_giao_duc,tien_ich_thuong_mai,0.4,criteria
+tien_ich_giao_duc,tien_ich_y_te,0.35,criteria
+tien_ich_giao_duc,tien_ich_giao_thong,0.3,criteria
+gan_benh_vien,tien_ich_y_te,0.85,criteria
+tien_ich_y_te,gan_benh_vien,0.85,criteria
+tien_ich_y_te,vi_tri_trung_tam,0.5,criteria
+tien_ich_y_te,tien_ich_giao_duc,0.35,criteria
+tien_ich_y_te,tien_ich_thuong_mai,0.35,criteria
+gan_sieu_thi,tien_ich_thuong_mai,0.85,criteria
+tien_ich_thuong_mai,gan_sieu_thi,0.85,criteria
+tien_ich_thuong_mai,vi_tri_trung_tam,0.65,criteria
+tien_ich_thuong_mai,tien_ich_giai_tri,0.45,criteria
+tien_ich_thuong_mai,vi_tri_can_trung_tam,0.45,criteria
+tien_ich_thuong_mai,tien_ich_giao_duc,0.4,criteria
+tien_ich_thuong_mai,tien_ich_giao_thong,0.4,criteria
+tien_ich_thuong_mai,tien_ich_y_te,0.35,criteria
+gan_cong_vien,tien_ich_giai_tri,0.7,criteria
+gan_cong_vien,view_dep,0.5,criteria
+tien_ich_giai_tri,co_ho_boi,0.75,criteria
+tien_ich_giai_tri,gan_cong_vien,0.7,criteria
+tien_ich_giai_tri,co_gym,0.7,criteria
+tien_ich_giai_tri,vi_tri_trung_tam,0.55,criteria
+tien_ich_giai_tri,tien_ich_thuong_mai,0.45,criteria
+co_ho_boi,tien_ich_giai_tri,0.75,criteria
+co_ho_boi,co_gym,0.65,criteria
+co_ho_boi,view_dep,0.45,criteria
+co_ho_boi,gia_rat_cao,0.45,criteria
+co_gym,tien_ich_giai_tri,0.7,criteria
+co_gym,co_ho_boi,0.65,criteria
+co_gym,gia_rat_cao,0.4,criteria
+view_dep,gan_cong_vien,0.5,criteria
+view_dep,gia_rat_cao,0.5,criteria
+view_dep,co_ho_boi,0.45,criteria
+view_dep,huong_tot,0.35,criteria
+an_ninh_tot,noi_that_day_du,0.4,criteria
+an_ninh_tot,vi_tri_trung_tam,0.4,criteria
+noi_that_day_du,gia_rat_cao,0.5,criteria
+noi_that_day_du,an_ninh_tot,0.4,criteria
+tien_ich_giao_thong,vi_tri_trung_tam,0.6,criteria
+tien_ich_giao_thong,vi_tri_can_trung_tam,0.5,criteria
+tien_ich_giao_thong,tien_ich_thuong_mai,0.4,criteria
+tien_ich_giao_thong,tien_ich_giao_duc,0.3,criteria
+vi_tri_can_trung_tam,tien_ich_giao_thong,0.5,criteria
+vi_tri_can_trung_tam,tien_ich_thuong_mai,0.45,criteria
+vi_tri_can_trung_tam,vi_tri_trung_tam,0.45,criteria
+vi_tri_can_trung_tam,vi_tri_ngoai_thanh,0.4,criteria
+vi_tri_ngoai_thanh,gia_thap,0.55,criteria
+vi_tri_ngoai_thanh,dien_tich_lon,0.5,criteria
+vi_tri_ngoai_thanh,vi_tri_can_trung_tam,0.4,criteria
+huong_tot,view_dep,0.35,criteria
+huong_tot,gia_cao,0.25,criteria
+so_hong_rieng,gia_cao,0.35,criteria
+so_hong_rieng,so_chung,0.3,criteria
+so_chung,dang_cho_so,0.4,criteria
+so_chung,hop_dong_mua_ban,0.35,criteria
+so_chung,so_hong_rieng,0.3,criteria
+hop_dong_mua_ban,dang_cho_so,0.6,criteria
+hop_dong_mua_ban,gia_thap,0.4,criteria
+hop_dong_mua_ban,so_chung,0.35,criteria
+dang_cho_so,hop_dong_mua_ban,0.6,criteria
+dang_cho_so,so_chung,0.4,criteria
+dang_cho_so,gia_thap,0.35,criteria
+noi_that_co_ban,gia_thap,0.45,criteria
+Phường An Hội Tây,Phường Bình Trưng,0.306,location
+Phường An Hội Tây,Phường An Lạc,0.289,location
+Phường An Hội Tây,Phường Bình Thạnh,0.279,location
+Phường Bình Trưng,Phường An Hội Tây,0.306,location
+Phường An Lạc,Phường An Hội Tây,0.289,location
+Phường An Lạc,Phường Long Bình,0.281,location
+Phường Bình Thạnh,Phường An Hội Tây,0.279,location
+Phường An Khánh,Phường Tây Thạnh,0.298,location
+Phường Tây Thạnh,Phường Chánh Hiệp,0.332,location
+Phường Tây Thạnh,Phường An Khánh,0.298,location
+Phường Long Bình,Xã Nhà Bè,0.389,location
+Phường Long Bình,Xã Tân Nhựt,0.304,location
+Phường Long Bình,Phường An Phú Đông,0.288,location
+Phường Long Bình,Phường Bình Lợi Trung,0.283,location
+Phường Long Bình,Phường Phú Thọ Hòa,0.283,location
+Phường Long Bình,Phường Vườn Lài,0.282,location
+Phường Long Bình,Phường An Lạc,0.281,location
+Phường Long Bình,Phường Thạnh Mỹ Tây,0.271,location
+Phường Long Bình,Phường Tân Hưng,0.268,location
+Phường An Nhơn,Xã Hưng Long,0.426,location
+Xã Hưng Long,Phường An Nhơn,0.426,location
+Xã Hưng Long,Xã Tân An Hội,0.392,location
+Xã Hưng Long,Phường Chánh Hưng,0.276,location
+Xã Hưng Long,Phường Thới An,0.253,location
+Phường An Phú Đông,Xã Nhà Bè,0.312,location
+Phường An Phú Đông,Phường Long Bình,0.288,location
+Phường An Phú Đông,Phường Phú Định,0.286,location
+Phường An Phú Đông,Phường Thông Tây Hội,0.264,location
+Phường An Phú Đông,Phường Tăng Nhơn Phú,0.253,location
+Xã Nhà Bè,Phường Long Bình,0.389,location
+Xã Nhà Bè,Phường Bình Lợi Trung,0.318,location
+Xã Nhà Bè,Phường An Phú Đông,0.312,location
+Xã Nhà Bè,Phường Long Phước,0.3,location
+Xã Nhà Bè,Phường Hiệp Bình,0.292,location
+Xã Nhà Bè,Phường Phú Thuận,0.279,location
+Xã Nhà Bè,Phường Vũng Tàu,0.279,location
+Xã Nhà Bè,Phường Thạnh Mỹ Tây,0.277,location
+Xã Nhà Bè,Phường Thủ Đức,0.261,location
+Xã Nhà Bè,Phường Phú Định,0.253,location
+Phường Phú Định,Phường An Phú Đông,0.286,location
+Phường Phú Định,Xã Nhà Bè,0.253,location
+Phường Bình Dương,Phường Bình Quới,0.304,location
+Phường Bình Quới,Phường Bình Dương,0.304,location
+Phường Bình Quới,Phường Tân Thới Hiệp,0.286,location
+Phường Bình Quới,Phường Tam Thắng,0.251,location
+Phường Bình Hòa,Phường Bình Lợi Trung,0.255,location
+Phường Bình Lợi Trung,Xã Nhà Bè,0.318,location
+Phường Bình Lợi Trung,Phường Tân Thuận,0.315,location
+Phường Bình Lợi Trung,Phường Long Bình,0.283,location
+Phường Bình Lợi Trung,Phường Bình Hòa,0.255,location
+Phường Bình Lợi Trung,Phường Hiệp Bình,0.252,location
+Phường Tân Thuận,Phường Bình Lợi Trung,0.315,location
+Phường Tân Thuận,Phường Tân Hưng,0.28,location
+Phường Tân Thuận,Phường Hòa Hưng,0.257,location
+Phường Tân Thới Hiệp,Phường Bình Quới,0.286,location
+Phường Tam Thắng,Phường Bình Quới,0.251,location
+Phường Bình Thới,Xã Trừ Văn Thố,0.287,location
+Xã Trừ Văn Thố,Phường Bình Thới,0.287,location
+Phường Bình Tiên,Phường Đức Nhuận,0.417,location
+Phường Bình Tiên,Xã Bình Lợi,0.376,location
+Phường Bình Tiên,Phường Phú Thuận,0.275,location
+Phường Đức Nhuận,Phường Bình Tiên,0.417,location
+Phường Đức Nhuận,Phường Phú Thuận,0.253,location
+Xã Bình Lợi,Phường Bình Tiên,0.376,location
+Xã Bình Lợi,Phường Tân Phú,0.296,location
+Phường Phú Thuận,Phường Bình Tây,0.301,location
+Phường Phú Thuận,Xã Nhà Bè,0.279,location
+Phường Phú Thuận,Phường Bình Tiên,0.275,location
+Phường Phú Thuận,Phường Đức Nhuận,0.253,location
+Phường Bình Trị Đông,Phường Tân Bình,0.314,location
+Phường Bình Trị Đông,Phường Bình Đông,0.261,location
+Phường Bình Trị Đông,Xã Đất Đỏ,0.252,location
+Phường Tân Bình,Phường Bình Trị Đông,0.314,location
+Phường Bình Đông,Phường Bình Trị Đông,0.261,location
+Xã Đất Đỏ,Xã Xuân Thới Sơn,0.337,location
+Xã Đất Đỏ,Phường Bình Trị Đông,0.252,location
+Phường Bình Tây,Phường Phú Thuận,0.301,location
+Phường Bến Thành,Phường Phú Lợi,0.374,location
+Phường Phú Lợi,Phường Bến Thành,0.374,location
+Phường Chánh Hiệp,Phường Chợ Quán,0.391,location
+Phường Chánh Hiệp,Phường Tây Thạnh,0.332,location
+Phường Chánh Hiệp,Phường Thủ Dầu Một,0.301,location
+Phường Chợ Quán,Phường Chánh Hiệp,0.391,location
+Phường Chợ Quán,Phường Tân Mỹ,0.366,location
+Phường Thủ Dầu Một,Xã Tân An Hội,0.412,location
+Phường Thủ Dầu Một,Phường Chánh Hiệp,0.301,location
+Phường Thủ Dầu Một,Phường Phước Long,0.266,location
+Phường Chánh Hưng,Xã Hưng Long,0.276,location
+Phường Chánh Hưng,Phường Long Trường,0.275,location
+Phường Long Trường,Phường Chánh Hưng,0.275,location
+Phường Chánh Phú Hòa,Phường Hạnh Thông,0.251,location
+Phường Hạnh Thông,Phường Rạch Dừa,0.299,location
+Phường Hạnh Thông,Phường Chánh Phú Hòa,0.251,location
+Phường Chợ Lớn,Phường Tân Đông Hiệp,0.262,location
+Phường Tân Đông Hiệp,Phường Tân Sơn Nhất,0.268,location
+Phường Tân Đông Hiệp,Phường Chợ Lớn,0.262,location
+Phường Tân Mỹ,Phường Chợ Quán,0.366,location
+Phường Tân Mỹ,Phường Xóm Chiếu,0.333,location
+Phường Cầu Ông Lãnh,Phường Tân Sơn,0.253,location
+Phường Tân Sơn,Xã Tân Nhựt,0.301,location
+Phường Tân Sơn,Phường Cầu Ông Lãnh,0.253,location
+Phường Gia Định,Phường Hiệp Bình,0.259,location
+Phường Hiệp Bình,Xã Nhà Bè,0.292,location
+Phường Hiệp Bình,Phường Gia Định,0.259,location
+Phường Hiệp Bình,Phường Bình Lợi Trung,0.252,location
+Phường Hiệp Bình,Phường Tân Sơn Nhất,0.25,location
+Phường Hòa Hưng,Phường Tân Hưng,0.286,location
+Phường Hòa Hưng,Phường Tân Thuận,0.257,location
+Phường Hòa Hưng,Phường Phú Nhuận,0.257,location
+Phường Tân Hưng,Phường Hòa Hưng,0.286,location
+Phường Tân Hưng,Phường Tân Thuận,0.28,location
+Phường Tân Hưng,Phường Long Bình,0.268,location
+Phường Phú Nhuận,Phường Hòa Hưng,0.257,location
+Phường Rạch Dừa,Phường Hạnh Thông,0.299,location
+Phường Khánh Hội,Xã Tân Vĩnh Lộc,0.288,location
+Xã Tân Vĩnh Lộc,Xã Bình Chánh,0.315,location
+Xã Tân Vĩnh Lộc,Phường Khánh Hội,0.288,location
+Phường Linh Xuân,Phường Thông Tây Hội,0.307,location
+Phường Thông Tây Hội,Phường Linh Xuân,0.307,location
+Phường Thông Tây Hội,Phường An Phú Đông,0.264,location
+Xã Tân Nhựt,Phường Long Bình,0.304,location
+Xã Tân Nhựt,Phường Tân Sơn,0.301,location
+Phường Long Hương,Phường Tân Sơn Hòa,0.35,location
+Phường Tân Sơn Hòa,Phường Long Hương,0.35,location
+Phường Long Phước,Xã Nhà Bè,0.3,location
+Phường Phú Lâm,Xã Hóc Môn,0.518,location
+Xã Hóc Môn,Phường Phú Lâm,0.518,location
+Xã Hóc Môn,Phường Xuân Hòa,0.285,location
+Phường Phú Thọ Hòa,Phường Long Bình,0.283,location
+Phường Phước Long,Phường Thủ Dầu Một,0.266,location
+Phường Sài Gòn,Xã Bàu Bàng,0.276,location
+Xã Bàu Bàng,Phường Sài Gòn,0.276,location
+Xã Bàu Bàng,Phường Tân Tạo,0.26,location
+Phường Thạnh Mỹ Tây,Xã Nhà Bè,0.277,location
+Phường Thạnh Mỹ Tây,Phường Long Bình,0.271,location
+Phường Thới An,Xã Hưng Long,0.253,location
+Phường Thới Hòa,Phường Đông Hòa,0.414,location
+Phường Thới Hòa,Xã Tân An Hội,0.33,location
+Phường Thới Hòa,Xã Xuân Thới Sơn,0.285,location
+Phường Đông Hòa,Phường Thới Hòa,0.414,location
+Xã Tân An Hội,Phường Thủ Dầu Một,0.412,location
+Xã Tân An Hội,Xã Hưng Long,0.392,location
+Xã Tân An Hội,Phường Thới Hòa,0.33,location
+Xã Xuân Thới Sơn,Xã Đất Đỏ,0.337,location
+Xã Xuân Thới Sơn,Phường Thới Hòa,0.285,location
+Phường Thủ Đức,Xã Nhà Bè,0.261,location
+Phường Xóm Chiếu,Xã Bình Hưng,0.343,location
+Phường Xóm Chiếu,Phường Tân Mỹ,0.333,location
+Phường Tân Phú,Xã Bình Lợi,0.296,location
+Phường Tân Sơn Nhất,Phường Tân Đông Hiệp,0.268,location
+Phường Tân Sơn Nhất,Phường Hiệp Bình,0.25,location
+Phường Tân Tạo,Xã Bàu Bàng,0.26,location
+Phường Tăng Nhơn Phú,Phường An Phú Đông,0.253,location
+Phường Vũng Tàu,Xã Nhà Bè,0.279,location
+Phường Vườn Lài,Phường Long Bình,0.282,location
+Phường Xuân Hòa,Xã Hóc Môn,0.285,location
+Xã Bình Hưng,Phường Xóm Chiếu,0.343,location
+Xã Bình Chánh,Xã Tân Vĩnh Lộc,0.315,location

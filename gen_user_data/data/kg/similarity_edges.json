@@ -1,0 +1,723 @@
+[
+  {
+    "attr_a": "garage",
+    "attr_b": "parking",
+    "weight": 0.85,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "balcony",
+    "attr_b": "terrace",
+    "weight": 0.65,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "garden",
+    "attr_b": "near_park",
+    "weight": 0.4,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "garden",
+    "attr_b": "park",
+    "weight": 0.35,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "gym",
+    "attr_b": "sports_court",
+    "weight": 0.9,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "gym",
+    "attr_b": "park",
+    "weight": 0.45,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "gym",
+    "attr_b": "pool",
+    "weight": 0.35,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "park",
+    "attr_b": "kids_playground",
+    "weight": 0.78,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "park",
+    "attr_b": "bbq",
+    "weight": 0.42,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "kids_playground",
+    "attr_b": "bbq",
+    "weight": 0.3,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "security_24h",
+    "attr_b": "reception",
+    "weight": 0.55,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "pool",
+    "attr_b": "park",
+    "weight": 0.32,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "sports_court",
+    "attr_b": "park",
+    "weight": 0.38,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "near_metro",
+    "attr_b": "near_bus",
+    "weight": 0.68,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "near_metro",
+    "attr_b": "near_highway",
+    "weight": 0.44,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "near_bus",
+    "attr_b": "near_highway",
+    "weight": 0.4,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "near_mall",
+    "attr_b": "near_market",
+    "weight": 0.74,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "near_mall",
+    "attr_b": "near_park",
+    "weight": 0.22,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "near_school",
+    "attr_b": "near_park",
+    "weight": 0.28,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "near_school",
+    "attr_b": "kids_playground",
+    "weight": 0.3,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "near_park",
+    "attr_b": "park",
+    "weight": 0.52,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "river_view",
+    "attr_b": "park_view",
+    "weight": 0.54,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "park_view",
+    "attr_b": "city_view",
+    "weight": 0.26,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "elevator",
+    "attr_b": "parking",
+    "weight": 0.25,
+    "group": "amenity",
+    "source": "knowledge.py"
+  },
+  {
+    "attr_a": "gia_thap",
+    "attr_b": "gia_trung_binh",
+    "weight": 0.5,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_trung_binh",
+    "attr_b": "gia_cao",
+    "weight": 0.5,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_cao",
+    "attr_b": "gia_rat_cao",
+    "weight": 0.5,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_thap",
+    "attr_b": "gia_cao",
+    "weight": 0.15,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_thap",
+    "attr_b": "gia_rat_cao",
+    "weight": 0.0,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_trung_binh",
+    "attr_b": "gia_rat_cao",
+    "weight": 0.15,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_thap",
+    "attr_b": "don_gia_thap",
+    "weight": 0.7,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_rat_cao",
+    "attr_b": "don_gia_cao",
+    "weight": 0.7,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_cao",
+    "attr_b": "don_gia_cao",
+    "weight": 0.5,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_trung_binh",
+    "attr_b": "don_gia_thap",
+    "weight": 0.4,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "don_gia_thap",
+    "attr_b": "don_gia_cao",
+    "weight": 0.0,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "dien_tich_nho",
+    "attr_b": "dien_tich_vua",
+    "weight": 0.5,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "dien_tich_vua",
+    "attr_b": "dien_tich_lon",
+    "weight": 0.5,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "dien_tich_lon",
+    "attr_b": "dien_tich_rat_lon",
+    "weight": 0.5,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "dien_tich_nho",
+    "attr_b": "dien_tich_lon",
+    "weight": 0.15,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "dien_tich_nho",
+    "attr_b": "dien_tich_rat_lon",
+    "weight": 0.0,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "dien_tich_vua",
+    "attr_b": "dien_tich_rat_lon",
+    "weight": 0.15,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "dien_tich_nho",
+    "attr_b": "it_phong_ngu",
+    "weight": 0.75,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "dien_tich_lon",
+    "attr_b": "nhieu_phong_ngu",
+    "weight": 0.75,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "dien_tich_rat_lon",
+    "attr_b": "nhieu_phong_ngu",
+    "weight": 0.8,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "dien_tich_vua",
+    "attr_b": "it_phong_ngu",
+    "weight": 0.4,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "dien_tich_vua",
+    "attr_b": "nhieu_phong_ngu",
+    "weight": 0.35,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "it_phong_ngu",
+    "attr_b": "nhieu_phong_ngu",
+    "weight": 0.0,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_thap",
+    "attr_b": "dien_tich_nho",
+    "weight": 0.55,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_cao",
+    "attr_b": "dien_tich_lon",
+    "weight": 0.5,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_rat_cao",
+    "attr_b": "dien_tich_rat_lon",
+    "weight": 0.5,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_trung_binh",
+    "attr_b": "dien_tich_vua",
+    "weight": 0.45,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "don_gia_cao",
+    "attr_b": "vi_tri_trung_tam",
+    "weight": 0.6,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gan_truong_hoc",
+    "attr_b": "tien_ich_giao_duc",
+    "weight": 0.85,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gan_benh_vien",
+    "attr_b": "tien_ich_y_te",
+    "weight": 0.85,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gan_sieu_thi",
+    "attr_b": "tien_ich_thuong_mai",
+    "weight": 0.85,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gan_cong_vien",
+    "attr_b": "tien_ich_giai_tri",
+    "weight": 0.7,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "co_ho_boi",
+    "attr_b": "tien_ich_giai_tri",
+    "weight": 0.75,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "co_gym",
+    "attr_b": "tien_ich_giai_tri",
+    "weight": 0.7,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "co_ho_boi",
+    "attr_b": "co_gym",
+    "weight": 0.65,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "view_dep",
+    "attr_b": "gan_cong_vien",
+    "weight": 0.5,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "an_ninh_tot",
+    "attr_b": "noi_that_day_du",
+    "weight": 0.4,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "co_ho_boi",
+    "attr_b": "view_dep",
+    "weight": 0.45,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "noi_that_day_du",
+    "attr_b": "noi_that_co_ban",
+    "weight": 0.0,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "tien_ich_giao_duc",
+    "attr_b": "tien_ich_y_te",
+    "weight": 0.35,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "tien_ich_giao_duc",
+    "attr_b": "tien_ich_thuong_mai",
+    "weight": 0.4,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "tien_ich_y_te",
+    "attr_b": "tien_ich_thuong_mai",
+    "weight": 0.35,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "tien_ich_thuong_mai",
+    "attr_b": "tien_ich_giai_tri",
+    "weight": 0.45,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "tien_ich_giao_thong",
+    "attr_b": "tien_ich_thuong_mai",
+    "weight": 0.4,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "tien_ich_giao_thong",
+    "attr_b": "tien_ich_giao_duc",
+    "weight": 0.3,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_trung_tam",
+    "attr_b": "tien_ich_thuong_mai",
+    "weight": 0.65,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_trung_tam",
+    "attr_b": "tien_ich_giai_tri",
+    "weight": 0.55,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_trung_tam",
+    "attr_b": "tien_ich_giao_thong",
+    "weight": 0.6,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_trung_tam",
+    "attr_b": "tien_ich_y_te",
+    "weight": 0.5,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_trung_tam",
+    "attr_b": "tien_ich_giao_duc",
+    "weight": 0.45,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_trung_tam",
+    "attr_b": "an_ninh_tot",
+    "weight": 0.4,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_can_trung_tam",
+    "attr_b": "tien_ich_giao_thong",
+    "weight": 0.5,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_can_trung_tam",
+    "attr_b": "tien_ich_thuong_mai",
+    "weight": 0.45,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_ngoai_thanh",
+    "attr_b": "dien_tich_lon",
+    "weight": 0.5,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_ngoai_thanh",
+    "attr_b": "gia_thap",
+    "weight": 0.55,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_trung_tam",
+    "attr_b": "vi_tri_can_trung_tam",
+    "weight": 0.45,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_can_trung_tam",
+    "attr_b": "vi_tri_ngoai_thanh",
+    "weight": 0.4,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_trung_tam",
+    "attr_b": "vi_tri_ngoai_thanh",
+    "weight": 0.1,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_trung_tam",
+    "attr_b": "gia_cao",
+    "weight": 0.55,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_trung_tam",
+    "attr_b": "gia_rat_cao",
+    "weight": 0.6,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_trung_tam",
+    "attr_b": "gia_thap",
+    "weight": 0.05,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "vi_tri_ngoai_thanh",
+    "attr_b": "gia_rat_cao",
+    "weight": 0.05,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "huong_tot",
+    "attr_b": "huong_xau",
+    "weight": 0.0,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "huong_tot",
+    "attr_b": "view_dep",
+    "weight": 0.35,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "huong_tot",
+    "attr_b": "gia_cao",
+    "weight": 0.25,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "so_hong_rieng",
+    "attr_b": "so_chung",
+    "weight": 0.3,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "so_hong_rieng",
+    "attr_b": "hop_dong_mua_ban",
+    "weight": 0.15,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "so_hong_rieng",
+    "attr_b": "dang_cho_so",
+    "weight": 0.2,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "so_chung",
+    "attr_b": "hop_dong_mua_ban",
+    "weight": 0.35,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "so_chung",
+    "attr_b": "dang_cho_so",
+    "weight": 0.4,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "hop_dong_mua_ban",
+    "attr_b": "dang_cho_so",
+    "weight": 0.6,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "so_hong_rieng",
+    "attr_b": "gia_cao",
+    "weight": 0.35,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "hop_dong_mua_ban",
+    "attr_b": "gia_thap",
+    "weight": 0.4,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "dang_cho_so",
+    "attr_b": "gia_thap",
+    "weight": 0.35,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_rat_cao",
+    "attr_b": "noi_that_day_du",
+    "weight": 0.5,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_rat_cao",
+    "attr_b": "co_ho_boi",
+    "weight": 0.45,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_rat_cao",
+    "attr_b": "co_gym",
+    "weight": 0.4,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_rat_cao",
+    "attr_b": "view_dep",
+    "weight": 0.5,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  },
+  {
+    "attr_a": "gia_thap",
+    "attr_b": "noi_that_co_ban",
+    "weight": 0.45,
+    "group": "criteria",
+    "source": "similarity_matrix_v2.py"
+  }
+]

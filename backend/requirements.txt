@@ -1,0 +1,63 @@
+numpy
+fastapi==0.108.0
+pydantic==2.13.4
+python-dotenv==1.0.0
+loguru==0.7.2
+unidecode==1.3.7
+orjson==3.11.5
+uvicorn==0.25.0
+python-multipart==0.0.6
+gunicorn==21.2.0
+celery==5.3.6
+redis==5.0.1
+python-jose[cryptography]==3.3.0
+bcrypt==4.0.1
+passlib[bcrypt]
+SQLAlchemy==1.4.5
+alembic==1.13.3
+psycopg2-binary==2.9.9
+neo4j>=5.25,<6
+minio==7.2.0
+requests
+aiohttp
+pillow
+sqlparse==0.5.1
+openai==2.47.0
+firebase_admin==6.6.0
+sse-starlette==2.1.3
+python-slugify
+pydantic[email]
+pytz
+resend==2.6.0
+anthropic
+replicate
+ipaddress==1.0.23
+ip2geotools==0.1.6
+langdetect
+hashids==1.3.1
+
+# AI Services
+beautifulsoup4==4.13.4
+fastcore==1.8.4
+llms-txt==0.0.4
+google-genai==1.24.0
+google-generativeai==0.8.5
+
+# LangGraph chat orchestration.  These are pinned together because the graph,
+# OpenAI-compatible model adapter, and PostgreSQL checkpoint schema evolve in
+# lockstep.
+langgraph==1.2.9
+langchain==1.3.14
+langchain-openai==1.4.0
+langgraph-checkpoint-postgres==3.1.0
+psycopg[binary,pool]
+
+# Crawler
+playwright==1.53.0
+
+langdetect==1.0.9
+langid==1.1.6
+loguru>=0.7.2
+celery==5.3.6
+pytz
+cent==5.0.0

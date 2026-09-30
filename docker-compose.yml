@@ -1,0 +1,103 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  minio:
+    image: minio/minio:latest
+    restart: unless-stopped
+    env_file: .env
+    command: server /data --console-address ":9001"
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/ready"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  minio-init:
+    image: minio/mc:latest
+    depends_on:
+      minio:
+        condition: service_healthy
+    env_file: .env
+    entrypoint: >
+      sh -c "
+      mc alias set local http://minio:9000 $$MINIO_ROOT_USER $$MINIO_ROOT_PASSWORD &&
+      mc mb --ignore-existing local/$$MINIO_BUCKET_NAME
+      "
+    restart: "no"
+
+  neo4j-import-init:
+    image: busybox:1.36
+    profiles: ["graph-tools", "graph-search"]
+    volumes:
+      - ./Data/real_estate_graph_ready_v2_address_mapping:/source:ro
+      - neo4j_import:/target
+    command: ["sh", "-c", "cp -R /source/. /target/"]
+    restart: "no"
+
+  neo4j:
+    image: neo4j:5-community
+    profiles: ["graph-tools", "graph-search"]
+    restart: unless-stopped
+    environment:
+      - NEO4J_AUTH=${NEO4J_AUTH:-neo4j/changeme}
+      - GRAPH_USER=${NEO4J_USER:-neo4j}
+      - GRAPH_PASSWORD=${NEO4J_PASSWORD:-changeme}
+      - NEO4J_server_memory_heap_initial__size=512m
+      - NEO4J_server_memory_heap_max__size=1G
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4j_data:/data
+      - neo4j_import:/var/lib/neo4j/import/real_estate_graph_ready
+      - ./backend/scripts/neo4j:/opt/search-graph:ro
+    depends_on:
+      neo4j-import-init:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:7474 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./.env:/app/.env:ro
+      - ./Data:/app/Data:ro
+    ports:
+      - "8001:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 30s
+      timeout: 10s
+      start_period: 60s
+      retries: 3
+
+volumes:
+  pgdata:
+  minio_data:
+  neo4j_data:
+  neo4j_import:

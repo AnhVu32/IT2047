@@ -1,0 +1,44 @@
+[
+  {
+    "interaction_id": "evt_100039",
+    "result_set_id": "rs_100039",
+    "user_id": "usr_1002",
+    "session_id": "sess_1002_0",
+    "listing_id": 43381561,
+    "rank_position": 0,
+    "action_type": "view",
+    "timestamp": "2026-01-02T06:51:18Z",
+    "dwell_time_seconds": 68,
+    "source": "search_bar",
+    "implicit_score": 0.814,
+    "is_bounce": false
+  },
+  {
+    "interaction_id": "evt_100037",
+    "result_set_id": "rs_100039",
+    "user_id": "usr_1002",
+    "session_id": "sess_1002_0",
+    "listing_id": 44419047,
+    "rank_position": 2,
+    "action_type": "contact",
+    "timestamp": "2026-01-04T09:48:26Z",
+    "dwell_time_seconds": 39,
+    "source": "ai_recommendation",
+    "implicit_score": 3.548,
+    "is_bounce": false
+  },
+  {
+    "interaction_id": "evt_100099",
+    "result_set_id": null,
+    "user_id": "usr_1000",
+    "session_id": "sess_1000_2",
+    "listing_id": 45900123,
+    "rank_position": null,
+    "action_type": "view",
+    "timestamp": "2026-01-06T02:10:00Z",
+    "dwell_time_seconds": 12,
+    "source": "related_items",
+    "implicit_score": 0.21,
+    "is_bounce": true
+  }
+]

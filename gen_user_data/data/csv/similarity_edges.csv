@@ -1,0 +1,333 @@
+﻿attr_a,attr_b,weight,group,source
+garage,parking,0.85,amenity,knowledge.py
+balcony,terrace,0.65,amenity,knowledge.py
+garden,near_park,0.4,amenity,knowledge.py
+garden,park,0.35,amenity,knowledge.py
+gym,sports_court,0.9,amenity,knowledge.py
+gym,park,0.45,amenity,knowledge.py
+gym,pool,0.35,amenity,knowledge.py
+park,kids_playground,0.78,amenity,knowledge.py
+park,bbq,0.42,amenity,knowledge.py
+kids_playground,bbq,0.3,amenity,knowledge.py
+security_24h,reception,0.55,amenity,knowledge.py
+pool,park,0.32,amenity,knowledge.py
+sports_court,park,0.38,amenity,knowledge.py
+near_metro,near_bus,0.68,amenity,knowledge.py
+near_metro,near_highway,0.44,amenity,knowledge.py
+near_bus,near_highway,0.4,amenity,knowledge.py
+near_mall,near_market,0.74,amenity,knowledge.py
+near_mall,near_park,0.22,amenity,knowledge.py
+near_school,near_park,0.28,amenity,knowledge.py
+near_school,kids_playground,0.3,amenity,knowledge.py
+near_park,park,0.52,amenity,knowledge.py
+river_view,park_view,0.54,amenity,knowledge.py
+park_view,city_view,0.26,amenity,knowledge.py
+elevator,parking,0.25,amenity,knowledge.py
+gia_thap,gia_trung_binh,0.5,criteria,similarity_matrix_v2.py
+gia_trung_binh,gia_cao,0.5,criteria,similarity_matrix_v2.py
+gia_cao,gia_rat_cao,0.5,criteria,similarity_matrix_v2.py
+gia_thap,gia_cao,0.15,criteria,similarity_matrix_v2.py
+gia_thap,gia_rat_cao,0.0,criteria,similarity_matrix_v2.py
+gia_trung_binh,gia_rat_cao,0.15,criteria,similarity_matrix_v2.py
+gia_thap,don_gia_thap,0.7,criteria,similarity_matrix_v2.py
+gia_rat_cao,don_gia_cao,0.7,criteria,similarity_matrix_v2.py
+gia_cao,don_gia_cao,0.5,criteria,similarity_matrix_v2.py
+gia_trung_binh,don_gia_thap,0.4,criteria,similarity_matrix_v2.py
+don_gia_thap,don_gia_cao,0.0,criteria,similarity_matrix_v2.py
+dien_tich_nho,dien_tich_vua,0.5,criteria,similarity_matrix_v2.py
+dien_tich_vua,dien_tich_lon,0.5,criteria,similarity_matrix_v2.py
+dien_tich_lon,dien_tich_rat_lon,0.5,criteria,similarity_matrix_v2.py
+dien_tich_nho,dien_tich_lon,0.15,criteria,similarity_matrix_v2.py
+dien_tich_nho,dien_tich_rat_lon,0.0,criteria,similarity_matrix_v2.py
+dien_tich_vua,dien_tich_rat_lon,0.15,criteria,similarity_matrix_v2.py
+dien_tich_nho,it_phong_ngu,0.75,criteria,similarity_matrix_v2.py
+dien_tich_lon,nhieu_phong_ngu,0.75,criteria,similarity_matrix_v2.py
+dien_tich_rat_lon,nhieu_phong_ngu,0.8,criteria,similarity_matrix_v2.py
+dien_tich_vua,it_phong_ngu,0.4,criteria,similarity_matrix_v2.py
+dien_tich_vua,nhieu_phong_ngu,0.35,criteria,similarity_matrix_v2.py
+it_phong_ngu,nhieu_phong_ngu,0.0,criteria,similarity_matrix_v2.py
+gia_thap,dien_tich_nho,0.55,criteria,similarity_matrix_v2.py
+gia_cao,dien_tich_lon,0.5,criteria,similarity_matrix_v2.py
+gia_rat_cao,dien_tich_rat_lon,0.5,criteria,similarity_matrix_v2.py
+gia_trung_binh,dien_tich_vua,0.45,criteria,similarity_matrix_v2.py
+don_gia_cao,vi_tri_trung_tam,0.6,criteria,similarity_matrix_v2.py
+gan_truong_hoc,tien_ich_giao_duc,0.85,criteria,similarity_matrix_v2.py
+gan_benh_vien,tien_ich_y_te,0.85,criteria,similarity_matrix_v2.py
+gan_sieu_thi,tien_ich_thuong_mai,0.85,criteria,similarity_matrix_v2.py
+gan_cong_vien,tien_ich_giai_tri,0.7,criteria,similarity_matrix_v2.py
+co_ho_boi,tien_ich_giai_tri,0.75,criteria,similarity_matrix_v2.py
+co_gym,tien_ich_giai_tri,0.7,criteria,similarity_matrix_v2.py
+co_ho_boi,co_gym,0.65,criteria,similarity_matrix_v2.py
+view_dep,gan_cong_vien,0.5,criteria,similarity_matrix_v2.py
+an_ninh_tot,noi_that_day_du,0.4,criteria,similarity_matrix_v2.py
+co_ho_boi,view_dep,0.45,criteria,similarity_matrix_v2.py
+noi_that_day_du,noi_that_co_ban,0.0,criteria,similarity_matrix_v2.py
+tien_ich_giao_duc,tien_ich_y_te,0.35,criteria,similarity_matrix_v2.py
+tien_ich_giao_duc,tien_ich_thuong_mai,0.4,criteria,similarity_matrix_v2.py
+tien_ich_y_te,tien_ich_thuong_mai,0.35,criteria,similarity_matrix_v2.py
+tien_ich_thuong_mai,tien_ich_giai_tri,0.45,criteria,similarity_matrix_v2.py
+tien_ich_giao_thong,tien_ich_thuong_mai,0.4,criteria,similarity_matrix_v2.py
+tien_ich_giao_thong,tien_ich_giao_duc,0.3,criteria,similarity_matrix_v2.py
+vi_tri_trung_tam,tien_ich_thuong_mai,0.65,criteria,similarity_matrix_v2.py
+vi_tri_trung_tam,tien_ich_giai_tri,0.55,criteria,similarity_matrix_v2.py
+vi_tri_trung_tam,tien_ich_giao_thong,0.6,criteria,similarity_matrix_v2.py
+vi_tri_trung_tam,tien_ich_y_te,0.5,criteria,similarity_matrix_v2.py
+vi_tri_trung_tam,tien_ich_giao_duc,0.45,criteria,similarity_matrix_v2.py
+vi_tri_trung_tam,an_ninh_tot,0.4,criteria,similarity_matrix_v2.py
+vi_tri_can_trung_tam,tien_ich_giao_thong,0.5,criteria,similarity_matrix_v2.py
+vi_tri_can_trung_tam,tien_ich_thuong_mai,0.45,criteria,similarity_matrix_v2.py
+vi_tri_ngoai_thanh,dien_tich_lon,0.5,criteria,similarity_matrix_v2.py
+vi_tri_ngoai_thanh,gia_thap,0.55,criteria,similarity_matrix_v2.py
+vi_tri_trung_tam,vi_tri_can_trung_tam,0.45,criteria,similarity_matrix_v2.py
+vi_tri_can_trung_tam,vi_tri_ngoai_thanh,0.4,criteria,similarity_matrix_v2.py
+vi_tri_trung_tam,vi_tri_ngoai_thanh,0.1,criteria,similarity_matrix_v2.py
+vi_tri_trung_tam,gia_cao,0.55,criteria,similarity_matrix_v2.py
+vi_tri_trung_tam,gia_rat_cao,0.6,criteria,similarity_matrix_v2.py
+vi_tri_trung_tam,gia_thap,0.05,criteria,similarity_matrix_v2.py
+vi_tri_ngoai_thanh,gia_rat_cao,0.05,criteria,similarity_matrix_v2.py
+huong_tot,huong_xau,0.0,criteria,similarity_matrix_v2.py
+huong_tot,view_dep,0.35,criteria,similarity_matrix_v2.py
+huong_tot,gia_cao,0.25,criteria,similarity_matrix_v2.py
+so_hong_rieng,so_chung,0.3,criteria,similarity_matrix_v2.py
+so_hong_rieng,hop_dong_mua_ban,0.15,criteria,similarity_matrix_v2.py
+so_hong_rieng,dang_cho_so,0.2,criteria,similarity_matrix_v2.py
+so_chung,hop_dong_mua_ban,0.35,criteria,similarity_matrix_v2.py
+so_chung,dang_cho_so,0.4,criteria,similarity_matrix_v2.py
+hop_dong_mua_ban,dang_cho_so,0.6,criteria,similarity_matrix_v2.py
+so_hong_rieng,gia_cao,0.35,criteria,similarity_matrix_v2.py
+hop_dong_mua_ban,gia_thap,0.4,criteria,similarity_matrix_v2.py
+dang_cho_so,gia_thap,0.35,criteria,similarity_matrix_v2.py
+gia_rat_cao,noi_that_day_du,0.5,criteria,similarity_matrix_v2.py
+gia_rat_cao,co_ho_boi,0.45,criteria,similarity_matrix_v2.py
+gia_rat_cao,co_gym,0.4,criteria,similarity_matrix_v2.py
+gia_rat_cao,view_dep,0.5,criteria,similarity_matrix_v2.py
+gia_thap,noi_that_co_ban,0.45,criteria,similarity_matrix_v2.py
+Phường An Hội Tây,Phường Bình Trưng,0.306,location,behavior(interactions)
+Phường An Hội Tây,Phường An Lạc,0.289,location,behavior(interactions)
+Phường An Hội Tây,Phường Bình Thạnh,0.279,location,behavior(interactions)
+Phường An Hội Đông,Phường Hiệp Bình,0.243,location,behavior(interactions)
+Phường An Hội Đông,Phường Thới Hòa,0.204,location,behavior(interactions)
+Phường An Hội Đông,Phường Chánh Phú Hòa,0.197,location,behavior(interactions)
+Phường An Khánh,Phường Tây Thạnh,0.298,location,behavior(interactions)
+Phường An Khánh,Phường Long Bình,0.225,location,behavior(interactions)
+Phường An Khánh,Phường Bình Thạnh,0.22,location,behavior(interactions)
+Phường An Lạc,Phường Long Bình,0.281,location,behavior(interactions)
+Phường An Lạc,Phường Phú Thuận,0.231,location,behavior(interactions)
+Phường An Nhơn,Xã Hưng Long,0.426,location,behavior(interactions)
+Phường An Nhơn,Phường Gò Vấp,0.241,location,behavior(interactions)
+Phường An Nhơn,Phường Hòa Bình,0.154,location,behavior(interactions)
+Phường An Phú Đông,Xã Nhà Bè,0.312,location,behavior(interactions)
+Phường An Phú Đông,Phường Long Bình,0.288,location,behavior(interactions)
+Phường An Phú Đông,Phường Phú Định,0.286,location,behavior(interactions)
+Phường An Đông,Phường Bàn Cờ,0.214,location,behavior(interactions)
+Phường An Đông,Phường Thạnh Mỹ Tây,0.196,location,behavior(interactions)
+Phường An Lạc,Phường An Đông,0.164,location,behavior(interactions)
+Phường Bàn Cờ,Xã Hiệp Phước,0.237,location,behavior(interactions)
+Phường Bàn Cờ,Phường Chợ Lớn,0.21,location,behavior(interactions)
+Phường Bình Dương,Phường Bình Quới,0.304,location,behavior(interactions)
+Phường Bình Dương,Phường Chánh Hưng,0.212,location,behavior(interactions)
+Phường Bình Dương,Phường Tân Đông Hiệp,0.202,location,behavior(interactions)
+Phường Bình Hòa,Phường Bình Lợi Trung,0.255,location,behavior(interactions)
+Phường Bình Hòa,Phường Long Trường,0.203,location,behavior(interactions)
+Phường An Lạc,Phường Bình Hòa,0.189,location,behavior(interactions)
+Phường Bình Hưng Hòa,Phường Tân Thuận,0.236,location,behavior(interactions)
+Phường Bình Hưng Hòa,Phường Bình Lợi Trung,0.22,location,behavior(interactions)
+Phường Bình Hưng Hòa,Phường Phú Nhuận,0.217,location,behavior(interactions)
+Phường Bình Lợi Trung,Xã Nhà Bè,0.318,location,behavior(interactions)
+Phường Bình Lợi Trung,Phường Tân Thuận,0.315,location,behavior(interactions)
+Phường Bình Lợi Trung,Phường Long Bình,0.283,location,behavior(interactions)
+Phường Bình Phú,Phường Tân Phú,0.223,location,behavior(interactions)
+Phường Bình Phú,Xã Tân Nhựt,0.201,location,behavior(interactions)
+Phường Bình Phú,Phường Minh Phụng,0.2,location,behavior(interactions)
+Phường Bình Quới,Phường Tân Thới Hiệp,0.286,location,behavior(interactions)
+Phường Bình Quới,Phường Tam Thắng,0.251,location,behavior(interactions)
+Phường Bình Thạnh,Phường Tân Hưng,0.249,location,behavior(interactions)
+Phường Bình Thạnh,Phường Tân Phú,0.248,location,behavior(interactions)
+Phường Bình Thới,Xã Trừ Văn Thố,0.287,location,behavior(interactions)
+Phường Bình Lợi Trung,Phường Bình Thới,0.222,location,behavior(interactions)
+Phường Bình Thới,Phường Thông Tây Hội,0.215,location,behavior(interactions)
+Phường Bình Tiên,Phường Đức Nhuận,0.417,location,behavior(interactions)
+Phường Bình Tiên,Xã Bình Lợi,0.376,location,behavior(interactions)
+Phường Bình Tiên,Phường Phú Thuận,0.275,location,behavior(interactions)
+Phường Bình Trưng,Phường Thủ Đức,0.232,location,behavior(interactions)
+Phường Bình Trưng,Phường Phú Thuận,0.22,location,behavior(interactions)
+Phường Bình Trị Đông,Phường Tân Bình,0.314,location,behavior(interactions)
+Phường Bình Trị Đông,Phường Bình Đông,0.261,location,behavior(interactions)
+Phường Bình Trị Đông,Xã Đất Đỏ,0.252,location,behavior(interactions)
+Phường Bình Tân,Phường Dĩ An,0.232,location,behavior(interactions)
+Phường Bình Tân,Phường Gò Vấp,0.222,location,behavior(interactions)
+Phường Bình Tân,Phường Phú Thuận,0.215,location,behavior(interactions)
+Phường Bình Tây,Phường Phú Thuận,0.301,location,behavior(interactions)
+Phường Bình Tân,Phường Bình Tây,0.179,location,behavior(interactions)
+Phường Bình Tây,Phường Gia Định,0.153,location,behavior(interactions)
+Phường Bình Đông,Phường Long Bình,0.24,location,behavior(interactions)
+Phường Bình Đông,Phường Gò Vấp,0.185,location,behavior(interactions)
+Phường Bảy Hiền,Phường Khánh Hội,0.238,location,behavior(interactions)
+Phường Bảy Hiền,Xã Nhà Bè,0.235,location,behavior(interactions)
+Phường Bảy Hiền,Phường Tân Mỹ,0.23,location,behavior(interactions)
+Phường Bến Thành,Phường Phú Lợi,0.374,location,behavior(interactions)
+Phường Bến Thành,Xã Nhà Bè,0.208,location,behavior(interactions)
+Phường Bến Thành,Phường Chợ Quán,0.202,location,behavior(interactions)
+Phường Chánh Hiệp,Phường Chợ Quán,0.391,location,behavior(interactions)
+Phường Chánh Hiệp,Phường Tây Thạnh,0.332,location,behavior(interactions)
+Phường Chánh Hiệp,Phường Thủ Dầu Một,0.301,location,behavior(interactions)
+Phường Chánh Hưng,Xã Hưng Long,0.276,location,behavior(interactions)
+Phường Chánh Hưng,Phường Long Trường,0.275,location,behavior(interactions)
+Phường Chánh Hưng,Xã Tân Nhựt,0.231,location,behavior(interactions)
+Phường Chánh Phú Hòa,Phường Hạnh Thông,0.251,location,behavior(interactions)
+Phường Chánh Phú Hòa,Phường Hiệp Bình,0.207,location,behavior(interactions)
+Phường Chợ Lớn,Phường Tân Đông Hiệp,0.262,location,behavior(interactions)
+Phường Chợ Lớn,Xã Bình Chánh,0.204,location,behavior(interactions)
+Phường Chợ Quán,Phường Tân Mỹ,0.366,location,behavior(interactions)
+Phường Chợ Quán,Phường Xóm Chiếu,0.24,location,behavior(interactions)
+Phường Cát Lái,Xã Nhà Bè,0.214,location,behavior(interactions)
+Phường Cát Lái,Phường Đông Hòa,0.196,location,behavior(interactions)
+Phường Cát Lái,Phường Sài Gòn,0.194,location,behavior(interactions)
+Phường Cầu Kiệu,Phường Long Bình,0.235,location,behavior(interactions)
+Phường Cầu Kiệu,Xã Nhà Bè,0.222,location,behavior(interactions)
+Phường Bình Thạnh,Phường Cầu Kiệu,0.221,location,behavior(interactions)
+Phường Cầu Ông Lãnh,Phường Tân Sơn,0.253,location,behavior(interactions)
+Phường Cầu Ông Lãnh,Xã Tân Nhựt,0.233,location,behavior(interactions)
+Phường Cầu Ông Lãnh,Xã Nhà Bè,0.232,location,behavior(interactions)
+Phường Diên Hồng,Phường Tam Thắng,0.205,location,behavior(interactions)
+Phường Diên Hồng,Phường Phú Thọ,0.192,location,behavior(interactions)
+Phường Diên Hồng,Phường Long Trường,0.182,location,behavior(interactions)
+Phường Dĩ An,Xã Nhà Bè,0.188,location,behavior(interactions)
+Phường Cầu Ông Lãnh,Phường Dĩ An,0.186,location,behavior(interactions)
+Phường Gia Định,Phường Hiệp Bình,0.259,location,behavior(interactions)
+Phường Gia Định,Phường Phú Thuận,0.243,location,behavior(interactions)
+Phường Gia Định,Phường Đức Nhuận,0.206,location,behavior(interactions)
+Phường An Hội Tây,Phường Gò Vấp,0.232,location,behavior(interactions)
+Phường Hiệp Bình,Xã Nhà Bè,0.292,location,behavior(interactions)
+Phường Bình Lợi Trung,Phường Hiệp Bình,0.252,location,behavior(interactions)
+Phường Hòa Bình,Phường Tân Tạo,0.215,location,behavior(interactions)
+Phường Hòa Bình,Phường Long Bình,0.186,location,behavior(interactions)
+Phường An Lạc,Phường Hòa Bình,0.166,location,behavior(interactions)
+Phường Hòa Hưng,Phường Tân Hưng,0.286,location,behavior(interactions)
+Phường Hòa Hưng,Phường Tân Thuận,0.257,location,behavior(interactions)
+Phường Hòa Hưng,Phường Phú Nhuận,0.257,location,behavior(interactions)
+Phường Hạnh Thông,Phường Rạch Dừa,0.299,location,behavior(interactions)
+Phường Hạnh Thông,Phường Thủ Dầu Một,0.216,location,behavior(interactions)
+Phường Khánh Hội,Xã Tân Vĩnh Lộc,0.288,location,behavior(interactions)
+Phường Khánh Hội,Phường Thới Hòa,0.212,location,behavior(interactions)
+Phường Linh Xuân,Phường Thông Tây Hội,0.307,location,behavior(interactions)
+Phường Bình Trị Đông,Phường Linh Xuân,0.225,location,behavior(interactions)
+Phường Linh Xuân,Phường Tân Hưng,0.198,location,behavior(interactions)
+Phường Long Bình,Xã Nhà Bè,0.389,location,behavior(interactions)
+Phường Long Bình,Xã Tân Nhựt,0.304,location,behavior(interactions)
+Phường Long Hương,Phường Tân Sơn Hòa,0.35,location,behavior(interactions)
+Phường Bình Hưng Hòa,Phường Long Nguyên,0.211,location,behavior(interactions)
+Phường Bàn Cờ,Phường Long Nguyên,0.198,location,behavior(interactions)
+Phường Long Nguyên,Phường Tam Thắng,0.177,location,behavior(interactions)
+Phường Long Phước,Xã Nhà Bè,0.3,location,behavior(interactions)
+Phường Long Phước,Phường Vườn Lài,0.186,location,behavior(interactions)
+Phường Long Phước,Phường Tân Hưng,0.179,location,behavior(interactions)
+Phường Long Trường,Phường Tây Thạnh,0.22,location,behavior(interactions)
+Phường Long Trường,Phường Phước Long,0.215,location,behavior(interactions)
+Phường Bình Trị Đông,Phường Minh Phụng,0.161,location,behavior(interactions)
+Phường An Hội Đông,Phường Minh Phụng,0.157,location,behavior(interactions)
+Phường Nhiêu Lộc,Phường Thuận Giao,0.212,location,behavior(interactions)
+Phường Nhiêu Lộc,Phường Tân Sơn,0.184,location,behavior(interactions)
+Phường Long Bình,Phường Nhiêu Lộc,0.176,location,behavior(interactions)
+Phường Phú Lâm,Xã Hóc Môn,0.518,location,behavior(interactions)
+Phường Phú Lâm,Phường Phú Lợi,0.228,location,behavior(interactions)
+Phường Phú Lâm,Phường Thủ Dầu Một,0.181,location,behavior(interactions)
+Phường Phú Lợi,Xã Hóc Môn,0.241,location,behavior(interactions)
+Phường Long Bình,Phường Phú Nhuận,0.249,location,behavior(interactions)
+Phường Bình Lợi Trung,Phường Phú Nhuận,0.244,location,behavior(interactions)
+Phường Phú Thuận,Xã Nhà Bè,0.279,location,behavior(interactions)
+Phường Phú Thạnh,Phường Trung Mỹ Tây,0.234,location,behavior(interactions)
+Phường Long Bình,Phường Phú Thạnh,0.223,location,behavior(interactions)
+Phường Phú Nhuận,Phường Phú Thạnh,0.199,location,behavior(interactions)
+Phường Long Bình,Phường Phú Thọ Hòa,0.283,location,behavior(interactions)
+Phường Phú Thuận,Phường Phú Thọ Hòa,0.21,location,behavior(interactions)
+Phường Phú Thọ Hòa,Phường Thủ Đức,0.194,location,behavior(interactions)
+Phường Phú Định,Xã Nhà Bè,0.253,location,behavior(interactions)
+Phường Bình Lợi Trung,Phường Phú Định,0.175,location,behavior(interactions)
+Phường Phước Long,Phường Thủ Dầu Một,0.266,location,behavior(interactions)
+Phường Phước Long,Phường Thạnh Mỹ Tây,0.213,location,behavior(interactions)
+Phường Phước Thắng,Phường Vũng Tàu,0.164,location,behavior(interactions)
+Phường Rạch Dừa,Phường Vũng Tàu,0.247,location,behavior(interactions)
+Phường Bàn Cờ,Phường Rạch Dừa,0.179,location,behavior(interactions)
+Phường Sài Gòn,Xã Bàu Bàng,0.276,location,behavior(interactions)
+Phường Sài Gòn,Phường Thủ Đức,0.182,location,behavior(interactions)
+Phường Tam Bình,Xã Đất Đỏ,0.203,location,behavior(interactions)
+Phường Tam Bình,Phường Thạnh Mỹ Tây,0.195,location,behavior(interactions)
+Phường Long Bình,Phường Tam Bình,0.193,location,behavior(interactions)
+Phường Bình Lợi Trung,Phường Tam Thắng,0.238,location,behavior(interactions)
+Phường Gò Vấp,Phường Thuận Giao,0.218,location,behavior(interactions)
+Phường Thuận Giao,Xã Hiệp Phước,0.197,location,behavior(interactions)
+Phường An Phú Đông,Phường Thông Tây Hội,0.264,location,behavior(interactions)
+Phường Bình Quới,Phường Thông Tây Hội,0.242,location,behavior(interactions)
+Phường Thạnh Mỹ Tây,Xã Nhà Bè,0.277,location,behavior(interactions)
+Phường Long Bình,Phường Thạnh Mỹ Tây,0.271,location,behavior(interactions)
+Phường Thạnh Mỹ Tây,Phường Xuân Hòa,0.246,location,behavior(interactions)
+Phường Thới An,Xã Hưng Long,0.253,location,behavior(interactions)
+Phường Thới An,Xã Tân Nhựt,0.217,location,behavior(interactions)
+Phường Chánh Hưng,Phường Thới An,0.216,location,behavior(interactions)
+Phường Thới Hòa,Phường Đông Hòa,0.414,location,behavior(interactions)
+Phường Thới Hòa,Xã Tân An Hội,0.33,location,behavior(interactions)
+Phường Thới Hòa,Xã Xuân Thới Sơn,0.285,location,behavior(interactions)
+Phường Thủ Dầu Một,Xã Tân An Hội,0.412,location,behavior(interactions)
+Phường Thủ Đức,Xã Nhà Bè,0.261,location,behavior(interactions)
+Phường Phú Thuận,Phường Thủ Đức,0.243,location,behavior(interactions)
+Phường Trung Mỹ Tây,Phường Tân Sơn Nhì,0.219,location,behavior(interactions)
+Phường Trung Mỹ Tây,Phường Vĩnh Hội,0.213,location,behavior(interactions)
+Phường Tân Bình,Phường Xóm Chiếu,0.235,location,behavior(interactions)
+Phường Tân Bình,Phường Tân Định,0.23,location,behavior(interactions)
+Phường Tân Hòa,Phường Tân Mỹ,0.236,location,behavior(interactions)
+Phường Bình Lợi Trung,Phường Tân Hòa,0.235,location,behavior(interactions)
+Phường Bình Hưng Hòa,Phường Tân Hòa,0.199,location,behavior(interactions)
+Phường Tân Hưng,Phường Tân Thuận,0.28,location,behavior(interactions)
+Phường Long Bình,Phường Tân Hưng,0.268,location,behavior(interactions)
+Phường Tân Mỹ,Phường Xóm Chiếu,0.333,location,behavior(interactions)
+Phường Tân Phú,Xã Bình Lợi,0.296,location,behavior(interactions)
+Phường Tân Phú,Phường Xuân Hòa,0.223,location,behavior(interactions)
+Phường Tân Sơn,Xã Tân Nhựt,0.301,location,behavior(interactions)
+Phường Bình Trưng,Phường Tân Sơn,0.195,location,behavior(interactions)
+Phường Tân Sơn Hòa,Phường Tân Sơn Nhất,0.242,location,behavior(interactions)
+Phường Phú Thuận,Phường Tân Sơn Hòa,0.238,location,behavior(interactions)
+Phường Tân Sơn Nhì,Phường Tây Thạnh,0.223,location,behavior(interactions)
+Phường Diên Hồng,Phường Tân Sơn Nhì,0.182,location,behavior(interactions)
+Phường Tân Sơn Nhất,Phường Tân Đông Hiệp,0.268,location,behavior(interactions)
+Phường Hiệp Bình,Phường Tân Sơn Nhất,0.25,location,behavior(interactions)
+Phường Tân Sơn Nhất,Phường Vĩnh Hội,0.248,location,behavior(interactions)
+Phường Cầu Kiệu,Phường Tân Thới Hiệp,0.2,location,behavior(interactions)
+Phường Tân Thới Hiệp,Phường Đức Nhuận,0.184,location,behavior(interactions)
+Phường Tân Tạo,Xã Bàu Bàng,0.26,location,behavior(interactions)
+Phường Bình Hưng Hòa,Phường Tân Tạo,0.194,location,behavior(interactions)
+Phường Thạnh Mỹ Tây,Phường Tân Định,0.224,location,behavior(interactions)
+Phường Cầu Kiệu,Phường Tân Định,0.209,location,behavior(interactions)
+Phường Chợ Quán,Phường Tây Thạnh,0.226,location,behavior(interactions)
+Phường An Phú Đông,Phường Tăng Nhơn Phú,0.253,location,behavior(interactions)
+Phường Tăng Nhơn Phú,Xã Nhà Bè,0.235,location,behavior(interactions)
+Phường Cầu Kiệu,Phường Tăng Nhơn Phú,0.208,location,behavior(interactions)
+Phường Gò Vấp,Phường Vĩnh Hội,0.195,location,behavior(interactions)
+Phường Vũng Tàu,Xã Nhà Bè,0.279,location,behavior(interactions)
+Phường Tân Thuận,Phường Vũng Tàu,0.228,location,behavior(interactions)
+Phường Long Bình,Phường Vườn Lài,0.282,location,behavior(interactions)
+Phường Tân Thuận,Phường Vườn Lài,0.222,location,behavior(interactions)
+Phường An Khánh,Phường Vườn Lài,0.211,location,behavior(interactions)
+Phường Xuân Hòa,Xã Hóc Môn,0.285,location,behavior(interactions)
+Phường Tân Hưng,Phường Xuân Hòa,0.239,location,behavior(interactions)
+Phường Xóm Chiếu,Xã Bình Hưng,0.343,location,behavior(interactions)
+Phường Chánh Hưng,Phường Đông Hòa,0.195,location,behavior(interactions)
+Phường Tân Đông Hiệp,Phường Đông Hưng Thuận,0.2,location,behavior(interactions)
+Phường Tân Thuận,Phường Đông Hưng Thuận,0.192,location,behavior(interactions)
+Phường Đông Hưng Thuận,Xã Nhà Bè,0.191,location,behavior(interactions)
+Phường Phú Thuận,Phường Đức Nhuận,0.253,location,behavior(interactions)
+Phường Đức Nhuận,Xã Bình Lợi,0.241,location,behavior(interactions)
+Phường Đức Nhuận,Xã Bà Điểm,0.225,location,behavior(interactions)
+Phường Phú Nhuận,Xã Bà Điểm,0.177,location,behavior(interactions)
+Phường Bình Đông,Xã Bà Điểm,0.171,location,behavior(interactions)
+Xã Bình Chánh,Xã Tân Vĩnh Lộc,0.315,location,behavior(interactions)
+Phường Gò Vấp,Xã Bình Chánh,0.183,location,behavior(interactions)
+Phường Tân Mỹ,Xã Bình Hưng,0.181,location,behavior(interactions)
+Phường Long Bình,Xã Hiệp Phước,0.225,location,behavior(interactions)
+Xã Hiệp Phước,Xã Trừ Văn Thố,0.21,location,behavior(interactions)
+Xã Hưng Long,Xã Tân An Hội,0.392,location,behavior(interactions)
+Phường Linh Xuân,Xã Trừ Văn Thố,0.179,location,behavior(interactions)
+Xã Nhà Bè,Xã Tân Nhựt,0.246,location,behavior(interactions)
+Phường Tam Bình,Xã Tân Vĩnh Lộc,0.186,location,behavior(interactions)
+Xã Xuân Thới Sơn,Xã Đất Đỏ,0.337,location,behavior(interactions)
+Phường Long Bình,Xã Xuân Thới Sơn,0.197,location,behavior(interactions)

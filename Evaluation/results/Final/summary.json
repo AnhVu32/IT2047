@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-08-06T09:30:07.164309+00:00",
+  "source_run_dirs": [
+    "results/20260806T144112_n481",
+    "results/20260806T162644_n7"
+  ],
+  "interactions_file": "/Users/nguyenvu/Downloads/CS2307/gen_user_data/data/interactions_v3_claude.json",
+  "k": 10,
+  "n_events_total": 488,
+  "n_events_used": 488,
+  "group_a_ranking": {
+    "precision_at_10": 0.3325819672131148,
+    "recall_at_10": 0.3325819672131148,
+    "ndcg_at_10": 0.3555587393062345,
+    "map_at_10": 0.23460154826958105,
+    "mrr_at_10": 0.6937172304819363,
+    "arhr_at_10": 0.35612671028567516,
+    "average_precision_at_10": 0.4378257231187049,
+    "average_recall_at_10": NaN
+  },
+  "group_bc_rating_classification": {
+    "n_pairs": 353,
+    "rmse": 1.5880734154239229,
+    "mae": 1.0327628895184136,
+    "mse": 2.5219771727762037,
+    "rsquared": -0.6649346170291632,
+    "exp_var": -0.006660353670097763,
+    "mape": 43.544245769900364,
+    "auc": 0.48649956611708167,
+    "logloss": 0.8120346564259424
+  },
+  "group_d_diversity": {
+    "diversity": 0.38266389192883704
+  },
+  "group_e_novelty": {
+    "novelty": 2.6525005716968093
+  },
+  "group_f_serendipity": {
+    "serendipity": 0.41689147443650443,
+    "n_users": 200,
+    "dropped_already_interacted_pairs": 284
+  },
+  "group_g_coverage": {
+    "catalog_coverage": 0.4023102310231023,
+    "distributional_coverage": 9.715425373256068
+  },
+  "breakdown_ndcg_by_segment": {
+    "affordable": 0.36390461457150075,
+    "luxury": 0.37447792650297734,
+    "mid_range": 0.33500007409739285
+  },
+  "breakdown_ndcg_by_intent": {
+    "buy_for_living": 0.335195091121123,
+    "investment": 0.39847940174964475,
+    "rent": 0.37477057958465515
+  }
+}

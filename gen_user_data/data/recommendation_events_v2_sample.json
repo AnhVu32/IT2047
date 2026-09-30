@@ -1,0 +1,44 @@
+[
+  {
+    "result_set_id": "rs_100039",
+    "user_id": "usr_1002",
+    "session_id": "sess_1002_0",
+    "timestamp": "2026-01-02T06:51:10Z",
+    "algorithm_version": "knowledge_hybrid_v1",
+    "context": {
+      "raw_query": "Mua căn hộ 1 phòng ngủ Quận Tân Bình tầm trung",
+      "filters_applied": {"price_max": 2.7, "bedrooms": 2, "district": "Phường Tân Bình"},
+      "inferred_intent": "buy_for_living",
+      "budget_group": "affordable"
+    },
+    "recommended_items": [
+      {"listing_id": 43381561, "rank": 0, "score": 0.842, "matched_features": ["near_bus"], "partial_match_features": []},
+      {"listing_id": 45177611, "rank": 1, "score": 0.799, "matched_features": [], "partial_match_features": ["gym~sports_court"]},
+      {"listing_id": 44419047, "rank": 2, "score": 0.751, "matched_features": ["parking"], "partial_match_features": []},
+      {"listing_id": 45222670, "rank": 3, "score": 0.734, "matched_features": ["near_bus"], "partial_match_features": ["pool~park"]},
+      {"listing_id": 41003332, "rank": 4, "score": 0.718, "matched_features": [], "partial_match_features": ["near_school~kids_playground"]},
+      {"listing_id": 44850086, "rank": 5, "score": 0.702, "matched_features": ["elevator"], "partial_match_features": []},
+      {"listing_id": 45225431, "rank": 6, "score": 0.689, "matched_features": [], "partial_match_features": ["garage~parking"]},
+      {"listing_id": 44733927, "rank": 7, "score": 0.671, "matched_features": ["near_bus"], "partial_match_features": []},
+      {"listing_id": 45177612, "rank": 8, "score": 0.655, "matched_features": [], "partial_match_features": ["security_24h~reception"]},
+      {"listing_id": 44419048, "rank": 9, "score": 0.640, "matched_features": ["parking"], "partial_match_features": []}
+    ],
+    "llm_output": {
+      "43381561": {
+        "explanation": "Căn hộ này phù hợp vì nằm trong ngân sách 2.7 tỷ và gần trạm xe buýt, thuận tiện di chuyển hằng ngày.",
+        "comparison": "Là căn duy nhất trong top-3 có kết nối xe buýt trực tiếp.",
+        "model_name": "gemini-2.5-flash"
+      },
+      "45177611": {
+        "explanation": "Căn hộ này có sân thể thao thay vì phòng gym như yêu cầu, nhưng vẫn đáp ứng nhu cầu vận động.",
+        "comparison": "Diện tích rộng hơn 2 căn còn lại trong top-3.",
+        "model_name": "gemini-2.5-flash"
+      },
+      "44419047": {
+        "explanation": "Căn hộ này có chỗ đậu xe, phù hợp nếu bạn đang sở hữu ô tô.",
+        "comparison": "Là căn duy nhất trong top-3 có bãi đỗ xe riêng.",
+        "model_name": "gemini-2.5-flash"
+      }
+    }
+  }
+]

@@ -1,0 +1,1605 @@
+[
+  {
+    "attr_a": "Phường An Hội Tây",
+    "attr_b": "Phường Bình Trưng",
+    "weight": 0.306,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Hội Tây",
+    "attr_b": "Phường An Lạc",
+    "weight": 0.289,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Hội Tây",
+    "attr_b": "Phường Bình Thạnh",
+    "weight": 0.279,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Hội Đông",
+    "attr_b": "Phường Hiệp Bình",
+    "weight": 0.243,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Hội Đông",
+    "attr_b": "Phường Thới Hòa",
+    "weight": 0.204,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Hội Đông",
+    "attr_b": "Phường Chánh Phú Hòa",
+    "weight": 0.197,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Khánh",
+    "attr_b": "Phường Tây Thạnh",
+    "weight": 0.298,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Khánh",
+    "attr_b": "Phường Long Bình",
+    "weight": 0.225,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Khánh",
+    "attr_b": "Phường Bình Thạnh",
+    "weight": 0.22,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Lạc",
+    "attr_b": "Phường Long Bình",
+    "weight": 0.281,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Lạc",
+    "attr_b": "Phường Phú Thuận",
+    "weight": 0.231,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Nhơn",
+    "attr_b": "Xã Hưng Long",
+    "weight": 0.426,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Nhơn",
+    "attr_b": "Phường Gò Vấp",
+    "weight": 0.241,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Nhơn",
+    "attr_b": "Phường Hòa Bình",
+    "weight": 0.154,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Phú Đông",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.312,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Phú Đông",
+    "attr_b": "Phường Long Bình",
+    "weight": 0.288,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Phú Đông",
+    "attr_b": "Phường Phú Định",
+    "weight": 0.286,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Đông",
+    "attr_b": "Phường Bàn Cờ",
+    "weight": 0.214,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Đông",
+    "attr_b": "Phường Thạnh Mỹ Tây",
+    "weight": 0.196,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Lạc",
+    "attr_b": "Phường An Đông",
+    "weight": 0.164,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bàn Cờ",
+    "attr_b": "Xã Hiệp Phước",
+    "weight": 0.237,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bàn Cờ",
+    "attr_b": "Phường Chợ Lớn",
+    "weight": 0.21,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Dương",
+    "attr_b": "Phường Bình Quới",
+    "weight": 0.304,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Dương",
+    "attr_b": "Phường Chánh Hưng",
+    "weight": 0.212,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Dương",
+    "attr_b": "Phường Tân Đông Hiệp",
+    "weight": 0.202,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Hòa",
+    "attr_b": "Phường Bình Lợi Trung",
+    "weight": 0.255,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Hòa",
+    "attr_b": "Phường Long Trường",
+    "weight": 0.203,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Lạc",
+    "attr_b": "Phường Bình Hòa",
+    "weight": 0.189,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Hưng Hòa",
+    "attr_b": "Phường Tân Thuận",
+    "weight": 0.236,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Hưng Hòa",
+    "attr_b": "Phường Bình Lợi Trung",
+    "weight": 0.22,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Hưng Hòa",
+    "attr_b": "Phường Phú Nhuận",
+    "weight": 0.217,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Lợi Trung",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.318,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Lợi Trung",
+    "attr_b": "Phường Tân Thuận",
+    "weight": 0.315,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Lợi Trung",
+    "attr_b": "Phường Long Bình",
+    "weight": 0.283,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Phú",
+    "attr_b": "Phường Tân Phú",
+    "weight": 0.223,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Phú",
+    "attr_b": "Xã Tân Nhựt",
+    "weight": 0.201,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Phú",
+    "attr_b": "Phường Minh Phụng",
+    "weight": 0.2,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Quới",
+    "attr_b": "Phường Tân Thới Hiệp",
+    "weight": 0.286,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Quới",
+    "attr_b": "Phường Tam Thắng",
+    "weight": 0.251,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Thạnh",
+    "attr_b": "Phường Tân Hưng",
+    "weight": 0.249,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Thạnh",
+    "attr_b": "Phường Tân Phú",
+    "weight": 0.248,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Thới",
+    "attr_b": "Xã Trừ Văn Thố",
+    "weight": 0.287,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Lợi Trung",
+    "attr_b": "Phường Bình Thới",
+    "weight": 0.222,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Thới",
+    "attr_b": "Phường Thông Tây Hội",
+    "weight": 0.215,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Tiên",
+    "attr_b": "Phường Đức Nhuận",
+    "weight": 0.417,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Tiên",
+    "attr_b": "Xã Bình Lợi",
+    "weight": 0.376,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Tiên",
+    "attr_b": "Phường Phú Thuận",
+    "weight": 0.275,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Trưng",
+    "attr_b": "Phường Thủ Đức",
+    "weight": 0.232,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Trưng",
+    "attr_b": "Phường Phú Thuận",
+    "weight": 0.22,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Trị Đông",
+    "attr_b": "Phường Tân Bình",
+    "weight": 0.314,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Trị Đông",
+    "attr_b": "Phường Bình Đông",
+    "weight": 0.261,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Trị Đông",
+    "attr_b": "Xã Đất Đỏ",
+    "weight": 0.252,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Tân",
+    "attr_b": "Phường Dĩ An",
+    "weight": 0.232,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Tân",
+    "attr_b": "Phường Gò Vấp",
+    "weight": 0.222,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Tân",
+    "attr_b": "Phường Phú Thuận",
+    "weight": 0.215,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Tây",
+    "attr_b": "Phường Phú Thuận",
+    "weight": 0.301,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Tân",
+    "attr_b": "Phường Bình Tây",
+    "weight": 0.179,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Tây",
+    "attr_b": "Phường Gia Định",
+    "weight": 0.153,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Đông",
+    "attr_b": "Phường Long Bình",
+    "weight": 0.24,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Đông",
+    "attr_b": "Phường Gò Vấp",
+    "weight": 0.185,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bảy Hiền",
+    "attr_b": "Phường Khánh Hội",
+    "weight": 0.238,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bảy Hiền",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.235,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bảy Hiền",
+    "attr_b": "Phường Tân Mỹ",
+    "weight": 0.23,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bến Thành",
+    "attr_b": "Phường Phú Lợi",
+    "weight": 0.374,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bến Thành",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.208,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bến Thành",
+    "attr_b": "Phường Chợ Quán",
+    "weight": 0.202,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Chánh Hiệp",
+    "attr_b": "Phường Chợ Quán",
+    "weight": 0.391,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Chánh Hiệp",
+    "attr_b": "Phường Tây Thạnh",
+    "weight": 0.332,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Chánh Hiệp",
+    "attr_b": "Phường Thủ Dầu Một",
+    "weight": 0.301,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Chánh Hưng",
+    "attr_b": "Xã Hưng Long",
+    "weight": 0.276,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Chánh Hưng",
+    "attr_b": "Phường Long Trường",
+    "weight": 0.275,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Chánh Hưng",
+    "attr_b": "Xã Tân Nhựt",
+    "weight": 0.231,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Chánh Phú Hòa",
+    "attr_b": "Phường Hạnh Thông",
+    "weight": 0.251,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Chánh Phú Hòa",
+    "attr_b": "Phường Hiệp Bình",
+    "weight": 0.207,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Chợ Lớn",
+    "attr_b": "Phường Tân Đông Hiệp",
+    "weight": 0.262,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Chợ Lớn",
+    "attr_b": "Xã Bình Chánh",
+    "weight": 0.204,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Chợ Quán",
+    "attr_b": "Phường Tân Mỹ",
+    "weight": 0.366,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Chợ Quán",
+    "attr_b": "Phường Xóm Chiếu",
+    "weight": 0.24,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Cát Lái",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.214,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Cát Lái",
+    "attr_b": "Phường Đông Hòa",
+    "weight": 0.196,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Cát Lái",
+    "attr_b": "Phường Sài Gòn",
+    "weight": 0.194,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Cầu Kiệu",
+    "attr_b": "Phường Long Bình",
+    "weight": 0.235,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Cầu Kiệu",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.222,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Thạnh",
+    "attr_b": "Phường Cầu Kiệu",
+    "weight": 0.221,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Cầu Ông Lãnh",
+    "attr_b": "Phường Tân Sơn",
+    "weight": 0.253,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Cầu Ông Lãnh",
+    "attr_b": "Xã Tân Nhựt",
+    "weight": 0.233,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Cầu Ông Lãnh",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.232,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Diên Hồng",
+    "attr_b": "Phường Tam Thắng",
+    "weight": 0.205,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Diên Hồng",
+    "attr_b": "Phường Phú Thọ",
+    "weight": 0.192,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Diên Hồng",
+    "attr_b": "Phường Long Trường",
+    "weight": 0.182,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Dĩ An",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.188,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Cầu Ông Lãnh",
+    "attr_b": "Phường Dĩ An",
+    "weight": 0.186,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Gia Định",
+    "attr_b": "Phường Hiệp Bình",
+    "weight": 0.259,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Gia Định",
+    "attr_b": "Phường Phú Thuận",
+    "weight": 0.243,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Gia Định",
+    "attr_b": "Phường Đức Nhuận",
+    "weight": 0.206,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Hội Tây",
+    "attr_b": "Phường Gò Vấp",
+    "weight": 0.232,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Hiệp Bình",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.292,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Lợi Trung",
+    "attr_b": "Phường Hiệp Bình",
+    "weight": 0.252,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Hòa Bình",
+    "attr_b": "Phường Tân Tạo",
+    "weight": 0.215,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Hòa Bình",
+    "attr_b": "Phường Long Bình",
+    "weight": 0.186,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Lạc",
+    "attr_b": "Phường Hòa Bình",
+    "weight": 0.166,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Hòa Hưng",
+    "attr_b": "Phường Tân Hưng",
+    "weight": 0.286,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Hòa Hưng",
+    "attr_b": "Phường Tân Thuận",
+    "weight": 0.257,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Hòa Hưng",
+    "attr_b": "Phường Phú Nhuận",
+    "weight": 0.257,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Hạnh Thông",
+    "attr_b": "Phường Rạch Dừa",
+    "weight": 0.299,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Hạnh Thông",
+    "attr_b": "Phường Thủ Dầu Một",
+    "weight": 0.216,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Khánh Hội",
+    "attr_b": "Xã Tân Vĩnh Lộc",
+    "weight": 0.288,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Khánh Hội",
+    "attr_b": "Phường Thới Hòa",
+    "weight": 0.212,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Linh Xuân",
+    "attr_b": "Phường Thông Tây Hội",
+    "weight": 0.307,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Trị Đông",
+    "attr_b": "Phường Linh Xuân",
+    "weight": 0.225,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Linh Xuân",
+    "attr_b": "Phường Tân Hưng",
+    "weight": 0.198,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Bình",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.389,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Bình",
+    "attr_b": "Xã Tân Nhựt",
+    "weight": 0.304,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Hương",
+    "attr_b": "Phường Tân Sơn Hòa",
+    "weight": 0.35,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Hưng Hòa",
+    "attr_b": "Phường Long Nguyên",
+    "weight": 0.211,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bàn Cờ",
+    "attr_b": "Phường Long Nguyên",
+    "weight": 0.198,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Nguyên",
+    "attr_b": "Phường Tam Thắng",
+    "weight": 0.177,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Phước",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.3,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Phước",
+    "attr_b": "Phường Vườn Lài",
+    "weight": 0.186,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Phước",
+    "attr_b": "Phường Tân Hưng",
+    "weight": 0.179,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Trường",
+    "attr_b": "Phường Tây Thạnh",
+    "weight": 0.22,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Trường",
+    "attr_b": "Phường Phước Long",
+    "weight": 0.215,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Trị Đông",
+    "attr_b": "Phường Minh Phụng",
+    "weight": 0.161,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Hội Đông",
+    "attr_b": "Phường Minh Phụng",
+    "weight": 0.157,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Nhiêu Lộc",
+    "attr_b": "Phường Thuận Giao",
+    "weight": 0.212,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Nhiêu Lộc",
+    "attr_b": "Phường Tân Sơn",
+    "weight": 0.184,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Bình",
+    "attr_b": "Phường Nhiêu Lộc",
+    "weight": 0.176,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phú Lâm",
+    "attr_b": "Xã Hóc Môn",
+    "weight": 0.518,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phú Lâm",
+    "attr_b": "Phường Phú Lợi",
+    "weight": 0.228,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phú Lâm",
+    "attr_b": "Phường Thủ Dầu Một",
+    "weight": 0.181,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phú Lợi",
+    "attr_b": "Xã Hóc Môn",
+    "weight": 0.241,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Bình",
+    "attr_b": "Phường Phú Nhuận",
+    "weight": 0.249,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Lợi Trung",
+    "attr_b": "Phường Phú Nhuận",
+    "weight": 0.244,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phú Thuận",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.279,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phú Thạnh",
+    "attr_b": "Phường Trung Mỹ Tây",
+    "weight": 0.234,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Bình",
+    "attr_b": "Phường Phú Thạnh",
+    "weight": 0.223,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phú Nhuận",
+    "attr_b": "Phường Phú Thạnh",
+    "weight": 0.199,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Bình",
+    "attr_b": "Phường Phú Thọ Hòa",
+    "weight": 0.283,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phú Thuận",
+    "attr_b": "Phường Phú Thọ Hòa",
+    "weight": 0.21,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phú Thọ Hòa",
+    "attr_b": "Phường Thủ Đức",
+    "weight": 0.194,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phú Định",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.253,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Lợi Trung",
+    "attr_b": "Phường Phú Định",
+    "weight": 0.175,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phước Long",
+    "attr_b": "Phường Thủ Dầu Một",
+    "weight": 0.266,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phước Long",
+    "attr_b": "Phường Thạnh Mỹ Tây",
+    "weight": 0.213,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phước Thắng",
+    "attr_b": "Phường Vũng Tàu",
+    "weight": 0.164,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Rạch Dừa",
+    "attr_b": "Phường Vũng Tàu",
+    "weight": 0.247,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bàn Cờ",
+    "attr_b": "Phường Rạch Dừa",
+    "weight": 0.179,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Sài Gòn",
+    "attr_b": "Xã Bàu Bàng",
+    "weight": 0.276,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Sài Gòn",
+    "attr_b": "Phường Thủ Đức",
+    "weight": 0.182,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tam Bình",
+    "attr_b": "Xã Đất Đỏ",
+    "weight": 0.203,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tam Bình",
+    "attr_b": "Phường Thạnh Mỹ Tây",
+    "weight": 0.195,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Bình",
+    "attr_b": "Phường Tam Bình",
+    "weight": 0.193,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Lợi Trung",
+    "attr_b": "Phường Tam Thắng",
+    "weight": 0.238,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Gò Vấp",
+    "attr_b": "Phường Thuận Giao",
+    "weight": 0.218,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Thuận Giao",
+    "attr_b": "Xã Hiệp Phước",
+    "weight": 0.197,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Phú Đông",
+    "attr_b": "Phường Thông Tây Hội",
+    "weight": 0.264,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Quới",
+    "attr_b": "Phường Thông Tây Hội",
+    "weight": 0.242,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Thạnh Mỹ Tây",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.277,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Bình",
+    "attr_b": "Phường Thạnh Mỹ Tây",
+    "weight": 0.271,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Thạnh Mỹ Tây",
+    "attr_b": "Phường Xuân Hòa",
+    "weight": 0.246,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Thới An",
+    "attr_b": "Xã Hưng Long",
+    "weight": 0.253,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Thới An",
+    "attr_b": "Xã Tân Nhựt",
+    "weight": 0.217,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Chánh Hưng",
+    "attr_b": "Phường Thới An",
+    "weight": 0.216,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Thới Hòa",
+    "attr_b": "Phường Đông Hòa",
+    "weight": 0.414,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Thới Hòa",
+    "attr_b": "Xã Tân An Hội",
+    "weight": 0.33,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Thới Hòa",
+    "attr_b": "Xã Xuân Thới Sơn",
+    "weight": 0.285,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Thủ Dầu Một",
+    "attr_b": "Xã Tân An Hội",
+    "weight": 0.412,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Thủ Đức",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.261,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phú Thuận",
+    "attr_b": "Phường Thủ Đức",
+    "weight": 0.243,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Trung Mỹ Tây",
+    "attr_b": "Phường Tân Sơn Nhì",
+    "weight": 0.219,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Trung Mỹ Tây",
+    "attr_b": "Phường Vĩnh Hội",
+    "weight": 0.213,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Bình",
+    "attr_b": "Phường Xóm Chiếu",
+    "weight": 0.235,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Bình",
+    "attr_b": "Phường Tân Định",
+    "weight": 0.23,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Hòa",
+    "attr_b": "Phường Tân Mỹ",
+    "weight": 0.236,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Lợi Trung",
+    "attr_b": "Phường Tân Hòa",
+    "weight": 0.235,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Hưng Hòa",
+    "attr_b": "Phường Tân Hòa",
+    "weight": 0.199,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Hưng",
+    "attr_b": "Phường Tân Thuận",
+    "weight": 0.28,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Bình",
+    "attr_b": "Phường Tân Hưng",
+    "weight": 0.268,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Mỹ",
+    "attr_b": "Phường Xóm Chiếu",
+    "weight": 0.333,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Phú",
+    "attr_b": "Xã Bình Lợi",
+    "weight": 0.296,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Phú",
+    "attr_b": "Phường Xuân Hòa",
+    "weight": 0.223,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Sơn",
+    "attr_b": "Xã Tân Nhựt",
+    "weight": 0.301,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Trưng",
+    "attr_b": "Phường Tân Sơn",
+    "weight": 0.195,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Sơn Hòa",
+    "attr_b": "Phường Tân Sơn Nhất",
+    "weight": 0.242,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phú Thuận",
+    "attr_b": "Phường Tân Sơn Hòa",
+    "weight": 0.238,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Sơn Nhì",
+    "attr_b": "Phường Tây Thạnh",
+    "weight": 0.223,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Diên Hồng",
+    "attr_b": "Phường Tân Sơn Nhì",
+    "weight": 0.182,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Sơn Nhất",
+    "attr_b": "Phường Tân Đông Hiệp",
+    "weight": 0.268,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Hiệp Bình",
+    "attr_b": "Phường Tân Sơn Nhất",
+    "weight": 0.25,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Sơn Nhất",
+    "attr_b": "Phường Vĩnh Hội",
+    "weight": 0.248,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Cầu Kiệu",
+    "attr_b": "Phường Tân Thới Hiệp",
+    "weight": 0.2,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Thới Hiệp",
+    "attr_b": "Phường Đức Nhuận",
+    "weight": 0.184,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Tạo",
+    "attr_b": "Xã Bàu Bàng",
+    "weight": 0.26,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Hưng Hòa",
+    "attr_b": "Phường Tân Tạo",
+    "weight": 0.194,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Thạnh Mỹ Tây",
+    "attr_b": "Phường Tân Định",
+    "weight": 0.224,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Cầu Kiệu",
+    "attr_b": "Phường Tân Định",
+    "weight": 0.209,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Chợ Quán",
+    "attr_b": "Phường Tây Thạnh",
+    "weight": 0.226,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Phú Đông",
+    "attr_b": "Phường Tăng Nhơn Phú",
+    "weight": 0.253,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tăng Nhơn Phú",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.235,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Cầu Kiệu",
+    "attr_b": "Phường Tăng Nhơn Phú",
+    "weight": 0.208,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Gò Vấp",
+    "attr_b": "Phường Vĩnh Hội",
+    "weight": 0.195,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Vũng Tàu",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.279,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Thuận",
+    "attr_b": "Phường Vũng Tàu",
+    "weight": 0.228,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Bình",
+    "attr_b": "Phường Vườn Lài",
+    "weight": 0.282,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Thuận",
+    "attr_b": "Phường Vườn Lài",
+    "weight": 0.222,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường An Khánh",
+    "attr_b": "Phường Vườn Lài",
+    "weight": 0.211,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Xuân Hòa",
+    "attr_b": "Xã Hóc Môn",
+    "weight": 0.285,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Hưng",
+    "attr_b": "Phường Xuân Hòa",
+    "weight": 0.239,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Xóm Chiếu",
+    "attr_b": "Xã Bình Hưng",
+    "weight": 0.343,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Chánh Hưng",
+    "attr_b": "Phường Đông Hòa",
+    "weight": 0.195,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Đông Hiệp",
+    "attr_b": "Phường Đông Hưng Thuận",
+    "weight": 0.2,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Thuận",
+    "attr_b": "Phường Đông Hưng Thuận",
+    "weight": 0.192,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Đông Hưng Thuận",
+    "attr_b": "Xã Nhà Bè",
+    "weight": 0.191,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phú Thuận",
+    "attr_b": "Phường Đức Nhuận",
+    "weight": 0.253,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Đức Nhuận",
+    "attr_b": "Xã Bình Lợi",
+    "weight": 0.241,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Đức Nhuận",
+    "attr_b": "Xã Bà Điểm",
+    "weight": 0.225,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Phú Nhuận",
+    "attr_b": "Xã Bà Điểm",
+    "weight": 0.177,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Bình Đông",
+    "attr_b": "Xã Bà Điểm",
+    "weight": 0.171,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Xã Bình Chánh",
+    "attr_b": "Xã Tân Vĩnh Lộc",
+    "weight": 0.315,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Gò Vấp",
+    "attr_b": "Xã Bình Chánh",
+    "weight": 0.183,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tân Mỹ",
+    "attr_b": "Xã Bình Hưng",
+    "weight": 0.181,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Bình",
+    "attr_b": "Xã Hiệp Phước",
+    "weight": 0.225,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Xã Hiệp Phước",
+    "attr_b": "Xã Trừ Văn Thố",
+    "weight": 0.21,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Xã Hưng Long",
+    "attr_b": "Xã Tân An Hội",
+    "weight": 0.392,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Linh Xuân",
+    "attr_b": "Xã Trừ Văn Thố",
+    "weight": 0.179,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Xã Nhà Bè",
+    "attr_b": "Xã Tân Nhựt",
+    "weight": 0.246,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Tam Bình",
+    "attr_b": "Xã Tân Vĩnh Lộc",
+    "weight": 0.186,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Xã Xuân Thới Sơn",
+    "attr_b": "Xã Đất Đỏ",
+    "weight": 0.337,
+    "group": "location",
+    "source": "behavior(interactions)"
+  },
+  {
+    "attr_a": "Phường Long Bình",
+    "attr_b": "Xã Xuân Thới Sơn",
+    "weight": 0.197,
+    "group": "location",
+    "source": "behavior(interactions)"
+  }
+]

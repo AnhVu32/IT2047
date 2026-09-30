@@ -1,0 +1,9346 @@
+[
+  {
+    "user_id": "usr_1000",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Cầu Kiệu"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.0,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1001",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Trường",
+        "Phường Tam Thắng",
+        "Phường Phú Định"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.7
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "gym",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1002",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Bình",
+        "Phường Cầu Kiệu"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.8,
+        2.1
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1003",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Chánh Hưng",
+        "Phường Long Bình",
+        "Phường Đông Hòa"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        3.2,
+        6.0
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "security_24h",
+        "near_bus",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1004",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Tân Nhựt",
+        "Phường Phú Thuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.4,
+        2.2
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1005",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Hưng Hòa",
+        "Phường Tăng Nhơn Phú",
+        "Phường Tân Thuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.9,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "park",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1006",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thủ Đức"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.6,
+        2.5
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_market",
+        "near_bus",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1007",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Đức Nhuận",
+        "Phường Bình Lợi Trung",
+        "Phường Tân Thuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.4,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_metro",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1008",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Hóc Môn",
+        "Phường Bình Phú"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.5,
+        2.3
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "park",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1009",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Đông Hòa"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.6,
+        2.7
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "near_metro",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1010",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Sài Gòn"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.3
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1011",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Hiệp Phước",
+        "Phường Tân Sơn Hòa",
+        "Phường Hiệp Bình"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        5.0,
+        7.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1012",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Khánh",
+        "Phường Tân Thuận",
+        "Phường Thới An"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.3,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_market"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1013",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Sơn Nhì"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.4,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_hospital",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1014",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Đức Nhuận",
+        "Phường Tam Bình",
+        "Phường Xuân Hòa"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        5.4,
+        7.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "near_hospital",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1015",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Khánh",
+        "Phường Gia Định"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.9,
+        2.1
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_market",
+        "security_24h",
+        "near_metro",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1016",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Sơn Nhất",
+        "Phường Bình Tân",
+        "Phường Phú Thọ Hòa"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        3.2,
+        7.3
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1017",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè",
+        "Phường Cát Lái"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.7,
+        7.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1018",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thới An",
+        "Phường Tân Sơn Hòa",
+        "Phường Phú Nhuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        18.8,
+        27.1
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "near_mall",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1019",
+    "segment": "luxury",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Khánh",
+        "Phường Bình Hưng Hòa",
+        "Phường Tân Hưng"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        15.7,
+        21.7
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1020",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Hòa Hưng",
+        "Phường Tam Thắng"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.4,
+        6.9
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1021",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Cát Lái",
+        "Phường Xóm Chiếu",
+        "Phường Bến Thành"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.7,
+        7.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "near_hospital",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1022",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bàn Cờ",
+        "Phường Long Trường"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.3,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "park",
+        "near_market"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1023",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Hiệp Phước"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.6,
+        2.9
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "gym",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1024",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Gia Định"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.7,
+        6.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1025",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Bình",
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.5
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1026",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 4,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Nhuận",
+        "Phường Cát Lái"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        3.0,
+        7.2
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1027",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thới An"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        5.3,
+        7.8
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "park",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1028",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Định",
+        "Xã Trừ Văn Thố",
+        "Phường Bình Trị Đông"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.6,
+        2.2
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1029",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bàn Cờ",
+        "Phường Bình Tiên"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.4,
+        2.2
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1030",
+    "segment": "luxury",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Trị Đông",
+        "Phường Cát Lái"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        11.7,
+        19.9
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "park",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1031",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tăng Nhơn Phú"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.9,
+        2.9
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "park",
+        "near_hospital",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1032",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Thạnh"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.3,
+        2.8
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "park",
+        "near_hospital",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1033",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Bình"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.4,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "gym",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1034",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Sơn",
+        "Phường Linh Xuân"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        13.2,
+        27.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1035",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.4,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "gym",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1036",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Thạnh",
+        "Phường An Hội Tây"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.6,
+        5.6
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_market",
+        "security_24h",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1037",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tam Thắng",
+        "Phường Vũng Tàu",
+        "Phường Hòa Hưng"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        2.1,
+        2.9
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "security_24h",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1038",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Trường",
+        "Phường Thới An",
+        "Phường Phú Nhuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.5,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "park",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1039",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Đông"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.3,
+        7.9
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1040",
+    "segment": "luxury",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Thuận"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        16.9,
+        25.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1041",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Diên Hồng",
+        "Phường Khánh Hội"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.0,
+        2.2
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1042",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Nhuận",
+        "Phường Hòa Hưng",
+        "Phường An Hội Đông"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.4,
+        2.3
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "pool",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1043",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thông Tây Hội",
+        "Phường Tân Sơn",
+        "Phường An Phú Đông"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.6,
+        7.6
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "park",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1044",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Đông Hưng Thuận",
+        "Phường An Phú Đông",
+        "Phường Xuân Hòa"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.2,
+        2.9
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "pool",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1045",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Hiệp Bình"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        5.1,
+        6.1
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1046",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Nhuận",
+        "Phường Phú Định",
+        "Phường An Phú Đông"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.1,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "park",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1047",
+    "segment": "luxury",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tăng Nhơn Phú",
+        "Phường Bình Trưng",
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        13.5,
+        22.7
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "park",
+        "near_hospital",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1048",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 4,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Bình"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        5.3,
+        7.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1049",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phước Long",
+        "Phường An Lạc",
+        "Phường An Phú Đông"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.4,
+        2.8
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1050",
+    "segment": "luxury",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Đất Đỏ"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        18.8,
+        28.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "parking",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1051",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Nhuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.3,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_market",
+        "security_24h",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1052",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Hưng",
+        "Phường Hiệp Bình"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        17.3,
+        20.9
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "park",
+        "near_hospital",
+        "security_24h"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1053",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Vườn Lài",
+        "Phường An Phú Đông",
+        "Phường Thới Hòa"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.9,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "gym",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1054",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Vườn Lài"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.7,
+        3.0
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1055",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 5,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Hồ Tràm"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        1.3,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "park",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1056",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Thạnh",
+        "Xã Tân An Hội"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.9,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_metro",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1057",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Hội Tây",
+        "Phường Thạnh Mỹ Tây",
+        "Phường Tam Thắng"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        1.3,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1058",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Thuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.0,
+        2.9
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "park",
+        "near_mall"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1059",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thạnh Mỹ Tây"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.3
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "park",
+        "near_hospital",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1060",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tam Bình"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        5.0,
+        6.5
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "security_24h",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1061",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Đức Nhuận",
+        "Phường Cầu Kiệu",
+        "Phường Long Bình"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.1,
+        7.4
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1062",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Trưng"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        12.6,
+        29.5
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_market",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1063",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Tây",
+        "Phường Hạnh Thông",
+        "Phường Bình Trị Đông"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.3,
+        3.0
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1064",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Hòa"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.4,
+        6.7
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1065",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Khánh"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.4,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "security_24h",
+        "gym",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1066",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Tân Vĩnh Lộc"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.9,
+        6.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1067",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Xóm Chiếu",
+        "Phường Vũng Tàu"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        10.7,
+        29.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_hospital",
+        "elevator",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1068",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Gia Định",
+        "Phường An Khánh"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.9,
+        6.1
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_metro",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1069",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Sơn"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.2,
+        2.2
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_market",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1070",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Bình",
+        "Phường Phước Thắng",
+        "Phường Hòa Hưng"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.8,
+        7.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1071",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Sơn Nhất"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.7,
+        2.1
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "near_hospital",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1072",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Trường",
+        "Phường Thới An",
+        "Phường Long Bình"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        3.5,
+        7.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_metro",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1073",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Sơn"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        5.1,
+        5.9
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "pool",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1074",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Sơn"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        5.4,
+        5.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1075",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Bình",
+        "Phường Chợ Lớn",
+        "Phường Bình Tây"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.8,
+        7.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "security_24h",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1076",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Hương",
+        "Xã Hiệp Phước"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1077",
+    "segment": "luxury",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Tân Nhựt",
+        "Phường Bình Tân",
+        "Phường Thới Hòa"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        8.6,
+        29.0
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1078",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.0,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1079",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Linh Xuân",
+        "Phường Tân Phú",
+        "Phường Tăng Nhơn Phú"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.1,
+        3.0
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "gym",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1080",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè",
+        "Phường Tân Hưng"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.7,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_market",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1081",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Lợi Trung",
+        "Phường Bình Trưng"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.7,
+        2.3
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1082",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thới An",
+        "Xã Hiệp Phước"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1083",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Hưng",
+        "Phường Thủ Đức",
+        "Phường Hiệp Bình"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.5,
+        2.5
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "near_market"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1084",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Trị Đông",
+        "Phường Bàn Cờ"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.8,
+        7.2
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1085",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Hưng",
+        "Phường Vườn Lài"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.3,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_market",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1086",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Vĩnh Hội"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.0,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1087",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Trường"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.4,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "security_24h",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1088",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phước Long",
+        "Phường Tân Thuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.7,
+        3.0
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1089",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Nhiêu Lộc"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.6,
+        2.5
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "near_hospital",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1090",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè",
+        "Xã Bình Hưng",
+        "Phường Thới An"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.5,
+        2.9
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "near_bus",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1091",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bảy Hiền",
+        "Phường Tăng Nhơn Phú"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.1,
+        6.9
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "park",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1092",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bảy Hiền",
+        "Phường Tân Hưng",
+        "Phường Dĩ An"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        4.7,
+        6.4
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1093",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Lợi Trung",
+        "Phường Hòa Hưng",
+        "Phường Long Bình"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        1.2,
+        2.9
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "park",
+        "pool",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1094",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Hòa Hưng"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.4,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "pool",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1095",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Lạc",
+        "Phường Chợ Lớn"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.0,
+        3.0
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "gym",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1096",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Hội Tây"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.4,
+        2.3
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "gym",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1097",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thới An",
+        "Phường Phú Nhuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.5,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "park",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1098",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.0,
+        2.1
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "pool",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1099",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Lạc",
+        "Phường Gia Định"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.3,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "park",
+        "near_mall",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1100",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bến Thành"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.2,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "pool",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1101",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Gia Định",
+        "Phường Tam Thắng",
+        "Phường Hiệp Bình"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.3
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1102",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tam Thắng"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.0,
+        7.7
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "security_24h",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1103",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Khánh",
+        "Phường Tân Hưng"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.2,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1104",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Thuận",
+        "Phường Khánh Hội",
+        "Phường Phú Thuận"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        4.6,
+        6.1
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1105",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thới An",
+        "Xã Nhà Bè",
+        "Xã Tân Nhựt"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        10.1,
+        23.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "security_24h",
+        "near_bus",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1106",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Tân Nhựt",
+        "Phường Cầu Ông Lãnh",
+        "Phường Diên Hồng"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        3.8,
+        5.6
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "pool",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1107",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Lạc",
+        "Phường Hiệp Bình",
+        "Phường Hòa Bình"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        5.5,
+        7.0
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "gym",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1108",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Thạnh"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.9,
+        2.5
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "pool",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1109",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Gò Vấp",
+        "Phường Tân Sơn Nhì",
+        "Phường Đức Nhuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.6,
+        2.1
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "pool",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1110",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Hòa",
+        "Phường Tân Bình"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        3.1,
+        5.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1111",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Hiệp Bình",
+        "Phường Tân Sơn",
+        "Phường Tăng Nhơn Phú"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.9,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_market",
+        "security_24h"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1112",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Hòa Hưng",
+        "Phường An Phú Đông"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.1,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1113",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.8
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "park",
+        "near_hospital",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1114",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 5,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bàn Cờ",
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        4.3,
+        6.3
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1115",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Định"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        3.5,
+        7.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_market",
+        "security_24h",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1116",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Trưng"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        3.5,
+        7.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "security_24h",
+        "sports_court",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1117",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Bình",
+        "Phường Đức Nhuận"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        5.4,
+        6.8
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1118",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bàn Cờ",
+        "Phường Hòa Hưng",
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.2,
+        6.3
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "security_24h",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1119",
+    "segment": "luxury",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Gia Định",
+        "Phường Bình Đông"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        18.0,
+        24.2
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "near_hospital",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1120",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Thạnh",
+        "Phường Phú Nhuận",
+        "Phường An Phú Đông"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.9,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "park",
+        "near_hospital",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1121",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Định"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.4,
+        2.9
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "security_24h",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1122",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thủ Đức"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        17.6,
+        28.5
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "near_market",
+        "security_24h"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1123",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.1,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "security_24h",
+        "parking",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1124",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Thạnh"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.0,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_hospital",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1125",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Trưng"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.7,
+        3.0
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1126",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Trưng"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.7,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "security_24h",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1127",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phước Long",
+        "Phường Bình Lợi Trung",
+        "Phường Tân Sơn Hòa"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.0,
+        2.5
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "park",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1128",
+    "segment": "luxury",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thới Hòa",
+        "Phường Chánh Hưng"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        16.2,
+        24.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1129",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Trường",
+        "Phường Tân Sơn",
+        "Phường Xuân Hòa"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        4.0,
+        6.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1130",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Bình"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.6,
+        2.5
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_market",
+        "security_24h"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1131",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Cầu Ông Lãnh"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.6,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "park",
+        "near_hospital",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1132",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Gò Vấp"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        14.2,
+        20.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1133",
+    "segment": "luxury",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Thuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        13.9,
+        26.3
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1134",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.6,
+        6.1
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "gym",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1135",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Khánh",
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.5,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1136",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Hội Tây",
+        "Phường Gò Vấp"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.0,
+        3.0
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1137",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Tạo",
+        "Phường Bình Thạnh"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.2
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "park",
+        "security_24h",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1138",
+    "segment": "luxury",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Tân An Hội",
+        "Phường Vũng Tàu",
+        "Phường An Lạc"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        12.0,
+        25.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_metro",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1139",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 5,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Thuận",
+        "Phường Tân Mỹ"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        14.1,
+        25.1
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "near_mall",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1140",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Tân"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.2,
+        2.4
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "park",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1141",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Vũng Tàu",
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.2,
+        5.7
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_hospital",
+        "near_mall",
+        "sports_court",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1142",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thạnh Mỹ Tây",
+        "Phường Thông Tây Hội"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.8,
+        2.3
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "parking",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1143",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Khánh Hội"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.1,
+        6.9
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1144",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè",
+        "Phường Đức Nhuận"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        10.0,
+        28.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_market",
+        "security_24h",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1145",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Gò Vấp"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        8.2,
+        21.1
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "park",
+        "security_24h",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1146",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Hội Tây"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.7,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "park",
+        "near_hospital",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1147",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Mỹ",
+        "Phường Bình Trưng",
+        "Phường Diên Hồng"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.9,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1148",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thới Hòa",
+        "Phường Bình Hưng Hòa",
+        "Phường Bình Đông"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        5.4,
+        7.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "park",
+        "near_mall",
+        "near_market",
+        "security_24h"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1149",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.4,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "gym",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1150",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Đức Nhuận",
+        "Phường Thông Tây Hội"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.2,
+        2.9
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "near_mall",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1151",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Thuận",
+        "Phường Bàn Cờ",
+        "Phường Tân Mỹ"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.0,
+        7.1
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_hospital",
+        "near_metro",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1152",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Mỹ",
+        "Phường Cát Lái"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1153",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè",
+        "Phường Tân Sơn Hòa",
+        "Phường Tân Định"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.5,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_market",
+        "security_24h",
+        "parking",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1154",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè",
+        "Phường Bình Trị Đông"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        1.3,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_hospital",
+        "near_bus",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1155",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Hạnh Thông",
+        "Phường Thới An",
+        "Phường Tân Bình"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.5,
+        3.0
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "near_hospital",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1156",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Bà Điểm",
+        "Xã Nhà Bè",
+        "Phường Chánh Hưng"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        14.1,
+        19.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1157",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thông Tây Hội"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.5,
+        2.3
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "near_hospital",
+        "parking",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1158",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.4,
+        5.9
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1159",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Bình",
+        "Phường Bến Thành"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.0,
+        5.7
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "park",
+        "near_hospital",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1160",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Đức Nhuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.2
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "park"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1161",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tây Thạnh",
+        "Phường Bình Trị Đông",
+        "Phường Đức Nhuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.0,
+        2.2
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_market",
+        "sports_court",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1162",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Cầu Ông Lãnh",
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.7,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "gym",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1163",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thới An",
+        "Xã Trừ Văn Thố",
+        "Phường Cầu Ông Lãnh"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        4.3,
+        7.2
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital",
+        "gym",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1164",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tăng Nhơn Phú"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.7,
+        2.9
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "gym",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1165",
+    "segment": "luxury",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Sơn Nhì",
+        "Phường Cầu Ông Lãnh"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        15.4,
+        26.4
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1166",
+    "segment": "luxury",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Lợi Trung",
+        "Phường Bảy Hiền",
+        "Phường An Hội Đông"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        13.5,
+        25.3
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1167",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Sơn Hòa",
+        "Phường Phú Nhuận",
+        "Phường Diên Hồng"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        1.7,
+        2.5
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "park",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1168",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Bình"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.2,
+        6.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_hospital",
+        "near_mall",
+        "security_24h",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1169",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Khánh Hội"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.7,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_metro",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1170",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tăng Nhơn Phú",
+        "Phường Đức Nhuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.5,
+        2.5
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "gym",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1171",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bảy Hiền",
+        "Phường An Hội Tây"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.4,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1172",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Thuận"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.4,
+        2.5
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1173",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Định",
+        "Xã Nhà Bè",
+        "Phường Thuận Giao"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.5
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "park",
+        "near_hospital",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1174",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Gia Định"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "pool",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1175",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Khánh",
+        "Phường Gia Định"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.0,
+        5.5
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_metro",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1176",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thới An"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.0,
+        2.9
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "pool",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1177",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Linh Xuân",
+        "Phường Gò Vấp"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        17.6,
+        27.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "park",
+        "near_hospital",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1178",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Bình",
+        "Phường Bình Lợi Trung",
+        "Phường Tân Thuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.8,
+        7.2
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1179",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Thạnh",
+        "Phường An Đông",
+        "Phường Tân Sơn Nhì"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        3.6,
+        6.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_market",
+        "security_24h",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1180",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Xuân Hòa"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        16.4,
+        27.1
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "security_24h",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1181",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Sài Gòn",
+        "Phường Thông Tây Hội",
+        "Phường Khánh Hội"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        4.3,
+        6.0
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "pool",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1182",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Lợi Trung",
+        "Phường Bảy Hiền"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.4,
+        2.5
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "near_hospital",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1183",
+    "segment": "luxury",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bàn Cờ"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        14.3,
+        29.1
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "park",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1184",
+    "segment": "luxury",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Khánh",
+        "Phường Chợ Quán"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        9.9,
+        24.9
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1185",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Sơn Nhất"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        4.6,
+        5.7
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "pool",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1186",
+    "segment": "luxury",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Trung Mỹ Tây",
+        "Phường An Lạc"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        10.7,
+        28.1
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1187",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Vĩnh Hội",
+        "Phường Chánh Hưng",
+        "Phường Bình Thạnh"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.7,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_mall",
+        "near_market",
+        "security_24h"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1188",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 4,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Lợi Trung",
+        "Phường Thủ Đức",
+        "Phường Cầu Kiệu"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        4.3,
+        6.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "park",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1189",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Hưng Hòa",
+        "Phường An Khánh"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.3,
+        2.2
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1190",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Nhiêu Lộc",
+        "Phường Thới An",
+        "Phường Cầu Kiệu"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.6,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1191",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thới Hòa",
+        "Phường Bàn Cờ"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        3.1,
+        6.0
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "park",
+        "gym",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1192",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Nhiêu Lộc",
+        "Phường Chánh Hưng"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        2.0,
+        2.3
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "security_24h"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1193",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Hội Tây",
+        "Phường Tân Bình",
+        "Phường Hòa Hưng"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        5.4,
+        7.9
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1194",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Hiệp Bình",
+        "Phường Phú Thuận",
+        "Phường Long Trường"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.0,
+        5.7
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1195",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Đức Nhuận",
+        "Phường Phú Thuận",
+        "Phường An Hội Tây"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        12.5,
+        21.9
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_market"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1196",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Tân An Hội",
+        "Phường Thủ Đức"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.7,
+        2.5
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "park",
+        "near_hospital",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1197",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thông Tây Hội",
+        "Phường Tân Định"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.9,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1198",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thạnh Mỹ Tây"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.3,
+        2.2
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "parking",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1199",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Thạnh",
+        "Phường Vĩnh Hội"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.3,
+        2.2
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "near_metro",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1200",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Minh Phụng",
+        "Phường Khánh Hội"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.8,
+        5.7
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "near_mall",
+        "security_24h",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1201",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Bình",
+        "Phường Bảy Hiền",
+        "Phường Thới An"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.5,
+        2.1
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_metro",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1202",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tăng Nhơn Phú",
+        "Phường Gia Định",
+        "Phường Cát Lái"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        1.3,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "park"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1203",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Diên Hồng",
+        "Phường Long Bình",
+        "Phường An Hội Tây"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        5.2,
+        7.8
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1204",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Hưng Hòa"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.7,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1205",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Vũng Tàu"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.6,
+        2.2
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital",
+        "gym",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1206",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Hưng",
+        "Phường An Hội Tây",
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.7,
+        2.5
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_market",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1207",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Lợi Trung",
+        "Phường Bình Tân"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.8,
+        2.9
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1208",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Hiệp Bình",
+        "Phường Hòa Hưng"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.0,
+        2.3
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "near_bus",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1209",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thạnh Mỹ Tây",
+        "Phường Long Bình",
+        "Phường Tây Thạnh"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1210",
+    "segment": "luxury",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Hiệp Phước",
+        "Phường Tăng Nhơn Phú",
+        "Phường Phú Lợi"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        15.0,
+        26.3
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1211",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Bình",
+        "Phường An Hội Tây"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.3,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1212",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Phú",
+        "Xã Nhà Bè",
+        "Phường Tân Sơn Hòa"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.8,
+        7.1
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "parking",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1213",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Khánh",
+        "Phường Tân Thới Hiệp",
+        "Phường Bình Trị Đông"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        3.4,
+        6.9
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "parking",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1214",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Sơn Nhất"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.5,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "park",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1215",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Tân Nhựt"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.5,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "near_market",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1216",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Gia Định",
+        "Phường Hiệp Bình"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.4,
+        2.1
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1217",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phước Thắng"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.3,
+        2.3
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "park",
+        "elevator",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1218",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Khánh"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        3.8,
+        6.1
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "park",
+        "near_mall",
+        "security_24h"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1219",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Hiệp Bình",
+        "Phường Tân Hưng",
+        "Phường Thông Tây Hội"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.7,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "gym",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1220",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Hòa Hưng"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        1.8,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1221",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 4,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Hội Tây",
+        "Phường Gò Vấp"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        1.6,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "security_24h"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1222",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Sơn",
+        "Phường Hòa Hưng"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.6,
+        2.7
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "near_hospital",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1223",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 5,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Thọ Hòa",
+        "Phường An Phú Đông"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        1.7,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1224",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Sơn Nhì",
+        "Phường Vũng Tàu"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        18.3,
+        21.3
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_hospital",
+        "near_mall",
+        "near_market"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1225",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 1,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Vườn Lài",
+        "Phường Phú Nhuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.2,
+        7.0
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1226",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bảy Hiền",
+        "Phường Bình Thạnh",
+        "Phường Cầu Kiệu"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.2,
+        2.5
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1227",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.4,
+        6.3
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_market",
+        "security_24h",
+        "sports_court",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1228",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Hòa Hưng",
+        "Phường Gia Định"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.4,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_metro",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1229",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Thuận",
+        "Xã Hiệp Phước"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.6,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_market"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1230",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Thạnh"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.7,
+        2.5
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1231",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Thuận",
+        "Phường Tân Bình"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.2
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "near_hospital",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1232",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Dĩ An",
+        "Phường Hạnh Thông",
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.9,
+        6.1
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1233",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Hưng",
+        "Phường Tân Thới Hiệp",
+        "Phường Nhiêu Lộc"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.4,
+        2.3
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "gym",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1234",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Xuân Thới Sơn",
+        "Phường An Khánh"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.2,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1235",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Nhuận",
+        "Phường Tân Thuận"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        1.5,
+        2.3
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital",
+        "parking",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1236",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Chánh Hưng"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.9,
+        7.2
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1237",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè",
+        "Phường Tân Hòa",
+        "Phường Tân Sơn Nhất"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.6,
+        6.5
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1238",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Vĩnh Hội",
+        "Phường Bình Trưng",
+        "Phường Hạnh Thông"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.5,
+        7.2
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1239",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Sơn Hòa"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        2.1,
+        2.8
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_market",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1240",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Lợi Trung"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.5,
+        5.9
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "gym",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1241",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Cầu Kiệu",
+        "Phường Phú Định"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.9,
+        7.2
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_market",
+        "security_24h",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1242",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phước Thắng"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.7,
+        7.1
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "park",
+        "parking",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1243",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bảy Hiền",
+        "Phường An Khánh"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.4,
+        7.2
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1244",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tam Bình"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.6,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "near_hospital",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1245",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Gò Vấp",
+        "Phường Thủ Đức",
+        "Phường Phú Thạnh"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        4.6,
+        8.0
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "park",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1246",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Thạnh",
+        "Phường Vũng Tàu",
+        "Phường Thông Tây Hội"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        13.3,
+        21.4
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_market"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1247",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Hòa Hưng",
+        "Phường Đông Hưng Thuận",
+        "Phường Bình Thạnh"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.6,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1248",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Lợi Trung",
+        "Phường Tam Thắng",
+        "Phường Rạch Dừa"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.3
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "near_market"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1249",
+    "segment": "luxury",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tam Bình"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        13.8,
+        25.2
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_hospital",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1250",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Cầu Kiệu",
+        "Phường Bến Thành",
+        "Phường Tân Bình"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        5.0,
+        5.5
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "pool",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1251",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Nhiêu Lộc",
+        "Phường Tăng Nhơn Phú",
+        "Phường Đức Nhuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1252",
+    "segment": "luxury",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Thuận",
+        "Phường Thông Tây Hội",
+        "Phường Tăng Nhơn Phú"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        10.5,
+        28.5
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "near_hospital",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1253",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Cầu Ông Lãnh",
+        "Phường Nhiêu Lộc"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.0,
+        2.6
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "security_24h",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1254",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Cầu Ông Lãnh",
+        "Phường Thạnh Mỹ Tây"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.5,
+        2.3
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_market"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1255",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Tân Nhựt"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        4.3,
+        6.8
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1256",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Phú Đông",
+        "Phường Tân Phú",
+        "Xã Tân Nhựt"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.3,
+        2.9
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_hospital",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1257",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Thuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.6
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1258",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.9,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1259",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Hội Tây",
+        "Phường Bình Phú"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.7,
+        2.3
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "parking",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1260",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tăng Nhơn Phú"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1261",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Cầu Kiệu"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.1
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "security_24h",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1262",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Cầu Kiệu",
+        "Xã Bà Điểm",
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.1,
+        8.0
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "gym",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1263",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Khánh",
+        "Phường Long Bình"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.7,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_market",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1264",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Hòa Hưng",
+        "Phường Tân Sơn Hòa"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        4.9,
+        6.7
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1265",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Bình Chánh",
+        "Phường Bình Trưng"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        3.6,
+        6.5
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1266",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Định",
+        "Phường Thạnh Mỹ Tây"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.3,
+        7.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "near_mall",
+        "near_market"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1267",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Định"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.6,
+        2.3
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "near_hospital",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1268",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Hội Tây",
+        "Phường Phú Thuận",
+        "Phường Tăng Nhơn Phú"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        4.7,
+        5.9
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "sports_court",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1269",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè",
+        "Phường Phú Nhuận",
+        "Phường Tân Sơn Hòa"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        1.4,
+        2.5
+      ],
+      "property_type": [
+        "Căn hộ",
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "near_hospital",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1270",
+    "segment": "mid_range",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Thuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.1,
+        7.0
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_market",
+        "security_24h",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1271",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "single",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thủ Đức"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.1,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "park",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1272",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Gia Định",
+        "Phường Trung Mỹ Tây"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.8,
+        2.7
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1273",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Tân Nhựt",
+        "Phường Phú Thuận",
+        "Phường An Phú Đông"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        4.2,
+        7.2
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "parking",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1274",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Hưng"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.6,
+        5.5
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_hospital",
+        "parking",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1275",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 3,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Bình",
+        "Phường Cầu Ông Lãnh",
+        "Phường Tăng Nhơn Phú"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        1.7,
+        2.5
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_mall"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1276",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Xã Nhà Bè",
+        "Phường An Hội Tây",
+        "Phường Chợ Lớn"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.2,
+        2.5
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_bus",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1277",
+    "segment": "luxury",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Thạnh",
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        8.0,
+        21.6
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "park",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1278",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bến Thành"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        4.3,
+        6.6
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "parking",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1279",
+    "segment": "luxury",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Diên Hồng",
+        "Phường An Khánh",
+        "Phường Tân Hưng"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        17.2,
+        25.2
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_metro",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1280",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Định"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.2,
+        7.6
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "park",
+        "near_hospital",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1281",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Hạnh Thông",
+        "Phường Phú Nhuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.9,
+        2.9
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1282",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thạnh Mỹ Tây"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.4,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "sports_court",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1283",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Hưng",
+        "Phường Bình Tây"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        11.7,
+        19.0
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital",
+        "near_market"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1284",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Hòa Hưng",
+        "Phường Xóm Chiếu",
+        "Phường Phú Định"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        4.7,
+        7.1
+      ],
+      "property_type": [
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "parking",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1285",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Thuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.4,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_market",
+        "near_bus",
+        "pool"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1286",
+    "segment": "affordable",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Bình Trị Đông"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        2.1,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_bus",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1287",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Thủ Đức",
+        "Xã Nhà Bè"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.1,
+        2.4
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1288",
+    "segment": "mid_range",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Bình"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        3.2,
+        5.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1289",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Bình",
+        "Phường Bình Tân",
+        "Xã Tân Nhựt"
+      ],
+      "min_bedrooms": 1,
+      "budget_range": [
+        1.2,
+        3.0
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "near_market"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1290",
+    "segment": "affordable",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Sơn Hòa",
+        "Phường Nhiêu Lộc",
+        "Phường Tân Hưng"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.0,
+        3.0
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1291",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 4,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường An Phú Đông",
+        "Phường Phú Nhuận"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        1.3,
+        2.9
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1292",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Cát Lái"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.3,
+        2.6
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "park",
+        "elevator"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1293",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "single",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Long Bình",
+        "Phường Tân Định",
+        "Phường Phú Thuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.3,
+        2.9
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "pool",
+        "near_metro"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1294",
+    "segment": "luxury",
+    "primary_intent": "investment",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 0,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Tân Thuận",
+        "Phường Tân Sơn Hòa"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        14.6,
+        22.2
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "near_mall",
+        "security_24h"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1295",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "20-30",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Cầu Ông Lãnh",
+        "Phường Đức Nhuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        3.7,
+        7.0
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1296",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "50+",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "medium_high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Thạnh",
+        "Phường Thủ Đức"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        2.0,
+        2.8
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "elevator",
+        "gym"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1297",
+    "segment": "luxury",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 1,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Cầu Kiệu"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        14.6,
+        22.3
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "kids_playground",
+        "pool",
+        "sports_court"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1298",
+    "segment": "mid_range",
+    "primary_intent": "rent",
+    "demographics": {
+      "age_group": "40-50",
+      "marital_status": "married",
+      "children": 4,
+      "income_level": "medium"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Nhuận",
+        "Phường An Khánh"
+      ],
+      "min_bedrooms": 3,
+      "budget_range": [
+        4.5,
+        5.7
+      ],
+      "property_type": [
+        "Nhà đất",
+        "Căn hộ"
+      ],
+      "liked_amenities": [
+        "near_school",
+        "elevator",
+        "parking"
+      ]
+    },
+    "persona": null
+  },
+  {
+    "user_id": "usr_1299",
+    "segment": "affordable",
+    "primary_intent": "buy_for_living",
+    "demographics": {
+      "age_group": "30-40",
+      "marital_status": "married",
+      "children": 2,
+      "income_level": "high"
+    },
+    "explicit_preferences": {
+      "preferred_districts": [
+        "Phường Phú Thuận"
+      ],
+      "min_bedrooms": 2,
+      "budget_range": [
+        1.2,
+        2.2
+      ],
+      "property_type": [
+        "Nhà đất"
+      ],
+      "liked_amenities": [
+        "kids_playground",
+        "near_hospital",
+        "near_bus"
+      ]
+    },
+    "persona": null
+  }
+]

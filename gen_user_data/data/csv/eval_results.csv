@@ -1,0 +1,4 @@
+﻿recommender,k,num_neg_samples,NDCG@10,MRR@10,Recall@10,Precision@10,MAP@10,HitRate@10,users_evaluated,engine
+popularity,10,100,0.0603,0.307,0.1099,0.0208,0.034,0.1991,221,recommenders (cloned repo)
+content,10,100,0.1489,0.4225,0.246,0.0412,0.0973,0.371,221,recommenders (cloned repo)
+embed_cf,10,100,0.0589,0.3588,0.1091,0.0181,0.0368,0.1719,221,recommenders (cloned repo)

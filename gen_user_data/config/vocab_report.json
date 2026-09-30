@@ -1,0 +1,46 @@
+{
+  "property_type": {
+    "Nhà đất": 2548,
+    "Căn hộ": 489
+  },
+  "legal_status": {
+    "Sổ hồng riêng": 2821,
+    "Đang chờ sổ": 124,
+    "Sổ chung": 69,
+    "Không rõ": 23
+  },
+  "furnishing": {
+    "Đầy đủ": 1256,
+    "Không nội thất": 1153,
+    "Cơ bản": 544,
+    "Cao cấp": 84
+  },
+  "house_direction": {
+    "nan": 2208,
+    "Đông - Nam": 173,
+    "Tây - Bắc": 118,
+    "Đông - Bắc": 101,
+    "Nam": 98,
+    "Bắc": 97,
+    "Đông": 91,
+    "Tây - Nam": 90,
+    "Tây": 61
+  },
+  "balcony_direction": {
+    "nan": 2486,
+    "Đông - Nam": 132,
+    "Nam": 78,
+    "Tây - Bắc": 75,
+    "Đông - Bắc": 61,
+    "Tây - Nam": 58,
+    "Bắc": 58,
+    "Đông": 56,
+    "Tây": 33
+  },
+  "listing_type": {
+    "Tin thường": 2968,
+    "Tin VIP Bạc": 45,
+    "Tin VIP Vàng": 16,
+    "Tin VIP Kim Cương": 8
+  }
+}

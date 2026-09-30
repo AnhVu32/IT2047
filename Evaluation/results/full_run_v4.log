@@ -1,0 +1,57 @@
+[eval] ground-truth size per event: {10: 488} -> using k=10
+[eval] queried 50/488 (11520.0s, 230.40s/query)
+[eval] queried 100/488 (13084.5s, 130.85s/query)
+[eval] queried 150/488 (14154.7s, 94.36s/query)
+[eval] queried 200/488 (15488.7s, 77.44s/query)
+[eval] queried 250/488 (16580.5s, 66.32s/query)
+[eval] queried 300/488 (19375.3s, 64.58s/query)
+[eval] queried 350/488 (20799.3s, 59.43s/query)
+[eval] queried 400/488 (22101.2s, 55.25s/query)
+[eval] queried 450/488 (23724.7s, 52.72s/query)
+[eval] queried 488/488 (25782.7s, 52.83s/query)
+[eval] 7/488 queries failed (see results json for detail)
+[eval] usable events (live query succeeded): 481/488
+[eval] computing metrics...
+[eval] written -> /Users/nguyenvu/Downloads/CS2307/Evaluation/results/20260806T144112_n481/summary.json
+[eval] written -> /Users/nguyenvu/Downloads/CS2307/Evaluation/results/20260806T144112_n481/per_query.json (481 queries: raw_query + ground_truth + live_pred + hits)
+[eval] written -> /Users/nguyenvu/Downloads/CS2307/Evaluation/results/20260806T144112_n481/per_query.csv (flat view for spreadsheet)
+
+=== Nhom A - Ranking/Accuracy ===
+  precision_at_10: 0.33388773388773396
+  recall_at_10: 0.33388773388773396
+  ndcg_at_10: 0.3571498769484005
+  map_at_10: 0.23587227337227332
+  mrr_at_10: 0.6978434592227696
+  arhr_at_10: 0.3566180394947518
+  average_precision_at_10: 0.4408991778708339
+  average_recall_at_10: nan
+
+=== Nhom B/C - Rating/Classification ===
+  n_pairs: 352
+  rmse: 1.5902896244491698
+  mae: 1.0351110795454546
+  mse: 2.5290210896306817
+  rsquared: -0.6665682245031408
+  exp_var: -0.006517486560826624
+  mape: 43.60329367862606
+  auc: 0.4880449362843729
+  logloss: 0.8109230890868605
+
+=== Nhom D/E/F/G - Diversity/Novelty/Serendipity/Coverage ===
+  group_d_diversity.diversity: 0.38284426160323215
+  group_e_novelty.novelty: 2.661335550301954
+  group_f_serendipity.serendipity: 0.41713455534428107
+  group_f_serendipity.n_users: 200
+  group_f_serendipity.dropped_already_interacted_pairs: 283
+  group_g_coverage.catalog_coverage: 0.39966996699669965
+  group_g_coverage.distributional_coverage: 9.712907313640954
+
+=== Breakdown NDCG theo segment ===
+  affordable: 0.36392617265247496
+  luxury: 0.38572362602078386
+  mid_range: 0.3369913902322892
+
+=== Breakdown NDCG theo intent ===
+  buy_for_living: 0.3355854267109779
+  investment: 0.40201746114351716
+  rent: 0.3785871602398846

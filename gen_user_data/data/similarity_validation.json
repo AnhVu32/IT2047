@@ -1,0 +1,68 @@
+{
+  "pairs_compared": 24,
+  "spearman_declared_vs_behavior": -0.081,
+  "agree_within_0.2": 9,
+  "agree_ratio": 0.375,
+  "top_disagreements": [
+    {
+      "pair": "elevator↔parking",
+      "declared": 0.25,
+      "empirical": 0.923,
+      "abs_diff": 0.673
+    },
+    {
+      "pair": "kids_playground↔bbq",
+      "declared": 0.3,
+      "empirical": 0.939,
+      "abs_diff": 0.639
+    },
+    {
+      "pair": "gym↔pool",
+      "declared": 0.35,
+      "empirical": 0.973,
+      "abs_diff": 0.623
+    },
+    {
+      "pair": "pool↔park",
+      "declared": 0.32,
+      "empirical": 0.915,
+      "abs_diff": 0.595
+    },
+    {
+      "pair": "garden↔park",
+      "declared": 0.35,
+      "empirical": 0.871,
+      "abs_diff": 0.521
+    },
+    {
+      "pair": "gym↔park",
+      "declared": 0.45,
+      "empirical": 0.903,
+      "abs_diff": 0.453
+    },
+    {
+      "pair": "river_view↔park_view",
+      "declared": 0.54,
+      "empirical": 0.1,
+      "abs_diff": 0.44
+    },
+    {
+      "pair": "near_school↔kids_playground",
+      "declared": 0.3,
+      "empirical": 0.737,
+      "abs_diff": 0.437
+    },
+    {
+      "pair": "park↔bbq",
+      "declared": 0.42,
+      "empirical": 0.848,
+      "abs_diff": 0.428
+    },
+    {
+      "pair": "sports_court↔park",
+      "declared": 0.38,
+      "empirical": 0.794,
+      "abs_diff": 0.414
+    }
+  ]
+}

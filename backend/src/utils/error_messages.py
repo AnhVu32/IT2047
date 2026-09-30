@@ -1,0 +1,18 @@
+PAGING_ERROR = "PAGING_ERROR"
+VALIDATE_ERROR = "VALIDATE_ERROR"
+
+USERNAME_OR_PASSWORD_INVALID = "USERNAME_OR_PASSWORD_INVALID"
+
+ERROR_COMMIT = "ERROR_COMMIT"
+
+MESSAGE_STATUS = {
+    # general error
+    PAGING_ERROR: "Can not found page!",
+    VALIDATE_ERROR: "Validate error!",
+
+    USERNAME_OR_PASSWORD_INVALID: "Username or password is invalid",
+
+    ERROR_COMMIT: "Commit to database error",
+}
+ERROR_CODE_SUCCESS = '00'
+ERROR_CODE_FAILURE = '11'

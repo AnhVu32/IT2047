@@ -1,0 +1,301 @@
+﻿user_id,segment,primary_intent,age_group,marital_status,children,income_level,preferred_districts,min_bedrooms,budget_min,budget_max,property_type,liked_amenities
+usr_1000,affordable,buy_for_living,50+,married,2,medium_high,Phường Cầu Kiệu,2,2.0,2.4,Nhà đất,kids_playground|near_hospital|near_bus
+usr_1001,affordable,buy_for_living,20-30,married,0,medium,Phường Long Trường|Phường Tam Thắng|Phường Phú Định,2,1.8,2.7,Căn hộ|Nhà đất,gym|pool
+usr_1002,affordable,rent,30-40,single,0,medium_high,Phường Tân Bình|Phường Cầu Kiệu,1,1.8,2.1,Nhà đất|Căn hộ,elevator|near_bus
+usr_1003,mid_range,investment,20-30,single,0,medium,Phường Chánh Hưng|Phường Long Bình|Phường Đông Hòa,1,3.2,6.0,Nhà đất,security_24h|near_bus|parking
+usr_1004,affordable,rent,50+,married,0,medium,Xã Tân Nhựt|Phường Phú Thuận,2,1.4,2.2,Nhà đất|Căn hộ,elevator|gym
+usr_1005,affordable,buy_for_living,50+,married,1,medium_high,Phường Bình Hưng Hòa|Phường Tăng Nhơn Phú|Phường Tân Thuận,2,1.9,2.8,Nhà đất|Căn hộ,near_school|kids_playground|park|gym
+usr_1006,affordable,investment,40-50,single,0,medium_high,Phường Thủ Đức,2,1.6,2.5,Nhà đất|Căn hộ,near_market|near_bus|elevator
+usr_1007,affordable,buy_for_living,20-30,single,0,medium,Phường Đức Nhuận|Phường Bình Lợi Trung|Phường Tân Thuận,2,1.4,2.8,Nhà đất,near_metro|gym
+usr_1008,affordable,buy_for_living,30-40,married,2,high,Xã Hóc Môn|Phường Bình Phú,2,1.5,2.3,Nhà đất|Căn hộ,near_school|kids_playground|park|near_bus
+usr_1009,affordable,buy_for_living,20-30,married,2,medium_high,Phường Đông Hòa,2,1.6,2.7,Căn hộ,near_school|kids_playground|near_metro|sports_court
+usr_1010,affordable,buy_for_living,30-40,married,0,high,Phường Sài Gòn,2,1.8,2.3,Nhà đất,sports_court|parking
+usr_1011,mid_range,buy_for_living,20-30,single,0,medium,Xã Hiệp Phước|Phường Tân Sơn Hòa|Phường Hiệp Bình,2,5.0,7.4,Nhà đất|Căn hộ,near_bus|pool
+usr_1012,affordable,investment,30-40,single,0,medium_high,Phường An Khánh|Phường Tân Thuận|Phường Thới An,1,1.3,2.8,Nhà đất|Căn hộ,near_mall|near_market
+usr_1013,affordable,buy_for_living,20-30,married,1,medium,Phường Tân Sơn Nhì,2,1.4,2.4,Nhà đất|Căn hộ,near_hospital|near_metro
+usr_1014,mid_range,buy_for_living,30-40,married,3,medium,Phường Đức Nhuận|Phường Tam Bình|Phường Xuân Hòa,3,5.4,7.7,Nhà đất,near_school|kids_playground|near_hospital|near_bus
+usr_1015,affordable,investment,40-50,single,0,medium,Phường An Khánh|Phường Gia Định,2,1.9,2.1,Căn hộ,near_market|security_24h|near_metro|elevator
+usr_1016,mid_range,buy_for_living,30-40,married,3,medium,Phường Tân Sơn Nhất|Phường Bình Tân|Phường Phú Thọ Hòa,3,3.2,7.3,Nhà đất,kids_playground|near_hospital
+usr_1017,mid_range,rent,50+,single,0,medium_high,Xã Nhà Bè|Phường Cát Lái,2,4.7,7.6,Nhà đất|Căn hộ,elevator|parking
+usr_1018,luxury,investment,30-40,married,2,medium_high,Phường Thới An|Phường Tân Sơn Hòa|Phường Phú Nhuận,2,18.8,27.1,Căn hộ,near_school|park|near_mall|pool
+usr_1019,luxury,buy_for_living,40-50,single,0,high,Phường An Khánh|Phường Bình Hưng Hòa|Phường Tân Hưng,2,15.7,21.7,Nhà đất|Căn hộ,elevator|near_bus
+usr_1020,mid_range,rent,30-40,single,0,medium,Phường Hòa Hưng|Phường Tam Thắng,2,4.4,6.9,Nhà đất,near_bus|pool
+usr_1021,mid_range,rent,20-30,single,1,medium_high,Phường Cát Lái|Phường Xóm Chiếu|Phường Bến Thành,2,3.7,7.6,Nhà đất|Căn hộ,near_school|park|near_hospital|pool
+usr_1022,affordable,investment,30-40,married,1,medium_high,Phường Bàn Cờ|Phường Long Trường,2,1.3,2.7,Nhà đất,near_school|kids_playground|park|near_market
+usr_1023,affordable,rent,30-40,married,1,medium_high,Xã Hiệp Phước,2,1.6,2.9,Nhà đất,near_school|park|gym|parking
+usr_1024,mid_range,rent,40-50,married,2,medium,Phường Gia Định,2,4.7,6.4,Nhà đất|Căn hộ,kids_playground|near_hospital|gym
+usr_1025,affordable,buy_for_living,50+,single,0,high,Phường Long Bình|Xã Nhà Bè,2,1.8,2.5,Nhà đất|Căn hộ,near_bus|parking
+usr_1026,mid_range,buy_for_living,30-40,married,4,medium,Phường Phú Nhuận|Phường Cát Lái,3,3.0,7.2,Căn hộ,near_school|gym
+usr_1027,mid_range,buy_for_living,30-40,married,3,medium_high,Phường Thới An,3,5.3,7.8,Nhà đất,park|parking
+usr_1028,affordable,buy_for_living,50+,single,0,medium,Phường Tân Định|Xã Trừ Văn Thố|Phường Bình Trị Đông,1,1.6,2.2,Nhà đất|Căn hộ,near_bus|sports_court
+usr_1029,affordable,buy_for_living,30-40,single,0,medium,Phường Bàn Cờ|Phường Bình Tiên,2,1.4,2.2,Nhà đất|Căn hộ,sports_court|parking
+usr_1030,luxury,buy_for_living,30-40,married,2,medium_high,Phường Bình Trị Đông|Phường Cát Lái,2,11.7,19.9,Căn hộ,kids_playground|park|gym
+usr_1031,affordable,buy_for_living,20-30,married,1,medium,Phường Tăng Nhơn Phú,2,1.9,2.9,Nhà đất|Căn hộ,park|near_hospital|elevator
+usr_1032,affordable,buy_for_living,30-40,single,1,medium_high,Phường Phú Thạnh,2,1.3,2.8,Căn hộ,park|near_hospital|near_metro
+usr_1033,affordable,buy_for_living,20-30,single,0,medium_high,Phường Long Bình,2,1.4,2.8,Nhà đất|Căn hộ,gym|pool
+usr_1034,luxury,investment,40-50,married,2,medium,Phường Tân Sơn|Phường Linh Xuân,2,13.2,27.7,Nhà đất,near_school|kids_playground|near_hospital
+usr_1035,affordable,investment,30-40,single,0,medium,Xã Nhà Bè,1,1.4,2.4,Nhà đất,near_mall|gym|near_metro
+usr_1036,mid_range,investment,30-40,married,0,medium,Phường Bình Thạnh|Phường An Hội Tây,2,3.6,5.6,Nhà đất,near_mall|near_market|security_24h|sports_court
+usr_1037,affordable,investment,30-40,single,0,high,Phường Tam Thắng|Phường Vũng Tàu|Phường Hòa Hưng,1,2.1,2.9,Nhà đất|Căn hộ,security_24h|elevator
+usr_1038,affordable,buy_for_living,30-40,married,1,medium,Phường Long Trường|Phường Thới An|Phường Phú Nhuận,2,1.5,2.7,Nhà đất,park|near_hospital
+usr_1039,mid_range,buy_for_living,30-40,married,2,medium_high,Phường Bình Đông,2,4.3,7.9,Căn hộ,near_school|kids_playground|pool
+usr_1040,luxury,buy_for_living,30-40,married,3,medium_high,Phường Tân Thuận,3,16.9,25.7,Nhà đất,near_school|kids_playground|gym
+usr_1041,affordable,buy_for_living,20-30,single,0,high,Phường Diên Hồng|Phường Khánh Hội,2,2.0,2.2,Nhà đất|Căn hộ,near_bus|parking
+usr_1042,affordable,buy_for_living,40-50,single,0,medium,Phường Phú Nhuận|Phường Hòa Hưng|Phường An Hội Đông,2,1.4,2.3,Nhà đất|Căn hộ,pool|parking
+usr_1043,mid_range,buy_for_living,20-30,married,2,medium,Phường Thông Tây Hội|Phường Tân Sơn|Phường An Phú Đông,2,4.6,7.6,Nhà đất,park|sports_court
+usr_1044,affordable,buy_for_living,30-40,single,0,medium_high,Phường Đông Hưng Thuận|Phường An Phú Đông|Phường Xuân Hòa,1,1.2,2.9,Căn hộ,pool|sports_court
+usr_1045,mid_range,buy_for_living,40-50,married,3,medium_high,Phường Hiệp Bình,3,5.1,6.1,Nhà đất,kids_playground|near_hospital|elevator
+usr_1046,affordable,investment,40-50,married,2,medium,Phường Phú Nhuận|Phường Phú Định|Phường An Phú Đông,2,2.1,2.7,Nhà đất|Căn hộ,near_school|kids_playground|park|near_hospital
+usr_1047,luxury,buy_for_living,30-40,married,3,medium_high,Phường Tăng Nhơn Phú|Phường Bình Trưng|Xã Nhà Bè,3,13.5,22.7,Nhà đất|Căn hộ,kids_playground|park|near_hospital|sports_court
+usr_1048,mid_range,buy_for_living,30-40,married,4,medium,Phường Tân Bình,3,5.3,7.4,Nhà đất|Căn hộ,near_school|park|near_hospital
+usr_1049,affordable,buy_for_living,40-50,married,0,medium_high,Phường Phước Long|Phường An Lạc|Phường An Phú Đông,1,1.4,2.8,Căn hộ|Nhà đất,near_bus|pool
+usr_1050,luxury,rent,30-40,single,0,medium_high,Xã Đất Đỏ,2,18.8,28.7,Nhà đất,parking|near_metro
+usr_1051,affordable,investment,50+,married,0,medium,Phường Phú Nhuận,2,1.3,2.7,Nhà đất,near_market|security_24h|pool
+usr_1052,luxury,investment,40-50,married,1,medium,Phường Tân Hưng|Phường Hiệp Bình,2,17.3,20.9,Nhà đất|Căn hộ,park|near_hospital|security_24h
+usr_1053,affordable,buy_for_living,40-50,single,0,medium_high,Phường Vườn Lài|Phường An Phú Đông|Phường Thới Hòa,1,1.9,2.8,Nhà đất,gym|elevator
+usr_1054,affordable,investment,20-30,single,0,medium,Phường Vườn Lài,1,1.7,3.0,Nhà đất,near_mall|gym
+usr_1055,affordable,investment,30-40,married,5,high,Xã Hồ Tràm,3,1.3,2.7,Nhà đất|Căn hộ,kids_playground|park|near_hospital
+usr_1056,affordable,buy_for_living,30-40,married,0,medium_high,Phường Bình Thạnh|Xã Tân An Hội,2,1.9,2.6,Nhà đất,near_metro|elevator
+usr_1057,affordable,buy_for_living,40-50,married,3,high,Phường An Hội Tây|Phường Thạnh Mỹ Tây|Phường Tam Thắng,3,1.3,2.6,Nhà đất|Căn hộ,kids_playground|near_hospital|pool
+usr_1058,affordable,investment,30-40,married,1,medium,Phường Phú Thuận,2,2.0,2.9,Nhà đất,park|near_mall
+usr_1059,affordable,buy_for_living,30-40,married,2,medium,Phường Thạnh Mỹ Tây,2,1.8,2.3,Nhà đất|Căn hộ,kids_playground|park|near_hospital|pool
+usr_1060,mid_range,investment,20-30,single,0,medium_high,Phường Tam Bình,1,5.0,6.5,Nhà đất,security_24h|near_bus
+usr_1061,mid_range,rent,50+,married,2,medium,Phường Đức Nhuận|Phường Cầu Kiệu|Phường Long Bình,2,4.1,7.4,Căn hộ,kids_playground|near_hospital|sports_court
+usr_1062,luxury,investment,30-40,single,0,high,Phường Bình Trưng,1,12.6,29.5,Căn hộ|Nhà đất,near_market|near_bus
+usr_1063,affordable,investment,20-30,single,0,medium,Phường Bình Tây|Phường Hạnh Thông|Phường Bình Trị Đông,2,1.3,3.0,Nhà đất|Căn hộ,near_mall|elevator
+usr_1064,mid_range,investment,30-40,married,1,medium,Phường Tân Hòa,2,4.4,6.7,Căn hộ|Nhà đất,kids_playground|near_hospital
+usr_1065,affordable,investment,30-40,single,1,medium,Phường An Khánh,2,1.4,2.6,Nhà đất,near_mall|security_24h|gym|parking
+usr_1066,mid_range,buy_for_living,30-40,single,0,medium_high,Xã Tân Vĩnh Lộc,2,3.9,6.7,Nhà đất,elevator|pool
+usr_1067,luxury,investment,30-40,married,1,medium,Phường Xóm Chiếu|Phường Vũng Tàu,2,10.7,29.4,Nhà đất|Căn hộ,near_hospital|elevator|gym
+usr_1068,mid_range,investment,30-40,single,0,high,Phường Gia Định|Phường An Khánh,2,4.9,6.1,Nhà đất|Căn hộ,near_mall|near_metro|pool
+usr_1069,affordable,investment,30-40,single,0,medium_high,Phường Tân Sơn,1,1.2,2.2,Nhà đất,near_market|sports_court
+usr_1070,mid_range,buy_for_living,30-40,married,2,high,Phường Long Bình|Phường Phước Thắng|Phường Hòa Hưng,2,3.8,7.7,Nhà đất,near_school|park|near_hospital
+usr_1071,affordable,buy_for_living,30-40,married,2,medium_high,Phường Tân Sơn Nhất,2,1.7,2.1,Nhà đất,near_school|kids_playground|near_hospital|parking
+usr_1072,mid_range,rent,40-50,single,0,medium_high,Phường Long Trường|Phường Thới An|Phường Long Bình,1,3.5,7.4,Nhà đất|Căn hộ,near_metro|sports_court
+usr_1073,mid_range,buy_for_living,40-50,single,0,medium_high,Phường Tân Sơn,2,5.1,5.9,Nhà đất|Căn hộ,pool|near_bus
+usr_1074,mid_range,buy_for_living,50+,married,0,medium_high,Phường Tân Sơn,1,5.4,5.6,Nhà đất|Căn hộ,sports_court|near_metro
+usr_1075,mid_range,investment,20-30,married,2,medium,Phường Long Bình|Phường Chợ Lớn|Phường Bình Tây,2,4.8,7.6,Nhà đất|Căn hộ,near_mall|security_24h|parking
+usr_1076,affordable,investment,20-30,married,2,medium,Phường Long Hương|Xã Hiệp Phước,2,1.8,2.8,Nhà đất|Căn hộ,near_mall|near_bus
+usr_1077,luxury,buy_for_living,20-30,single,0,medium_high,Xã Tân Nhựt|Phường Bình Tân|Phường Thới Hòa,1,8.6,29.0,Nhà đất|Căn hộ,sports_court|near_bus
+usr_1078,affordable,buy_for_living,20-30,single,0,medium,Xã Nhà Bè,2,2.0,2.8,Nhà đất,elevator|sports_court
+usr_1079,affordable,rent,40-50,single,0,medium,Phường Linh Xuân|Phường Tân Phú|Phường Tăng Nhơn Phú,2,2.1,3.0,Nhà đất|Căn hộ,gym|near_metro
+usr_1080,affordable,investment,30-40,single,0,medium_high,Xã Nhà Bè|Phường Tân Hưng,2,1.7,2.7,Nhà đất,near_market|parking
+usr_1081,affordable,buy_for_living,30-40,married,0,medium,Phường Bình Lợi Trung|Phường Bình Trưng,1,1.7,2.3,Nhà đất|Căn hộ,near_bus|elevator
+usr_1082,affordable,buy_for_living,20-30,single,0,medium,Phường Thới An|Xã Hiệp Phước,2,1.8,2.6,Nhà đất,near_bus|parking
+usr_1083,affordable,investment,20-30,married,1,medium_high,Phường Tân Hưng|Phường Thủ Đức|Phường Hiệp Bình,2,1.5,2.5,Nhà đất|Căn hộ,near_school|near_market
+usr_1084,mid_range,buy_for_living,40-50,single,0,medium,Phường Bình Trị Đông|Phường Bàn Cờ,2,4.8,7.2,Nhà đất,near_bus|pool
+usr_1085,affordable,investment,50+,single,0,medium,Phường Tân Hưng|Phường Vườn Lài,2,1.3,2.7,Nhà đất,near_mall|near_market|sports_court
+usr_1086,affordable,investment,50+,married,1,medium_high,Phường Vĩnh Hội,2,2.0,2.7,Nhà đất|Căn hộ,near_school|elevator
+usr_1087,affordable,investment,20-30,single,0,medium,Phường Long Trường,2,1.4,2.4,Nhà đất|Căn hộ,security_24h|pool
+usr_1088,affordable,buy_for_living,30-40,single,0,medium,Phường Phước Long|Phường Tân Thuận,2,1.7,3.0,Nhà đất|Căn hộ,sports_court|pool
+usr_1089,affordable,buy_for_living,30-40,married,2,high,Phường Nhiêu Lộc,2,1.6,2.5,Nhà đất,near_school|near_hospital|sports_court
+usr_1090,affordable,buy_for_living,40-50,married,1,medium,Xã Nhà Bè|Xã Bình Hưng|Phường Thới An,2,1.5,2.9,Nhà đất|Căn hộ,near_school|kids_playground|near_bus|gym
+usr_1091,mid_range,buy_for_living,30-40,married,2,medium,Phường Bảy Hiền|Phường Tăng Nhơn Phú,2,3.1,6.9,Nhà đất,near_school|kids_playground|park|near_hospital
+usr_1092,mid_range,buy_for_living,50+,married,0,high,Phường Bảy Hiền|Phường Tân Hưng|Phường Dĩ An,1,4.7,6.4,Căn hộ|Nhà đất,sports_court|near_metro
+usr_1093,affordable,investment,50+,married,3,high,Phường Bình Lợi Trung|Phường Hòa Hưng|Phường Long Bình,3,1.2,2.9,Nhà đất|Căn hộ,park|pool|parking
+usr_1094,affordable,buy_for_living,40-50,single,0,medium,Phường Hòa Hưng,1,1.4,2.8,Nhà đất|Căn hộ,pool|near_bus
+usr_1095,affordable,buy_for_living,20-30,single,0,medium,Phường An Lạc|Phường Chợ Lớn,2,2.0,3.0,Nhà đất,gym|elevator
+usr_1096,affordable,buy_for_living,30-40,single,0,medium,Phường An Hội Tây,1,1.4,2.3,Nhà đất,gym|parking
+usr_1097,affordable,investment,40-50,married,2,medium_high,Phường Thới An|Phường Phú Nhuận,2,1.5,2.4,Nhà đất|Căn hộ,park|gym
+usr_1098,affordable,buy_for_living,30-40,single,0,high,Xã Nhà Bè,2,2.0,2.1,Nhà đất|Căn hộ,pool|parking
+usr_1099,affordable,investment,40-50,married,1,medium,Phường An Lạc|Phường Gia Định,2,1.3,2.6,Nhà đất|Căn hộ,kids_playground|park|near_mall|near_bus
+usr_1100,affordable,rent,40-50,single,0,medium,Phường Bến Thành,2,1.2,2.4,Nhà đất,pool|elevator
+usr_1101,affordable,rent,20-30,married,1,medium_high,Phường Gia Định|Phường Tam Thắng|Phường Hiệp Bình,2,1.8,2.3,Căn hộ|Nhà đất,near_school|kids_playground
+usr_1102,mid_range,investment,20-30,married,2,medium_high,Phường Tam Thắng,2,4.0,7.7,Nhà đất|Căn hộ,kids_playground|security_24h|gym
+usr_1103,affordable,rent,20-30,single,0,medium,Phường An Khánh|Phường Tân Hưng,2,1.2,2.7,Nhà đất|Căn hộ,sports_court|gym
+usr_1104,mid_range,buy_for_living,50+,married,3,medium,Phường Tân Thuận|Phường Khánh Hội|Phường Phú Thuận,3,4.6,6.1,Nhà đất,kids_playground|near_hospital|parking
+usr_1105,luxury,investment,40-50,single,0,medium_high,Phường Thới An|Xã Nhà Bè|Xã Tân Nhựt,1,10.1,23.4,Nhà đất|Căn hộ,security_24h|near_bus|elevator
+usr_1106,mid_range,buy_for_living,20-30,married,0,medium_high,Xã Tân Nhựt|Phường Cầu Ông Lãnh|Phường Diên Hồng,1,3.8,5.6,Nhà đất,pool|elevator
+usr_1107,mid_range,buy_for_living,30-40,single,0,medium_high,Phường An Lạc|Phường Hiệp Bình|Phường Hòa Bình,1,5.5,7.0,Nhà đất,gym|pool
+usr_1108,affordable,buy_for_living,50+,married,0,high,Phường Phú Thạnh,2,1.9,2.5,Nhà đất|Căn hộ,pool|gym
+usr_1109,affordable,buy_for_living,20-30,single,0,medium,Phường Gò Vấp|Phường Tân Sơn Nhì|Phường Đức Nhuận,2,1.6,2.1,Nhà đất,pool|elevator
+usr_1110,mid_range,rent,30-40,single,0,medium_high,Phường Tân Hòa|Phường Tân Bình,1,3.1,5.6,Nhà đất|Căn hộ,near_bus|near_metro
+usr_1111,affordable,investment,40-50,single,0,medium,Phường Hiệp Bình|Phường Tân Sơn|Phường Tăng Nhơn Phú,2,1.9,2.4,Nhà đất|Căn hộ,near_market|security_24h
+usr_1112,affordable,rent,50+,married,2,medium,Phường Hòa Hưng|Phường An Phú Đông,2,2.1,2.7,Nhà đất,near_school|kids_playground|sports_court
+usr_1113,affordable,buy_for_living,30-40,married,1,medium_high,Xã Nhà Bè,2,1.8,2.8,Căn hộ|Nhà đất,kids_playground|park|near_hospital|parking
+usr_1114,mid_range,buy_for_living,50+,married,5,medium,Phường Bàn Cờ|Xã Nhà Bè,3,4.3,6.3,Nhà đất|Căn hộ,kids_playground|near_hospital
+usr_1115,mid_range,investment,30-40,single,0,medium_high,Phường Tân Định,1,3.5,7.4,Nhà đất|Căn hộ,near_mall|near_market|security_24h|gym
+usr_1116,mid_range,investment,40-50,single,0,medium,Phường Bình Trưng,1,3.5,7.6,Nhà đất|Căn hộ,near_mall|security_24h|sports_court|gym
+usr_1117,mid_range,buy_for_living,50+,married,3,medium_high,Phường Long Bình|Phường Đức Nhuận,3,5.4,6.8,Nhà đất,near_school|park|parking
+usr_1118,mid_range,investment,30-40,married,2,medium,Phường Bàn Cờ|Phường Hòa Hưng|Xã Nhà Bè,2,3.2,6.3,Nhà đất,near_school|security_24h|near_bus
+usr_1119,luxury,rent,50+,married,2,medium_high,Phường Gia Định|Phường Bình Đông,2,18.0,24.2,Nhà đất,near_school|park|near_hospital|near_metro
+usr_1120,affordable,buy_for_living,40-50,married,1,medium,Phường Bình Thạnh|Phường Phú Nhuận|Phường An Phú Đông,2,1.9,2.6,Nhà đất,park|near_hospital|pool
+usr_1121,affordable,investment,20-30,married,1,medium,Phường Phú Định,2,1.4,2.9,Nhà đất|Căn hộ,security_24h|gym
+usr_1122,luxury,investment,40-50,married,2,medium_high,Phường Thủ Đức,2,17.6,28.5,Nhà đất|Căn hộ,near_school|near_market|security_24h
+usr_1123,affordable,investment,20-30,married,1,high,Xã Nhà Bè,2,2.1,2.7,Nhà đất,kids_playground|security_24h|parking|elevator
+usr_1124,affordable,investment,30-40,married,2,medium,Phường Bình Thạnh,2,2.0,2.4,Nhà đất,near_hospital|parking
+usr_1125,affordable,buy_for_living,40-50,married,0,medium,Phường Bình Trưng,2,1.7,3.0,Nhà đất|Căn hộ,elevator|sports_court
+usr_1126,affordable,investment,30-40,single,0,medium_high,Phường Bình Trưng,1,1.7,2.4,Nhà đất,near_mall|security_24h|parking
+usr_1127,affordable,buy_for_living,30-40,married,2,medium,Phường Phước Long|Phường Bình Lợi Trung|Phường Tân Sơn Hòa,2,2.0,2.5,Nhà đất|Căn hộ,park|near_metro
+usr_1128,luxury,buy_for_living,20-30,married,2,medium,Phường Thới Hòa|Phường Chánh Hưng,2,16.2,24.8,Nhà đất|Căn hộ,near_school|kids_playground|near_hospital
+usr_1129,mid_range,buy_for_living,20-30,single,0,medium,Phường Long Trường|Phường Tân Sơn|Phường Xuân Hòa,1,4.0,6.4,Nhà đất|Căn hộ,sports_court|near_metro
+usr_1130,affordable,investment,40-50,single,0,medium,Phường Long Bình,1,1.6,2.5,Nhà đất|Căn hộ,near_market|security_24h
+usr_1131,affordable,buy_for_living,20-30,married,2,medium_high,Phường Cầu Ông Lãnh,2,1.6,2.7,Nhà đất,kids_playground|park|near_hospital|pool
+usr_1132,luxury,investment,50+,single,0,medium_high,Phường Gò Vấp,1,14.2,20.8,Nhà đất|Căn hộ,near_mall|near_metro
+usr_1133,luxury,rent,30-40,single,0,medium,Phường Phú Thuận,2,13.9,26.3,Nhà đất,elevator|parking
+usr_1134,mid_range,buy_for_living,20-30,single,0,medium,Xã Nhà Bè,2,4.6,6.1,Nhà đất,gym|elevator
+usr_1135,affordable,buy_for_living,30-40,single,0,medium,Phường An Khánh|Xã Nhà Bè,1,1.5,2.8,Nhà đất,near_bus|near_metro
+usr_1136,affordable,rent,30-40,married,0,high,Phường An Hội Tây|Phường Gò Vấp,2,2.0,3.0,Nhà đất,sports_court|pool
+usr_1137,affordable,investment,30-40,married,1,high,Phường Tân Tạo|Phường Bình Thạnh,2,1.8,2.2,Căn hộ|Nhà đất,park|security_24h|pool
+usr_1138,luxury,buy_for_living,20-30,single,0,medium_high,Xã Tân An Hội|Phường Vũng Tàu|Phường An Lạc,2,12.0,25.7,Nhà đất,near_metro|sports_court
+usr_1139,luxury,investment,50+,married,5,medium,Phường Tân Thuận|Phường Tân Mỹ,3,14.1,25.1,Nhà đất|Căn hộ,near_school|near_mall|sports_court
+usr_1140,affordable,buy_for_living,30-40,married,1,high,Phường Bình Tân,2,1.2,2.4,Căn hộ,kids_playground|park|sports_court
+usr_1141,mid_range,investment,30-40,married,2,high,Phường Vũng Tàu|Xã Nhà Bè,2,4.2,5.7,Nhà đất|Căn hộ,near_hospital|near_mall|sports_court|near_bus
+usr_1142,affordable,rent,30-40,married,0,medium_high,Phường Thạnh Mỹ Tây|Phường Thông Tây Hội,1,1.8,2.3,Nhà đất,parking|near_bus
+usr_1143,mid_range,buy_for_living,30-40,married,2,high,Phường Khánh Hội,2,4.1,6.9,Căn hộ|Nhà đất,near_school|park
+usr_1144,luxury,investment,30-40,single,0,medium,Xã Nhà Bè|Phường Đức Nhuận,1,10.0,28.6,Nhà đất|Căn hộ,near_mall|near_market|security_24h|elevator
+usr_1145,luxury,investment,40-50,married,1,high,Phường Gò Vấp,2,8.2,21.1,Nhà đất|Căn hộ,kids_playground|park|security_24h|pool
+usr_1146,affordable,buy_for_living,20-30,married,2,medium_high,Phường An Hội Tây,2,1.7,2.8,Nhà đất,kids_playground|park|near_hospital|gym
+usr_1147,affordable,buy_for_living,30-40,single,0,medium_high,Phường Tân Mỹ|Phường Bình Trưng|Phường Diên Hồng,1,1.9,2.6,Nhà đất,sports_court|near_metro
+usr_1148,mid_range,investment,50+,married,1,medium_high,Phường Thới Hòa|Phường Bình Hưng Hòa|Phường Bình Đông,2,5.4,7.4,Nhà đất|Căn hộ,park|near_mall|near_market|security_24h
+usr_1149,affordable,buy_for_living,50+,single,0,medium_high,Xã Nhà Bè,2,1.4,2.6,Nhà đất|Căn hộ,gym|pool
+usr_1150,affordable,investment,20-30,married,2,medium,Phường Đức Nhuận|Phường Thông Tây Hội,2,1.2,2.9,Nhà đất,near_school|near_mall|parking
+usr_1151,mid_range,buy_for_living,30-40,married,1,medium,Phường Tân Thuận|Phường Bàn Cờ|Phường Tân Mỹ,2,3.0,7.1,Nhà đất,near_hospital|near_metro|pool
+usr_1152,affordable,buy_for_living,20-30,married,2,medium,Phường Tân Mỹ|Phường Cát Lái,2,1.8,2.7,Nhà đất,near_school|kids_playground|pool
+usr_1153,affordable,investment,40-50,single,0,medium_high,Xã Nhà Bè|Phường Tân Sơn Hòa|Phường Tân Định,1,1.5,2.4,Nhà đất|Căn hộ,near_market|security_24h|parking|pool
+usr_1154,affordable,buy_for_living,30-40,married,3,medium_high,Xã Nhà Bè|Phường Bình Trị Đông,3,1.3,2.6,Nhà đất|Căn hộ,near_hospital|near_bus|pool
+usr_1155,affordable,buy_for_living,20-30,married,1,medium,Phường Hạnh Thông|Phường Thới An|Phường Tân Bình,2,1.5,3.0,Căn hộ|Nhà đất,near_school|park|near_hospital|pool
+usr_1156,luxury,investment,40-50,married,3,high,Xã Bà Điểm|Xã Nhà Bè|Phường Chánh Hưng,3,14.1,19.7,Nhà đất,kids_playground|near_hospital
+usr_1157,affordable,buy_for_living,30-40,married,2,medium_high,Phường Thông Tây Hội,2,1.5,2.3,Nhà đất|Căn hộ,near_school|near_hospital|parking|sports_court
+usr_1158,mid_range,buy_for_living,40-50,married,2,medium,Xã Nhà Bè,2,4.4,5.9,Căn hộ,near_school|near_hospital
+usr_1159,mid_range,buy_for_living,30-40,married,1,high,Phường Long Bình|Phường Bến Thành,2,4.0,5.7,Nhà đất|Căn hộ,park|near_hospital|near_bus
+usr_1160,affordable,buy_for_living,20-30,married,2,medium,Phường Đức Nhuận,2,1.8,2.2,Căn hộ,near_school|kids_playground|park
+usr_1161,affordable,investment,30-40,married,1,medium_high,Phường Tây Thạnh|Phường Bình Trị Đông|Phường Đức Nhuận,2,2.0,2.2,Nhà đất|Căn hộ,near_mall|near_market|sports_court|near_bus
+usr_1162,affordable,buy_for_living,30-40,single,0,high,Phường Cầu Ông Lãnh|Xã Nhà Bè,1,1.7,2.6,Nhà đất,gym|elevator
+usr_1163,mid_range,rent,20-30,married,3,medium,Phường Thới An|Xã Trừ Văn Thố|Phường Cầu Ông Lãnh,3,4.3,7.2,Nhà đất,kids_playground|near_hospital|gym|pool
+usr_1164,affordable,buy_for_living,20-30,single,0,high,Phường Tăng Nhơn Phú,2,1.7,2.9,Nhà đất|Căn hộ,gym|sports_court
+usr_1165,luxury,buy_for_living,40-50,married,1,high,Phường Tân Sơn Nhì|Phường Cầu Ông Lãnh,2,15.4,26.4,Nhà đất,near_school|park
+usr_1166,luxury,buy_for_living,30-40,married,0,medium,Phường Bình Lợi Trung|Phường Bảy Hiền|Phường An Hội Đông,1,13.5,25.3,Căn hộ,near_bus|near_metro
+usr_1167,affordable,buy_for_living,20-30,married,3,medium,Phường Tân Sơn Hòa|Phường Phú Nhuận|Phường Diên Hồng,3,1.7,2.5,Nhà đất|Căn hộ,kids_playground|park|pool
+usr_1168,mid_range,investment,50+,married,2,high,Phường Long Bình,2,3.2,6.7,Nhà đất,near_hospital|near_mall|security_24h|near_bus
+usr_1169,affordable,investment,20-30,single,0,high,Phường Khánh Hội,1,1.7,2.8,Nhà đất,near_metro|elevator
+usr_1170,affordable,buy_for_living,30-40,single,0,medium_high,Phường Tăng Nhơn Phú|Phường Đức Nhuận,2,1.5,2.5,Nhà đất,gym|sports_court
+usr_1171,affordable,buy_for_living,30-40,married,1,medium,Phường Bảy Hiền|Phường An Hội Tây,2,1.4,2.7,Nhà đất,near_school|near_bus
+usr_1172,affordable,buy_for_living,50+,single,0,medium_high,Phường Phú Thuận,1,1.4,2.5,Nhà đất,elevator|sports_court
+usr_1173,affordable,rent,40-50,married,1,medium_high,Phường Tân Định|Xã Nhà Bè|Phường Thuận Giao,2,1.8,2.5,Nhà đất,park|near_hospital|elevator
+usr_1174,affordable,rent,40-50,married,0,medium_high,Phường Gia Định,2,1.8,2.4,Nhà đất|Căn hộ,pool|near_metro
+usr_1175,mid_range,buy_for_living,30-40,married,0,medium_high,Phường An Khánh|Phường Gia Định,2,3.0,5.5,Nhà đất,near_metro|parking
+usr_1176,affordable,buy_for_living,20-30,single,0,high,Phường Thới An,2,2.0,2.9,Nhà đất|Căn hộ,pool|elevator
+usr_1177,luxury,investment,40-50,married,1,medium,Phường Linh Xuân|Phường Gò Vấp,2,17.6,27.7,Nhà đất,park|near_hospital|sports_court
+usr_1178,mid_range,buy_for_living,20-30,married,0,medium,Phường Long Bình|Phường Bình Lợi Trung|Phường Tân Thuận,2,3.8,7.2,Nhà đất|Căn hộ,elevator|sports_court
+usr_1179,mid_range,investment,30-40,single,0,medium_high,Phường Phú Thạnh|Phường An Đông|Phường Tân Sơn Nhì,1,3.6,6.4,Nhà đất|Căn hộ,near_mall|near_market|security_24h|near_metro
+usr_1180,luxury,investment,40-50,married,1,medium,Phường Xuân Hòa,2,16.4,27.1,Nhà đất|Căn hộ,near_school|park|security_24h|near_metro
+usr_1181,mid_range,buy_for_living,50+,single,0,medium,Phường Sài Gòn|Phường Thông Tây Hội|Phường Khánh Hội,1,4.3,6.0,Nhà đất|Căn hộ,pool|near_bus
+usr_1182,affordable,rent,30-40,married,1,medium,Phường Bình Lợi Trung|Phường Bảy Hiền,2,1.4,2.5,Căn hộ|Nhà đất,near_school|park|near_hospital|near_metro
+usr_1183,luxury,buy_for_living,20-30,married,2,medium_high,Phường Bàn Cờ,2,14.3,29.1,Căn hộ,park|near_hospital
+usr_1184,luxury,buy_for_living,30-40,single,0,medium_high,Phường An Khánh|Phường Chợ Quán,1,9.9,24.9,Nhà đất,sports_court|pool
+usr_1185,mid_range,buy_for_living,30-40,single,0,medium_high,Phường Tân Sơn Nhất,1,4.6,5.7,Nhà đất|Căn hộ,pool|sports_court
+usr_1186,luxury,buy_for_living,40-50,married,1,medium_high,Phường Trung Mỹ Tây|Phường An Lạc,2,10.7,28.1,Nhà đất|Căn hộ,kids_playground|gym
+usr_1187,affordable,investment,30-40,single,1,medium,Phường Vĩnh Hội|Phường Chánh Hưng|Phường Bình Thạnh,2,1.7,2.6,Nhà đất|Căn hộ,kids_playground|near_mall|near_market|security_24h
+usr_1188,mid_range,buy_for_living,30-40,married,4,medium,Phường Bình Lợi Trung|Phường Thủ Đức|Phường Cầu Kiệu,3,4.3,6.8,Nhà đất|Căn hộ,near_school|kids_playground|park|near_hospital
+usr_1189,affordable,buy_for_living,20-30,single,0,medium_high,Phường Bình Hưng Hòa|Phường An Khánh,2,1.3,2.2,Nhà đất,elevator|pool
+usr_1190,affordable,buy_for_living,20-30,married,2,medium_high,Phường Nhiêu Lộc|Phường Thới An|Phường Cầu Kiệu,2,1.6,2.8,Nhà đất|Căn hộ,near_school|park|gym
+usr_1191,mid_range,rent,30-40,married,3,medium_high,Phường Thới Hòa|Phường Bàn Cờ,3,3.1,6.0,Nhà đất,park|gym|pool
+usr_1192,affordable,investment,30-40,married,3,medium,Phường Nhiêu Lộc|Phường Chánh Hưng,3,2.0,2.3,Nhà đất,kids_playground|security_24h
+usr_1193,mid_range,buy_for_living,40-50,married,0,high,Phường An Hội Tây|Phường Tân Bình|Phường Hòa Hưng,1,5.4,7.9,Nhà đất|Căn hộ,elevator|sports_court
+usr_1194,mid_range,rent,40-50,married,2,medium,Phường Hiệp Bình|Phường Phú Thuận|Phường Long Trường,2,4.0,5.7,Căn hộ|Nhà đất,near_school|near_hospital
+usr_1195,luxury,investment,30-40,single,0,medium_high,Phường Đức Nhuận|Phường Phú Thuận|Phường An Hội Tây,2,12.5,21.9,Nhà đất,near_mall|near_market
+usr_1196,affordable,buy_for_living,20-30,married,2,medium,Xã Tân An Hội|Phường Thủ Đức,2,1.7,2.5,Nhà đất|Căn hộ,park|near_hospital|elevator
+usr_1197,affordable,buy_for_living,40-50,married,2,medium,Phường Thông Tây Hội|Phường Tân Định,2,1.9,2.4,Nhà đất|Căn hộ,near_school|park
+usr_1198,affordable,buy_for_living,40-50,single,0,medium,Phường Thạnh Mỹ Tây,2,1.3,2.2,Nhà đất,parking|near_metro
+usr_1199,affordable,rent,20-30,married,2,medium_high,Phường Bình Thạnh|Phường Vĩnh Hội,2,1.3,2.2,Nhà đất,near_school|park|near_metro|parking
+usr_1200,mid_range,investment,20-30,married,2,medium_high,Phường Minh Phụng|Phường Khánh Hội,2,4.8,5.7,Căn hộ|Nhà đất,near_school|near_mall|security_24h|pool
+usr_1201,affordable,buy_for_living,50+,single,0,medium,Phường Long Bình|Phường Bảy Hiền|Phường Thới An,2,1.5,2.1,Nhà đất,near_metro|gym
+usr_1202,affordable,buy_for_living,40-50,married,3,medium,Phường Tăng Nhơn Phú|Phường Gia Định|Phường Cát Lái,3,1.3,2.8,Nhà đất|Căn hộ,near_school|kids_playground|park
+usr_1203,mid_range,investment,20-30,married,2,medium_high,Phường Diên Hồng|Phường Long Bình|Phường An Hội Tây,2,5.2,7.8,Nhà đất,near_school|park
+usr_1204,affordable,buy_for_living,20-30,married,2,medium_high,Phường Bình Hưng Hòa,2,1.7,2.7,Nhà đất|Căn hộ,elevator|sports_court
+usr_1205,affordable,buy_for_living,30-40,married,1,medium,Phường Vũng Tàu,2,1.6,2.2,Nhà đất|Căn hộ,kids_playground|near_hospital|gym|parking
+usr_1206,affordable,investment,30-40,single,0,medium_high,Phường Tân Hưng|Phường An Hội Tây|Xã Nhà Bè,2,1.7,2.5,Nhà đất|Căn hộ,near_market|parking
+usr_1207,affordable,buy_for_living,50+,single,0,medium,Phường Bình Lợi Trung|Phường Bình Tân,1,1.8,2.9,Nhà đất,near_bus|gym
+usr_1208,affordable,buy_for_living,20-30,married,1,medium,Phường Hiệp Bình|Phường Hòa Hưng,2,2.0,2.3,Nhà đất|Căn hộ,near_school|near_bus|gym
+usr_1209,affordable,buy_for_living,40-50,single,0,medium,Phường Thạnh Mỹ Tây|Phường Long Bình|Phường Tây Thạnh,2,1.8,2.6,Nhà đất|Căn hộ,near_bus|elevator
+usr_1210,luxury,buy_for_living,40-50,married,1,medium,Xã Hiệp Phước|Phường Tăng Nhơn Phú|Phường Phú Lợi,2,15.0,26.3,Nhà đất|Căn hộ,near_school|park|near_hospital
+usr_1211,affordable,rent,30-40,married,2,medium,Phường Tân Bình|Phường An Hội Tây,2,1.3,2.4,Nhà đất|Căn hộ,kids_playground|near_bus
+usr_1212,mid_range,rent,40-50,single,0,medium_high,Phường Tân Phú|Xã Nhà Bè|Phường Tân Sơn Hòa,2,3.8,7.1,Căn hộ|Nhà đất,parking|gym
+usr_1213,mid_range,buy_for_living,20-30,single,0,medium,Phường An Khánh|Phường Tân Thới Hiệp|Phường Bình Trị Đông,1,3.4,6.9,Nhà đất|Căn hộ,parking|gym
+usr_1214,affordable,rent,20-30,married,1,medium,Phường Tân Sơn Nhất,2,1.5,2.6,Nhà đất|Căn hộ,near_school|kids_playground|park|parking
+usr_1215,affordable,investment,40-50,married,2,medium_high,Xã Tân Nhựt,2,1.5,2.8,Nhà đất|Căn hộ,near_school|kids_playground|near_market|sports_court
+usr_1216,affordable,buy_for_living,20-30,single,0,medium,Phường Gia Định|Phường Hiệp Bình,1,1.4,2.1,Nhà đất,near_bus|elevator
+usr_1217,affordable,buy_for_living,30-40,married,2,medium_high,Phường Phước Thắng,2,1.3,2.3,Nhà đất,park|elevator|pool
+usr_1218,mid_range,investment,20-30,married,3,medium_high,Phường An Khánh,3,3.8,6.1,Nhà đất,park|near_mall|security_24h
+usr_1219,affordable,rent,40-50,single,0,medium,Phường Hiệp Bình|Phường Tân Hưng|Phường Thông Tây Hội,2,1.7,2.8,Nhà đất,gym|parking
+usr_1220,affordable,buy_for_living,30-40,married,3,medium_high,Phường Hòa Hưng,3,1.8,2.6,Nhà đất,near_school|near_hospital
+usr_1221,affordable,investment,50+,married,4,medium_high,Phường An Hội Tây|Phường Gò Vấp,3,1.6,2.7,Nhà đất,near_school|kids_playground|security_24h
+usr_1222,affordable,buy_for_living,20-30,married,2,high,Phường Tân Sơn|Phường Hòa Hưng,2,1.6,2.7,Căn hộ|Nhà đất,near_school|park|near_hospital|sports_court
+usr_1223,affordable,buy_for_living,30-40,married,5,medium,Phường Phú Thọ Hòa|Phường An Phú Đông,3,1.7,2.4,Nhà đất,near_school|kids_playground|near_hospital
+usr_1224,luxury,investment,30-40,married,3,medium,Phường Tân Sơn Nhì|Phường Vũng Tàu,3,18.3,21.3,Nhà đất|Căn hộ,near_hospital|near_mall|near_market
+usr_1225,mid_range,buy_for_living,20-30,single,1,high,Phường Vườn Lài|Phường Phú Nhuận,2,3.2,7.0,Căn hộ|Nhà đất,near_school|near_hospital
+usr_1226,affordable,buy_for_living,30-40,single,0,medium_high,Phường Bảy Hiền|Phường Bình Thạnh|Phường Cầu Kiệu,2,1.2,2.5,Nhà đất,elevator|near_bus
+usr_1227,mid_range,investment,40-50,married,0,medium_high,Xã Nhà Bè,2,4.4,6.3,Căn hộ,near_market|security_24h|sports_court|gym
+usr_1228,affordable,buy_for_living,30-40,single,0,medium,Phường Hòa Hưng|Phường Gia Định,2,1.4,2.8,Nhà đất,near_metro|near_bus
+usr_1229,affordable,investment,40-50,single,0,high,Phường Phú Thuận|Xã Hiệp Phước,2,1.6,2.6,Nhà đất|Căn hộ,near_mall|near_market
+usr_1230,affordable,buy_for_living,20-30,married,0,high,Phường Phú Thạnh,2,1.7,2.5,Căn hộ,sports_court|parking
+usr_1231,affordable,buy_for_living,30-40,single,1,medium_high,Phường Phú Thuận|Phường Tân Bình,2,1.8,2.2,Nhà đất,near_school|kids_playground|near_hospital|pool
+usr_1232,mid_range,rent,40-50,single,0,medium_high,Phường Dĩ An|Phường Hạnh Thông|Xã Nhà Bè,2,4.9,6.1,Nhà đất|Căn hộ,near_bus|parking
+usr_1233,affordable,rent,30-40,married,0,high,Phường Tân Hưng|Phường Tân Thới Hiệp|Phường Nhiêu Lộc,2,1.4,2.3,Nhà đất,gym|sports_court
+usr_1234,affordable,buy_for_living,40-50,married,1,medium,Xã Xuân Thới Sơn|Phường An Khánh,2,1.2,2.8,Nhà đất,near_school|park
+usr_1235,affordable,buy_for_living,30-40,married,3,high,Phường Phú Nhuận|Phường Tân Thuận,3,1.5,2.3,Căn hộ|Nhà đất,kids_playground|near_hospital|parking|near_metro
+usr_1236,mid_range,buy_for_living,40-50,married,1,medium,Phường Chánh Hưng,2,3.9,7.2,Nhà đất,near_school|park|near_bus
+usr_1237,mid_range,rent,40-50,married,2,medium_high,Xã Nhà Bè|Phường Tân Hòa|Phường Tân Sơn Nhất,2,4.6,6.5,Nhà đất,near_school|kids_playground
+usr_1238,mid_range,rent,20-30,single,0,medium,Phường Vĩnh Hội|Phường Bình Trưng|Phường Hạnh Thông,2,4.5,7.2,Nhà đất,sports_court|elevator
+usr_1239,affordable,investment,40-50,single,0,medium,Phường Tân Sơn Hòa,1,2.1,2.8,Căn hộ,near_mall|near_market|near_bus
+usr_1240,mid_range,buy_for_living,40-50,single,0,medium,Phường Bình Lợi Trung,2,3.5,5.9,Nhà đất|Căn hộ,gym|sports_court
+usr_1241,mid_range,investment,30-40,single,0,medium,Phường Cầu Kiệu|Phường Phú Định,2,4.9,7.2,Nhà đất,near_mall|near_market|security_24h|elevator
+usr_1242,mid_range,buy_for_living,30-40,married,2,medium,Phường Phước Thắng,2,4.7,7.1,Nhà đất,kids_playground|park|parking|sports_court
+usr_1243,mid_range,investment,50+,married,2,medium_high,Phường Bảy Hiền|Phường An Khánh,2,4.4,7.2,Nhà đất,kids_playground|near_hospital
+usr_1244,affordable,buy_for_living,40-50,married,1,medium_high,Phường Tam Bình,2,1.6,2.8,Nhà đất|Căn hộ,near_school|park|near_hospital|gym
+usr_1245,mid_range,buy_for_living,50+,married,3,medium,Phường Gò Vấp|Phường Thủ Đức|Phường Phú Thạnh,3,4.6,8.0,Nhà đất,kids_playground|park|parking
+usr_1246,luxury,investment,40-50,married,3,medium,Phường Bình Thạnh|Phường Vũng Tàu|Phường Thông Tây Hội,3,13.3,21.4,Nhà đất,near_mall|near_market
+usr_1247,affordable,investment,20-30,married,2,medium,Phường Hòa Hưng|Phường Đông Hưng Thuận|Phường Bình Thạnh,2,1.6,2.4,Nhà đất|Căn hộ,near_school|elevator
+usr_1248,affordable,investment,20-30,married,1,medium_high,Phường Bình Lợi Trung|Phường Tam Thắng|Phường Rạch Dừa,2,1.8,2.3,Nhà đất|Căn hộ,near_school|near_market
+usr_1249,luxury,rent,20-30,married,2,medium_high,Phường Tam Bình,2,13.8,25.2,Nhà đất,near_hospital|pool
+usr_1250,mid_range,buy_for_living,40-50,single,0,high,Phường Cầu Kiệu|Phường Bến Thành|Phường Tân Bình,1,5.0,5.5,Nhà đất|Căn hộ,pool|gym
+usr_1251,affordable,buy_for_living,30-40,single,0,medium_high,Phường Nhiêu Lộc|Phường Tăng Nhơn Phú|Phường Đức Nhuận,2,1.8,2.6,Nhà đất|Căn hộ,sports_court|parking
+usr_1252,luxury,buy_for_living,20-30,married,1,medium_high,Phường Phú Thuận|Phường Thông Tây Hội|Phường Tăng Nhơn Phú,2,10.5,28.5,Căn hộ|Nhà đất,near_school|kids_playground|near_hospital|gym
+usr_1253,affordable,investment,20-30,single,0,medium,Phường Cầu Ông Lãnh|Phường Nhiêu Lộc,2,2.0,2.6,Căn hộ|Nhà đất,near_mall|security_24h|pool
+usr_1254,affordable,investment,20-30,single,0,medium_high,Phường Cầu Ông Lãnh|Phường Thạnh Mỹ Tây,1,1.5,2.3,Nhà đất|Căn hộ,near_mall|near_market
+usr_1255,mid_range,buy_for_living,30-40,single,0,medium_high,Xã Tân Nhựt,1,4.3,6.8,Nhà đất,sports_court|parking
+usr_1256,affordable,buy_for_living,40-50,married,2,medium_high,Phường An Phú Đông|Phường Tân Phú|Xã Tân Nhựt,2,1.3,2.9,Nhà đất,near_hospital|elevator
+usr_1257,affordable,buy_for_living,30-40,married,1,medium_high,Phường Tân Thuận,2,1.8,2.6,Căn hộ|Nhà đất,near_school|gym
+usr_1258,affordable,rent,50+,single,0,medium,Xã Nhà Bè,1,1.9,2.6,Nhà đất|Căn hộ,near_bus|sports_court
+usr_1259,affordable,buy_for_living,30-40,married,0,medium_high,Phường An Hội Tây|Phường Bình Phú,2,1.7,2.3,Nhà đất|Căn hộ,parking|near_bus
+usr_1260,affordable,buy_for_living,30-40,single,0,medium,Phường Tăng Nhơn Phú,2,1.8,2.8,Nhà đất|Căn hộ,near_bus|pool
+usr_1261,affordable,investment,40-50,single,0,medium_high,Phường Cầu Kiệu,2,1.8,2.1,Nhà đất|Căn hộ,near_mall|security_24h|gym
+usr_1262,mid_range,buy_for_living,30-40,single,0,medium_high,Phường Cầu Kiệu|Xã Bà Điểm|Xã Nhà Bè,2,4.1,8.0,Nhà đất|Căn hộ,gym|sports_court
+usr_1263,affordable,investment,20-30,married,1,medium_high,Phường An Khánh|Phường Long Bình,2,1.7,2.8,Nhà đất|Căn hộ,kids_playground|near_market|sports_court
+usr_1264,mid_range,buy_for_living,20-30,single,0,high,Phường Hòa Hưng|Phường Tân Sơn Hòa,1,4.9,6.7,Nhà đất,sports_court|near_bus
+usr_1265,mid_range,rent,40-50,single,0,high,Xã Bình Chánh|Phường Bình Trưng,1,3.6,6.5,Nhà đất|Căn hộ,near_bus|near_metro
+usr_1266,mid_range,investment,30-40,married,1,medium_high,Phường Tân Định|Phường Thạnh Mỹ Tây,2,3.3,7.8,Nhà đất|Căn hộ,near_school|near_mall|near_market
+usr_1267,affordable,buy_for_living,40-50,married,1,medium,Phường Phú Định,2,1.6,2.3,Nhà đất,near_school|near_hospital|parking
+usr_1268,mid_range,rent,30-40,married,0,medium,Phường An Hội Tây|Phường Phú Thuận|Phường Tăng Nhơn Phú,1,4.7,5.9,Nhà đất,sports_court|gym
+usr_1269,affordable,buy_for_living,20-30,married,3,high,Xã Nhà Bè|Phường Phú Nhuận|Phường Tân Sơn Hòa,3,1.4,2.5,Căn hộ|Nhà đất,near_school|kids_playground|near_hospital|parking
+usr_1270,mid_range,investment,20-30,single,0,medium,Phường Tân Thuận,2,4.1,7.0,Nhà đất|Căn hộ,near_mall|near_market|security_24h|gym
+usr_1271,affordable,buy_for_living,50+,single,1,medium,Phường Thủ Đức,2,2.1,2.8,Nhà đất|Căn hộ,near_school|kids_playground|park|sports_court
+usr_1272,affordable,buy_for_living,40-50,single,0,medium_high,Phường Gia Định|Phường Trung Mỹ Tây,2,1.8,2.7,Nhà đất|Căn hộ,elevator|sports_court
+usr_1273,mid_range,rent,20-30,single,0,medium,Xã Tân Nhựt|Phường Phú Thuận|Phường An Phú Đông,1,4.2,7.2,Nhà đất|Căn hộ,parking|sports_court
+usr_1274,mid_range,buy_for_living,40-50,married,1,medium_high,Phường Tân Hưng,2,3.6,5.5,Nhà đất|Căn hộ,near_hospital|parking|gym
+usr_1275,affordable,investment,20-30,married,3,high,Phường Tân Bình|Phường Cầu Ông Lãnh|Phường Tăng Nhơn Phú,3,1.7,2.5,Nhà đất,kids_playground|near_mall
+usr_1276,affordable,rent,30-40,married,1,medium,Xã Nhà Bè|Phường An Hội Tây|Phường Chợ Lớn,2,1.2,2.5,Nhà đất|Căn hộ,kids_playground|near_bus|sports_court
+usr_1277,luxury,buy_for_living,30-40,married,1,high,Phường Phú Thạnh|Xã Nhà Bè,2,8.0,21.6,Nhà đất,kids_playground|park|pool
+usr_1278,mid_range,buy_for_living,50+,single,0,medium_high,Phường Bến Thành,2,4.3,6.6,Nhà đất,parking|near_metro
+usr_1279,luxury,buy_for_living,30-40,single,0,medium_high,Phường Diên Hồng|Phường An Khánh|Phường Tân Hưng,1,17.2,25.2,Nhà đất,near_metro|near_bus
+usr_1280,mid_range,rent,20-30,married,2,medium_high,Phường Phú Định,2,3.2,7.6,Nhà đất,park|near_hospital|gym
+usr_1281,affordable,investment,40-50,married,2,medium_high,Phường Hạnh Thông|Phường Phú Nhuận,2,1.9,2.9,Nhà đất,kids_playground|near_bus
+usr_1282,affordable,buy_for_living,30-40,married,1,medium_high,Phường Thạnh Mỹ Tây,2,1.4,2.6,Nhà đất|Căn hộ,kids_playground|sports_court|parking
+usr_1283,luxury,investment,40-50,married,2,high,Phường Tân Hưng|Phường Bình Tây,2,11.7,19.0,Nhà đất|Căn hộ,kids_playground|near_hospital|near_market
+usr_1284,mid_range,buy_for_living,40-50,single,0,medium,Phường Hòa Hưng|Phường Xóm Chiếu|Phường Phú Định,1,4.7,7.1,Căn hộ,parking|near_metro
+usr_1285,affordable,investment,20-30,single,0,medium_high,Phường Tân Thuận,2,1.4,2.4,Nhà đất|Căn hộ,near_mall|near_market|near_bus|pool
+usr_1286,affordable,rent,30-40,married,0,medium_high,Phường Bình Trị Đông,1,2.1,2.6,Nhà đất,near_bus|gym
+usr_1287,affordable,buy_for_living,40-50,married,1,medium,Phường Thủ Đức|Xã Nhà Bè,2,2.1,2.4,Nhà đất,near_school|kids_playground|near_bus
+usr_1288,mid_range,buy_for_living,30-40,single,0,medium_high,Phường Long Bình,1,3.2,5.8,Nhà đất|Căn hộ,elevator|near_metro
+usr_1289,affordable,investment,40-50,single,0,medium_high,Phường Long Bình|Phường Bình Tân|Xã Tân Nhựt,1,1.2,3.0,Nhà đất|Căn hộ,near_mall|near_market
+usr_1290,affordable,investment,30-40,married,1,medium,Phường Tân Sơn Hòa|Phường Nhiêu Lộc|Phường Tân Hưng,2,2.0,3.0,Nhà đất|Căn hộ,kids_playground|parking
+usr_1291,affordable,buy_for_living,40-50,married,4,medium,Phường An Phú Đông|Phường Phú Nhuận,3,1.3,2.9,Nhà đất,kids_playground|near_metro
+usr_1292,affordable,buy_for_living,50+,married,2,medium,Phường Cát Lái,2,1.3,2.6,Nhà đất|Căn hộ,near_school|park|elevator
+usr_1293,affordable,buy_for_living,30-40,single,0,medium,Phường Long Bình|Phường Tân Định|Phường Phú Thuận,2,1.3,2.9,Nhà đất|Căn hộ,pool|near_metro
+usr_1294,luxury,investment,30-40,married,0,medium,Phường Tân Thuận|Phường Tân Sơn Hòa,2,14.6,22.2,Nhà đất,near_mall|security_24h
+usr_1295,mid_range,rent,20-30,married,2,medium_high,Phường Cầu Ông Lãnh|Phường Đức Nhuận,2,3.7,7.0,Nhà đất|Căn hộ,kids_playground|near_hospital
+usr_1296,affordable,buy_for_living,50+,married,2,medium_high,Phường Phú Thạnh|Phường Thủ Đức,2,2.0,2.8,Nhà đất|Căn hộ,elevator|gym
+usr_1297,luxury,rent,30-40,married,1,high,Phường Cầu Kiệu,2,14.6,22.3,Nhà đất|Căn hộ,near_school|kids_playground|pool|sports_court
+usr_1298,mid_range,rent,40-50,married,4,medium,Phường Phú Nhuận|Phường An Khánh,3,4.5,5.7,Nhà đất|Căn hộ,near_school|elevator|parking
+usr_1299,affordable,buy_for_living,30-40,married,2,high,Phường Phú Thuận,2,1.2,2.2,Nhà đất,kids_playground|near_hospital|near_bus

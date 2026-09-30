@@ -1,0 +1,904 @@
+[
+  {
+    "result_set_id": "rs_300005",
+    "user_id": "usr_1002",
+    "raw_query": "căn hộ Phường Long Bình dưới 3.0 tỷ cho thuê lại được, 2 phòng ngủ, gần trường học",
+    "filters_applied": {
+      "district": "Phường Long Bình",
+      "price_max": 3.0,
+      "bedrooms": 2
+    },
+    "ground_truth": [
+      {
+        "listing_id": 45235201,
+        "rank": 0,
+        "score": 0.99
+      },
+      {
+        "listing_id": 44403119,
+        "rank": 1,
+        "score": 0.993
+      },
+      {
+        "listing_id": 45219182,
+        "rank": 2,
+        "score": 0.996
+      },
+      {
+        "listing_id": 44988313,
+        "rank": 3,
+        "score": 1.007
+      },
+      {
+        "listing_id": 43317425,
+        "rank": 4,
+        "score": 0.989
+      },
+      {
+        "listing_id": 43339881,
+        "rank": 5,
+        "score": 0.977
+      },
+      {
+        "listing_id": 43241856,
+        "rank": 6,
+        "score": 0.974
+      },
+      {
+        "listing_id": 44239561,
+        "rank": 7,
+        "score": 0.978
+      },
+      {
+        "listing_id": 45266104,
+        "rank": 8,
+        "score": 0.963
+      },
+      {
+        "listing_id": 43880424,
+        "rank": 9,
+        "score": 0.956
+      }
+    ],
+    "llm_output_picks": [
+      45235201,
+      44403119,
+      45219182
+    ],
+    "live_pred": [
+      {
+        "listing_id": 45266104,
+        "score": 0.7292,
+        "rank": 0
+      },
+      {
+        "listing_id": 43321672,
+        "score": 0.7237,
+        "rank": 1
+      },
+      {
+        "listing_id": 44048727,
+        "score": 0.7234,
+        "rank": 2
+      },
+      {
+        "listing_id": 43436120,
+        "score": 0.72,
+        "rank": 3
+      },
+      {
+        "listing_id": 44034581,
+        "score": 0.7192,
+        "rank": 4
+      },
+      {
+        "listing_id": 44397902,
+        "score": 0.7169,
+        "rank": 5
+      },
+      {
+        "listing_id": 43960856,
+        "score": 0.7152,
+        "rank": 6
+      },
+      {
+        "listing_id": 44350831,
+        "score": 0.7149,
+        "rank": 7
+      },
+      {
+        "listing_id": 43572439,
+        "score": 0.7127,
+        "rank": 8
+      },
+      {
+        "listing_id": 44286055,
+        "score": 0.7084,
+        "rank": 9
+      }
+    ],
+    "n_hits": 1,
+    "hit_listing_ids": [
+      45266104
+    ],
+    "hit_positions_in_pred": {
+      "45266104": 0
+    }
+  },
+  {
+    "result_set_id": "rs_300007",
+    "user_id": "usr_1003",
+    "raw_query": "nhà đất Phường Phú Định dưới 5.6 tỷ cho vợ chồng mới cưới, 1 phòng ngủ, gần bến xe buýt",
+    "filters_applied": {
+      "district": "Phường Phú Định",
+      "price_max": 5.6,
+      "bedrooms": 1
+    },
+    "ground_truth": [
+      {
+        "listing_id": 45269276,
+        "rank": 0,
+        "score": 0.682
+      },
+      {
+        "listing_id": 45169945,
+        "rank": 1,
+        "score": 0.682
+      },
+      {
+        "listing_id": 43634809,
+        "rank": 2,
+        "score": 0.693
+      },
+      {
+        "listing_id": 44326273,
+        "rank": 3,
+        "score": 0.69
+      },
+      {
+        "listing_id": 44819431,
+        "rank": 4,
+        "score": 0.692
+      },
+      {
+        "listing_id": 44996895,
+        "rank": 5,
+        "score": 0.685
+      },
+      {
+        "listing_id": 45237780,
+        "rank": 6,
+        "score": 0.688
+      },
+      {
+        "listing_id": 45154879,
+        "rank": 7,
+        "score": 0.692
+      },
+      {
+        "listing_id": 45099519,
+        "rank": 8,
+        "score": 0.696
+      },
+      {
+        "listing_id": 44492641,
+        "rank": 9,
+        "score": 0.683
+      }
+    ],
+    "llm_output_picks": [
+      45269276,
+      45169945,
+      43634809
+    ],
+    "live_pred": [
+      {
+        "listing_id": 45131129,
+        "score": 0.7201,
+        "rank": 0
+      },
+      {
+        "listing_id": 42886620,
+        "score": 0.676,
+        "rank": 1
+      },
+      {
+        "listing_id": 45169945,
+        "score": 0.6714,
+        "rank": 2
+      },
+      {
+        "listing_id": 43634809,
+        "score": 0.6667,
+        "rank": 3
+      },
+      {
+        "listing_id": 45269276,
+        "score": 0.6624,
+        "rank": 4
+      },
+      {
+        "listing_id": 44743197,
+        "score": 0.6596,
+        "rank": 5
+      },
+      {
+        "listing_id": 44372189,
+        "score": 0.6559,
+        "rank": 6
+      },
+      {
+        "listing_id": 45111637,
+        "score": 0.6437,
+        "rank": 7
+      },
+      {
+        "listing_id": 45141155,
+        "score": 0.6393,
+        "rank": 8
+      },
+      {
+        "listing_id": 45116396,
+        "score": 0.6295,
+        "rank": 9
+      }
+    ],
+    "n_hits": 3,
+    "hit_listing_ids": [
+      45269276,
+      45169945,
+      43634809
+    ],
+    "hit_positions_in_pred": {
+      "45269276": 4,
+      "45169945": 2,
+      "43634809": 3
+    }
+  },
+  {
+    "result_set_id": "rs_300032",
+    "user_id": "usr_1012",
+    "raw_query": "cần thuê căn hộ Phường Phú Thuận full nội thất, dưới 7.6 tỷ, 2 phòng ngủ, gần trường học",
+    "filters_applied": {
+      "district": "Phường Phú Thuận",
+      "price_max": 7.6,
+      "bedrooms": 2
+    },
+    "ground_truth": [
+      {
+        "listing_id": 45227501,
+        "rank": 0,
+        "score": 0.992
+      },
+      {
+        "listing_id": 45222094,
+        "rank": 1,
+        "score": 0.775
+      },
+      {
+        "listing_id": 44960399,
+        "rank": 2,
+        "score": 0.767
+      },
+      {
+        "listing_id": 43136703,
+        "rank": 3,
+        "score": 0.763
+      },
+      {
+        "listing_id": 45231927,
+        "rank": 4,
+        "score": 0.767
+      },
+      {
+        "listing_id": 45088537,
+        "rank": 5,
+        "score": 0.766
+      },
+      {
+        "listing_id": 44958250,
+        "rank": 6,
+        "score": 0.767
+      },
+      {
+        "listing_id": 44887265,
+        "rank": 7,
+        "score": 0.778
+      },
+      {
+        "listing_id": 45075295,
+        "rank": 8,
+        "score": 0.761
+      },
+      {
+        "listing_id": 45157388,
+        "rank": 9,
+        "score": 0.781
+      }
+    ],
+    "llm_output_picks": [
+      45227501,
+      45222094,
+      44960399
+    ],
+    "live_pred": [
+      {
+        "listing_id": 43652465,
+        "score": 0.6207,
+        "rank": 0
+      },
+      {
+        "listing_id": 45151230,
+        "score": 0.6171,
+        "rank": 1
+      },
+      {
+        "listing_id": 45105255,
+        "score": 0.61,
+        "rank": 2
+      },
+      {
+        "listing_id": 45100589,
+        "score": 0.6092,
+        "rank": 3
+      },
+      {
+        "listing_id": 44910889,
+        "score": 0.6053,
+        "rank": 4
+      },
+      {
+        "listing_id": 45088537,
+        "score": 0.6025,
+        "rank": 5
+      },
+      {
+        "listing_id": 44904039,
+        "score": 0.6021,
+        "rank": 6
+      },
+      {
+        "listing_id": 45032566,
+        "score": 0.6014,
+        "rank": 7
+      },
+      {
+        "listing_id": 45084742,
+        "score": 0.6004,
+        "rank": 8
+      },
+      {
+        "listing_id": 44530340,
+        "score": 0.5997,
+        "rank": 9
+      }
+    ],
+    "n_hits": 1,
+    "hit_listing_ids": [
+      45088537
+    ],
+    "hit_positions_in_pred": {
+      "45088537": 5
+    }
+  },
+  {
+    "result_set_id": "rs_300037",
+    "user_id": "usr_1014",
+    "raw_query": "cần mua nhà đất 2 phòng ngủ ở Xã Nhà Bè để ở, dưới 22.9 tỷ, gần trường học",
+    "filters_applied": {
+      "district": "Xã Nhà Bè",
+      "price_max": 22.9,
+      "bedrooms": 2
+    },
+    "ground_truth": [
+      {
+        "listing_id": 44949894,
+        "rank": 0,
+        "score": 1.0
+      },
+      {
+        "listing_id": 44963713,
+        "rank": 1,
+        "score": 1.003
+      },
+      {
+        "listing_id": 45143889,
+        "rank": 2,
+        "score": 0.991
+      },
+      {
+        "listing_id": 39465019,
+        "rank": 3,
+        "score": 1.004
+      },
+      {
+        "listing_id": 44829409,
+        "rank": 4,
+        "score": 0.999
+      },
+      {
+        "listing_id": 45268965,
+        "rank": 5,
+        "score": 0.995
+      },
+      {
+        "listing_id": 45054263,
+        "rank": 6,
+        "score": 0.992
+      },
+      {
+        "listing_id": 45256036,
+        "rank": 7,
+        "score": 1.004
+      },
+      {
+        "listing_id": 44877579,
+        "rank": 8,
+        "score": 1.001
+      },
+      {
+        "listing_id": 44962142,
+        "rank": 9,
+        "score": 0.995
+      }
+    ],
+    "llm_output_picks": [
+      44949894,
+      44963713,
+      45143889
+    ],
+    "live_pred": [
+      {
+        "listing_id": 44572247,
+        "score": 0.7016,
+        "rank": 0
+      },
+      {
+        "listing_id": 44885592,
+        "score": 0.7015,
+        "rank": 1
+      },
+      {
+        "listing_id": 45253417,
+        "score": 0.697,
+        "rank": 2
+      },
+      {
+        "listing_id": 44385645,
+        "score": 0.6953,
+        "rank": 3
+      },
+      {
+        "listing_id": 44378630,
+        "score": 0.693,
+        "rank": 4
+      },
+      {
+        "listing_id": 44261451,
+        "score": 0.6914,
+        "rank": 5
+      },
+      {
+        "listing_id": 44089093,
+        "score": 0.689,
+        "rank": 6
+      },
+      {
+        "listing_id": 44598931,
+        "score": 0.6888,
+        "rank": 7
+      },
+      {
+        "listing_id": 45054263,
+        "score": 0.686,
+        "rank": 8
+      },
+      {
+        "listing_id": 44635628,
+        "score": 0.6834,
+        "rank": 9
+      }
+    ],
+    "n_hits": 1,
+    "hit_listing_ids": [
+      45054263
+    ],
+    "hit_positions_in_pred": {
+      "45054263": 8
+    }
+  },
+  {
+    "result_set_id": "rs_300075",
+    "user_id": "usr_1029",
+    "raw_query": "tìm nhà đất Phường An Phú Đông dưới 25.9 tỷ tiềm năng tăng giá, 2 phòng ngủ, gần trường học",
+    "filters_applied": {
+      "district": "Phường An Phú Đông",
+      "price_max": 25.9,
+      "bedrooms": 2
+    },
+    "ground_truth": [
+      {
+        "listing_id": 45127270,
+        "rank": 0,
+        "score": 1.005
+      },
+      {
+        "listing_id": 44390382,
+        "rank": 1,
+        "score": 0.993
+      },
+      {
+        "listing_id": 44670333,
+        "rank": 2,
+        "score": 0.99
+      },
+      {
+        "listing_id": 45083827,
+        "rank": 3,
+        "score": 1.002
+      },
+      {
+        "listing_id": 45192019,
+        "rank": 4,
+        "score": 1.008
+      },
+      {
+        "listing_id": 44639724,
+        "rank": 5,
+        "score": 1.006
+      },
+      {
+        "listing_id": 44269504,
+        "rank": 6,
+        "score": 0.999
+      },
+      {
+        "listing_id": 45180546,
+        "rank": 7,
+        "score": 0.77
+      },
+      {
+        "listing_id": 45250947,
+        "rank": 8,
+        "score": 0.687
+      },
+      {
+        "listing_id": 45236207,
+        "rank": 9,
+        "score": 0.684
+      }
+    ],
+    "llm_output_picks": [
+      45127270,
+      44390382,
+      44670333
+    ],
+    "live_pred": [
+      {
+        "listing_id": 45016734,
+        "score": 0.7684,
+        "rank": 0
+      },
+      {
+        "listing_id": 44139929,
+        "score": 0.7667,
+        "rank": 1
+      },
+      {
+        "listing_id": 44619715,
+        "score": 0.7575,
+        "rank": 2
+      },
+      {
+        "listing_id": 45120025,
+        "score": 0.7483,
+        "rank": 3
+      },
+      {
+        "listing_id": 44269504,
+        "score": 0.7456,
+        "rank": 4
+      },
+      {
+        "listing_id": 45226530,
+        "score": 0.7432,
+        "rank": 5
+      },
+      {
+        "listing_id": 45016136,
+        "score": 0.7358,
+        "rank": 6
+      },
+      {
+        "listing_id": 45250947,
+        "score": 0.7324,
+        "rank": 7
+      },
+      {
+        "listing_id": 45127270,
+        "score": 0.7312,
+        "rank": 8
+      },
+      {
+        "listing_id": 45158404,
+        "score": 0.721,
+        "rank": 9
+      }
+    ],
+    "n_hits": 3,
+    "hit_listing_ids": [
+      45127270,
+      44269504,
+      45250947
+    ],
+    "hit_positions_in_pred": {
+      "45127270": 8,
+      "44269504": 4,
+      "45250947": 7
+    }
+  },
+  {
+    "result_set_id": "rs_300292",
+    "user_id": "usr_1118",
+    "raw_query": "căn hộ Phường Diên Hồng dưới 2.6 tỷ cho gia đình, 1 phòng ngủ, có thang máy",
+    "filters_applied": {
+      "district": "Phường Diên Hồng",
+      "price_max": 2.6,
+      "bedrooms": 1
+    },
+    "ground_truth": [
+      {
+        "listing_id": 44706860,
+        "rank": 0,
+        "score": 0.78
+      },
+      {
+        "listing_id": 44723754,
+        "rank": 1,
+        "score": 0.542
+      },
+      {
+        "listing_id": 45233559,
+        "rank": 2,
+        "score": 0.541
+      },
+      {
+        "listing_id": 44713249,
+        "rank": 3,
+        "score": 0.303
+      },
+      {
+        "listing_id": 44689369,
+        "rank": 4,
+        "score": 0.31
+      },
+      {
+        "listing_id": 43684138,
+        "rank": 5,
+        "score": 0.223
+      },
+      {
+        "listing_id": 44965701,
+        "rank": 6,
+        "score": 0.226
+      },
+      {
+        "listing_id": 42527051,
+        "rank": 7,
+        "score": 0.231
+      },
+      {
+        "listing_id": 43684191,
+        "rank": 8,
+        "score": 0.237
+      },
+      {
+        "listing_id": 45211803,
+        "rank": 9,
+        "score": 0.234
+      }
+    ],
+    "llm_output_picks": [
+      44706860,
+      44723754,
+      45233559
+    ],
+    "live_pred": [
+      {
+        "listing_id": 44706860,
+        "score": 0.5203,
+        "rank": 0
+      },
+      {
+        "listing_id": 44965701,
+        "score": 0.5081,
+        "rank": 1
+      },
+      {
+        "listing_id": 44713249,
+        "score": 0.5008,
+        "rank": 2
+      },
+      {
+        "listing_id": 44689369,
+        "score": 0.5003,
+        "rank": 3
+      },
+      {
+        "listing_id": 44130060,
+        "score": 0.4924,
+        "rank": 4
+      },
+      {
+        "listing_id": 42527051,
+        "score": 0.49,
+        "rank": 5
+      },
+      {
+        "listing_id": 44723754,
+        "score": 0.4885,
+        "rank": 6
+      },
+      {
+        "listing_id": 43684191,
+        "score": 0.4882,
+        "rank": 7
+      },
+      {
+        "listing_id": 43317208,
+        "score": 0.4868,
+        "rank": 8
+      },
+      {
+        "listing_id": 40901271,
+        "score": 0.4867,
+        "rank": 9
+      }
+    ],
+    "n_hits": 7,
+    "hit_listing_ids": [
+      44706860,
+      44723754,
+      44713249,
+      44689369,
+      44965701,
+      42527051,
+      43684191
+    ],
+    "hit_positions_in_pred": {
+      "44706860": 0,
+      "44723754": 6,
+      "44713249": 2,
+      "44689369": 3,
+      "44965701": 1,
+      "42527051": 5,
+      "43684191": 7
+    }
+  },
+  {
+    "result_set_id": "rs_300468",
+    "user_id": "usr_1192",
+    "raw_query": "nhà đất Phường Phú Nhuận dưới 2.3 tỷ cho gia đình, 2 phòng ngủ, gần trường học",
+    "filters_applied": {
+      "district": "Phường Phú Nhuận",
+      "price_max": 2.3,
+      "bedrooms": 2
+    },
+    "ground_truth": [
+      {
+        "listing_id": 45261537,
+        "rank": 0,
+        "score": 0.765
+      },
+      {
+        "listing_id": 45189864,
+        "rank": 1,
+        "score": 0.767
+      },
+      {
+        "listing_id": 45036689,
+        "rank": 2,
+        "score": 0.772
+      },
+      {
+        "listing_id": 45025194,
+        "rank": 3,
+        "score": 0.772
+      },
+      {
+        "listing_id": 45267558,
+        "rank": 4,
+        "score": 0.77
+      },
+      {
+        "listing_id": 44994985,
+        "rank": 5,
+        "score": 0.768
+      },
+      {
+        "listing_id": 45079987,
+        "rank": 6,
+        "score": 0.763
+      },
+      {
+        "listing_id": 45263166,
+        "rank": 7,
+        "score": 0.449
+      },
+      {
+        "listing_id": 43775385,
+        "rank": 8,
+        "score": 0.454
+      },
+      {
+        "listing_id": 45214659,
+        "rank": 9,
+        "score": 0.464
+      }
+    ],
+    "llm_output_picks": [
+      45261537,
+      45189864,
+      45036689
+    ],
+    "live_pred": [
+      {
+        "listing_id": 45075183,
+        "score": 0.7324,
+        "rank": 0
+      },
+      {
+        "listing_id": 45272297,
+        "score": 0.7258,
+        "rank": 1
+      },
+      {
+        "listing_id": 45255723,
+        "score": 0.7189,
+        "rank": 2
+      },
+      {
+        "listing_id": 45261537,
+        "score": 0.6998,
+        "rank": 3
+      },
+      {
+        "listing_id": 44784242,
+        "score": 0.6973,
+        "rank": 4
+      },
+      {
+        "listing_id": 45265897,
+        "score": 0.697,
+        "rank": 5
+      },
+      {
+        "listing_id": 45266718,
+        "score": 0.6958,
+        "rank": 6
+      },
+      {
+        "listing_id": 45252566,
+        "score": 0.6931,
+        "rank": 7
+      },
+      {
+        "listing_id": 44101006,
+        "score": 0.6851,
+        "rank": 8
+      },
+      {
+        "listing_id": 44939112,
+        "score": 0.6849,
+        "rank": 9
+      }
+    ],
+    "n_hits": 1,
+    "hit_listing_ids": [
+      45261537
+    ],
+    "hit_positions_in_pred": {
+      "45261537": 3
+    }
+  }
+]

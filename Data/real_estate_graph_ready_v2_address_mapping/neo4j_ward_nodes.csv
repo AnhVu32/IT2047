@@ -1,0 +1,113 @@
+ward_id:ID(Ward),name:string,normalized_name:string,aliases:string,ward_type:string,city_province:string,:LABEL
+ward|ho-chi-minh|phuong-an-hoi-ong,An Hội Đông,an hoi dong,"An Hội Đông|an hoi dong|an hoi ong|An Hội Đông, Hồ Chí Minh|an hoi dong ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-an-hoi-tay,An Hội Tây,an hoi tay,"An Hội Tây|an hoi tay|An Hội Tây, Hồ Chí Minh|an hoi tay ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-an-khanh,An Khánh,an khanh,"An Khánh|an khanh|An Khánh, Hồ Chí Minh|an khanh ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-an-lac,An Lạc,an lac,"An Lạc|an lac|An Lạc, Hồ Chí Minh|an lac ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-an-nhon,An Nhơn,an nhon,"An Nhơn|an nhon|An Nhơn, Hồ Chí Minh|an nhon ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-an-ong,An Đông,an dong,"An Đông|an dong|an ong|An Đông, Hồ Chí Minh|an dong ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-an-phu-ong,An Phú Đông,an phu dong,"An Phú Đông|an phu dong|an phu ong|An Phú Đông, Hồ Chí Minh|an phu dong ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-ban-co,Bàn Cờ,ban co,"Bàn Cờ|ban co|Bàn Cờ, Hồ Chí Minh|ban co ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-bay-hien,Bảy Hiền,bay hien,"Bảy Hiền|bay hien|Bảy Hiền, Hồ Chí Minh|bay hien ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-ben-thanh,Bến Thành,ben thanh,"Bến Thành|ben thanh|Bến Thành, Hồ Chí Minh|ben thanh ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-duong,Bình Dương,binh duong,"Bình Dương|binh duong|Bình Dương, Hồ Chí Minh|binh duong ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-hoa,Bình Hòa,binh hoa,"Bình Hòa|binh hoa|Bình Hòa, Hồ Chí Minh|binh hoa ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-hung-hoa,Bình Hưng Hòa,binh hung hoa,"Bình Hưng Hòa|binh hung hoa|Bình Hưng Hòa, Hồ Chí Minh|binh hung hoa ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-loi-trung,Bình Lợi Trung,binh loi trung,"Bình Lợi Trung|binh loi trung|Bình Lợi Trung, Hồ Chí Minh|binh loi trung ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-ong,Bình Đông,binh dong,"Bình Đông|binh dong|binh ong|Bình Đông, Hồ Chí Minh|binh dong ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-phu,Bình Phú,binh phu,"Bình Phú|binh phu|Bình Phú, Hồ Chí Minh|binh phu ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-quoi,Bình Quới,binh quoi,"Bình Quới|binh quoi|Bình Quới, Hồ Chí Minh|binh quoi ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-tan,Bình Tân,binh tan,"Bình Tân|binh tan|Bình Tân, Hồ Chí Minh|binh tan ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-tay,Bình Tây,binh tay,"Bình Tây|binh tay|Bình Tây, Hồ Chí Minh|binh tay ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-thanh,Bình Thạnh,binh thanh,"Bình Thạnh|binh thanh|Bình Thạnh, Hồ Chí Minh|binh thanh ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-thoi,Bình Thới,binh thoi,"Bình Thới|binh thoi|Bình Thới, Hồ Chí Minh|binh thoi ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-tien,Bình Tiên,binh tien,"Bình Tiên|binh tien|Bình Tiên, Hồ Chí Minh|binh tien ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-tri-ong,Bình Trị Đông,binh tri dong,"Bình Trị Đông|binh tri dong|binh tri ong|Bình Trị Đông, Hồ Chí Minh|binh tri dong ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-trung,Bình Trưng,binh trung,"Bình Trưng|binh trung|Bình Trưng, Hồ Chí Minh|binh trung ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-cat-lai,Cát Lái,cat lai,"Cát Lái|cat lai|Cát Lái, Hồ Chí Minh|cat lai ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-cau-kieu,Cầu Kiệu,cau kieu,"Cầu Kiệu|cau kieu|Cầu Kiệu, Hồ Chí Minh|cau kieu ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-cau-ong-lanh,Cầu Ông Lãnh,cau ong lanh,"Cầu Ông Lãnh|cau ong lanh|Cầu Ông Lãnh, Hồ Chí Minh|cau ong lanh ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-chanh-hiep,Chánh Hiệp,chanh hiep,"Chánh Hiệp|chanh hiep|Chánh Hiệp, Hồ Chí Minh|chanh hiep ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-chanh-hung,Chánh Hưng,chanh hung,"Chánh Hưng|chanh hung|Chánh Hưng, Hồ Chí Minh|chanh hung ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-chanh-phu-hoa,Chánh Phú Hòa,chanh phu hoa,"Chánh Phú Hòa|chanh phu hoa|Chánh Phú Hòa, Hồ Chí Minh|chanh phu hoa ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-cho-lon,Chợ Lớn,cho lon,"Chợ Lớn|cho lon|Chợ Lớn, Hồ Chí Minh|cho lon ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-cho-quan,Chợ Quán,cho quan,"Chợ Quán|cho quan|Chợ Quán, Hồ Chí Minh|cho quan ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-di-an,Dĩ An,di an,"Dĩ An|di an|Dĩ An, Hồ Chí Minh|di an ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-dien-hong,Diên Hồng,dien hong,"Diên Hồng|dien hong|Diên Hồng, Hồ Chí Minh|dien hong ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-gia-inh,Gia Định,gia dinh,"Gia Định|gia dinh|gia inh|Gia Định, Hồ Chí Minh|gia dinh ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-go-vap,Gò Vấp,go vap,"Gò Vấp|go vap|Gò Vấp, Hồ Chí Minh|go vap ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-hanh-thong,Hạnh Thông,hanh thong,"Hạnh Thông|hanh thong|Hạnh Thông, Hồ Chí Minh|hanh thong ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-hiep-binh,Hiệp Bình,hiep binh,"Hiệp Bình|hiep binh|Hiệp Bình, Hồ Chí Minh|hiep binh ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-hoa-binh,Hòa Bình,hoa binh,"Hòa Bình|hoa binh|Hòa Bình, Hồ Chí Minh|hoa binh ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-hoa-hung,Hòa Hưng,hoa hung,"Hòa Hưng|hoa hung|Hòa Hưng, Hồ Chí Minh|hoa hung ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-khanh-hoi,Khánh Hội,khanh hoi,"Khánh Hội|khanh hoi|Khánh Hội, Hồ Chí Minh|khanh hoi ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-linh-xuan,Linh Xuân,linh xuan,"Linh Xuân|linh xuan|Linh Xuân, Hồ Chí Minh|linh xuan ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-long-binh,Long Bình,long binh,"Long Bình|long binh|Long Bình, Hồ Chí Minh|long binh ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-long-huong,Long Hương,long huong,"Long Hương|long huong|Long Hương, Hồ Chí Minh|long huong ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-long-nguyen,Long Nguyên,long nguyen,"Long Nguyên|long nguyen|Long Nguyên, Hồ Chí Minh|long nguyen ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-long-phuoc,Long Phước,long phuoc,"Long Phước|long phuoc|Long Phước, Hồ Chí Minh|long phuoc ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-long-truong,Long Trường,long truong,"Long Trường|long truong|Long Trường, Hồ Chí Minh|long truong ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-minh-phung,Minh Phụng,minh phung,"Minh Phụng|minh phung|Minh Phụng, Hồ Chí Minh|minh phung ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-nhieu-loc,Nhiêu Lộc,nhieu loc,"Nhiêu Lộc|nhieu loc|Nhiêu Lộc, Hồ Chí Minh|nhieu loc ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-ong-hoa,Đông Hòa,dong hoa,"Đông Hòa|dong hoa|ong hoa|Đông Hòa, Hồ Chí Minh|dong hoa ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-ong-hung-thuan,Đông Hưng Thuận,dong hung thuan,"Đông Hưng Thuận|dong hung thuan|ong hung thuan|Đông Hưng Thuận, Hồ Chí Minh|dong hung thuan ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phu-inh,Phú Định,phu dinh,"Phú Định|phu dinh|phu inh|Phú Định, Hồ Chí Minh|phu dinh ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phu-lam,Phú Lâm,phu lam,"Phú Lâm|phu lam|Phú Lâm, Hồ Chí Minh|phu lam ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phu-loi,Phú Lợi,phu loi,"Phú Lợi|phu loi|Phú Lợi, Hồ Chí Minh|phu loi ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phu-nhuan,Phú Nhuận,phu nhuan,"Phú Nhuận|phu nhuan|Phú Nhuận, Hồ Chí Minh|phu nhuan ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phu-thanh,Phú Thạnh,phu thanh,"Phú Thạnh|phu thanh|Phú Thạnh, Hồ Chí Minh|phu thanh ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phu-tho,Phú Thọ,phu tho,"Phú Thọ|phu tho|Phú Thọ, Hồ Chí Minh|phu tho ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phu-tho-hoa,Phú Thọ Hòa,phu tho hoa,"Phú Thọ Hòa|phu tho hoa|Phú Thọ Hòa, Hồ Chí Minh|phu tho hoa ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phu-thuan,Phú Thuận,phu thuan,"Phú Thuận|phu thuan|Phú Thuận, Hồ Chí Minh|phu thuan ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phuoc-long,Phước Long,phuoc long,"Phước Long|phuoc long|Phước Long, Hồ Chí Minh|phuoc long ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phuoc-thang,Phước Thắng,phuoc thang,"Phước Thắng|phuoc thang|Phước Thắng, Hồ Chí Minh|phuoc thang ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-rach-dua,Rạch Dừa,rach dua,"Rạch Dừa|rach dua|Rạch Dừa, Hồ Chí Minh|rach dua ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-sai-gon,Sài Gòn,sai gon,"Sài Gòn|sai gon|Sài Gòn, Hồ Chí Minh|sai gon ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tam-binh,Tam Bình,tam binh,"Tam Bình|tam binh|Tam Bình, Hồ Chí Minh|tam binh ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tam-thang,Tam Thắng,tam thang,"Tam Thắng|tam thang|Tam Thắng, Hồ Chí Minh|tam thang ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-binh,Tân Bình,tan binh,"Tân Bình|tan binh|Tân Bình, Hồ Chí Minh|tan binh ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-hoa,Tân Hòa,tan hoa,"Tân Hòa|tan hoa|Tân Hòa, Hồ Chí Minh|tan hoa ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-hung,Tân Hưng,tan hung,"Tân Hưng|tan hung|Tân Hưng, Hồ Chí Minh|tan hung ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-inh,Tân Định,tan dinh,"Tân Định|tan dinh|tan inh|Tân Định, Hồ Chí Minh|tan dinh ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-my,Tân Mỹ,tan my,"Tân Mỹ|tan my|Tân Mỹ, Hồ Chí Minh|tan my ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-ong-hiep,Tân Đông Hiệp,tan dong hiep,"Tân Đông Hiệp|tan dong hiep|tan ong hiep|Tân Đông Hiệp, Hồ Chí Minh|tan dong hiep ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-phu,Tân Phú,tan phu,"Tân Phú|tan phu|Tân Phú, Hồ Chí Minh|tan phu ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-son,Tân Sơn,tan son,"Tân Sơn|tan son|Tân Sơn, Hồ Chí Minh|tan son ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-son-hoa,Tân Sơn Hòa,tan son hoa,"Tân Sơn Hòa|tan son hoa|Tân Sơn Hòa, Hồ Chí Minh|tan son hoa ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-son-nhat,Tân Sơn Nhất,tan son nhat,"Tân Sơn Nhất|tan son nhat|Tân Sơn Nhất, Hồ Chí Minh|tan son nhat ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-son-nhi,Tân Sơn Nhì,tan son nhi,"Tân Sơn Nhì|tan son nhi|Tân Sơn Nhì, Hồ Chí Minh|tan son nhi ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-tao,Tân Tạo,tan tao,"Tân Tạo|tan tao|Tân Tạo, Hồ Chí Minh|tan tao ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-thoi-hiep,Tân Thới Hiệp,tan thoi hiep,"Tân Thới Hiệp|tan thoi hiep|Tân Thới Hiệp, Hồ Chí Minh|tan thoi hiep ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-thuan,Tân Thuận,tan thuan,"Tân Thuận|tan thuan|Tân Thuận, Hồ Chí Minh|tan thuan ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tang-nhon-phu,Tăng Nhơn Phú,tang nhon phu,"Tăng Nhơn Phú|tang nhon phu|Tăng Nhơn Phú, Hồ Chí Minh|tang nhon phu ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tay-thanh,Tây Thạnh,tay thanh,"Tây Thạnh|tay thanh|Tây Thạnh, Hồ Chí Minh|tay thanh ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-thanh-my-tay,Thạnh Mỹ Tây,thanh my tay,"Thạnh Mỹ Tây|thanh my tay|Thạnh Mỹ Tây, Hồ Chí Minh|thanh my tay ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-thoi-an,Thới An,thoi an,"Thới An|thoi an|Thới An, Hồ Chí Minh|thoi an ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-thoi-hoa,Thới Hòa,thoi hoa,"Thới Hòa|thoi hoa|Thới Hòa, Hồ Chí Minh|thoi hoa ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-thong-tay-hoi,Thông Tây Hội,thong tay hoi,"Thông Tây Hội|thong tay hoi|Thông Tây Hội, Hồ Chí Minh|thong tay hoi ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-thu-dau-mot,Thủ Dầu Một,thu dau mot,"Thủ Dầu Một|thu dau mot|Thủ Dầu Một, Hồ Chí Minh|thu dau mot ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-thu-uc,Thủ Đức,thu duc,"Thủ Đức|thu duc|thu uc|Thủ Đức, Hồ Chí Minh|thu duc ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-thuan-giao,Thuận Giao,thuan giao,"Thuận Giao|thuan giao|Thuận Giao, Hồ Chí Minh|thuan giao ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-trung-my-tay,Trung Mỹ Tây,trung my tay,"Trung Mỹ Tây|trung my tay|Trung Mỹ Tây, Hồ Chí Minh|trung my tay ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-uc-nhuan,Đức Nhuận,duc nhuan,"Đức Nhuận|duc nhuan|uc nhuan|Đức Nhuận, Hồ Chí Minh|duc nhuan ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-vinh-hoi,Vĩnh Hội,vinh hoi,"Vĩnh Hội|vinh hoi|Vĩnh Hội, Hồ Chí Minh|vinh hoi ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-vung-tau,Vũng Tàu,vung tau,"Vũng Tàu|vung tau|Vũng Tàu, Hồ Chí Minh|vung tau ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-vuon-lai,Vườn Lài,vuon lai,"Vườn Lài|vuon lai|Vườn Lài, Hồ Chí Minh|vuon lai ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-xom-chieu,Xóm Chiếu,xom chieu,"Xóm Chiếu|xom chieu|Xóm Chiếu, Hồ Chí Minh|xom chieu ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-xuan-hoa,Xuân Hòa,xuan hoa,"Xuân Hòa|xuan hoa|Xuân Hòa, Hồ Chí Minh|xuan hoa ho chi minh",phường,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-at-o,Đất Đỏ,dat do,"Đất Đỏ|dat do|at o|Đất Đỏ, Hồ Chí Minh|dat do ho chi minh",xã,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-ba-iem,Bà Điểm,ba diem,"Bà Điểm|ba diem|ba iem|Bà Điểm, Hồ Chí Minh|ba diem ho chi minh",xã,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-bau-bang,Bàu Bàng,bau bang,"Bàu Bàng|bau bang|Bàu Bàng, Hồ Chí Minh|bau bang ho chi minh",xã,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-binh-chanh,Bình Chánh,binh chanh,"Bình Chánh|binh chanh|Bình Chánh, Hồ Chí Minh|binh chanh ho chi minh",xã,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-binh-hung,Bình Hưng,binh hung,"Bình Hưng|binh hung|Bình Hưng, Hồ Chí Minh|binh hung ho chi minh",xã,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-binh-loi,Bình Lợi,binh loi,"Bình Lợi|binh loi|Bình Lợi, Hồ Chí Minh|binh loi ho chi minh",xã,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-hiep-phuoc,Hiệp Phước,hiep phuoc,"Hiệp Phước|hiep phuoc|Hiệp Phước, Hồ Chí Minh|hiep phuoc ho chi minh",xã,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-ho-tram,Hồ Tràm,ho tram,"Hồ Tràm|ho tram|Hồ Tràm, Hồ Chí Minh|ho tram ho chi minh",xã,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-hoc-mon,Hóc Môn,hoc mon,"Hóc Môn|hoc mon|Hóc Môn, Hồ Chí Minh|hoc mon ho chi minh",xã,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-hung-long,Hưng Long,hung long,"Hưng Long|hung long|Hưng Long, Hồ Chí Minh|hung long ho chi minh",xã,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-nha-be,Nhà Bè,nha be,"Nhà Bè|nha be|Nhà Bè, Hồ Chí Minh|nha be ho chi minh",xã,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-tan-an-hoi,Tân An Hội,tan an hoi,"Tân An Hội|tan an hoi|Tân An Hội, Hồ Chí Minh|tan an hoi ho chi minh",xã,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-tan-nhut,Tân Nhựt,tan nhut,"Tân Nhựt|tan nhut|Tân Nhựt, Hồ Chí Minh|tan nhut ho chi minh",xã,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-tan-vinh-loc,Tân Vĩnh Lộc,tan vinh loc,"Tân Vĩnh Lộc|tan vinh loc|Tân Vĩnh Lộc, Hồ Chí Minh|tan vinh loc ho chi minh",xã,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-tru-van-tho,Trừ Văn Thố,tru van tho,"Trừ Văn Thố|tru van tho|Trừ Văn Thố, Hồ Chí Minh|tru van tho ho chi minh",xã,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-vinh-loc,Vĩnh Lộc,vinh loc,"Vĩnh Lộc|vinh loc|Vĩnh Lộc, Hồ Chí Minh|vinh loc ho chi minh",xã,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-xuan-thoi-son,Xuân Thới Sơn,xuan thoi son,"Xuân Thới Sơn|xuan thoi son|Xuân Thới Sơn, Hồ Chí Minh|xuan thoi son ho chi minh",xã,Hồ Chí Minh,Ward

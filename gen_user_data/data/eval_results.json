@@ -1,0 +1,37 @@
+{
+  "cutoff": "2026-04-06T19:36:19Z",
+  "k": 10,
+  "num_neg_samples": 100,
+  "results": {
+    "popularity": {
+      "NDCG@10": 0.0603,
+      "MRR@10": 0.307,
+      "Recall@10": 0.1099,
+      "Precision@10": 0.0208,
+      "MAP@10": 0.034,
+      "HitRate@10": 0.1991,
+      "users_evaluated": 221,
+      "engine": "recommenders (cloned repo)"
+    },
+    "content": {
+      "NDCG@10": 0.1489,
+      "MRR@10": 0.4225,
+      "Recall@10": 0.246,
+      "Precision@10": 0.0412,
+      "MAP@10": 0.0973,
+      "HitRate@10": 0.371,
+      "users_evaluated": 221,
+      "engine": "recommenders (cloned repo)"
+    },
+    "embed_cf": {
+      "NDCG@10": 0.0589,
+      "MRR@10": 0.3588,
+      "Recall@10": 0.1091,
+      "Precision@10": 0.0181,
+      "MAP@10": 0.0368,
+      "HitRate@10": 0.1719,
+      "users_evaluated": 221,
+      "engine": "recommenders (cloned repo)"
+    }
+  }
+}

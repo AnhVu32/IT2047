@@ -1,0 +1,23 @@
+.DS_Store
+__pycache__/
+.venv/
+.env
+*.log
+*.pyc
+
+# Generated outputs
+Final_Data.json
+*.npy
+*.csv
+*_summary.json
+property_id_index*.json
+
+# Large/derived crawl outputs
+data/images/
+data/img/
+data/*.csv
+data/*.xlsx
+data/*.json
+
+# Keep the Excel template required by export pipeline
+!data/exceltemplate.xlsx

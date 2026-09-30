@@ -1,0 +1,220 @@
+﻿source_column,action,target,reason,nonempty_rows,coverage
+listing_id,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+listing_type,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+posted_date,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+expiry_date,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+property_type,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+city_province,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+district,DROP_DUPLICATE_DERIVED,,Duplicated or superseded by a canonical final field.,3037,100.00%
+Folder,DROP_RAW_PIPELINE,,"Raw folder/link/legacy field used during collection or enrichment, not graph semantics.",3037,100.00%
+title,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+address,KEEP_RENAMED_NORMALIZED,address_new; address_new_normalized,Current administrative address retained explicitly and normalized for location search.,3037,100.00%
+old_address,KEEP_NORMALIZED,address_old; address_old_normalized; FormerAdminArea mapping,Required to resolve pre-reorganization addresses and map them to current wards.,3037,100.00%
+location_link,DROP_RAW_PIPELINE,,"Raw folder/link/legacy field used during collection or enrichment, not graph semantics.",3037,100.00%
+latitude_longitude,DROP_DUPLICATE_DERIVED,,Duplicated or superseded by a canonical final field.,3037,100.00%
+description,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+area_price_history,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,2986,98.32%
+price_range,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+area,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+bedrooms,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,2697,88.80%
+bathrooms,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,2574,84.75%
+legal_status,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+furnishing,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+balcony_direction,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,551,18.14%
+house_direction,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,829,27.30%
+pool,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+gym,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+park,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+bbq,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+kids_playground,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+sports_court,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+security_24h,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+reception,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+elevator,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+parking,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+near_metro,DROP_NOISY_LEGACY,,Text-extracted proximity flag is noisy and superseded by computed driving-distance fields.,3037,100.00%
+near_bus,DROP_NOISY_LEGACY,,Text-extracted proximity flag is noisy and superseded by computed driving-distance fields.,3037,100.00%
+near_highway,DROP_NOISY_LEGACY,,Text-extracted proximity flag is noisy and superseded by computed driving-distance fields.,3037,100.00%
+near_school,DROP_NOISY_LEGACY,,Text-extracted proximity flag is noisy and superseded by computed driving-distance fields.,3037,100.00%
+near_hospital,DROP_NOISY_LEGACY,,Text-extracted proximity flag is noisy and superseded by computed driving-distance fields.,3037,100.00%
+near_mall,DROP_NOISY_LEGACY,,Text-extracted proximity flag is noisy and superseded by computed driving-distance fields.,3037,100.00%
+near_market,DROP_NOISY_LEGACY,,Text-extracted proximity flag is noisy and superseded by computed driving-distance fields.,3037,100.00%
+near_park,DROP_NOISY_LEGACY,,Text-extracted proximity flag is noisy and superseded by computed driving-distance fields.,3037,100.00%
+river_view,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+park_view,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+city_view,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+balcony,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+garden,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+garage,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+terrace,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+frontage,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,1948,64.14%
+access_road,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,1780,58.61%
+latitude_original,DROP_DUPLICATE_DERIVED,,Duplicated or superseded by a canonical final field.,3037,100.00%
+longitude_original,DROP_DUPLICATE_DERIVED,,Duplicated or superseded by a canonical final field.,3037,100.00%
+latitude,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+longitude,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+coordinate_status,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+coordinate_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+coordinate_confidence,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+coordinate_enriched_at,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+latitude_longitude_enriched,DROP_DUPLICATE_DERIVED,,Duplicated or superseded by a canonical final field.,3037,100.00%
+map_link_enriched,DROP_RAW_PIPELINE,,"Raw folder/link/legacy field used during collection or enrichment, not graph semantics.",3037,100.00%
+location_label,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+street_name,DROP_DUPLICATE_DERIVED,,Duplicated or superseded by a canonical final field.,2805,92.36%
+ward_commune,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+ward_commune_type,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+ward_commune_name,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+former_admin_area,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+geohash_6,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+geohash_7,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+location_graph_key,DROP_DUPLICATE_DERIVED,,Duplicated or superseded by a canonical final field.,3037,100.00%
+geo_cluster_150m,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+geo_cluster_size,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_listing_distance_m,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+listing_density_1km,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+distance_to_ben_thanh_km,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+distance_band_ben_thanh,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearby_category_count,DROP_DUPLICATE_DERIVED,,Duplicated or superseded by a canonical final field.,3037,100.00%
+nearby_categories,DROP_DUPLICATE_DERIVED,,Duplicated or superseded by a canonical final field.,2328,76.65%
+road_name_osm,DROP_DUPLICATE_DERIVED,,Duplicated or superseded by a canonical final field.,2523,83.08%
+road_snap_distance_m,KEEP_NORMALIZED,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_hospital_name,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_hospital_osm_id,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_hospital_latitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_hospital_longitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_hospital_street,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,2540,83.64%
+nearest_hospital_street_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_hospital_address_osm,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,2289,75.37%
+nearest_hospital_operator,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,229,7.54%
+hospital_straight_line_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+hospital_driving_distance_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+hospital_driving_duration_min,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+road_name_final,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,2966,97.66%
+road_name_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+hospital_data_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+hospital_route_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+travel_enriched_at,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_school_name,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_school_osm_id,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_school_latitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_school_longitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_school_street,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,2670,87.92%
+nearest_school_street_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_school_address_osm,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,1928,63.48%
+nearest_school_operator,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,74,2.44%
+school_straight_line_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+school_driving_distance_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+school_driving_duration_min,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+school_data_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+school_route_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_college_university_name,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_college_university_osm_id,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_college_university_latitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_college_university_longitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_college_university_street,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,2013,66.28%
+nearest_college_university_street_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_college_university_address_osm,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,1685,55.48%
+nearest_college_university_operator,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,79,2.60%
+college_university_straight_line_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+college_university_driving_distance_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+college_university_driving_duration_min,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+college_university_data_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+college_university_route_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_metro_name,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_metro_osm_id,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_metro_latitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_metro_longitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_metro_street,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,2419,79.65%
+nearest_metro_street_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_metro_address_osm,DROP_EMPTY,,Column is empty for every row.,0,0.00%
+nearest_metro_operator,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+metro_straight_line_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+metro_driving_distance_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+metro_driving_duration_min,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+metro_data_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+metro_route_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_mall_name,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_mall_osm_id,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_mall_latitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_mall_longitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_mall_street,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,2085,68.65%
+nearest_mall_street_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_mall_address_osm,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,1437,47.32%
+nearest_mall_operator,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,244,8.03%
+mall_straight_line_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+mall_driving_distance_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+mall_driving_duration_min,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+mall_data_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+mall_route_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_market_name,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_market_osm_id,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_market_latitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_market_longitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_market_street,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,2115,69.64%
+nearest_market_street_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_market_address_osm,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,697,22.95%
+nearest_market_operator,DROP_EMPTY,,Column is empty for every row.,0,0.00%
+market_straight_line_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+market_driving_distance_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+market_driving_duration_min,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+market_data_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+market_route_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_supermarket_name,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_supermarket_osm_id,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_supermarket_latitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_supermarket_longitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_supermarket_street,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,2717,89.46%
+nearest_supermarket_street_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_supermarket_address_osm,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,2050,67.50%
+nearest_supermarket_operator,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,312,10.27%
+supermarket_straight_line_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+supermarket_driving_distance_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+supermarket_driving_duration_min,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+supermarket_data_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+supermarket_route_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_park_name,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_park_osm_id,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_park_latitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_park_longitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_park_street,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,2088,68.75%
+nearest_park_street_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_park_address_osm,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,1061,34.94%
+nearest_park_operator,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,190,6.26%
+park_straight_line_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+park_driving_distance_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+park_driving_duration_min,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+park_data_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+park_route_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_bus_stop_name,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_bus_stop_osm_id,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_bus_stop_latitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_bus_stop_longitude,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+nearest_bus_stop_street,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,2906,95.69%
+nearest_bus_stop_street_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+nearest_bus_stop_address_osm,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,42,1.38%
+nearest_bus_stop_operator,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,9,0.30%
+bus_stop_straight_line_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+bus_stop_driving_distance_km,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+bus_stop_driving_duration_min,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+bus_stop_data_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+bus_stop_route_source,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+within_school_2km_driving,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+within_college_university_5km_driving,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+within_metro_3km_driving,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+within_mall_5km_driving,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+within_market_2km_driving,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+within_supermarket_2km_driving,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+within_park_5km_driving,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+within_bus_stop_2km_driving,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+amenity_types_within_threshold_count,KEEP,filtered master; graph node/edge files,Required as graph property or relationship attribute.,3037,100.00%
+amenities_travel_enriched_at,DROP_TRACE_AUDIT,,"Pipeline source, routing source, street-source or enrichment timestamp; not required at graph runtime.",3037,100.00%
+[derived] listing_node_id,ADD,listing nodes and relationships,Unique Neo4j ID; suffixes duplicated listing_id values.,3037,100.00%
+[derived] duplicate_index,ADD,listing nodes,Preserves every duplicated source listing without ID collision.,3037,100.00%
+[derived] data_quality_flags,ADD,listing nodes,"Compact runtime flags for duplicate ID, malformed area, low coordinate confidence and large road snap.",,
+[derived] amenity_id,ADD,amenity nodes,Uses globally unique OSM type/id as the graph amenity ID.,1896,100.00%
+[derived] ward_id,ADD,ward nodes and relationships,Deterministic normalized ward identifier.,112,100.00%
+[derived] street_id,ADD,street nodes and relationships,Deterministic hash of city + ward + canonical street.,1137,100.00%
+[derived] address_new_normalized,ADD,listing nodes,Accent-free lowercase current address.,3037,100.00%
+[derived] address_old_normalized,ADD,listing nodes,Accent-free lowercase former address.,3037,100.00%
+[derived] former_area_id,ADD,FormerAdminArea nodes and relationships,Deterministic former-area ID from former province and area name.,32,100.00%
+[derived] Ward-MAPPED_FROM-FormerAdminArea,ADD,ward/former-area relationships,Many-to-many mapping that preserves administrative boundary changes.,122,100.00%

@@ -1,0 +1,113 @@
+﻿ward_id:ID(Ward),name:string,ward_type:string,former_admin_area:string,city_province:string,:LABEL
+ward|ho-chi-minh|phuong-an-hoi-ong,An Hội Đông,phường,Quận Gò Vấp,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-an-hoi-tay,An Hội Tây,phường,Quận Gò Vấp,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-an-khanh,An Khánh,phường,Quận 2,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-an-lac,An Lạc,phường,Quận Bình Tân,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-an-nhon,An Nhơn,phường,Quận Gò Vấp,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-an-ong,An Đông,phường,Quận 5,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-an-phu-ong,An Phú Đông,phường,Quận 12,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-ban-co,Bàn Cờ,phường,Quận 3,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-bay-hien,Bảy Hiền,phường,Quận Tân Bình,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-ben-thanh,Bến Thành,phường,Quận 1,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-duong,Bình Dương,phường,Thành Phố Thủ Dầu Một,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-hoa,Bình Hòa,phường,Thành Phố Thuận An,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-hung-hoa,Bình Hưng Hòa,phường,Quận Bình Tân,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-loi-trung,Bình Lợi Trung,phường,Quận Bình Thạnh,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-ong,Bình Đông,phường,Quận 8,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-phu,Bình Phú,phường,Quận 6,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-quoi,Bình Quới,phường,Quận Bình Thạnh,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-tan,Bình Tân,phường,Quận Bình Tân,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-tay,Bình Tây,phường,Quận 6,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-thanh,Bình Thạnh,phường,Quận Bình Thạnh,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-thoi,Bình Thới,phường,Quận 11,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-tien,Bình Tiên,phường,Quận 6,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-tri-ong,Bình Trị Đông,phường,Quận Bình Tân,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-binh-trung,Bình Trưng,phường,Quận 2,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-cat-lai,Cát Lái,phường,Quận 2,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-cau-kieu,Cầu Kiệu,phường,Quận Phú Nhuận,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-cau-ong-lanh,Cầu Ông Lãnh,phường,Quận 1,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-chanh-hiep,Chánh Hiệp,phường,Thành Phố Thủ Dầu Một,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-chanh-hung,Chánh Hưng,phường,Quận 8,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-chanh-phu-hoa,Chánh Phú Hòa,phường,Thành Phố Bến Cát,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-cho-lon,Chợ Lớn,phường,Quận 5,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-cho-quan,Chợ Quán,phường,Quận 5,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-di-an,Dĩ An,phường,Thành Phố Dĩ An,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-dien-hong,Diên Hồng,phường,Quận 10,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-gia-inh,Gia Định,phường,Quận Bình Thạnh,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-go-vap,Gò Vấp,phường,Quận Gò Vấp,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-hanh-thong,Hạnh Thông,phường,Quận Gò Vấp,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-hiep-binh,Hiệp Bình,phường,Thành Phố Thủ Đức,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-hoa-binh,Hòa Bình,phường,Quận 11,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-hoa-hung,Hòa Hưng,phường,Quận 10,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-khanh-hoi,Khánh Hội,phường,Quận 4,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-linh-xuan,Linh Xuân,phường,Thành Phố Thủ Đức,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-long-binh,Long Bình,phường,Quận 9,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-long-huong,Long Hương,phường,Thành Phố Bà Rịa,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-long-nguyen,Long Nguyên,phường,Thành Phố Bến Cát,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-long-phuoc,Long Phước,phường,Quận 9,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-long-truong,Long Trường,phường,Quận 9,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-minh-phung,Minh Phụng,phường,Quận 11,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-nhieu-loc,Nhiêu Lộc,phường,Quận 3,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-ong-hoa,Đông Hòa,phường,Thành Phố Dĩ An,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-ong-hung-thuan,Đông Hưng Thuận,phường,Quận 12,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phu-inh,Phú Định,phường,Quận 8,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phu-lam,Phú Lâm,phường,Quận 6,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phu-loi,Phú Lợi,phường,Thành Phố Thủ Dầu Một,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phu-nhuan,Phú Nhuận,phường,Quận Phú Nhuận,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phu-thanh,Phú Thạnh,phường,Quận Tân Phú,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phu-tho,Phú Thọ,phường,Quận 11,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phu-tho-hoa,Phú Thọ Hòa,phường,Quận Tân Phú,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phu-thuan,Phú Thuận,phường,Quận 7,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phuoc-long,Phước Long,phường,Quận 9,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-phuoc-thang,Phước Thắng,phường,Thành Phố Vũng Tàu,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-rach-dua,Rạch Dừa,phường,Thành Phố Vũng Tàu,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-sai-gon,Sài Gòn,phường,Quận 1,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tam-binh,Tam Bình,phường,Thành Phố Thủ Đức,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tam-thang,Tam Thắng,phường,Thành Phố Vũng Tàu,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-binh,Tân Bình,phường,Quận Tân Bình,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-hoa,Tân Hòa,phường,Quận Tân Bình,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-hung,Tân Hưng,phường,Quận 7,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-inh,Tân Định,phường,Quận 1,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-my,Tân Mỹ,phường,Quận 7,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-ong-hiep,Tân Đông Hiệp,phường,Thành Phố Dĩ An,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-phu,Tân Phú,phường,Quận Tân Phú,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-son,Tân Sơn,phường,Quận Tân Bình,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-son-hoa,Tân Sơn Hòa,phường,Quận Tân Bình,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-son-nhat,Tân Sơn Nhất,phường,Quận Tân Bình,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-son-nhi,Tân Sơn Nhì,phường,Quận Tân Phú,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-tao,Tân Tạo,phường,Quận Bình Tân,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-thoi-hiep,Tân Thới Hiệp,phường,Quận 12,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tan-thuan,Tân Thuận,phường,Quận 7,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tang-nhon-phu,Tăng Nhơn Phú,phường,Quận 9,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-tay-thanh,Tây Thạnh,phường,Quận Tân Phú,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-thanh-my-tay,Thạnh Mỹ Tây,phường,Quận Bình Thạnh,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-thoi-an,Thới An,phường,Quận 12,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-thoi-hoa,Thới Hòa,phường,Thành Phố Bến Cát,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-thong-tay-hoi,Thông Tây Hội,phường,Quận Gò Vấp,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-thu-dau-mot,Thủ Dầu Một,phường,Thành Phố Thủ Dầu Một,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-thu-uc,Thủ Đức,phường,Thành Phố Thủ Đức,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-thuan-giao,Thuận Giao,phường,Thành Phố Thuận An,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-trung-my-tay,Trung Mỹ Tây,phường,Quận 12,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-uc-nhuan,Đức Nhuận,phường,Quận Phú Nhuận,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-vinh-hoi,Vĩnh Hội,phường,Quận 4,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-vung-tau,Vũng Tàu,phường,Thành Phố Vũng Tàu,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-vuon-lai,Vườn Lài,phường,Quận 10,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-xom-chieu,Xóm Chiếu,phường,Quận 4,Hồ Chí Minh,Ward
+ward|ho-chi-minh|phuong-xuan-hoa,Xuân Hòa,phường,Quận 3,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-at-o,Đất Đỏ,xã,Huyện Long Đất,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-ba-iem,Bà Điểm,xã,Huyện Hóc Môn,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-bau-bang,Bàu Bàng,xã,Huyện Bàu Bàng,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-binh-chanh,Bình Chánh,xã,Huyện Bình Chánh,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-binh-hung,Bình Hưng,xã,Huyện Bình Chánh,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-binh-loi,Bình Lợi,xã,Huyện Bình Chánh,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-hiep-phuoc,Hiệp Phước,xã,Huyện Nhà Bè,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-ho-tram,Hồ Tràm,xã,Huyện Xuyên Mộc,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-hoc-mon,Hóc Môn,xã,Huyện Hóc Môn,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-hung-long,Hưng Long,xã,Huyện Bình Chánh,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-nha-be,Nhà Bè,xã,Huyện Nhà Bè,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-tan-an-hoi,Tân An Hội,xã,Huyện Củ Chi,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-tan-nhut,Tân Nhựt,xã,Huyện Bình Chánh,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-tan-vinh-loc,Tân Vĩnh Lộc,xã,Huyện Bình Chánh,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-tru-van-tho,Trừ Văn Thố,xã,Huyện Bàu Bàng,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-vinh-loc,Vĩnh Lộc,xã,Huyện Bình Chánh,Hồ Chí Minh,Ward
+ward|ho-chi-minh|xa-xuan-thoi-son,Xuân Thới Sơn,xã,Huyện Hóc Môn,Hồ Chí Minh,Ward

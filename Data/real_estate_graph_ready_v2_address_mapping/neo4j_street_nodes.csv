@@ -1,0 +1,1138 @@
+﻿street_id:ID(Street),name:string,ward_id:string,city_province:string,:LABEL
+street|002345283dca4a,57,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|00254e98946ac0,Số 34B,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|004027f6b00ee2,Nguyễn Duy Cung,ward|ho-chi-minh|phuong-an-hoi-tay,Hồ Chí Minh,Street
+street|004d4a323bb379,Sinco,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|006ac862599335,Trường Chinh,ward|ho-chi-minh|phuong-ong-hung-thuan,Hồ Chí Minh,Street
+street|007816a24c1b9f,Đình Nghi Xuân,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|007e6d2414232e,Số 3J,ward|ho-chi-minh|phuong-tan-thuan,Hồ Chí Minh,Street
+street|0120656527c2a8,Số 6A,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|017e7e66f1d738,Phạm Thế Hiển,ward|ho-chi-minh|phuong-chanh-hung,Hồ Chí Minh,Street
+street|0182fa65ebcbe8,Thạnh Lộc 47,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|029cbf98e4d9e0,Lý Tự Trọng,ward|ho-chi-minh|phuong-ben-thanh,Hồ Chí Minh,Street
+street|02b5205b6d9822,Hẻm 965/130 Quang Trung,ward|ho-chi-minh|phuong-ong-hung-thuan,Hồ Chí Minh,Street
+street|02c299b770202d,Tỉnh Lộ 10,ward|ho-chi-minh|phuong-binh-tan,Hồ Chí Minh,Street
+street|02c978ede2c39f,Hoàng Diệu,ward|ho-chi-minh|phuong-xom-chieu,Hồ Chí Minh,Street
+street|02cd4266381ff9,Lương Minh Nguyệt,ward|ho-chi-minh|phuong-phu-thanh,Hồ Chí Minh,Street
+street|02ef629cebb04d,Đào Duy Anh,ward|ho-chi-minh|phuong-uc-nhuan,Hồ Chí Minh,Street
+street|03968ce3503d9e,Số 13A,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|03ab2e3a1d7248,Số 53,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|03ac3f377191d6,Số 33,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|040ada393fe60a,Lê Chí Dân,ward|ho-chi-minh|phuong-chanh-hiep,Hồ Chí Minh,Street
+street|042b45e5b75b5f,Tân Chánh Hiệp 18,ward|ho-chi-minh|phuong-trung-my-tay,Hồ Chí Minh,Street
+street|044f795b9b6534,Hẻm 71 Đường Số 359,ward|ho-chi-minh|phuong-phuoc-long,Hồ Chí Minh,Street
+street|04a885f47d0517,Trung Mỹ Tây 9,ward|ho-chi-minh|phuong-trung-my-tay,Hồ Chí Minh,Street
+street|054d42cd498a51,Số 8,ward|ho-chi-minh|phuong-thong-tay-hoi,Hồ Chí Minh,Street
+street|054eda949d2cdb,D16,ward|ho-chi-minh|phuong-tay-thanh,Hồ Chí Minh,Street
+street|055805e2b4c6cf,Lý Thái Tông,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|05b88c577a4530,Bàn Cờ,ward|ho-chi-minh|phuong-ban-co,Hồ Chí Minh,Street
+street|05c8876c1014fd,Lê Văn Duyệt,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|05e9a59a3a1610,Số 41,ward|ho-chi-minh|phuong-khanh-hoi,Hồ Chí Minh,Street
+street|066338520f14bb,Nguyễn Văn Cừ,ward|ho-chi-minh|phuong-cau-ong-lanh,Hồ Chí Minh,Street
+street|06721ddc993b43,Xóm Chiếu,ward|ho-chi-minh|phuong-xom-chieu,Hồ Chí Minh,Street
+street|0683794765faac,Đường Thích Quảng Đức,ward|ho-chi-minh|phuong-uc-nhuan,Hồ Chí Minh,Street
+street|070a49526f7633,Hẻm 348 Đường Cách Mạng Tháng 8,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|074f5206abcf94,Trần Hưng Đạo,ward|ho-chi-minh|phuong-an-ong,Hồ Chí Minh,Street
+street|079e1cebed0500,Số 32,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|0823098b876f6c,Nguyễn Bỉnh Khiêm,ward|ho-chi-minh|phuong-hanh-thong,Hồ Chí Minh,Street
+street|084694dcd11532,Số 11,ward|ho-chi-minh|phuong-linh-xuan,Hồ Chí Minh,Street
+street|0868b298b0c0fb,Võ Văn Kiệt,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|086f817bd39a1e,Nguyễn Văn Đậu,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|088b0cacffb082,328,ward|ho-chi-minh|xa-ho-tram,Hồ Chí Minh,Street
+street|088e098ec83bca,Nguyễn Văn Lượng,ward|ho-chi-minh|phuong-an-hoi-ong,Hồ Chí Minh,Street
+street|08a371ded0dcdd,35,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|08c622b3fadf24,Thống Nhất,ward|ho-chi-minh|phuong-thong-tay-hoi,Hồ Chí Minh,Street
+street|0911faa762659b,Nguyễn Thế Lộc,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|094314deac0cb7,Lâm Văn Bền,ward|ho-chi-minh|phuong-tan-thuan,Hồ Chí Minh,Street
+street|096b377756351e,Trần Quốc Toản,ward|ho-chi-minh|phuong-xuan-hoa,Hồ Chí Minh,Street
+street|0990b31e29a8c9,Nguyễn Văn Linh,ward|ho-chi-minh|xa-binh-chanh,Hồ Chí Minh,Street
+street|099491068fccf7,48,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|099761beebc0f8,Phan Đình Phùng,ward|ho-chi-minh|phuong-phu-nhuan,Hồ Chí Minh,Street
+street|0a89477ea88ac0,Lê Lợi,ward|ho-chi-minh|xa-xuan-thoi-son,Hồ Chí Minh,Street
+street|0a9904cd0e4c07,Đông Village,ward|ho-chi-minh|phuong-cat-lai,Hồ Chí Minh,Street
+street|0b156c072480b7,Quang Trung,ward|ho-chi-minh|phuong-thong-tay-hoi,Hồ Chí Minh,Street
+street|0b2b1f9a83d075,Đỗ Xuân Hợp,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|0ba980773cd10c,Số 7 Cư xá Đô Thành,ward|ho-chi-minh|phuong-ban-co,Hồ Chí Minh,Street
+street|0bdba5acca4656,Lê Văn Chí,ward|ho-chi-minh|phuong-linh-xuan,Hồ Chí Minh,Street
+street|0c60e420e21005,Cô Bắc,ward|ho-chi-minh|phuong-cau-ong-lanh,Hồ Chí Minh,Street
+street|0cc4234867d181,Nguyễn Quý Cảnh,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|0cdf9e1130acbb,Hiệp Thành 5,ward|ho-chi-minh|phuong-tan-thoi-hiep,Hồ Chí Minh,Street
+street|0d1f4e04c77c59,Huỳnh Tấn Phát,ward|ho-chi-minh|phuong-phu-thuan,Hồ Chí Minh,Street
+street|0d23b229b2a954,Nguyễn Đình Chiểu,ward|ho-chi-minh|phuong-ban-co,Hồ Chí Minh,Street
+street|0d2f69e00a6eb5,ĐT 743,ward|ho-chi-minh|phuong-di-an,Hồ Chí Minh,Street
+street|0d8995909c7e5d,Thạnh Xuân 52,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|0da85d4507ecbc,Lê Văn Tiên,ward|ho-chi-minh|phuong-di-an,Hồ Chí Minh,Street
+street|0db32a9704cf91,Số 16,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|0e396a1cfddbe6,Số 6D,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|0e7c4cc3a9057e,Tân Hòa Đông,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|0ebd5f84ffa1a8,An Dương Vương,ward|ho-chi-minh|phuong-phu-inh,Hồ Chí Minh,Street
+street|0f09420d7582fe,Số 59,ward|ho-chi-minh|phuong-an-hoi-tay,Hồ Chí Minh,Street
+street|0f6a37772581a8,Võ Duy Ninh,ward|ho-chi-minh|phuong-thanh-my-tay,Hồ Chí Minh,Street
+street|10349bb5884898,Khuông Việt,ward|ho-chi-minh|phuong-tan-phu,Hồ Chí Minh,Street
+street|1088984b92cf72,Lò Lu,ward|ho-chi-minh|phuong-long-phuoc,Hồ Chí Minh,Street
+street|11afa054ea9816,Trung Mỹ Tây 1,ward|ho-chi-minh|phuong-trung-my-tay,Hồ Chí Minh,Street
+street|1217f7d14a2b65,Số 28,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|1295d800b98577,Đề Thám,ward|ho-chi-minh|phuong-ben-thanh,Hồ Chí Minh,Street
+street|12c4f4c6767497,Lý Thái Tổ,ward|ho-chi-minh|phuong-vuon-lai,Hồ Chí Minh,Street
+street|12ce94c52d19ac,Số 9,ward|ho-chi-minh|phuong-linh-xuan,Hồ Chí Minh,Street
+street|12ebb5bb2ce9d9,Phan Đăng Lưu,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|12ecff92523fec,Số 5,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|130580e076c065,Tam Châu,ward|ho-chi-minh|phuong-tam-binh,Hồ Chí Minh,Street
+street|13899046d47ca9,Số 339,ward|ho-chi-minh|phuong-phuoc-long,Hồ Chí Minh,Street
+street|139e4e1ea88429,Nguyễn Thị Huỳnh,ward|ho-chi-minh|phuong-phu-nhuan,Hồ Chí Minh,Street
+street|13c6c22d161869,Bà Hạt,ward|ho-chi-minh|phuong-dien-hong,Hồ Chí Minh,Street
+street|140f0c01b7c433,Mạc Đĩnh Chi,ward|ho-chi-minh|phuong-sai-gon,Hồ Chí Minh,Street
+street|142aaa4c6553e8,Lê Quang Định,ward|ho-chi-minh|phuong-binh-loi-trung,Hồ Chí Minh,Street
+street|143109baf530de,Bùi Văn Ngữ,ward|ho-chi-minh|phuong-tan-thoi-hiep,Hồ Chí Minh,Street
+street|153a1243066d9b,Nguyễn Hữu Trí,ward|ho-chi-minh|xa-tan-nhut,Hồ Chí Minh,Street
+street|15620ccd5b694e,Số 48,ward|ho-chi-minh|phuong-vinh-hoi,Hồ Chí Minh,Street
+street|156604d2aeb159,Lê Hồng Phong,ward|ho-chi-minh|phuong-tan-ong-hiep,Hồ Chí Minh,Street
+street|15a189de8486b1,Nguyễn Trọng Tuyển,ward|ho-chi-minh|phuong-phu-nhuan,Hồ Chí Minh,Street
+street|15da66f479a908,Lạc Hồng,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|163b06040eb1ff,Cách Mạng Tháng Tám,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|164ab8bf7776b0,Vĩnh Viễn,ward|ho-chi-minh|phuong-dien-hong,Hồ Chí Minh,Street
+street|169bb03339d82b,Trần Quốc Thảo,ward|ho-chi-minh|phuong-nhieu-loc,Hồ Chí Minh,Street
+street|16d9a12ae40908,Số 22,ward|ho-chi-minh|phuong-tam-binh,Hồ Chí Minh,Street
+street|175425eb4015d3,Thất Sơn,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|1763f2a662a058,Số 3,ward|ho-chi-minh|phuong-thong-tay-hoi,Hồ Chí Minh,Street
+street|17807d4369bf1c,Nguyễn Thị Thập,ward|ho-chi-minh|phuong-tan-my,Hồ Chí Minh,Street
+street|17989bbdfe3d3f,Phan Đăng Lưu,ward|ho-chi-minh|phuong-uc-nhuan,Hồ Chí Minh,Street
+street|180763a6d59a33,ĐT 743B,ward|ho-chi-minh|phuong-tan-ong-hiep,Hồ Chí Minh,Street
+street|182baca72d1337,Lê Đức Thọ,ward|ho-chi-minh|phuong-an-hoi-ong,Hồ Chí Minh,Street
+street|185d7c8de017dd,Số 672,ward|ho-chi-minh|phuong-phuoc-long,Hồ Chí Minh,Street
+street|18ae4a175ffe51,Bùi Văn Ba,ward|ho-chi-minh|phuong-tan-thuan,Hồ Chí Minh,Street
+street|18af2b25c52e11,Trương Văn Hải,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|19068142236d88,DX 02,ward|ho-chi-minh|phuong-binh-duong,Hồ Chí Minh,Street
+street|193fb0ccda1172,27,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|194b7e6fd59510,Xô Viết Nghệ Tĩnh,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|199a23815b3cc1,Số 12,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|19d8c9d52b9f26,Yên Đỗ,ward|ho-chi-minh|phuong-tan-son-nhi,Hồ Chí Minh,Street
+street|1a2f6e0b3a3156,Nguyễn Hữu Huân,ward|ho-chi-minh|xa-at-o,Hồ Chí Minh,Street
+street|1a5f31c1920c1c,Huỳnh Văn Nghệ,ward|ho-chi-minh|phuong-an-hoi-tay,Hồ Chí Minh,Street
+street|1a7578ebeeafc0,Võ Công Tồn,ward|ho-chi-minh|phuong-phu-tho-hoa,Hồ Chí Minh,Street
+street|1a9ba0b2d39c10,Mai Chí Thọ,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|1aa6055299dcf5,Bạch Đằng,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|1aca22f6cdeb1f,265,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|1af4a7b34740ed,Huỳnh Tịnh Của,ward|ho-chi-minh|phuong-xuan-hoa,Hồ Chí Minh,Street
+street|1b0cc29ebf0319,Nguyễn Văn Khối,ward|ho-chi-minh|phuong-thong-tay-hoi,Hồ Chí Minh,Street
+street|1b256cde420766,Trần Hưng Đạo,ward|ho-chi-minh|phuong-cho-lon,Hồ Chí Minh,Street
+street|1b75ce5a8e476f,Hẻm 713 Trần Xuân Soạn,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|1bdc8599841978,Võ Trứ,ward|ho-chi-minh|phuong-chanh-hung,Hồ Chí Minh,Street
+street|1bee6b12deebc2,Phan Bội Châu,ward|ho-chi-minh|phuong-thu-dau-mot,Hồ Chí Minh,Street
+street|1c10790d6a2cb7,Số 12,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|1c3ea2491ad967,Số 4F,ward|ho-chi-minh|phuong-tan-thuan,Hồ Chí Minh,Street
+street|1c524ab06d13cb,Số 2,ward|ho-chi-minh|phuong-hanh-thong,Hồ Chí Minh,Street
+street|1cf2668ae9d899,Huỳnh Văn Bánh,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|1d10d51f1df62b,3,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|1d1c6884c83ff5,3/2,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|1d7115b556063e,Nguyễn Thái Sơn,ward|ho-chi-minh|phuong-hanh-thong,Hồ Chí Minh,Street
+street|1df89c4b9a6e21,Thạnh Lộc 37,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|1e09c666bc0041,Điện Biên Phủ,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|1e0a98cc6e8937,Vườn Chuối,ward|ho-chi-minh|phuong-xuan-hoa,Hồ Chí Minh,Street
+street|1e0d141e4ba1cb,Số 14,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|1ea75a55612753,Trương Phước Phan,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|1ef61b50196d7f,25A,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|1f1e80f34eada5,An Dương Vương,ward|ho-chi-minh|phuong-cho-quan,Hồ Chí Minh,Street
+street|1f2b12879ab3b3,10,ward|ho-chi-minh|phuong-tam-binh,Hồ Chí Minh,Street
+street|1f513a7ed76ebc,Tạ Quang Bửu,ward|ho-chi-minh|phuong-binh-ong,Hồ Chí Minh,Street
+street|1fbbb5e61a0994,26/3,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|1fbcf88e09836e,Hoàng Lê Kha,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|1fc331b9b90436,Số 22,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|1ff44d09b75dc9,Tân Hải,ward|ho-chi-minh|phuong-tan-binh,Hồ Chí Minh,Street
+street|2003c8ea111801,Nguyễn Cư Trinh,ward|ho-chi-minh|phuong-ben-thanh,Hồ Chí Minh,Street
+street|20048b0da4bc0c,Nguyễn Thị Định,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|20aa71fb4841f6,Hồng Hà,ward|ho-chi-minh|phuong-tan-son-nhat,Hồ Chí Minh,Street
+street|20bfc623e97bdc,Gò Xoài,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|20f357fc29b2f4,Lạc Long Quân,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|2126960969f713,Võ Văn Ngân,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|212e34f2bfc01c,Hoàng Hoa Thám,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|21ac691a88ed72,Xô Viết Nghệ Tĩnh,ward|ho-chi-minh|phuong-binh-thanh,Hồ Chí Minh,Street
+street|21b136c9923758,Ngô Thời Nhiệm,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|21ca3f596a2988,Đường Vườn Chuối,ward|ho-chi-minh|phuong-ban-co,Hồ Chí Minh,Street
+street|22168270b7f013,Quách Đình Bảo,ward|ho-chi-minh|phuong-phu-thanh,Hồ Chí Minh,Street
+street|2266e908e7a553,Đường Số 13,ward|ho-chi-minh|phuong-khanh-hoi,Hồ Chí Minh,Street
+street|228db425a8492c,Duy Tân,ward|ho-chi-minh|phuong-phu-nhuan,Hồ Chí Minh,Street
+street|22c3c076fa77f0,Nam Kỳ Khởi Nghĩa,ward|ho-chi-minh|phuong-xuan-hoa,Hồ Chí Minh,Street
+street|22ce0bf0e1ffe4,Huỳnh Tấn Phát,ward|ho-chi-minh|phuong-tan-my,Hồ Chí Minh,Street
+street|22fe67caeda438,11,ward|ho-chi-minh|phuong-linh-xuan,Hồ Chí Minh,Street
+street|238e4308efea1f,Hẻm 249 Vườn Lài,ward|ho-chi-minh|phuong-phu-tho-hoa,Hồ Chí Minh,Street
+street|23bcf140a7a93c,Liên Tỉnh 5,ward|ho-chi-minh|phuong-chanh-hung,Hồ Chí Minh,Street
+street|244325f2ebe94e,Hẻm 60/3 đường số 5,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|2443b398354f29,D1,ward|ho-chi-minh|phuong-long-binh,Hồ Chí Minh,Street
+street|246a0cb86aa59a,Hương lộ 2,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|2523e564927667,Hoàng Trọng Mậu,ward|ho-chi-minh|phuong-tan-my,Hồ Chí Minh,Street
+street|25495e276b3b21,Số 38,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|256461351c0cb8,Số 1,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|25cb9ae0500d70,Hẻm 168/38 Nguyễn Gia Trí,ward|ho-chi-minh|phuong-thanh-my-tay,Hồ Chí Minh,Street
+street|266721c4304ca2,Bờ Bao,ward|ho-chi-minh|xa-binh-hung,Hồ Chí Minh,Street
+street|26673b3aa17f3d,Tôn Đản,ward|ho-chi-minh|phuong-xom-chieu,Hồ Chí Minh,Street
+street|2671051c652122,N5,ward|ho-chi-minh|phuong-long-nguyen,Hồ Chí Minh,Street
+street|2695566a5882c0,Nguyễn An Ninh,ward|ho-chi-minh|phuong-di-an,Hồ Chí Minh,Street
+street|26dc5986372708,CC5,ward|ho-chi-minh|phuong-tan-son-nhi,Hồ Chí Minh,Street
+street|27461f25e70b2a,Phan Huy Ích,ward|ho-chi-minh|phuong-tan-son,Hồ Chí Minh,Street
+street|28114df5b81a37,Nguyễn An Ninh,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|283cfe02d5f669,Số 2,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|286d9639bf7147,Bà Hom,ward|ho-chi-minh|phuong-phu-lam,Hồ Chí Minh,Street
+street|2905f541f13cd1,Trần Hưng Đạo,ward|ho-chi-minh|phuong-ben-thanh,Hồ Chí Minh,Street
+street|293e6b6537dd0d,Hậu Giang,ward|ho-chi-minh|phuong-binh-phu,Hồ Chí Minh,Street
+street|2943e7d2117002,Lê Thị Riêng,ward|ho-chi-minh|phuong-ben-thanh,Hồ Chí Minh,Street
+street|2969a50eb8b1b3,Hoàng Diệu,ward|ho-chi-minh|phuong-vinh-hoi,Hồ Chí Minh,Street
+street|298c7833b88e2f,Chuyên Dùng 9,ward|ho-chi-minh|phuong-phu-thuan,Hồ Chí Minh,Street
+street|29d24d9043fb41,Phan Huy Ích,ward|ho-chi-minh|phuong-an-hoi-tay,Hồ Chí Minh,Street
+street|29e9bb264b9e65,Thoại Ngọc Hầu,ward|ho-chi-minh|phuong-phu-thanh,Hồ Chí Minh,Street
+street|2b2d09142083d8,Bàu Cát 3,ward|ho-chi-minh|phuong-tan-binh,Hồ Chí Minh,Street
+street|2b65c9d61c8e3b,Trần Hưng Đạo,ward|ho-chi-minh|phuong-tan-son-nhi,Hồ Chí Minh,Street
+street|2b65fcf836fedc,Nguyễn Trọng Tuyển,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|2beaf39bb97ce4,Nguyễn Duy Trinh,ward|ho-chi-minh|phuong-long-phuoc,Hồ Chí Minh,Street
+street|2c01de6a55bf1c,Số 40,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|2c4820407ed488,Vạn Kiếp,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|2c9adfe39657c0,Lê Thị Hà,ward|ho-chi-minh|xa-hoc-mon,Hồ Chí Minh,Street
+street|2d0a83fe719bd3,Khánh Hội,ward|ho-chi-minh|phuong-vinh-hoi,Hồ Chí Minh,Street
+street|2d0af78b58ca9f,Trương Văn Thành,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|2d3d9e05a25176,Lưu Hữu Phước,ward|ho-chi-minh|phuong-phu-inh,Hồ Chí Minh,Street
+street|2d4dcc2f2dfd68,Trường Sơn,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|2de92042007b02,Số 4,ward|ho-chi-minh|phuong-linh-xuan,Hồ Chí Minh,Street
+street|2e2579b28f6b8e,Phạm Viết Chánh,ward|ho-chi-minh|phuong-cau-ong-lanh,Hồ Chí Minh,Street
+street|2f3928153106df,Mạc Đĩnh Chi,ward|ho-chi-minh|phuong-tan-inh,Hồ Chí Minh,Street
+street|2f65a5c5347149,297,ward|ho-chi-minh|phuong-phuoc-long,Hồ Chí Minh,Street
+street|2f8a4dd33396b2,Số 11,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|2feb6352d41830,Gò Cẩm Đệm,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|2ff71bf8f13e6e,Võ Nguyên Giáp,ward|ho-chi-minh|phuong-binh-duong,Hồ Chí Minh,Street
+street|2ff7d56e41cb6e,Nguyễn Duy Trinh,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|320e6da9483d7f,Minh Phụng,ward|ho-chi-minh|phuong-binh-tay,Hồ Chí Minh,Street
+street|3234d2a954bb3b,Hẻm 32 Nhiêu Tứ,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|32a0cead84ce10,Mai Xuân Thưởng,ward|ho-chi-minh|phuong-binh-loi-trung,Hồ Chí Minh,Street
+street|3306148aff20c7,Lâm Quang Ky,ward|ho-chi-minh|phuong-cat-lai,Hồ Chí Minh,Street
+street|330ba3375f874b,N1,ward|ho-chi-minh|phuong-di-an,Hồ Chí Minh,Street
+street|330ca67afaba1e,5,ward|ho-chi-minh|phuong-chanh-phu-hoa,Hồ Chí Minh,Street
+street|3326d4dac33580,Phạm Hồng Thái,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|3341d29cabfde2,An Bình,ward|ho-chi-minh|phuong-an-ong,Hồ Chí Minh,Street
+street|3369a385ee1731,Tôn Thất Thuyết,ward|ho-chi-minh|phuong-vinh-hoi,Hồ Chí Minh,Street
+street|3387290c1fca8e,Duy Tân,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|33c8b1b422d469,Lê Văn Khương,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|341e57b7922898,Hà Huy Giáp,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|3422eebc89e300,Bà Hạt,ward|ho-chi-minh|phuong-vuon-lai,Hồ Chí Minh,Street
+street|347282601781ea,Tân Thới Nhì 5,ward|ho-chi-minh|xa-xuan-thoi-son,Hồ Chí Minh,Street
+street|34b0d55c797310,Trương Đình Hội,ward|ho-chi-minh|phuong-phu-inh,Hồ Chí Minh,Street
+street|34cd0265ed5599,Huỳnh Văn Nghệ,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|34dda05d768f9b,Thạnh Xuân 43,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|351637e1c9dc48,Vành Đai Trong,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|354b268ebc42b8,Hoàng Hoa Thám,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|355c05741095e4,Lý Thường Kiệt,ward|ho-chi-minh|phuong-hanh-thong,Hồ Chí Minh,Street
+street|3584d277864df5,Ngô Quyền,ward|ho-chi-minh|phuong-dien-hong,Hồ Chí Minh,Street
+street|358aa576dfd920,Phạm Ngọc Thạch,ward|ho-chi-minh|phuong-xuan-hoa,Hồ Chí Minh,Street
+street|35c58ff27ca4f1,Nguyễn Văn Công,ward|ho-chi-minh|phuong-hanh-thong,Hồ Chí Minh,Street
+street|35d6d4feaa5d26,Tân Thới Nhất 1,ward|ho-chi-minh|phuong-ong-hung-thuan,Hồ Chí Minh,Street
+street|363ad62dcbda2c,7A,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|36d4dbbb604b9b,D3,ward|ho-chi-minh|phuong-phuoc-long,Hồ Chí Minh,Street
+street|36ed88d3cfecc0,Nguyễn Thái Học,ward|ho-chi-minh|phuong-tan-ong-hiep,Hồ Chí Minh,Street
+street|3724dea8abfff3,Số 2,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|374553c7ff6f75,Bàu Cát 1,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|37652f5971681c,Số 3,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|378552d2025a5a,Lê Văn Thọ,ward|ho-chi-minh|phuong-an-hoi-tay,Hồ Chí Minh,Street
+street|37997a8f910e83,Tân Sơn,ward|ho-chi-minh|phuong-an-hoi-tay,Hồ Chí Minh,Street
+street|37d90a43c37c19,Vườn Lài,ward|ho-chi-minh|phuong-phu-tho-hoa,Hồ Chí Minh,Street
+street|381cc7f3f84eac,Nguyễn Hữu Thọ,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|3824b2bdb2234c,Hoàng Hoa Thám,ward|ho-chi-minh|phuong-tan-binh,Hồ Chí Minh,Street
+street|383d4712028863,Lạc Long Quân,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|384aa2b4d38e18,Lê Thị Sẻ,ward|ho-chi-minh|xa-xuan-thoi-son,Hồ Chí Minh,Street
+street|384fa587bf107c,Võ Chí Công,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|38860a1b9eabb9,Số 6,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|38c1ef7e33f70d,Liên Khu 2-10,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|38ed0e34566522,Lương Định Của,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|3914b94fd68e32,Phạm Hữu Lầu,ward|ho-chi-minh|phuong-tan-my,Hồ Chí Minh,Street
+street|392279df3aedbd,Nguyễn Trung Nguyệt,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|3942d53aa37b48,836,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|39c509d789089c,Phạm Văn Chiêu,ward|ho-chi-minh|phuong-an-hoi-ong,Hồ Chí Minh,Street
+street|39d6660b281ad8,Đại Lộ Vòng Cung,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|3a051659e7e28c,Số 65A,ward|ho-chi-minh|phuong-cat-lai,Hồ Chí Minh,Street
+street|3a0d283afc59b5,Hẻm 31 Phạm Phú Thứ,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|3a0f3594deb6ad,Quốc lộ 1A,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|3af6236e8cfe7b,Nguyễn Cửu Phú,ward|ho-chi-minh|xa-tan-nhut,Hồ Chí Minh,Street
+street|3af62ef4a33a40,Kỳ Đồng,ward|ho-chi-minh|phuong-nhieu-loc,Hồ Chí Minh,Street
+street|3b16de3b0c0bd1,Trần Văn Giàu,ward|ho-chi-minh|xa-binh-loi,Hồ Chí Minh,Street
+street|3b767d9f77d896,Võ Văn Tần,ward|ho-chi-minh|phuong-ban-co,Hồ Chí Minh,Street
+street|3b773cda7430d9,Đình Bình Điền,ward|ho-chi-minh|xa-binh-chanh,Hồ Chí Minh,Street
+street|3c052f4faad1b6,Lý Đạo Thành,ward|ho-chi-minh|phuong-phu-inh,Hồ Chí Minh,Street
+street|3c276d6802195b,Nguyễn Văn Mai,ward|ho-chi-minh|phuong-xuan-hoa,Hồ Chí Minh,Street
+street|3c297639571927,Tân Chánh Hiệp 8,ward|ho-chi-minh|phuong-trung-my-tay,Hồ Chí Minh,Street
+street|3c42b7b46f7bbd,Quốc lộ 1K,ward|ho-chi-minh|phuong-linh-xuan,Hồ Chí Minh,Street
+street|3ca75f869383a7,Nơ Trang Long,ward|ho-chi-minh|phuong-binh-loi-trung,Hồ Chí Minh,Street
+street|3cbeb7299c630d,Tô Hiến Thành,ward|ho-chi-minh|phuong-dien-hong,Hồ Chí Minh,Street
+street|3ccf92f916ba27,Nguyễn Ảnh Thủ,ward|ho-chi-minh|xa-ba-iem,Hồ Chí Minh,Street
+street|3cda3f0562a70c,Nguyễn Trãi,ward|ho-chi-minh|phuong-an-ong,Hồ Chí Minh,Street
+street|3ceb11a91c1e72,Hạnh Thông,ward|ho-chi-minh|phuong-hanh-thong,Hồ Chí Minh,Street
+street|3d0c4e14c5c6cd,Phạm Văn Hai,ward|ho-chi-minh|phuong-tan-son-hoa,Hồ Chí Minh,Street
+street|3d7c9990754250,Lê Quốc Hưng,ward|ho-chi-minh|phuong-xom-chieu,Hồ Chí Minh,Street
+street|3db3b94c476734,Bùi Văn Thêm,ward|ho-chi-minh|phuong-uc-nhuan,Hồ Chí Minh,Street
+street|3e2f944dc106e0,Nguyễn Thượng Hiền,ward|ho-chi-minh|phuong-uc-nhuan,Hồ Chí Minh,Street
+street|3ea1e3ccc4d094,Trần Văn Đang,ward|ho-chi-minh|phuong-nhieu-loc,Hồ Chí Minh,Street
+street|3ea587298be297,Hồ Văn Huê,ward|ho-chi-minh|phuong-uc-nhuan,Hồ Chí Minh,Street
+street|3f2c61be91d0ca,A4,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|3f4472053338e0,Hoàng Hoa Thám,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|3fa7a92c1d8d30,Trịnh Quang Nghị,ward|ho-chi-minh|phuong-binh-ong,Hồ Chí Minh,Street
+street|3fc17f0f81af9e,Mạc Đĩnh Chi,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|40589dde0896a5,Số 2,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|40a740cae21142,Nguyễn Chí Thanh,ward|ho-chi-minh|phuong-an-ong,Hồ Chí Minh,Street
+street|40ac31a66d07ee,Nguyễn Hữu Thọ,ward|ho-chi-minh|xa-nha-be,Hồ Chí Minh,Street
+street|40d0c59c2a1466,Lê Hồng Phong,ward|ho-chi-minh|phuong-vuon-lai,Hồ Chí Minh,Street
+street|40fd8801c996f4,Phó Cơ Điều,ward|ho-chi-minh|phuong-cho-lon,Hồ Chí Minh,Street
+street|418e5779245e51,Nguyễn Thanh Tuyền,ward|ho-chi-minh|phuong-tan-son-hoa,Hồ Chí Minh,Street
+street|41cd4daa1a87e5,Bế Văn Cấm,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|42718b9a8be4a7,Đường D4,ward|ho-chi-minh|phuong-tan-my,Hồ Chí Minh,Street
+street|429967a8922d13,Thạnh Xuân 22,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|433c7b3275dc61,Kha Vạn Cân,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|435ec9b13ed0b1,Trần Văn Quang,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|4376f62e7333f9,Lê Đức Anh,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|43caf75719bc76,Hoàng Phan Thái,ward|ho-chi-minh|xa-binh-chanh,Hồ Chí Minh,Street
+street|43f7cdf0349cd3,Nguyễn Văn Linh,ward|ho-chi-minh|xa-binh-hung,Hồ Chí Minh,Street
+street|4401848db6804f,D6,ward|ho-chi-minh|xa-tru-van-tho,Hồ Chí Minh,Street
+street|44133a57cdb294,3/2,ward|ho-chi-minh|phuong-phuoc-thang,Hồ Chí Minh,Street
+street|44140f934ca16b,Lũy Bán Bích,ward|ho-chi-minh|phuong-tan-phu,Hồ Chí Minh,Street
+street|4423ba9230601d,Số 182,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|445e2195a9982e,Số 10,ward|ho-chi-minh|phuong-linh-xuan,Hồ Chí Minh,Street
+street|449c5c57500d0b,Thống Nhất,ward|ho-chi-minh|phuong-ong-hoa,Hồ Chí Minh,Street
+street|453a78461c2ebc,Nguyễn Văn Linh,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|456cdb55c7f713,13,ward|ho-chi-minh|phuong-tan-thuan,Hồ Chí Minh,Street
+street|45947c7db5564e,Nguyễn Sỹ Sách,ward|ho-chi-minh|phuong-tan-son,Hồ Chí Minh,Street
+street|45b040de388d38,Số 5K,ward|ho-chi-minh|phuong-tan-thuan,Hồ Chí Minh,Street
+street|46412b69c94811,Tân Hương,ward|ho-chi-minh|phuong-phu-tho-hoa,Hồ Chí Minh,Street
+street|469788ebec0958,Nguyễn Thị Sóc,ward|ho-chi-minh|xa-ba-iem,Hồ Chí Minh,Street
+street|46beeb65d2a4de,D24S,ward|ho-chi-minh|phuong-thoi-hoa,Hồ Chí Minh,Street
+street|46fc7ae98648d9,Số 31,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|473c59ed794377,Hưng Phú,ward|ho-chi-minh|phuong-chanh-hung,Hồ Chí Minh,Street
+street|47413c42cb36f2,Quốc Lộ 51,ward|ho-chi-minh|phuong-long-huong,Hồ Chí Minh,Street
+street|476f79df0ee21a,Đào Duy Từ,ward|ho-chi-minh|phuong-dien-hong,Hồ Chí Minh,Street
+street|4797e0f41c5f9e,N2,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|47b06a1463cb8d,Dương Bá Trạc,ward|ho-chi-minh|phuong-chanh-hung,Hồ Chí Minh,Street
+street|47b516e68ffa13,Võ Chí Công,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|488a59b328c3ab,Chiến Thắng,ward|ho-chi-minh|phuong-uc-nhuan,Hồ Chí Minh,Street
+street|4890f609aa55fd,Đường Hải Đăng,ward|ho-chi-minh|phuong-long-binh,Hồ Chí Minh,Street
+street|489909a8f87f5b,Trương Quyền,ward|ho-chi-minh|phuong-xuan-hoa,Hồ Chí Minh,Street
+street|48f19b0874661e,Đinh Tiên Hoàng,ward|ho-chi-minh|phuong-tan-inh,Hồ Chí Minh,Street
+street|4921ecc9a618d8,D5B,ward|ho-chi-minh|phuong-phu-thuan,Hồ Chí Minh,Street
+street|492319f3419732,Nguyễn Lâm,ward|ho-chi-minh|phuong-uc-nhuan,Hồ Chí Minh,Street
+street|4969b574c71d97,Ba Vì,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|49d68cbfb7b836,Ngô Gia Tự,ward|ho-chi-minh|phuong-vuon-lai,Hồ Chí Minh,Street
+street|49d9ba6f867f06,Phạm Hữu Lầu,ward|ho-chi-minh|xa-nha-be,Hồ Chí Minh,Street
+street|4a1829e07f2165,6,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|4a59c49e8c072a,Hồ Đắc Di,ward|ho-chi-minh|phuong-tay-thanh,Hồ Chí Minh,Street
+street|4ae823a8131042,2/9,ward|ho-chi-minh|phuong-phuoc-thang,Hồ Chí Minh,Street
+street|4b338abccc51ce,Võ Thị Sáu,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|4b682015fb8908,Hồng Hà,ward|ho-chi-minh|phuong-tan-son-hoa,Hồ Chí Minh,Street
+street|4bd1b1dac5380e,Đinh Thị Thi,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|4c38ba1627144c,D2,ward|ho-chi-minh|phuong-thuan-giao,Hồ Chí Minh,Street
+street|4c8977f6e0a937,D3,ward|ho-chi-minh|phuong-thanh-my-tay,Hồ Chí Minh,Street
+street|4d2fcdce00044e,Vành Đai 3,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|4d42a3617fce4f,Nguyễn Thị Phố,ward|ho-chi-minh|phuong-di-an,Hồ Chí Minh,Street
+street|4d833330bc2157,Số 1,ward|ho-chi-minh|phuong-thong-tay-hoi,Hồ Chí Minh,Street
+street|4de03d9b6410b5,Số 24,ward|ho-chi-minh|phuong-tam-binh,Hồ Chí Minh,Street
+street|4dfedd23dea62a,Thạnh Xuân 40,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|4ee1d556c587fd,Số 30,ward|ho-chi-minh|phuong-khanh-hoi,Hồ Chí Minh,Street
+street|4f5b4be40ac2d3,Số 10,ward|ho-chi-minh|phuong-thong-tay-hoi,Hồ Chí Minh,Street
+street|4fa094788c6ed5,Thạnh Lộc 8,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|502698af6d0376,Võ Thị Nhờ,ward|ho-chi-minh|phuong-tan-thuan,Hồ Chí Minh,Street
+street|502c206129163c,Nguyễn Lâm,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|502c399cb24e65,Đặng Dung,ward|ho-chi-minh|phuong-tan-inh,Hồ Chí Minh,Street
+street|50679060214eb3,Số 20,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|507083c06c6b36,Huỳnh Tấn Phát,ward|ho-chi-minh|xa-nha-be,Hồ Chí Minh,Street
+street|50a114aabf5550,ĐT 743C,ward|ho-chi-minh|phuong-binh-hoa,Hồ Chí Minh,Street
+street|50b52e68c79dce,An Mỹ,ward|ho-chi-minh|phuong-binh-duong,Hồ Chí Minh,Street
+street|50d662cb6e4a1b,Số 19,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|51d36a5a4d0f75,Cao Thắng,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|51dd9ab7645dd0,Bến Vân Đồn,ward|ho-chi-minh|phuong-khanh-hoi,Hồ Chí Minh,Street
+street|51feff8ef725cb,Lý Thánh Tông,ward|ho-chi-minh|phuong-tan-phu,Hồ Chí Minh,Street
+street|520a2729e3cbad,Thiên Lý,ward|ho-chi-minh|xa-binh-hung,Hồ Chí Minh,Street
+street|522440c3f37d0c,Vành Đai Trong,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|525910366a5e55,9,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|526b4e7428d409,Hai Bà Trưng,ward|ho-chi-minh|phuong-xuan-hoa,Hồ Chí Minh,Street
+street|527265f6528fda,Phạm Thế Hiển,ward|ho-chi-minh|phuong-binh-ong,Hồ Chí Minh,Street
+street|52a9977998aabf,13A,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|52b5ddea2f9a27,Liên Phường,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|52ba34028443b7,Vườn Chuối,ward|ho-chi-minh|phuong-ban-co,Hồ Chí Minh,Street
+street|52d8c3a92c47e9,Số 18,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|531a053f5c758f,Tô Ngọc Vân,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|5330acb8e50467,6,ward|ho-chi-minh|phuong-hanh-thong,Hồ Chí Minh,Street
+street|5336a4f60764bd,An Phú Đông 27,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|53a8dac14079a6,Đỗ Xuân Hợp,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|543e5cc3e63687,Tân Kỳ Tân Quý,ward|ho-chi-minh|phuong-tan-son-nhi,Hồ Chí Minh,Street
+street|547512e67330ed,Âu Cơ,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|54aaf6f216ae5a,Trịnh Hoài Đức,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|55220426514715,Hòa Hảo,ward|ho-chi-minh|phuong-dien-hong,Hồ Chí Minh,Street
+street|552fe81d697831,3/2,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|554371d49e0486,Huyền Trân Công Chúa,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|556c8fd027091d,Trường Lưu,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|55f22e31cd030b,Tôn Đức Thắng,ward|ho-chi-minh|phuong-sai-gon,Hồ Chí Minh,Street
+street|55fa081b6e2910,Đặng Minh Trứ,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|563a535f4b4c5c,Đường D7,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|5655c998806bf0,Phạm Văn Đồng,ward|ho-chi-minh|phuong-binh-loi-trung,Hồ Chí Minh,Street
+street|56566d34d7bb08,Số 17,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|566402e19f93e9,Liên Phường,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|567895ac2ab9dd,Phan Chu Trinh,ward|ho-chi-minh|phuong-binh-thanh,Hồ Chí Minh,Street
+street|56fa9c059a0108,Số 7,ward|ho-chi-minh|phuong-linh-xuan,Hồ Chí Minh,Street
+street|56fcfc53fe7cb9,An Dương Vương,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|575ddfe6b440c6,Bờ Bao Tân Thắng,ward|ho-chi-minh|phuong-tan-son-nhi,Hồ Chí Minh,Street
+street|577565b0e1e61e,Quốc Lộ 13,ward|ho-chi-minh|xa-tru-van-tho,Hồ Chí Minh,Street
+street|589dad060cc8b1,Nguyễn Thị Nhỏ,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|58bd88119b4d4a,Phạm Đôn,ward|ho-chi-minh|phuong-cho-lon,Hồ Chí Minh,Street
+street|58c94b7dba09eb,Lã Xuân Oai,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|5a0ae90a8c49e4,N4,ward|ho-chi-minh|phuong-tan-son-nhi,Hồ Chí Minh,Street
+street|5a76a2549a74d0,Phong Phú,ward|ho-chi-minh|phuong-phu-inh,Hồ Chí Minh,Street
+street|5a8732cd365ed8,Bình Giã,ward|ho-chi-minh|phuong-rach-dua,Hồ Chí Minh,Street
+street|5ad89964b7db0d,Liên Khu 1-6,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|5b066118b43f13,Nguyễn Thị Tần,ward|ho-chi-minh|phuong-chanh-hung,Hồ Chí Minh,Street
+street|5b23305be72f13,Ngô Tất Tố,ward|ho-chi-minh|phuong-thanh-my-tay,Hồ Chí Minh,Street
+street|5b593af7cbf64e,Nguyễn Văn Vỹ,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|5b59fea576ac86,Võ Trường Toản,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|5b7316bb821f3f,Thạnh Xuân 38,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|5ba2eaa78e6be8,Số 3,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|5bcfb20cf34d6b,3B,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|5c05ba96910584,D7,ward|ho-chi-minh|phuong-phu-thuan,Hồ Chí Minh,Street
+street|5c5886081e8c91,Lê Lợi,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|5c787dcc308fe5,Hoàng Văn Thụ,ward|ho-chi-minh|phuong-uc-nhuan,Hồ Chí Minh,Street
+street|5c92c8c487c229,Đinh Tiên Hoàng,ward|ho-chi-minh|phuong-sai-gon,Hồ Chí Minh,Street
+street|5c9bb24e338e2d,Mã Lò,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|5cd3b61a5ab0d2,Trương Minh Ký,ward|ho-chi-minh|phuong-an-hoi-ong,Hồ Chí Minh,Street
+street|5d1d21b654f238,Tân Hòa Đông,ward|ho-chi-minh|phuong-phu-lam,Hồ Chí Minh,Street
+street|5d2d1ffe342232,Phú Hòa,ward|ho-chi-minh|phuong-tan-hoa,Hồ Chí Minh,Street
+street|5d4b29a0064adc,Số 14,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|5d6767e2ba6648,Phạm Hữu Lầu,ward|ho-chi-minh|phuong-di-an,Hồ Chí Minh,Street
+street|5daf8dc513c05c,30/4,ward|ho-chi-minh|phuong-phu-loi,Hồ Chí Minh,Street
+street|5e6407c36d8b7f,Xa Lộ Hà Nội,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|5e70b635a29ab9,D2S,ward|ho-chi-minh|phuong-thoi-hoa,Hồ Chí Minh,Street
+street|5e9cbdcff1df3c,Hồng Bàng,ward|ho-chi-minh|phuong-phu-lam,Hồ Chí Minh,Street
+street|5eb2a2e8c8c590,Đường số 18,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|5eb93b0410c49a,Nguyễn Bình,ward|ho-chi-minh|phuong-phu-loi,Hồ Chí Minh,Street
+street|5edc6e4a82746d,Lữ Gia,ward|ho-chi-minh|phuong-phu-tho,Hồ Chí Minh,Street
+street|5ef6a74b85935c,Thới An 11,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|5f8ab590642e2a,6A,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|5fb8197c95ca4a,Số 2,ward|ho-chi-minh|phuong-tam-binh,Hồ Chí Minh,Street
+street|602664e70049e2,Lê Đình Cẩn,ward|ho-chi-minh|phuong-binh-tan,Hồ Chí Minh,Street
+street|602cfe390993bc,Số 3,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|603750550d4a13,Tân Túc,ward|ho-chi-minh|xa-tan-nhut,Hồ Chí Minh,Street
+street|6044cf5bc6f145,Giác Đạo,ward|ho-chi-minh|xa-ba-iem,Hồ Chí Minh,Street
+street|605a4cc47a9b12,Trần Bình Trọng,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|606ba3ba54c888,Thạnh Lộc 3,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|6085b51e2a66f3,Vũ Huy Tấn,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|60ab656fdf1a3b,Ông Ích Khiêm,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|60ced8ae5efbb3,Âu Dương Lân,ward|ho-chi-minh|phuong-chanh-hung,Hồ Chí Minh,Street
+street|60e864051deaef,Rạch Cát,ward|ho-chi-minh|phuong-phu-inh,Hồ Chí Minh,Street
+street|611f1752b127a6,D4S,ward|ho-chi-minh|phuong-thoi-hoa,Hồ Chí Minh,Street
+street|618df60debb3ae,Dương Quảng Hàm,ward|ho-chi-minh|phuong-an-nhon,Hồ Chí Minh,Street
+street|61bd06657a5aaf,212,ward|ho-chi-minh|phuong-phuoc-long,Hồ Chí Minh,Street
+street|61bfac4bf52607,Huỳnh Tấn Phát,ward|ho-chi-minh|phuong-tan-thuan,Hồ Chí Minh,Street
+street|61bffe6a2a5f5d,Hoàng Hoa Thám,ward|ho-chi-minh|phuong-uc-nhuan,Hồ Chí Minh,Street
+street|621d9f92f17f8e,Mã Lò,ward|ho-chi-minh|phuong-binh-tan,Hồ Chí Minh,Street
+street|628d2c008de8a7,Hai Bà Trưng,ward|ho-chi-minh|phuong-sai-gon,Hồ Chí Minh,Street
+street|6293edeaec3a0a,5,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|62bcf0a2dd6748,11,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|62bf5ac359aaaf,Nơ Trang Long,ward|ho-chi-minh|phuong-binh-thanh,Hồ Chí Minh,Street
+street|62c0a4fca4a104,Phan Đăng Lưu,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|62c533aead6d81,Trung Mỹ Tây 13,ward|ho-chi-minh|phuong-trung-my-tay,Hồ Chí Minh,Street
+street|62d78a92931d66,Lê Thị Hoa,ward|ho-chi-minh|phuong-tam-binh,Hồ Chí Minh,Street
+street|6338005a05cdee,Lê Ngọc Hân,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|639ae5fabc9507,Thiếu Niên 3,ward|ho-chi-minh|xa-tru-van-tho,Hồ Chí Minh,Street
+street|644af0447c616a,Số 4,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|64b94c4d0722ce,Số 12,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|64f6cd3e9e7a53,Hoàng Sa,ward|ho-chi-minh|phuong-tan-son-nhat,Hồ Chí Minh,Street
+street|651da9e9516824,Trần Văn Kỷ,ward|ho-chi-minh|phuong-binh-thanh,Hồ Chí Minh,Street
+street|656b026492be5c,Đồng Đen,ward|ho-chi-minh|phuong-tan-binh,Hồ Chí Minh,Street
+street|6576e2984436d9,Tô Ký,ward|ho-chi-minh|xa-hoc-mon,Hồ Chí Minh,Street
+street|65d92e404e4fda,Nguyễn Cư Trinh,ward|ho-chi-minh|phuong-cau-ong-lanh,Hồ Chí Minh,Street
+street|664c0f5be47560,Hồ Hảo Hớn,ward|ho-chi-minh|phuong-cau-ong-lanh,Hồ Chí Minh,Street
+street|66bdf7e31adb7f,Đặng Văn Bi,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|66e9884f9fd21f,Dương Cát Lợi,ward|ho-chi-minh|xa-nha-be,Hồ Chí Minh,Street
+street|66ec44130efe02,Số 62,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|672768b25722f1,A5,ward|ho-chi-minh|phuong-long-phuoc,Hồ Chí Minh,Street
+street|678e806370273e,Nguyễn Thái Bình,ward|ho-chi-minh|phuong-ben-thanh,Hồ Chí Minh,Street
+street|67aa356334b0bd,Hoàng Minh Đạo,ward|ho-chi-minh|phuong-chanh-hung,Hồ Chí Minh,Street
+street|67e87395745c63,D5,ward|ho-chi-minh|phuong-thuan-giao,Hồ Chí Minh,Street
+street|68c33f99a32b5c,Võ Nguyên Giáp,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|68cc3ccebe4c68,Lã Xuân Oai,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|693d7c787c89ba,2,ward|ho-chi-minh|phuong-long-phuoc,Hồ Chí Minh,Street
+street|695d5608867c83,Mai Xuân Thưởng,ward|ho-chi-minh|phuong-binh-thanh,Hồ Chí Minh,Street
+street|69884e73d86d08,Hai Bà Trưng,ward|ho-chi-minh|phuong-ong-hoa,Hồ Chí Minh,Street
+street|6997d29786fe3d,Số 970,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|69a337187525c5,N7,ward|ho-chi-minh|phuong-ong-hoa,Hồ Chí Minh,Street
+street|69a7204c5d5951,Nguyễn Thị Nhỏ,ward|ho-chi-minh|phuong-minh-phung,Hồ Chí Minh,Street
+street|6a389005e85c6f,Số 9,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|6a67623914af16,Nguyễn Du,ward|ho-chi-minh|phuong-binh-hoa,Hồ Chí Minh,Street
+street|6ab65ae4c65b83,Nguyễn Minh Hoàng,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|6ac6fb375fcce9,Nguyễn Văn Kỉnh,ward|ho-chi-minh|phuong-cat-lai,Hồ Chí Minh,Street
+street|6acd62bad0ae54,Bàu Cát,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|6b1b07dbf587e6,Nguyễn Văn Cự,ward|ho-chi-minh|phuong-tan-tao,Hồ Chí Minh,Street
+street|6b1bcee6af155e,D3,ward|ho-chi-minh|phuong-thuan-giao,Hồ Chí Minh,Street
+street|6b3241250d5e58,Tây Lân,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|6b39bdc144e78e,Nguyễn Thiện Thuật,ward|ho-chi-minh|phuong-ban-co,Hồ Chí Minh,Street
+street|6bb27b405856d0,Tân Hiệp 4,ward|ho-chi-minh|xa-hoc-mon,Hồ Chí Minh,Street
+street|6bd0230e6fb647,Ngô Đức Kế,ward|ho-chi-minh|phuong-binh-thanh,Hồ Chí Minh,Street
+street|6c4a1730b31c6c,Thành Thái,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|6c793e3aea32b6,Bùi Minh Trực,ward|ho-chi-minh|phuong-binh-ong,Hồ Chí Minh,Street
+street|6d086eda3d5163,D4,ward|ho-chi-minh|phuong-phu-thuan,Hồ Chí Minh,Street
+street|6d29b3ac8bcac5,Đường số 8,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|6d2f395af82171,Số 8,ward|ho-chi-minh|phuong-linh-xuan,Hồ Chí Minh,Street
+street|6d39642eacc47f,Số 12,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|6d3b2cf14a4ad1,18B,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|6d406da9acb58c,Phạm Văn Nghị,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|6d61984d2a6524,Tân Sơn Nhì,ward|ho-chi-minh|phuong-tan-binh,Hồ Chí Minh,Street
+street|6d647eaa330ae0,Nguyễn Văn Quỳ,ward|ho-chi-minh|phuong-phu-thuan,Hồ Chí Minh,Street
+street|6df622eff35169,Phùng Văn Cung,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|6dfdced78f5f9f,Hoa Lan,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|6e0717f89b8e86,Võ Văn Kiệt,ward|ho-chi-minh|phuong-binh-phu,Hồ Chí Minh,Street
+street|6e084b50af0247,Số 19A,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|6e7c613f0d3fa1,Ngô Quyền,ward|ho-chi-minh|phuong-an-ong,Hồ Chí Minh,Street
+street|6f0d783a434d22,160,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|6f3340f9156861,Phan Văn Sửu,ward|ho-chi-minh|phuong-tan-binh,Hồ Chí Minh,Street
+street|6f7b048c754c30,Hẻm 43D Hồ Văn Huê,ward|ho-chi-minh|phuong-uc-nhuan,Hồ Chí Minh,Street
+street|6fb14f77d2c0d3,Nguyễn Trường Tộ,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|6fed50fe8033a7,Bờ Xe Lam,ward|ho-chi-minh|xa-tan-nhut,Hồ Chí Minh,Street
+street|70ca3a79bb63ee,Xô Viết Nghệ Tĩnh,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|70ccba1f179fb0,An Phú Đông 25,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|710e435f7c9afd,Quốc Lộ 13,ward|ho-chi-minh|phuong-binh-thanh,Hồ Chí Minh,Street
+street|711860578eef55,Lê Văn Quới,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|71b3837e6365b3,Bùi Hữu Nghĩa,ward|ho-chi-minh|phuong-an-ong,Hồ Chí Minh,Street
+street|71c8778e868eb9,Số 10,ward|ho-chi-minh|phuong-tam-binh,Hồ Chí Minh,Street
+street|726515f00ab6b7,Quang Trung,ward|ho-chi-minh|phuong-go-vap,Hồ Chí Minh,Street
+street|728f2001a3ebfc,Phạm Văn Chiêu,ward|ho-chi-minh|phuong-thong-tay-hoi,Hồ Chí Minh,Street
+street|729b523ecc3eeb,Hoàng Diệu,ward|ho-chi-minh|phuong-khanh-hoi,Hồ Chí Minh,Street
+street|72c988a2842892,Tân Cảng,ward|ho-chi-minh|phuong-thanh-my-tay,Hồ Chí Minh,Street
+street|72dfbd64e423ed,ĐT 743,ward|ho-chi-minh|phuong-thuan-giao,Hồ Chí Minh,Street
+street|72f2b5953e933b,Trần Bạch Đằng,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|736da57c096c37,Nguyễn Hồng Đào,ward|ho-chi-minh|phuong-tan-binh,Hồ Chí Minh,Street
+street|7383453a0cacbe,Trần Quang Khải,ward|ho-chi-minh|phuong-tan-inh,Hồ Chí Minh,Street
+street|73fe3cb0b9e8d1,4,ward|ho-chi-minh|phuong-linh-xuan,Hồ Chí Minh,Street
+street|740927cbee1fdf,Lưu Chí Hiếu,ward|ho-chi-minh|phuong-rach-dua,Hồ Chí Minh,Street
+street|74579f5d173e40,Phạm Văn Bạch,ward|ho-chi-minh|phuong-tan-son,Hồ Chí Minh,Street
+street|74a6b698256793,Hoàng Tăng Bí,ward|ho-chi-minh|phuong-trung-my-tay,Hồ Chí Minh,Street
+street|74b0e064bc8ee6,Số 14,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|74b5ef97220171,Xô Viết Nghệ Tĩnh,ward|ho-chi-minh|phuong-thanh-my-tay,Hồ Chí Minh,Street
+street|74e5eedd546211,Nguyễn Văn Nguyễn,ward|ho-chi-minh|phuong-tan-inh,Hồ Chí Minh,Street
+street|75646597c099ee,Trường Sa,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|75b34b58346493,Cộng Hòa,ward|ho-chi-minh|phuong-tan-son-nhat,Hồ Chí Minh,Street
+street|75f5d77e359c76,Số 9M,ward|ho-chi-minh|phuong-tan-thuan,Hồ Chí Minh,Street
+street|75f789f81921d7,Bưng Ông Thoàn,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|762ff884135b95,Lê Văn Thọ,ward|ho-chi-minh|phuong-thong-tay-hoi,Hồ Chí Minh,Street
+street|768b53b9fa553f,Phan Văn Hớn,ward|ho-chi-minh|xa-ba-iem,Hồ Chí Minh,Street
+street|76a4ffbb5bf344,Trịnh Đình Trọng,ward|ho-chi-minh|phuong-tan-phu,Hồ Chí Minh,Street
+street|76a9d356cdd3ec,Đoàn Văn Bơ,ward|ho-chi-minh|phuong-khanh-hoi,Hồ Chí Minh,Street
+street|76db5c0217cff3,Nguyễn Duy Dương,ward|ho-chi-minh|phuong-vuon-lai,Hồ Chí Minh,Street
+street|76e31f643c2b70,Nguyễn Thiện Thuật,ward|ho-chi-minh|phuong-binh-thanh,Hồ Chí Minh,Street
+street|7708ee5b20b0e7,Thạnh Xuân 25,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|77899e30febe49,Số 5,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|77c5cdccaa8ae3,Thạnh Lộc 31,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|77ff53eb647c3d,12,ward|ho-chi-minh|phuong-long-phuoc,Hồ Chí Minh,Street
+street|7847dd15d45202,Thiên Phước,ward|ho-chi-minh|phuong-tan-hoa,Hồ Chí Minh,Street
+street|78765e8a6f834e,Liên Khu 5-6,ward|ho-chi-minh|phuong-binh-tan,Hồ Chí Minh,Street
+street|78805f295fb957,Liên khu 8-9,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|78b2f0dae049fc,Phạm Viết Chánh,ward|ho-chi-minh|phuong-thanh-my-tay,Hồ Chí Minh,Street
+street|793f79a32b8293,Nguyễn Ảnh Thủ,ward|ho-chi-minh|phuong-tan-thoi-hiep,Hồ Chí Minh,Street
+street|798c173b2e6994,Lý Thường Kiệt,ward|ho-chi-minh|phuong-tan-hoa,Hồ Chí Minh,Street
+street|79aff9d5fe8a85,Thạnh Lộc 27,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|79b491f22d6c41,Nguyễn Thị Xinh,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|7a3cbc8af4beb2,Lương Thế Vinh,ward|ho-chi-minh|phuong-phu-thanh,Hồ Chí Minh,Street
+street|7ae7323e2ca607,Số 1,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|7b3bd5a1f97620,Võ Thị Liễu,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|7b8a5a0bd396d0,Lê Trọng Tấn,ward|ho-chi-minh|phuong-tan-son-nhi,Hồ Chí Minh,Street
+street|7bfca4218522fb,Đường số 83,ward|ho-chi-minh|phuong-cat-lai,Hồ Chí Minh,Street
+street|7c14acbf62b13c,Số 11N,ward|ho-chi-minh|phuong-tan-thuan,Hồ Chí Minh,Street
+street|7c1bc4d3ca09c7,Phan Văn Khải,ward|ho-chi-minh|xa-tan-an-hoi,Hồ Chí Minh,Street
+street|7c2ccb95a701dc,Số 4,ward|ho-chi-minh|phuong-phu-thuan,Hồ Chí Minh,Street
+street|7c57ec6f01f434,Đường Trịnh Quang Nghị,ward|ho-chi-minh|phuong-binh-ong,Hồ Chí Minh,Street
+street|7c800fa3053748,Trần Phú,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|7c9a378052468f,Trần Bình Trọng,ward|ho-chi-minh|phuong-cho-quan,Hồ Chí Minh,Street
+street|7cfb869b2015f8,Trần Kế Xương,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|7d94a19341dc66,3/2,ward|ho-chi-minh|phuong-dien-hong,Hồ Chí Minh,Street
+street|7db047b8596246,Đường Số 5,ward|ho-chi-minh|xa-binh-hung,Hồ Chí Minh,Street
+street|7dcfd754f31855,26,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|7ddedadb473fe8,Cô Giang,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|7e0293e943289d,Âu Cơ,ward|ho-chi-minh|phuong-phu-tho-hoa,Hồ Chí Minh,Street
+street|7e8bbffaa49fb0,Quốc Lộ 13,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|7edf481958a1fb,Ao Đôi,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|7fb7b99645cf13,Trương Đăng Quế,ward|ho-chi-minh|phuong-hanh-thong,Hồ Chí Minh,Street
+street|8093432e785d65,Phan Xích Long,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|80a14004f10462,Song Hành,ward|ho-chi-minh|phuong-binh-phu,Hồ Chí Minh,Street
+street|80f2847e03144c,Đường Cầu Vồng 5,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|81214a0f179a73,Nguyễn Huy Tưởng,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|8122e57ec19b2b,5,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|81649f3d0e7785,Hoa Sữa,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|81928fcfc41fdf,Số 6,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|819aa641be6eb4,Thủy Lợi,ward|ho-chi-minh|phuong-phuoc-long,Hồ Chí Minh,Street
+street|81a49ce913fee0,Tôn Thất Tùng,ward|ho-chi-minh|phuong-ben-thanh,Hồ Chí Minh,Street
+street|81f46e6aea6309,Số 25A,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|82034311010299,Huỳnh Văn Bánh,ward|ho-chi-minh|phuong-phu-nhuan,Hồ Chí Minh,Street
+street|822255a85d3130,N3,ward|ho-chi-minh|xa-tru-van-tho,Hồ Chí Minh,Street
+street|82793a70e8a070,An Dương Vương,ward|ho-chi-minh|phuong-binh-phu,Hồ Chí Minh,Street
+street|829381fb801a3b,Phan Xích Long,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|82a20582762d62,Thanh Tịnh,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|82ceb0df1cc101,Sử Hy Nhan,ward|ho-chi-minh|phuong-cat-lai,Hồ Chí Minh,Street
+street|82e969b9fc0842,Bình Lợi,ward|ho-chi-minh|phuong-binh-loi-trung,Hồ Chí Minh,Street
+street|8313ecb8d7dc2b,Lê Hồng Phong,ward|ho-chi-minh|phuong-di-an,Hồ Chí Minh,Street
+street|8315ee0a25c3a8,Lạc Long Quân,ward|ho-chi-minh|phuong-binh-thoi,Hồ Chí Minh,Street
+street|833ad0bb3a5d87,Nguyễn Sơn,ward|ho-chi-minh|phuong-phu-tho-hoa,Hồ Chí Minh,Street
+street|835537f7d0571b,Quốc lộ 13,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|839f13624b5353,Số 41,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|83e97be122d518,8,ward|ho-chi-minh|phuong-thong-tay-hoi,Hồ Chí Minh,Street
+street|83f05b17719dc7,Số 60 - TML,ward|ho-chi-minh|phuong-cat-lai,Hồ Chí Minh,Street
+street|84134917dfb31a,Số 34,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|846d539cec4638,Phạm Hữu Lầu,ward|ho-chi-minh|phuong-phu-thuan,Hồ Chí Minh,Street
+street|847f92d8a74ee2,Nguyễn Văn Quỳ,ward|ho-chi-minh|phuong-tan-thuan,Hồ Chí Minh,Street
+street|85fe61fd0cf903,Bạch Vân,ward|ho-chi-minh|phuong-an-ong,Hồ Chí Minh,Street
+street|862244bf71ef01,Vĩnh Lộc,ward|ho-chi-minh|xa-vinh-loc,Hồ Chí Minh,Street
+street|865c52ff53b36e,Chiến Lược,ward|ho-chi-minh|phuong-binh-tan,Hồ Chí Minh,Street
+street|86754cd3b45c0a,Thành Thái,ward|ho-chi-minh|phuong-dien-hong,Hồ Chí Minh,Street
+street|8692fcaa590631,12,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|86a42d6b78e761,Dương Tử Giang,ward|ho-chi-minh|phuong-cho-lon,Hồ Chí Minh,Street
+street|86e4298b6a18bc,Tây Hòa,ward|ho-chi-minh|phuong-phuoc-long,Hồ Chí Minh,Street
+street|872a735822dc69,9,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|87814b12db1b9a,Nguyễn Văn Siêu,ward|ho-chi-minh|phuong-di-an,Hồ Chí Minh,Street
+street|879743601c81d7,Phan Đình Phùng,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|87a3902b5cf8b9,Thống Nhất,ward|ho-chi-minh|phuong-an-hoi-ong,Hồ Chí Minh,Street
+street|87d5a1b6f759ae,Nguyễn Văn Quá,ward|ho-chi-minh|phuong-ong-hung-thuan,Hồ Chí Minh,Street
+street|87d76fd4cd856d,Phan Văn Trị,ward|ho-chi-minh|phuong-hanh-thong,Hồ Chí Minh,Street
+street|87e4c8485bda3c,Đoàn Thị Điểm,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|87f2f498a7fe4e,Phú Thuận,ward|ho-chi-minh|phuong-phu-thuan,Hồ Chí Minh,Street
+street|88912dc9e79a89,Võ Văn Kiệt,ward|ho-chi-minh|phuong-cau-ong-lanh,Hồ Chí Minh,Street
+street|88a8a431d27919,Ung Văn Khiêm,ward|ho-chi-minh|phuong-thanh-my-tay,Hồ Chí Minh,Street
+street|89446a9b1b45dc,138,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|8956187ba72587,Số 21,ward|ho-chi-minh|phuong-thong-tay-hoi,Hồ Chí Minh,Street
+street|895cae0ea44dff,34B,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|897d8f8ae8ccb5,Nguyễn Kiệm,ward|ho-chi-minh|phuong-uc-nhuan,Hồ Chí Minh,Street
+street|89b37976093f31,9A,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|89cf155e6f9914,Nguyễn Văn Tăng,ward|ho-chi-minh|phuong-long-binh,Hồ Chí Minh,Street
+street|8a98e3e29879fd,Lũy Bán Bích,ward|ho-chi-minh|phuong-phu-thanh,Hồ Chí Minh,Street
+street|8b178d8c34c33d,Số 3,ward|ho-chi-minh|phuong-binh-ong,Hồ Chí Minh,Street
+street|8b1f3144435c27,Thạnh Lộc 19,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|8b29c593a63596,Phạm Phú Thứ,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|8b71594e4ef636,Số 5A,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|8b71a433c2bc09,Nguyễn Công Trứ,ward|ho-chi-minh|phuong-ben-thanh,Hồ Chí Minh,Street
+street|8bbe56b2fd23dc,Phan Anh,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|8c1012fa31da1f,Nguyễn Cửu Vân,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|8c6c625bb7e513,Nguyễn Cảnh Chân,ward|ho-chi-minh|phuong-cau-ong-lanh,Hồ Chí Minh,Street
+street|8c932d3439db9d,Cao Lỗ,ward|ho-chi-minh|phuong-chanh-hung,Hồ Chí Minh,Street
+street|8cbcb7d265ecb4,Số 11,ward|ho-chi-minh|phuong-thong-tay-hoi,Hồ Chí Minh,Street
+street|8ccb198184d8ad,Hương lộ 80,ward|ho-chi-minh|phuong-binh-tan,Hồ Chí Minh,Street
+street|8cccf56abc818c,Huỳnh Văn Nghệ,ward|ho-chi-minh|phuong-tan-son,Hồ Chí Minh,Street
+street|8d209c27a1a942,Tam Đa,ward|ho-chi-minh|phuong-long-phuoc,Hồ Chí Minh,Street
+street|8d693997569e84,Hẻm 171 Trần Huy Liệu,ward|ho-chi-minh|phuong-phu-nhuan,Hồ Chí Minh,Street
+street|8e77a3db9ffb17,Cư Xá Lữ Gia,ward|ho-chi-minh|phuong-phu-tho,Hồ Chí Minh,Street
+street|8ecfb9d02e5ff8,Lý Thái Tổ,ward|ho-chi-minh|phuong-ban-co,Hồ Chí Minh,Street
+street|8ef28bd779b785,Tây Thạnh,ward|ho-chi-minh|phuong-tay-thanh,Hồ Chí Minh,Street
+street|8f4317e66e7a61,Số 1,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|8f47efdc5f349f,Nguyễn Hiền,ward|ho-chi-minh|phuong-ban-co,Hồ Chí Minh,Street
+street|8fd628e48c8d22,Nguyễn Thanh Sơn,ward|ho-chi-minh|phuong-cat-lai,Hồ Chí Minh,Street
+street|900b9b7c6fd69d,Bến Bình Đông,ward|ho-chi-minh|phuong-phu-inh,Hồ Chí Minh,Street
+street|906bfdedd90fb9,Phó Đức Chính,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|9082ab78273c55,Hoàng Sa,ward|ho-chi-minh|phuong-tan-inh,Hồ Chí Minh,Street
+street|908b7b8744df37,Phan Văn Trị,ward|ho-chi-minh|phuong-binh-loi-trung,Hồ Chí Minh,Street
+street|90ca215192c672,Nguyễn Văn Linh,ward|ho-chi-minh|phuong-binh-ong,Hồ Chí Minh,Street
+street|90d4b056cfb8be,Quốc lộ 1A,ward|ho-chi-minh|phuong-ong-hung-thuan,Hồ Chí Minh,Street
+street|90d539b8fe0016,Số 61,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|90e131f8db3279,Nguyễn Phúc Chu,ward|ho-chi-minh|phuong-tan-son,Hồ Chí Minh,Street
+street|915e31504201e8,Nguyễn Thị Minh Khai,ward|ho-chi-minh|phuong-sai-gon,Hồ Chí Minh,Street
+street|91db4571ff7df0,Nguyễn Trọng Tuyển,ward|ho-chi-minh|phuong-tan-son-hoa,Hồ Chí Minh,Street
+street|921e46076b766b,Số 24,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|922687336883cf,Số 160,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|925b879a765bcd,Phạm Văn Chiêu,ward|ho-chi-minh|phuong-an-hoi-tay,Hồ Chí Minh,Street
+street|926deef15de720,40,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|9293b3ccb693cb,Nguyễn Thượng Hiền,ward|ho-chi-minh|phuong-ban-co,Hồ Chí Minh,Street
+street|92ae342a311759,35,ward|ho-chi-minh|phuong-cat-lai,Hồ Chí Minh,Street
+street|92de2566bcb152,Đào Tông Nguyên,ward|ho-chi-minh|xa-nha-be,Hồ Chí Minh,Street
+street|92fb68f2b43078,Trần Thái Tông,ward|ho-chi-minh|phuong-tan-son,Hồ Chí Minh,Street
+street|9315bc98be2249,Số 51,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|9316fccc718cb0,Phạm Văn Đồng,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|932b91a802e562,Tân Chánh Hiệp 36,ward|ho-chi-minh|phuong-trung-my-tay,Hồ Chí Minh,Street
+street|93a2dd86b961aa,N1,ward|ho-chi-minh|xa-tru-van-tho,Hồ Chí Minh,Street
+street|93a9e7fe883539,Số 10,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|940f50d7e1703f,Nguyễn Cửu Chí,ward|ho-chi-minh|xa-tan-nhut,Hồ Chí Minh,Street
+street|9482ac50ca0b39,Ngô Chí Quốc,ward|ho-chi-minh|phuong-tam-binh,Hồ Chí Minh,Street
+street|94aa686a1f2bf1,Nguyễn Thị Thập,ward|ho-chi-minh|phuong-phu-thuan,Hồ Chí Minh,Street
+street|94b8e0a41dcbb5,Phú Định,ward|ho-chi-minh|phuong-phu-inh,Hồ Chí Minh,Street
+street|94cbd7b2a2b662,Nguyễn Bặc,ward|ho-chi-minh|phuong-tan-son-hoa,Hồ Chí Minh,Street
+street|94f67e99071a04,44,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|95111019ff79c1,Trần Thanh Mại,ward|ho-chi-minh|phuong-tan-tao,Hồ Chí Minh,Street
+street|9545f44010a89f,Nguyễn Văn Đậu,ward|ho-chi-minh|phuong-binh-loi-trung,Hồ Chí Minh,Street
+street|955f69ffbff265,Nguyễn Thái Bình,ward|ho-chi-minh|phuong-sai-gon,Hồ Chí Minh,Street
+street|959dd94a37b31a,Trần Thị Trọng,ward|ho-chi-minh|phuong-tan-son,Hồ Chí Minh,Street
+street|95db879665a25d,Nguyễn Bỉnh Khiêm,ward|ho-chi-minh|phuong-tan-inh,Hồ Chí Minh,Street
+street|966d3dd44b87dc,Bình Đông,ward|ho-chi-minh|phuong-phu-inh,Hồ Chí Minh,Street
+street|96c66273914795,Cao Bá Nhạ,ward|ho-chi-minh|phuong-cau-ong-lanh,Hồ Chí Minh,Street
+street|96e08d43a0038e,Số 6,ward|ho-chi-minh|phuong-linh-xuan,Hồ Chí Minh,Street
+street|96eb8b49a62669,Nguyễn Biểu,ward|ho-chi-minh|phuong-cho-quan,Hồ Chí Minh,Street
+street|96edaeba327f89,Mai Hắc Đế,ward|ho-chi-minh|phuong-phu-inh,Hồ Chí Minh,Street
+street|9735c23697ecac,16,ward|ho-chi-minh|phuong-chanh-hung,Hồ Chí Minh,Street
+street|9860a41052e85c,Bình Giã,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|98a7484bd5b3c5,Nguyễn Cơ Thạch,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|98db774afb5425,Trung Mỹ Tây 19,ward|ho-chi-minh|phuong-trung-my-tay,Hồ Chí Minh,Street
+street|98e6909bcdd05a,Nguyễn Ảnh Thủ,ward|ho-chi-minh|phuong-trung-my-tay,Hồ Chí Minh,Street
+street|997df04982021b,Nguyễn Thị Nhuần,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|9a06d3a5b705c1,Kinh Dương Vương,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|9a320101084181,Số 1,ward|ho-chi-minh|phuong-an-hoi-ong,Hồ Chí Minh,Street
+street|9a37d0981565a6,Lạc Long Quân,ward|ho-chi-minh|phuong-tan-hoa,Hồ Chí Minh,Street
+street|9ab0ea9c8950a1,Vườn Lài,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|9b0bb0a9b8b116,Nguyễn Văn Tạo,ward|ho-chi-minh|xa-hiep-phuoc,Hồ Chí Minh,Street
+street|9b3742d3321c5c,Nguyễn Thiện Thuật,ward|ho-chi-minh|phuong-rach-dua,Hồ Chí Minh,Street
+street|9b4dd745ca57ae,Đặng Nhữ Lâm,ward|ho-chi-minh|xa-nha-be,Hồ Chí Minh,Street
+street|9bac795d90eecf,Số 2,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|9be6e6b8f99e34,Lê Thánh Tôn,ward|ho-chi-minh|phuong-sai-gon,Hồ Chí Minh,Street
+street|9c34c3a8c1ba5d,D2,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|9c80cc1ef9866d,Số 4,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|9ce167a1b39a6c,Số 28,ward|ho-chi-minh|phuong-an-nhon,Hồ Chí Minh,Street
+street|9d17becfbe7908,Đồng Nai,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|9db2c942c3d972,Núi Thành,ward|ho-chi-minh|phuong-tan-binh,Hồ Chí Minh,Street
+street|9dda15ea57ebb1,Nguyễn Duy Trinh,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|9df7c9041f6a53,Tôn Thất Thuyết,ward|ho-chi-minh|phuong-khanh-hoi,Hồ Chí Minh,Street
+street|9e113275210d4f,Quốc lộ 1A,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|9e194544aa29b5,Láng Le Bàu Cò,ward|ho-chi-minh|xa-binh-loi,Hồ Chí Minh,Street
+street|9e395773f201e8,Đặng Thùy Trâm,ward|ho-chi-minh|phuong-binh-loi-trung,Hồ Chí Minh,Street
+street|9e41324b63eca7,Trần Phú,ward|ho-chi-minh|phuong-cho-quan,Hồ Chí Minh,Street
+street|9e7b441a22606f,Nam Kỳ Khởi Nghĩa,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|9e95c572471099,Tô Hiến Thành,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|9ec7db9e9b7542,Hùng Vương,ward|ho-chi-minh|phuong-cho-quan,Hồ Chí Minh,Street
+street|9f4e45f7c0f582,Số 4 Cư xá Đô Thành,ward|ho-chi-minh|phuong-ban-co,Hồ Chí Minh,Street
+street|9f51bb5b3523fe,Bà Huyện Thanh Quan,ward|ho-chi-minh|phuong-xuan-hoa,Hồ Chí Minh,Street
+street|9f805c98b0f0a3,Lý Nam Đế,ward|ho-chi-minh|phuong-minh-phung,Hồ Chí Minh,Street
+street|a162254a8ec389,Võ Văn Hát,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|a1d7a4e62cfbfb,Thạnh Lộc 57,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|a1ec8da2ba8b6d,Nguyễn Thượng Hiền,ward|ho-chi-minh|phuong-binh-loi-trung,Hồ Chí Minh,Street
+street|a23d4cee71e757,Nguyễn Đình Chiểu,ward|ho-chi-minh|phuong-uc-nhuan,Hồ Chí Minh,Street
+street|a23dc0a830a9dd,Nghiệp Vụ Đường Sắt,ward|ho-chi-minh|phuong-di-an,Hồ Chí Minh,Street
+street|a24a0e68b8d3e8,Nguyễn Văn Thương,ward|ho-chi-minh|phuong-thanh-my-tay,Hồ Chí Minh,Street
+street|a2c787337ba1c1,Lê Trọng Tấn,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|a34726189bfd92,Hoàng Sa,ward|ho-chi-minh|phuong-nhieu-loc,Hồ Chí Minh,Street
+street|a3482c2e64ffc2,827,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|a3584376cc0a8b,Phan Anh,ward|ho-chi-minh|phuong-phu-thanh,Hồ Chí Minh,Street
+street|a3af5fad94a545,Số 1,ward|ho-chi-minh|phuong-di-an,Hồ Chí Minh,Street
+street|a3af6d27574c77,Hồng Lạc,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|a3c4707a777840,Nguyễn Gia Trí,ward|ho-chi-minh|phuong-thanh-my-tay,Hồ Chí Minh,Street
+street|a413d01b0037bd,Số 3,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|a424637c12a87d,Xuân Thới Thượng 31,ward|ho-chi-minh|xa-ba-iem,Hồ Chí Minh,Street
+street|a431bcad16fc17,Hồ Thị Kỷ,ward|ho-chi-minh|phuong-vuon-lai,Hồ Chí Minh,Street
+street|a433c0c381ed1e,Nguyễn Thị Minh Khai,ward|ho-chi-minh|phuong-ban-co,Hồ Chí Minh,Street
+street|a44775afc082a2,Võ Trường Toản,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|a453d9f2bce70f,Đông Bắc,ward|ho-chi-minh|phuong-trung-my-tay,Hồ Chí Minh,Street
+street|a466a3f83f76bf,Trường Chinh,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|a4e4ab54d59f6a,Bành Văn Trân,ward|ho-chi-minh|phuong-tan-son-nhat,Hồ Chí Minh,Street
+street|a5520f5c2707e6,Nhiêu Tứ,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|a56899529dc99e,Tân Vĩnh,ward|ho-chi-minh|phuong-khanh-hoi,Hồ Chí Minh,Street
+street|a58f98d6254181,Đồng Văn Cống,ward|ho-chi-minh|phuong-cat-lai,Hồ Chí Minh,Street
+street|a595cc99fa258f,Trần Thị Hè,ward|ho-chi-minh|phuong-tan-thoi-hiep,Hồ Chí Minh,Street
+street|a59ca09961ce1c,Nguyễn Xiển,ward|ho-chi-minh|phuong-long-binh,Hồ Chí Minh,Street
+street|a6366d1ab7763e,Thạnh Lộc 29,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|a6a5a1360f448f,Võ Thị Sáu,ward|ho-chi-minh|phuong-tan-inh,Hồ Chí Minh,Street
+street|a6cce37437e169,Số 13,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|a71a6678a6e4d0,Đất Thánh,ward|ho-chi-minh|phuong-tan-hoa,Hồ Chí Minh,Street
+street|a71afc09375467,Bến Vân Đồn,ward|ho-chi-minh|phuong-vinh-hoi,Hồ Chí Minh,Street
+street|a74359b29f47aa,C18,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|a75105dd5ebbad,Nguyễn Thái Bình,ward|ho-chi-minh|phuong-tan-son-nhat,Hồ Chí Minh,Street
+street|a7e8aa2cbb0d12,Nguyễn Thị Định,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|a897270c221607,Bạch Đằng,ward|ho-chi-minh|phuong-tan-son-hoa,Hồ Chí Minh,Street
+street|a8a01536387125,Bùi Thế Mỹ,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|a8a795946d4bfa,Thạnh Xuân 39,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|a8c7bd3f885b91,Tân Kỳ Tân Quý,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|a8cbdb63463338,D1,ward|ho-chi-minh|phuong-binh-hoa,Hồ Chí Minh,Street
+street|a8da74c6bcaef0,Trần Thủ Độ,ward|ho-chi-minh|phuong-phu-thanh,Hồ Chí Minh,Street
+street|a8ee74038c36c7,Bùi Tư Toàn,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|a942343e895e10,Nguyễn Súy,ward|ho-chi-minh|phuong-phu-tho-hoa,Hồ Chí Minh,Street
+street|a966eeb717f957,Hà Thị Khéo,ward|ho-chi-minh|phuong-trung-my-tay,Hồ Chí Minh,Street
+street|a99456ea0988f0,Điện Biên Phủ,ward|ho-chi-minh|phuong-thanh-my-tay,Hồ Chí Minh,Street
+street|a999f02b496794,Số 35,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|a9b959576ead92,Lê Thánh Tôn,ward|ho-chi-minh|phuong-ben-thanh,Hồ Chí Minh,Street
+street|a9f1e45442c9de,Hoàng Diệu,ward|ho-chi-minh|phuong-phu-nhuan,Hồ Chí Minh,Street
+street|aa49e4a3d1f6b7,Gò Ô Môi,ward|ho-chi-minh|phuong-phu-thuan,Hồ Chí Minh,Street
+street|aa70ed05de5078,Trần Thị Bảy,ward|ho-chi-minh|phuong-tan-thoi-hiep,Hồ Chí Minh,Street
+street|aa75403840213a,G11,ward|ho-chi-minh|phuong-binh-tan,Hồ Chí Minh,Street
+street|aadedd18eff5d2,Cách Mạng Tháng Tám,ward|ho-chi-minh|phuong-tan-son-nhat,Hồ Chí Minh,Street
+street|aaec6d3815651f,Út Tịch,ward|ho-chi-minh|phuong-tan-son-nhat,Hồ Chí Minh,Street
+street|ab2c9476fe90b3,Hiệp Bình,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|ab3fe0c5a08be4,Cầm Bá Thước,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|ab730eb183662a,1C,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|ab746fe41516ad,Văn Cao,ward|ho-chi-minh|phuong-phu-thanh,Hồ Chí Minh,Street
+street|ab787f053d3423,Gò Dầu,ward|ho-chi-minh|phuong-phu-tho-hoa,Hồ Chí Minh,Street
+street|abba05f4e26445,Cống Lở,ward|ho-chi-minh|phuong-tan-son,Hồ Chí Minh,Street
+street|abf7ac814b95df,Nguyễn Thị Minh Khai,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|ac26955f7b0dd1,Huỳnh Khương An,ward|ho-chi-minh|phuong-an-nhon,Hồ Chí Minh,Street
+street|ac544761c7e62b,Bờ Huệ,ward|ho-chi-minh|xa-binh-chanh,Hồ Chí Minh,Street
+street|ac6fc5e72408aa,Chu Văn An,ward|ho-chi-minh|phuong-binh-thanh,Hồ Chí Minh,Street
+street|acecbc1f44e11d,NK11,ward|ho-chi-minh|phuong-thoi-hoa,Hồ Chí Minh,Street
+street|ad5725296b9f0a,Phan Chu Trinh,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|ad959a14a082bb,Thạnh Lộc 25,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|adabfc729d6f3e,Hữu Nghị,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|adae8d3ff7067a,Nguyễn Đình Chính,ward|ho-chi-minh|phuong-phu-nhuan,Hồ Chí Minh,Street
+street|aea7d247cba18c,Bùi Viện,ward|ho-chi-minh|phuong-ben-thanh,Hồ Chí Minh,Street
+street|aed349d41fb569,Gò Cát,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|aef66eaa87e57a,Trung Mỹ Tân Xuân,ward|ho-chi-minh|xa-hoc-mon,Hồ Chí Minh,Street
+street|afac4e6c0c196e,Dương Văn Dương,ward|ho-chi-minh|phuong-tan-son-nhi,Hồ Chí Minh,Street
+street|aff4f0c06a4647,Số 8,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|b013d13ea327f2,10,ward|ho-chi-minh|phuong-binh-tan,Hồ Chí Minh,Street
+street|b050e6d5dc8720,Lê Hồng Phong,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|b0590672033d04,Bưng Ông Thoàn,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|b09cd32f54cd52,Masteri Centre Point,ward|ho-chi-minh|phuong-long-binh,Hồ Chí Minh,Street
+street|b0dd96d1c8aa48,Mai Xuân Thưởng,ward|ho-chi-minh|phuong-binh-tien,Hồ Chí Minh,Street
+street|b1012539eea678,N3,ward|ho-chi-minh|phuong-thuan-giao,Hồ Chí Minh,Street
+street|b10f9e10bab83c,Bến Vân Đồn,ward|ho-chi-minh|phuong-xom-chieu,Hồ Chí Minh,Street
+street|b1145f25a2568c,Bùi Xương Trạch,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|b1b73e7c0ce418,Số 59,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|b1e569f75ebac1,Phan Văn Khỏe,ward|ho-chi-minh|phuong-binh-tay,Hồ Chí Minh,Street
+street|b2b2e75849503c,Cư xá Thanh Đa,ward|ho-chi-minh|phuong-binh-quoi,Hồ Chí Minh,Street
+street|b2c2b632dd468d,Đường số 12,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|b2ce86a2b8ffff,An Hội,ward|ho-chi-minh|phuong-an-hoi-tay,Hồ Chí Minh,Street
+street|b2f2839bbf1849,Trần Đại Nghĩa,ward|ho-chi-minh|phuong-tan-tao,Hồ Chí Minh,Street
+street|b31d666025d10f,Nguyễn Oanh,ward|ho-chi-minh|phuong-go-vap,Hồ Chí Minh,Street
+street|b3281596130769,Tôn Đản,ward|ho-chi-minh|phuong-khanh-hoi,Hồ Chí Minh,Street
+street|b344292ab066bc,Nguyễn Văn Trỗi,ward|ho-chi-minh|phuong-tan-son-hoa,Hồ Chí Minh,Street
+street|b345dc20df5c7e,359,ward|ho-chi-minh|phuong-phuoc-long,Hồ Chí Minh,Street
+street|b3a90a060f1033,Võ Trường Toản,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|b4301634691c30,Quốc Lộ 1,ward|ho-chi-minh|phuong-binh-tan,Hồ Chí Minh,Street
+street|b43345e07dcb96,Đường số 53,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|b46e5cd88d6a06,Hoàng Diệu 2,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|b4bb8962f732ba,Lê Văn Sỹ,ward|ho-chi-minh|phuong-phu-nhuan,Hồ Chí Minh,Street
+street|b4bdab9328d165,Số 5,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|b4e51a905abea6,Âu Cơ,ward|ho-chi-minh|phuong-tan-son-nhi,Hồ Chí Minh,Street
+street|b4f18a041afc5e,Lê Văn Quới,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|b5815aa35eccee,Thạnh Lộc 48,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|b58c05d82e912b,Đường D2A,ward|ho-chi-minh|phuong-long-binh,Hồ Chí Minh,Street
+street|b5983b1a40d9e8,Bến Đình,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|b5b9d124e6779b,Lê Văn Sỹ,ward|ho-chi-minh|phuong-tan-son-hoa,Hồ Chí Minh,Street
+street|b5c12d514a80c9,Tên Lửa,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|b602b18e9f8a7f,Trần Huy Liệu,ward|ho-chi-minh|phuong-phu-nhuan,Hồ Chí Minh,Street
+street|b6251fe1298d19,Số 4,ward|ho-chi-minh|phuong-an-hoi-ong,Hồ Chí Minh,Street
+street|b640de9a26053e,Lý Văn Phức,ward|ho-chi-minh|phuong-tan-inh,Hồ Chí Minh,Street
+street|b669d2cedacea2,Số 9,ward|ho-chi-minh|phuong-thong-tay-hoi,Hồ Chí Minh,Street
+street|b6c82a56794de0,Lý Thường Kiệt,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|b700f771537b2d,Yên Thế,ward|ho-chi-minh|phuong-tan-son-hoa,Hồ Chí Minh,Street
+street|b71ccd8512d086,Phan Xích Long,ward|ho-chi-minh|phuong-uc-nhuan,Hồ Chí Minh,Street
+street|b73c55d4cf9fc3,Bàu Cát 2,ward|ho-chi-minh|phuong-tan-binh,Hồ Chí Minh,Street
+street|b81227929f2170,Văn Chung,ward|ho-chi-minh|phuong-tan-binh,Hồ Chí Minh,Street
+street|b81d499e3c7c5b,Hẻm 39 Nguyễn Cửu Đàm,ward|ho-chi-minh|phuong-tan-son-nhi,Hồ Chí Minh,Street
+street|b8268ab5b82a0d,Nguyễn Bình,ward|ho-chi-minh|xa-hiep-phuoc,Hồ Chí Minh,Street
+street|b84ac389f8f4ab,Đường số 71 - CL / Đường số 71 - CL,ward|ho-chi-minh|phuong-cat-lai,Hồ Chí Minh,Street
+street|b85c806091a880,Hoàng Văn Thụ,ward|ho-chi-minh|phuong-phu-nhuan,Hồ Chí Minh,Street
+street|b87e1fc6587fd9,Nguyễn Thị Minh Khai,ward|ho-chi-minh|phuong-ben-thanh,Hồ Chí Minh,Street
+street|b8c0846cd936a3,Vĩnh Lộc,ward|ho-chi-minh|xa-tan-vinh-loc,Hồ Chí Minh,Street
+street|b8c6685b939fa5,Số 5,ward|ho-chi-minh|phuong-tan-thuan,Hồ Chí Minh,Street
+street|b8ca2c0745144f,Số 4,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|b8d42624e987b0,Nguyễn Cảnh Dị,ward|ho-chi-minh|phuong-tan-son-nhat,Hồ Chí Minh,Street
+street|b8d49aa450a9f3,Bến Chương Dương,ward|ho-chi-minh|phuong-cau-ong-lanh,Hồ Chí Minh,Street
+street|b8f499758d35bb,Bùi Đình Túy,ward|ho-chi-minh|phuong-binh-thanh,Hồ Chí Minh,Street
+street|b98a9431974346,Đường Số 2,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|b9bc687976d35d,Cư Xá Phú Lâm D,ward|ho-chi-minh|phuong-binh-phu,Hồ Chí Minh,Street
+street|b9fe82788d5117,Nguyễn Tư Nghiêm,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|ba2a2bebcc4ae3,Đỗ Xuân Hợp,ward|ho-chi-minh|phuong-phuoc-long,Hồ Chí Minh,Street
+street|ba448534f42616,Cao Thắng,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|baae44a8ffde8b,2D,ward|ho-chi-minh|phuong-phu-thuan,Hồ Chí Minh,Street
+street|bad1e86750521e,Làng Tăng Phú,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|bb14a3234952d3,An Bình,ward|ho-chi-minh|phuong-di-an,Hồ Chí Minh,Street
+street|bb171da1174a37,Lê Văn Lương,ward|ho-chi-minh|xa-nha-be,Hồ Chí Minh,Street
+street|bb50159a4d6187,Hoàng Văn Thụ,ward|ho-chi-minh|phuong-tan-son-nhat,Hồ Chí Minh,Street
+street|bb701d701e4b6b,Trường Sa,ward|ho-chi-minh|phuong-phu-nhuan,Hồ Chí Minh,Street
+street|bb790b85de1a21,20,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|bb98a09c638a8f,Số 44,ward|ho-chi-minh|phuong-tan-tao,Hồ Chí Minh,Street
+street|bbd247461aab0a,D8,ward|ho-chi-minh|phuong-thu-dau-mot,Hồ Chí Minh,Street
+street|bbf091672b12fa,Bàu Bàng,ward|ho-chi-minh|phuong-tan-binh,Hồ Chí Minh,Street
+street|bc2f0f6bca8384,Nguyễn Phúc Nguyên,ward|ho-chi-minh|phuong-nhieu-loc,Hồ Chí Minh,Street
+street|bc3aa967779ebb,Hẻm 1886 Huỳnh Tấn Phát,ward|ho-chi-minh|xa-nha-be,Hồ Chí Minh,Street
+street|bc579d46c4b33d,Nguyễn Lâm,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|bc5cc3b63c4287,Nguyễn Thị Thập,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|bc7328d74dd78d,Phạm Văn Hai,ward|ho-chi-minh|phuong-tan-son-nhat,Hồ Chí Minh,Street
+street|bcc56176355d79,Đề Thám,ward|ho-chi-minh|phuong-cau-ong-lanh,Hồ Chí Minh,Street
+street|bd1a4d93d1ca99,Song Hành,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|bd3f33904d5361,Chánh Hưng,ward|ho-chi-minh|phuong-chanh-hung,Hồ Chí Minh,Street
+street|bd5cde93acb8c8,Trần Hưng Đạo,ward|ho-chi-minh|phuong-cau-ong-lanh,Hồ Chí Minh,Street
+street|bd69a4e0c01ea1,Chiến Lược,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|be0cebf625fb50,31,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|be13758b1f68ec,Trương Hán Siêu,ward|ho-chi-minh|phuong-tan-inh,Hồ Chí Minh,Street
+street|be1902275d95ca,Hùng Vương,ward|ho-chi-minh|phuong-an-ong,Hồ Chí Minh,Street
+street|be612371a7d71f,Trần Minh Quyền,ward|ho-chi-minh|phuong-vuon-lai,Hồ Chí Minh,Street
+street|be81db0328e091,Đông Hưng Thuận 3,ward|ho-chi-minh|phuong-ong-hung-thuan,Hồ Chí Minh,Street
+street|be9ed4380d4bfd,Thạch Thị Thanh,ward|ho-chi-minh|phuong-tan-inh,Hồ Chí Minh,Street
+street|bebd3613015bc2,Kha Vạn Cân,ward|ho-chi-minh|phuong-di-an,Hồ Chí Minh,Street
+street|becdf4f9b5b310,Sư Vạn Hạnh,ward|ho-chi-minh|phuong-vuon-lai,Hồ Chí Minh,Street
+street|bf0ab45537bb54,Nguyễn Phi Khanh,ward|ho-chi-minh|phuong-tan-inh,Hồ Chí Minh,Street
+street|bf104009fd2deb,Bình Thành,ward|ho-chi-minh|phuong-binh-tan,Hồ Chí Minh,Street
+street|bf1b19a53f36b8,Thới An 16,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|bf1dc48f3ca5b0,Nguyễn Xí,ward|ho-chi-minh|phuong-binh-thanh,Hồ Chí Minh,Street
+street|bf5b7df1e19555,Thạch Lam,ward|ho-chi-minh|phuong-phu-thanh,Hồ Chí Minh,Street
+street|bf7331eb5e2683,Số 23,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|bfa39e64dcfb83,Lê Hồng Phong,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|c007e75bf2f3fc,8,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|c012b4424f1f16,Hòa Bình,ward|ho-chi-minh|phuong-phu-thanh,Hồ Chí Minh,Street
+street|c024f5b4dbd53f,T4,ward|ho-chi-minh|phuong-long-binh,Hồ Chí Minh,Street
+street|c03cd56194ca7c,Trần Khắc Chân,ward|ho-chi-minh|phuong-uc-nhuan,Hồ Chí Minh,Street
+street|c03d522a90bf84,Nguyễn Xuân Khoát,ward|ho-chi-minh|phuong-phu-tho-hoa,Hồ Chí Minh,Street
+street|c049645f7e07e3,Đoàn Văn Bơ,ward|ho-chi-minh|phuong-xom-chieu,Hồ Chí Minh,Street
+street|c126e67734dbd6,Hoàng Văn Thụ,ward|ho-chi-minh|phuong-thu-dau-mot,Hồ Chí Minh,Street
+street|c1793d7ab6fb2e,Phan Huy Chú,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|c17d4968b9906b,Lý Tế Xuyên,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|c1d77b5e10fb0d,Số 6,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|c2225f0e021edb,Lê Trực,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|c24f03f446ef4c,Số 23,ward|ho-chi-minh|phuong-binh-phu,Hồ Chí Minh,Street
+street|c253cc199fceee,Lê Ngã,ward|ho-chi-minh|phuong-tan-phu,Hồ Chí Minh,Street
+street|c27254b9ed386e,An Phú Đông 12,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|c2d9b7d86b84f5,Nguyễn Cửu Đàm,ward|ho-chi-minh|phuong-tan-son-nhi,Hồ Chí Minh,Street
+street|c2dad9020366d3,Hồng Bàng,ward|ho-chi-minh|phuong-binh-tay,Hồ Chí Minh,Street
+street|c2e5f413e8ed45,Tỉnh Lộ 10,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|c333be045cf86b,D5,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|c340831943c979,Số 28,ward|ho-chi-minh|phuong-cat-lai,Hồ Chí Minh,Street
+street|c34edd180c1a68,Phan Văn Hớn,ward|ho-chi-minh|phuong-ong-hung-thuan,Hồ Chí Minh,Street
+street|c36c8e4353e372,Số 43,ward|ho-chi-minh|phuong-vinh-hoi,Hồ Chí Minh,Street
+street|c37a8549338e3a,30/4,ward|ho-chi-minh|phuong-rach-dua,Hồ Chí Minh,Street
+street|c388fe0155f3b8,Lý Thường Kiệt,ward|ho-chi-minh|phuong-dien-hong,Hồ Chí Minh,Street
+street|c3c72dd9f32405,Số 10,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|c3d2cf08ae6a13,N1,ward|ho-chi-minh|phuong-tan-son-nhi,Hồ Chí Minh,Street
+street|c441867d7dc366,Phan Văn Trị,ward|ho-chi-minh|phuong-go-vap,Hồ Chí Minh,Street
+street|c47b64c154bc8e,Lê Quang Định,ward|ho-chi-minh|phuong-hanh-thong,Hồ Chí Minh,Street
+street|c4b851ee53ae81,Thới An 35,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|c4bff55114df27,Hiệp Thành 13,ward|ho-chi-minh|phuong-tan-thoi-hiep,Hồ Chí Minh,Street
+street|c4c9f11de0170d,Lê Văn Lương,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|c4d38555b485b2,Ký Con,ward|ho-chi-minh|phuong-sai-gon,Hồ Chí Minh,Street
+street|c5423098739da2,Nguyễn Đình Chính,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|c59cf4ea46b6ad,Nguyễn Trãi,ward|ho-chi-minh|phuong-cho-quan,Hồ Chí Minh,Street
+street|c6105f31739999,Số 1,ward|ho-chi-minh|phuong-tan-thuan,Hồ Chí Minh,Street
+street|c64b9b327ed74f,Thạnh Xuân 24,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|c66fe442d274d4,Miếu Gò Xoài,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|c6781ca3382769,Lý Chính Thắng,ward|ho-chi-minh|phuong-xuan-hoa,Hồ Chí Minh,Street
+street|c6bb56fcc7853b,Hậu Giang,ward|ho-chi-minh|phuong-tan-son-nhat,Hồ Chí Minh,Street
+street|c717eb95f3d208,D7,ward|ho-chi-minh|xa-bau-bang,Hồ Chí Minh,Street
+street|c773d6bc42285e,Nguyễn Văn Linh,ward|ho-chi-minh|phuong-tan-thuan,Hồ Chí Minh,Street
+street|c79b567ac98daa,Huỳnh Thị Mài,ward|ho-chi-minh|xa-hoc-mon,Hồ Chí Minh,Street
+street|c7afcfa62454bf,4,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|c7df1da9a5be96,Nguyễn Thái Bình,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|c7f257f7b2bcd3,Nguyễn Văn Yến,ward|ho-chi-minh|phuong-phu-thanh,Hồ Chí Minh,Street
+street|c8036a0b85980a,Bà Thau,ward|ho-chi-minh|xa-tan-nhut,Hồ Chí Minh,Street
+street|c88becbcc1a11c,234,ward|ho-chi-minh|xa-binh-chanh,Hồ Chí Minh,Street
+street|c8b002d330f987,Thân Văn Nhiếp,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|c8b7b1f4440cee,Nguyễn Trãi,ward|ho-chi-minh|phuong-cau-ong-lanh,Hồ Chí Minh,Street
+street|c90e57cfc53de8,Xa Lộ Hà Nội,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|c98809d6510926,Đông Hưng Thuận 27,ward|ho-chi-minh|phuong-ong-hung-thuan,Hồ Chí Minh,Street
+street|ca0ee6b052bc14,Trần Thị Cờ,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|ca86a5ad2e808a,Nguyễn Xí,ward|ho-chi-minh|phuong-binh-loi-trung,Hồ Chí Minh,Street
+street|cb395efff72e29,Thạnh Xuân 37,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|cb5dde6b87798b,Số 6,ward|ho-chi-minh|phuong-vinh-hoi,Hồ Chí Minh,Street
+street|cb69dbb48551f4,Phổ Quang,ward|ho-chi-minh|phuong-tan-son-hoa,Hồ Chí Minh,Street
+street|cb7f20fa2ad729,Tân Hương,ward|ho-chi-minh|phuong-tan-son-nhi,Hồ Chí Minh,Street
+street|cbfe693e357dc0,Bùi Quang Là,ward|ho-chi-minh|phuong-an-hoi-tay,Hồ Chí Minh,Street
+street|cc086369204ce8,Trường Sa,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|cc3cfffb9651de,Vũ Tùng,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|cc82708de990c6,Lô 2,ward|ho-chi-minh|xa-binh-loi,Hồ Chí Minh,Street
+street|cce07031db18df,Trần Cao Vân,ward|ho-chi-minh|phuong-phu-nhuan,Hồ Chí Minh,Street
+street|cd56eeb780c4a6,Thạnh Xuân 33,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|cd575b935bdb25,Thích Quảng Đức,ward|ho-chi-minh|phuong-binh-loi-trung,Hồ Chí Minh,Street
+street|cd68a2119e18d6,Đặng Văn Ngữ,ward|ho-chi-minh|phuong-phu-nhuan,Hồ Chí Minh,Street
+street|cd97b0421331d4,Số 32,ward|ho-chi-minh|phuong-cat-lai,Hồ Chí Minh,Street
+street|cdcbdf071d8be8,Số 9,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|ce2f24e7f96b4f,Phan Văn Đáng,ward|ho-chi-minh|phuong-cat-lai,Hồ Chí Minh,Street
+street|ce5c5bf2c9b5b9,Số 6,ward|ho-chi-minh|phuong-long-phuoc,Hồ Chí Minh,Street
+street|ceab58fccf4097,Số 51,ward|ho-chi-minh|phuong-an-hoi-tay,Hồ Chí Minh,Street
+street|cee9071a1a47b3,Nguyễn Thượng Hiền,ward|ho-chi-minh|phuong-hanh-thong,Hồ Chí Minh,Street
+street|cf4c6452ff699e,Nguyễn Đình Chiểu,ward|ho-chi-minh|phuong-tan-inh,Hồ Chí Minh,Street
+street|cf79c162d0a6dd,Số 7,ward|ho-chi-minh|phuong-hanh-thong,Hồ Chí Minh,Street
+street|cfea776fc2506e,Kênh Tân Hóa,ward|ho-chi-minh|phuong-tan-phu,Hồ Chí Minh,Street
+street|d055a25dec0080,Nguyễn Thị Sóc,ward|ho-chi-minh|xa-xuan-thoi-son,Hồ Chí Minh,Street
+street|d06441e43c23dd,Dương Công Khi,ward|ho-chi-minh|xa-xuan-thoi-son,Hồ Chí Minh,Street
+street|d073b77ec12bfc,D11,ward|ho-chi-minh|xa-tru-van-tho,Hồ Chí Minh,Street
+street|d092ee0458f49f,Trần Phú,ward|ho-chi-minh|phuong-an-ong,Hồ Chí Minh,Street
+street|d0b91d5e15efb6,Nguyễn Xiển,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|d0bd8b8ea6c620,Nhật Tảo,ward|ho-chi-minh|phuong-dien-hong,Hồ Chí Minh,Street
+street|d129d0e7eb121c,Tân Thới Nhất 13,ward|ho-chi-minh|phuong-ong-hung-thuan,Hồ Chí Minh,Street
+street|d1686819d0db28,Hẻm 65 Đường Số 2,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|d178c8b4130c4d,Nguyễn Thị Thập,ward|ho-chi-minh|phuong-tan-thuan,Hồ Chí Minh,Street
+street|d1c906d47a908a,Lý Thường Kiệt,ward|ho-chi-minh|phuong-minh-phung,Hồ Chí Minh,Street
+street|d227b1e696228a,Phan Tây Hồ,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|d250dd36beb180,Bùi Thị Xuân,ward|ho-chi-minh|phuong-ben-thanh,Hồ Chí Minh,Street
+street|d2ed8974ff832d,Tỉnh Lộ 10,ward|ho-chi-minh|phuong-tan-tao,Hồ Chí Minh,Street
+street|d35ec6efd08d26,Đinh Tiên Hoàng,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|d3a38740a1f87c,Lê Đình Cẩn,ward|ho-chi-minh|phuong-tan-tao,Hồ Chí Minh,Street
+street|d3ab654afc0218,Đồng Đen,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|d3ba8af6964866,Điện Biên Phủ,ward|ho-chi-minh|phuong-ban-co,Hồ Chí Minh,Street
+street|d4162129a6517c,Cách Mạng Tháng Tám,ward|ho-chi-minh|phuong-xuan-hoa,Hồ Chí Minh,Street
+street|d456e9533f38a1,Hải Thượng Lãn Ông,ward|ho-chi-minh|phuong-cho-lon,Hồ Chí Minh,Street
+street|d4a4fcf9415eb3,An Hội,ward|ho-chi-minh|phuong-an-hoi-ong,Hồ Chí Minh,Street
+street|d4fbd248134697,Hẻm 127 Ni sư Huỳnh Liên,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|d53d0026972b5a,D9,ward|ho-chi-minh|xa-tru-van-tho,Hồ Chí Minh,Street
+street|d57cf08179faf8,Trương Công Định,ward|ho-chi-minh|phuong-tan-binh,Hồ Chí Minh,Street
+street|d57d9c58bd7ac1,Nguyễn Quý Anh,ward|ho-chi-minh|phuong-tan-son-nhi,Hồ Chí Minh,Street
+street|d68019e962d2b0,Nguyễn Hữu Tiến,ward|ho-chi-minh|phuong-tay-thanh,Hồ Chí Minh,Street
+street|d6a33fbb583196,Thích Quảng Đức,ward|ho-chi-minh|phuong-uc-nhuan,Hồ Chí Minh,Street
+street|d6cb744a5da8b0,Số 4,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|d7233c8af95a4c,Đình Phong Phú,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|d7a60e73467915,Đường số 22,ward|ho-chi-minh|xa-binh-hung,Hồ Chí Minh,Street
+street|d7b6768b709310,Nguyễn Quý Yêm,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|d7cbb097bd4703,Tân Sơn Nhì,ward|ho-chi-minh|phuong-tan-son-nhi,Hồ Chí Minh,Street
+street|d7d74c822a6522,5,ward|ho-chi-minh|phuong-long-truong,Hồ Chí Minh,Street
+street|d8372c276a92fd,Huỳnh Văn Lũy,ward|ho-chi-minh|phuong-phu-loi,Hồ Chí Minh,Street
+street|d8d69c333a2efa,Huỳnh Văn Chính,ward|ho-chi-minh|phuong-tan-phu,Hồ Chí Minh,Street
+street|d8fe8c6fc2a2a7,Số 27,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|d960be357e70e8,Chế Lan Viên,ward|ho-chi-minh|phuong-tay-thanh,Hồ Chí Minh,Street
+street|d96dadcd4d886c,Nguyễn Thị Sáu,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|d9a869ad46642c,Lê Văn Việt,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|d9c9e2c5cc3d4b,Phan Văn Trị,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|d9d117288d475c,D25S,ward|ho-chi-minh|phuong-thoi-hoa,Hồ Chí Minh,Street
+street|da7b153e1ab988,Nguyễn Văn Trỗi,ward|ho-chi-minh|phuong-phu-loi,Hồ Chí Minh,Street
+street|daa9a2c650f19d,Cô Giang,ward|ho-chi-minh|phuong-vung-tau,Hồ Chí Minh,Street
+street|dab19aba68d60e,Quốc Lộ 22,ward|ho-chi-minh|xa-tan-an-hoi,Hồ Chí Minh,Street
+street|db0861b626f000,Quốc Lộ 50,ward|ho-chi-minh|xa-hung-long,Hồ Chí Minh,Street
+street|db0d00078e9b7b,Hòa Hưng,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|db427a7e6c1ddb,Nguyễn Hữu Cảnh,ward|ho-chi-minh|phuong-thanh-my-tay,Hồ Chí Minh,Street
+street|db5485ad88f4c9,Đường Số 15,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|db8e3643469703,Số 14,ward|ho-chi-minh|phuong-phuoc-long,Hồ Chí Minh,Street
+street|dbd34e7d9cb690,Hoàng Bật Đạt,ward|ho-chi-minh|phuong-tan-son,Hồ Chí Minh,Street
+street|dbdf75c2fc337d,Tân Thới Nhất 2,ward|ho-chi-minh|phuong-ong-hung-thuan,Hồ Chí Minh,Street
+street|dc17efb1356d81,Số 48,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|dc3c886aaa61a2,Cư xá Trần Quang Diệu,ward|ho-chi-minh|phuong-nhieu-loc,Hồ Chí Minh,Street
+street|dcbc87310129fd,Khuất Văn Bức,ward|ho-chi-minh|xa-tan-nhut,Hồ Chí Minh,Street
+street|dcf7d44584f8bb,Lê Thiệt,ward|ho-chi-minh|phuong-phu-tho-hoa,Hồ Chí Minh,Street
+street|dd0a1913763430,Số 8,ward|ho-chi-minh|phuong-tan-my,Hồ Chí Minh,Street
+street|dd10ad818f0032,Trần Quang Diệu,ward|ho-chi-minh|phuong-nhieu-loc,Hồ Chí Minh,Street
+street|dd2f1240114330,Trần Hưng Đạo,ward|ho-chi-minh|phuong-ong-hoa,Hồ Chí Minh,Street
+street|dd90fd4c2763c8,19,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|dda65557e9c6f3,Nguyễn Bình,ward|ho-chi-minh|xa-nha-be,Hồ Chí Minh,Street
+street|dddc928be64fb3,Nguyễn Thái Sơn,ward|ho-chi-minh|phuong-an-nhon,Hồ Chí Minh,Street
+street|ddf521b1117815,Đông Hồ,ward|ho-chi-minh|phuong-chanh-hung,Hồ Chí Minh,Street
+street|de0ef3ae1a15e9,Tạ Quang Bửu,ward|ho-chi-minh|phuong-chanh-hung,Hồ Chí Minh,Street
+street|de0fc9cc4b8ffd,Bàu Cát,ward|ho-chi-minh|phuong-tan-binh,Hồ Chí Minh,Street
+street|de171950a98d03,Bát Nàn,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|de675116395a5a,Cô Bắc,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|deb0eefda17a20,Ông Ích Khiêm,ward|ho-chi-minh|phuong-hoa-binh,Hồ Chí Minh,Street
+street|deefa2ec0b8254,Cách Mạng Tháng Tám,ward|ho-chi-minh|phuong-nhieu-loc,Hồ Chí Minh,Street
+street|df22983f8b026c,Giải Phóng,ward|ho-chi-minh|phuong-tan-son-nhat,Hồ Chí Minh,Street
+street|dfbfb95ec3a569,Nguyễn Tất Thành,ward|ho-chi-minh|phuong-xom-chieu,Hồ Chí Minh,Street
+street|e0089213b2f69c,Hoàng Quốc Việt,ward|ho-chi-minh|phuong-phu-thuan,Hồ Chí Minh,Street
+street|e0493d7a9cc01e,Hoa Hồng,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|e04ccfb95d4db9,Hẻm 125 Bành Văn Trân,ward|ho-chi-minh|phuong-tan-son-nhat,Hồ Chí Minh,Street
+street|e09d2306b507f8,Trần Thị Điệu,ward|ho-chi-minh|phuong-phuoc-long,Hồ Chí Minh,Street
+street|e0a94279e79945,Nguyễn Tri Phương,ward|ho-chi-minh|phuong-vuon-lai,Hồ Chí Minh,Street
+street|e0e4398347f318,Lạc Long Quân,ward|ho-chi-minh|phuong-hoa-binh,Hồ Chí Minh,Street
+street|e105b60a906e08,Số 45,ward|ho-chi-minh|phuong-tan-thuan,Hồ Chí Minh,Street
+street|e15557bac26932,16,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|e1564b8a336fc9,Mễ Cốc,ward|ho-chi-minh|phuong-phu-inh,Hồ Chí Minh,Street
+street|e15c5f9415365d,Bình Trị Đông,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|e1da2109febf37,Trương Hán Siêu,ward|ho-chi-minh|phuong-sai-gon,Hồ Chí Minh,Street
+street|e2546bcce9284f,Võ Thị Sáu,ward|ho-chi-minh|phuong-xuan-hoa,Hồ Chí Minh,Street
+street|e2945d871e1abe,612,ward|ho-chi-minh|xa-bau-bang,Hồ Chí Minh,Street
+street|e2aadb2e8ada1a,Quang Trung,ward|ho-chi-minh|phuong-an-hoi-tay,Hồ Chí Minh,Street
+street|e2b65cefd9a1e4,Vành Đai 4,ward|ho-chi-minh|phuong-thoi-hoa,Hồ Chí Minh,Street
+street|e2e4ba2f047ad0,Nguyễn Trọng Lội,ward|ho-chi-minh|phuong-tan-son-nhat,Hồ Chí Minh,Street
+street|e2f481b7a480d0,Lê Hồng Phong,ward|ho-chi-minh|phuong-cho-quan,Hồ Chí Minh,Street
+street|e331370630dd35,Trần Đình Xu,ward|ho-chi-minh|phuong-cau-ong-lanh,Hồ Chí Minh,Street
+street|e3e7f1fc357d22,Hẻm 315 Lê Văn Sỹ,ward|ho-chi-minh|phuong-nhieu-loc,Hồ Chí Minh,Street
+street|e45d46d50938d0,Tập Đoàn 6B,ward|ho-chi-minh|phuong-tan-tao,Hồ Chí Minh,Street
+street|e48a722d4b1d42,D11,ward|ho-chi-minh|phuong-tay-thanh,Hồ Chí Minh,Street
+street|e492cdf2b44221,Trần Hưng Đạo,ward|ho-chi-minh|phuong-cho-quan,Hồ Chí Minh,Street
+street|e4af23d6fa4bbe,Sư Vạn Hạnh,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|e4f4415c385f08,Bạch Mã,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|e53552fae1ec23,Lê Đại Hành,ward|ho-chi-minh|phuong-phu-tho,Hồ Chí Minh,Street
+street|e5930f218d06e2,Đinh Hòa,ward|ho-chi-minh|phuong-phu-inh,Hồ Chí Minh,Street
+street|e5affe0780a079,Trường Chinh,ward|ho-chi-minh|phuong-tan-binh,Hồ Chí Minh,Street
+street|e5fc1ec720e5e4,D6,ward|ho-chi-minh|phuong-tan-my,Hồ Chí Minh,Street
+street|e61a3c64d68fc4,18,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|e65ae6da2234ab,Đô Đốc Long,ward|ho-chi-minh|phuong-tan-son-nhi,Hồ Chí Minh,Street
+street|e736d29f6e42a2,1A,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|e7471d6ee2c335,Tỉnh lộ 25B,ward|ho-chi-minh|phuong-cat-lai,Hồ Chí Minh,Street
+street|e75770a5a6f045,Tống Văn Hên,ward|ho-chi-minh|phuong-tan-son,Hồ Chí Minh,Street
+street|e7c1dd51c18304,Đinh Bộ Lĩnh,ward|ho-chi-minh|phuong-binh-thanh,Hồ Chí Minh,Street
+street|e7cf0e7e1921d9,Vân Côi,ward|ho-chi-minh|phuong-tan-son-nhat,Hồ Chí Minh,Street
+street|e806379a99a824,Lê Văn Thịnh,ward|ho-chi-minh|phuong-cat-lai,Hồ Chí Minh,Street
+street|e80c444e1968a1,Số 5,ward|ho-chi-minh|phuong-tan-my,Hồ Chí Minh,Street
+street|e82b6777f250f5,Trần Khắc Chân,ward|ho-chi-minh|phuong-tan-inh,Hồ Chí Minh,Street
+street|e83edd16808200,Lâm Văn Bền,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|e88e027df2a366,23,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|e8c38cdb1d892d,13,ward|ho-chi-minh|phuong-long-binh,Hồ Chí Minh,Street
+street|e9414576f26a2f,Số 5,ward|ho-chi-minh|phuong-binh-phu,Hồ Chí Minh,Street
+street|e9566f47b5ee0f,Số 22,ward|ho-chi-minh|phuong-binh-trung,Hồ Chí Minh,Street
+street|e959e40f320024,Vườn Thơm,ward|ho-chi-minh|xa-binh-loi,Hồ Chí Minh,Street
+street|e99110dccf3c85,Nguyễn Thái Học,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|e9d0fa092dc029,Số 19,ward|ho-chi-minh|phuong-thong-tay-hoi,Hồ Chí Minh,Street
+street|ea5c42ef90dd93,Huỳnh Thị Đồng,ward|ho-chi-minh|xa-nha-be,Hồ Chí Minh,Street
+street|ea64eb8d8fe2e1,Huỳnh Tấn Phát,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|eafdc0cac56524,Cao Thắng,ward|ho-chi-minh|phuong-ban-co,Hồ Chí Minh,Street
+street|eb79d9c0174aa2,Số 13,ward|ho-chi-minh|phuong-linh-xuan,Hồ Chí Minh,Street
+street|ebfeb698c3776a,Hồ Học Lãm,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|ec1388cfb787f1,Trần Văn Mười,ward|ho-chi-minh|xa-ba-iem,Hồ Chí Minh,Street
+street|ec23283d6b2b12,319,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|ec34e12913c53b,Nguyễn Tư Giản,ward|ho-chi-minh|phuong-an-hoi-tay,Hồ Chí Minh,Street
+street|ec8d795d35d3c0,Quốc Lộ 1,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|ecd524a86e58f8,Số 10,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|ed0d67c0f96715,Số 43,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|ed29106b1a940b,Linh Đông,ward|ho-chi-minh|phuong-hiep-binh,Hồ Chí Minh,Street
+street|ed92e32d74ae10,Lê Quang Định,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|edfdac927bcf03,Số 5,ward|ho-chi-minh|phuong-linh-xuan,Hồ Chí Minh,Street
+street|eebe89a875cb8f,Số 13A,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|eedaab1373c3d6,Chương Dương,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|eedc2d6d2f8f2b,Thới An 32,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|ef4c231490f410,Lê Đức Thọ,ward|ho-chi-minh|phuong-an-hoi-tay,Hồ Chí Minh,Street
+street|f007d1d519f583,Số 5,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|f04d6f15471218,Lý Thường Kiệt,ward|ho-chi-minh|phuong-phu-tho,Hồ Chí Minh,Street
+street|f113cf2a3c082c,Số 2,ward|ho-chi-minh|phuong-an-hoi-ong,Hồ Chí Minh,Street
+street|f12396010c72b1,Bùi Hữu Nghĩa,ward|ho-chi-minh|phuong-gia-inh,Hồ Chí Minh,Street
+street|f142131d78ba39,Lê Lợi,ward|ho-chi-minh|xa-hoc-mon,Hồ Chí Minh,Street
+street|f175466c794ede,Đào Trí,ward|ho-chi-minh|phuong-phu-thuan,Hồ Chí Minh,Street
+street|f1bebdd1461800,Hồ Biểu Chánh,ward|ho-chi-minh|phuong-phu-nhuan,Hồ Chí Minh,Street
+street|f1ea81aa5dc701,Tú Mỡ,ward|ho-chi-minh|phuong-hanh-thong,Hồ Chí Minh,Street
+street|f1ead5a6918d30,Tam Đảo,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|f204a2d69ec368,Phạm Vấn,ward|ho-chi-minh|phuong-phu-tho-hoa,Hồ Chí Minh,Street
+street|f245142d63ffe8,Liên khu 4-5,ward|ho-chi-minh|phuong-binh-tan,Hồ Chí Minh,Street
+street|f247f857578ba1,Man Thiện,ward|ho-chi-minh|phuong-tang-nhon-phu,Hồ Chí Minh,Street
+street|f254e5c1aeabed,Số 28,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|f27088b2bc980e,Số 6,ward|ho-chi-minh|phuong-an-hoi-ong,Hồ Chí Minh,Street
+street|f28b559898db6a,18,ward|ho-chi-minh|phuong-thong-tay-hoi,Hồ Chí Minh,Street
+street|f2b603588027f9,Nguyễn Đức Thiệu,ward|ho-chi-minh|phuong-di-an,Hồ Chí Minh,Street
+street|f2dde35db927c2,Số 5,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|f2fb5693486e1e,Ngô Đức Kế,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|f2fe205ab9ea39,Thạnh Xuân 21,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|f36090d41e789a,Số 212,ward|ho-chi-minh|phuong-phuoc-long,Hồ Chí Minh,Street
+street|f3af161f224baa,Nguyễn Trãi,ward|ho-chi-minh|phuong-ben-thanh,Hồ Chí Minh,Street
+street|f3b65491e35f63,Hẻm 147/15 Đường Thạnh Lộc 37,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|f416d524c63ad6,Lê Văn Lộc,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
+street|f481976c16959e,Thanh Niên,ward|ho-chi-minh|xa-tan-vinh-loc,Hồ Chí Minh,Street
+street|f485622bc13a3b,Vĩnh Viễn,ward|ho-chi-minh|phuong-vuon-lai,Hồ Chí Minh,Street
+street|f4a8d665b71b3b,N4,ward|ho-chi-minh|xa-tru-van-tho,Hồ Chí Minh,Street
+street|f509aa3baf0360,Hồ Văn Tư,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|f50addc99473d3,Tô Ngọc Vân,ward|ho-chi-minh|phuong-thoi-an,Hồ Chí Minh,Street
+street|f571de1561fcda,Nguyễn Xiển,ward|ho-chi-minh|phuong-long-phuoc,Hồ Chí Minh,Street
+street|f5d09271d0f82d,Hương Lộ 3,ward|ho-chi-minh|phuong-binh-hung-hoa,Hồ Chí Minh,Street
+street|f62e36c43f8846,Nguyễn Đình Chiểu,ward|ho-chi-minh|phuong-xuan-hoa,Hồ Chí Minh,Street
+street|f661f9b1a2410b,1B,ward|ho-chi-minh|phuong-phu-thuan,Hồ Chí Minh,Street
+street|f686263388a558,Số 24,ward|ho-chi-minh|phuong-vinh-hoi,Hồ Chí Minh,Street
+street|f6be0217c06df3,Ngô Quang Thắm,ward|ho-chi-minh|xa-hiep-phuoc,Hồ Chí Minh,Street
+street|f6f8f816b32356,Hà Huy Giáp,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|f73017637b304a,Lê Đức Thọ,ward|ho-chi-minh|phuong-go-vap,Hồ Chí Minh,Street
+street|f7737c816b8812,Bùi Minh Trực,ward|ho-chi-minh|phuong-chanh-hung,Hồ Chí Minh,Street
+street|f7ecfc0c648d18,3/2,ward|ho-chi-minh|phuong-vuon-lai,Hồ Chí Minh,Street
+street|f7f83d04d896f3,Cống Quỳnh,ward|ho-chi-minh|phuong-cau-ong-lanh,Hồ Chí Minh,Street
+street|f7f9257eb53cb9,Nguyễn Bá Huân,ward|ho-chi-minh|phuong-an-khanh,Hồ Chí Minh,Street
+street|f8a62fca5e71a9,Diệp Minh Tuyền,ward|ho-chi-minh|phuong-phuoc-long,Hồ Chí Minh,Street
+street|f8a85bac37a9a8,Phước Thiện,ward|ho-chi-minh|phuong-long-binh,Hồ Chí Minh,Street
+street|f8f550fd0ca3d3,Nguyễn Trãi,ward|ho-chi-minh|phuong-cho-lon,Hồ Chí Minh,Street
+street|f9072f356e51ca,Hoàng Xuân Hoành,ward|ho-chi-minh|phuong-phu-thanh,Hồ Chí Minh,Street
+street|f969743aa1d82a,Trần Bình Trọng,ward|ho-chi-minh|phuong-binh-loi-trung,Hồ Chí Minh,Street
+street|f9dd4b182c19a5,Số 14,ward|ho-chi-minh|phuong-thong-tay-hoi,Hồ Chí Minh,Street
+street|f9dd9a8e408369,2C,ward|ho-chi-minh|phuong-phu-thuan,Hồ Chí Minh,Street
+street|f9e37f10af1748,Lê Lai,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|fa2a5e4583e7f6,Ni Sư Huỳnh Liên,ward|ho-chi-minh|phuong-bay-hien,Hồ Chí Minh,Street
+street|fa490d3e29097b,Thạnh Lộc 13,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|fb5ab2dcc5e5a6,Lê Văn Sỹ,ward|ho-chi-minh|phuong-nhieu-loc,Hồ Chí Minh,Street
+street|fb735f6d128805,Lê Văn Lương,ward|ho-chi-minh|xa-hiep-phuoc,Hồ Chí Minh,Street
+street|fb889c73c16177,Hiệp Thành 6,ward|ho-chi-minh|phuong-tan-thoi-hiep,Hồ Chí Minh,Street
+street|fbc2c3b3fd6e3f,Hẻm 118-122 An Dương Vương,ward|ho-chi-minh|phuong-phu-inh,Hồ Chí Minh,Street
+street|fbd2b37c998c47,Nguyễn Văn Thủ,ward|ho-chi-minh|phuong-tan-inh,Hồ Chí Minh,Street
+street|fc0717bf725a73,Nguyễn Văn Bá,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|fc4ede48629175,Thạnh Lộc 16,ward|ho-chi-minh|phuong-an-phu-ong,Hồ Chí Minh,Street
+street|fc5acabe1e0934,Trần Thiện Chánh,ward|ho-chi-minh|phuong-hoa-hung,Hồ Chí Minh,Street
+street|fc7dce73407052,Lê Quang Định,ward|ho-chi-minh|phuong-binh-thanh,Hồ Chí Minh,Street
+street|fc9b767a58e47f,1B,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|fcb226f46e2e0e,Số 1A,ward|ho-chi-minh|phuong-long-binh,Hồ Chí Minh,Street
+street|fcbe65d1be0f0b,Số 4,ward|ho-chi-minh|phuong-phu-inh,Hồ Chí Minh,Street
+street|fd5977f46fa117,Tản Đà,ward|ho-chi-minh|phuong-cho-lon,Hồ Chí Minh,Street
+street|fd67420df13e92,Liên Khu 16-18,ward|ho-chi-minh|phuong-binh-tri-ong,Hồ Chí Minh,Street
+street|fdb0d4e52d3f26,Hoàng Hoa Thám,ward|ho-chi-minh|phuong-binh-loi-trung,Hồ Chí Minh,Street
+street|fdbf55ffb00355,Trần Xuân Soạn,ward|ho-chi-minh|phuong-tan-hung,Hồ Chí Minh,Street
+street|fdc6d313bfb985,Số 13,ward|ho-chi-minh|phuong-thu-uc,Hồ Chí Minh,Street
+street|fe343da3213e55,Vạn Kiếp,ward|ho-chi-minh|phuong-cho-lon,Hồ Chí Minh,Street
+street|fed51e3b11882c,Phó Đức Chính,ward|ho-chi-minh|phuong-ben-thanh,Hồ Chí Minh,Street
+street|fed9690b624c95,Nguyễn Công Hoan,ward|ho-chi-minh|phuong-cau-kieu,Hồ Chí Minh,Street
+street|fef465f5329a72,Hậu Giang,ward|ho-chi-minh|phuong-binh-tay,Hồ Chí Minh,Street
+street|fefadf2d0d772a,Nguyễn Văn Cừ,ward|ho-chi-minh|phuong-cho-quan,Hồ Chí Minh,Street
+street|fefc10a5758010,Calmette,ward|ho-chi-minh|phuong-ben-thanh,Hồ Chí Minh,Street
+street|ff86ef8c7460df,Số 7A,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|ffb0d41aaea95a,Số 1A,ward|ho-chi-minh|phuong-an-lac,Hồ Chí Minh,Street
+street|ffcaa36df186bc,Lê Lợi,ward|ho-chi-minh|phuong-tam-thang,Hồ Chí Minh,Street
