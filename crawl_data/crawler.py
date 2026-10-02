@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
 from urllib.parse import parse_qs, urljoin, urlparse
 
-import cloudscraper
+from curl_cffi import requests as curl_requests
 from bs4 import BeautifulSoup
 from openpyxl import Workbook
 
@@ -62,10 +62,9 @@ def build_page_url(page: int) -> str:
     return f"https://batdongsan.com.vn/ban-nha-dat-tp-ho-chi-minh/p{page}?vrs=1"
 
 
-def create_scraper() -> cloudscraper.CloudScraper:
-    scraper = cloudscraper.create_scraper(
-        browser={"browser": "chrome", "platform": "darwin", "mobile": False}
-    )
+def create_scraper() -> curl_requests.Session:
+    # Impersonate a real Chrome TLS/HTTP2 fingerprint so Cloudflare does not challenge us
+    scraper = curl_requests.Session(impersonate="chrome")
     
     # Load cookies from .env if available
     env_file = Path(__file__).parent / ".env"
