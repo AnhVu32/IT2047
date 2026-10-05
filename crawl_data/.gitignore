@@ -21,3 +21,9 @@ data/*.json
 
 # Keep the Excel template required by export pipeline
 !data/exceltemplate.xlsx
+
+# Checkpoints and tracking logs
+checkpoint.json
+**/checkpoint.json
+track_*.log
+**/track_*.log
