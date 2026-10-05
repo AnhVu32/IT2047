@@ -4,8 +4,21 @@ import csv
 import json
 import os
 import re
+import sys
 import time
 from dataclasses import asdict, dataclass
+
+# Hỗ trợ hiển thị UTF-8 an toàn trên Windows Console
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+if hasattr(sys.stderr, "reconfigure"):
+    try:
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
 from urllib.parse import parse_qs, urljoin, urlparse
@@ -14,8 +27,13 @@ from curl_cffi import requests as curl_requests
 from bs4 import BeautifulSoup
 from openpyxl import Workbook
 
-BASE_URL = "https://batdongsan.com.vn/ban-nha-dat-tp-ho-chi-minh?vrs=1"
 DOMAIN = "https://batdongsan.com.vn"
+
+VALID_CATEGORIES = [
+    "ban-can-ho-chung-cu-tp-ho-chi-minh",
+    "ban-nha-dat-tp-ho-chi-minh",
+]
+DEFAULT_CATEGORY = "ban-can-ho-chung-cu-tp-ho-chi-minh"
 
 
 @dataclass
@@ -56,10 +74,10 @@ class Listing:
     price_trend: str = ""
 
 
-def build_page_url(page: int) -> str:
+def build_page_url(category: str, page: int) -> str:
     if page <= 1:
-        return BASE_URL
-    return f"https://batdongsan.com.vn/ban-nha-dat-tp-ho-chi-minh/p{page}?vrs=1"
+        return f"{DOMAIN}/{category}?vrs=1&tpl=list"
+    return f"{DOMAIN}/{category}/p{page}?vrs=1&tpl=list"
 
 
 def create_scraper() -> curl_requests.Session:
@@ -481,95 +499,33 @@ def sanitize_column_key(raw_key: str) -> str:
     return key
 
 
-def to_title_from_key(raw_key: str) -> str:
-    cleaned = raw_key.replace("_", " ").strip()
-    return cleaned.title()
-
-
-VI_COLUMN_MAP = {
-    "title": "Tiêu đề",
-    "url": "URL tin",
-    "price": "Giá",
-    "area_m2": "Diện tích",
-    "price_per_m2": "Đơn giá/m²",
-    "location": "Khu vực",
-    "posted_date": "Ngày đăng",
-    "contact_masked": "SĐT (ẩn)",
-    "snippet": "Mô tả ngắn",
-    "source_page": "Trang nguồn",
-    "all_text": "Toàn bộ text hiển thị",
-    "all_tokens": "Toàn bộ token",
-    "all_links": "Tất cả liên kết",
-    "image_urls": "Danh sách ảnh",
-    "card_html": "HTML card",
-    "listing_code": "Mã tin",
-    "listing_type": "Loại tin",
-    "expiry_date": "Ngày hết hạn",
-    "real_estate_type": "Loại BĐS",
-    "province": "Tỉnh thành",
-    "district": "Quận huyện",
-    "description_text": "Thông tin mô tả",
-    "price_range": "Khoảng giá",
-    "bedrooms": "Phòng ngủ",
-    "folder": "Folder",
-    "address": "Địa chỉ",
-    "old_address": "Địa chỉ trước sát nhập",
-    "link_location": "Link Location",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "property_features": "Đặc điểm bất động sản",
-    "project_info": "Thông tin dự án",
-}
-
-
-VI_PREFERRED_COLUMN_ORDER = [
-    "Tiêu đề",
-    "Thông tin mô tả",
-    "Mã tin",
-    "Loại tin",
-    "Ngày đăng",
-    "Ngày hết hạn",
-    "Loại BĐS",
-    "Khoảng giá",
-    "Diện tích",
-    "Phòng ngủ",
-    "Địa chỉ",
-    "Địa chỉ trước sát nhập",
-    "Tỉnh thành",
-    "Quận huyện",
-    "Link Location",
-    "Latitude",
-    "Longitude",
-    "Thông tin dự án",
-    "Đặc điểm bất động sản",
-    "Folder",
-    "URL tin",
+PREFERRED_COLUMN_ORDER = [
+    "title",
+    "description_text",
+    "listing_code",
+    "listing_type",
+    "posted_date",
+    "expiry_date",
+    "real_estate_type",
+    "price_range",
+    "price",
+    "price_per_m2",
+    "area_m2",
+    "bedrooms",
+    "address",
+    "old_address",
+    "province",
+    "district",
+    "link_location",
+    "latitude",
+    "longitude",
+    "project_info",
+    "property_features",
+    "price_trend",
+    "folder",
+    "breadcrumb_folder",
+    "url",
 ]
-
-
-def to_vi_column_name(column_key: str) -> str:
-    if column_key in VI_COLUMN_MAP:
-        return VI_COLUMN_MAP[column_key]
-
-    if column_key.startswith("dac_diem_"):
-        suffix = column_key.replace("dac_diem_", "", 1)
-        return f"Đặc điểm - {to_title_from_key(suffix)}"
-
-    if column_key.startswith("du_an_"):
-        suffix = column_key.replace("du_an_", "", 1)
-        return f"Dự án - {to_title_from_key(suffix)}"
-
-    return column_key
-
-
-def rename_row_keys_to_vi(rows: List[dict]) -> List[dict]:
-    renamed_rows: List[dict] = []
-    for row in rows:
-        new_row = {}
-        for key, value in row.items():
-            new_row[to_vi_column_name(key)] = value
-        renamed_rows.append(new_row)
-    return renamed_rows
 
 
 def enrich_listing_detail(
@@ -799,61 +755,132 @@ def parse_listings(html: str, source_page: str) -> List[Listing]:
 
 
 def crawl(
+    category: str,
     pages: int,
-    timeout: int,
-    retries: int,
-    delay: float,
-    max_items: int,
-    with_detail: bool,
-    output_path: Optional[Path] = None,
+    start_page: int = 1,
+    timeout: int = 25,
+    retries: int = 3,
+    delay: float = 1.2,
+    max_items: int = 0,
+    with_detail: bool = True,
+    jsonl_path: Optional[Path] = None,
+    checkpoint_path: Optional[Path] = None,
+    track_log_path: Optional[Path] = None,
+    seen_urls: Optional[set] = None,
     include_snippet: bool = True,
-    vi_columns: bool = True,
 ) -> List[Listing]:
     results: List[Listing] = []
-    seen_urls = set()
+    if seen_urls is None:
+        seen_urls = set()
 
-    for page in range(1, pages + 1):
-        page_url = build_page_url(page)
-        print(f"Crawling page {page}/{pages}...")
-        html = fetch_html(page_url, timeout=timeout, retries=retries, delay=delay)
-        page_listings = parse_listings(html, source_page=page_url)
+    log_track(
+        track_log_path,
+        f"[SESSION START] Phân khúc: {category} | Dự kiến cào trang: {start_page} -> {pages} | Giới hạn max_items: {max_items} | Đã có sẵn trong DB: {len(seen_urls)} tin",
+    )
 
-        page_results = []
-        for item in page_listings:
-            if item.url in seen_urls:
-                continue
-            seen_urls.add(item.url)
+    current_page = start_page
+    current_item_index = 0
+    total_page_items = 0
 
-            if with_detail:
-                try:
-                    item = enrich_listing_detail(
-                        item, timeout=timeout, retries=retries, delay=delay
+    try:
+        for page in range(start_page, pages + 1):
+            current_page = page
+            page_url = build_page_url(category, page)
+            print(f"\nCrawling [{category}] page {page}/{pages}...")
+            log_track(track_log_path, f"[START PAGE {page}/{pages}] URL: {page_url}")
+
+            html = fetch_html(page_url, timeout=timeout, retries=retries, delay=delay)
+            page_listings = parse_listings(html, source_page=page_url)
+            total_page_items = len(page_listings)
+            print(f"  -> Tim thay {total_page_items} the tin tren trang {page}.")
+            log_track(track_log_path, f"  -> Trang {page}: Tìm thấy {total_page_items} tin danh sách.")
+
+            page_saved_count = 0
+            page_skipped_count = 0
+
+            for idx, item in enumerate(page_listings, start=1):
+                current_item_index = idx
+                if item.url in seen_urls:
+                    print(f"    [SKIP] Da co trong database: {item.title[:40]}...")
+                    page_skipped_count += 1
+                    continue
+                seen_urls.add(item.url)
+
+                if with_detail:
+                    try:
+                        item = enrich_listing_detail(
+                            item, timeout=timeout, retries=retries, delay=delay
+                        )
+                        time.sleep(delay)
+                    except Exception as e:
+                        print(f"    [WARN] Khong the lay chi tiet tin {item.url}: {e}")
+                        log_track(track_log_path, f"    [WARN] Lỗi chi tiết tin {item.url}: {e}")
+
+                results.append(item)
+                page_saved_count += 1
+
+                # Ghi ngay lập tức từng tin vào file JSONL (Item-level Streaming)
+                if jsonl_path:
+                    row = to_dict_rows([item], include_snippet=include_snippet)[0]
+                    append_jsonl(jsonl_path, row)
+                    print(f"    [OK] [{len(seen_urls)}] Da luu: {item.title[:40]}...")
+
+                if max_items > 0 and len(seen_urls) >= max_items:
+                    print(f"\nDa dat gioi han max_items ({max_items}). Dung cao.")
+                    if checkpoint_path:
+                        save_checkpoint(
+                            checkpoint_path,
+                            {
+                                "category": category,
+                                "last_page": page,
+                                "total_items": len(seen_urls),
+                                "updated_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                            },
+                        )
+                    log_track(
+                        track_log_path,
+                        f"[MAX_ITEMS REACHED] Đạt giới hạn {max_items} tin tại Trang {page} (tin thứ {idx}/{total_page_items}). Tổng DB: {len(seen_urls)} tin.",
                     )
-                    time.sleep(delay)
-                except Exception:
-                    pass
+                    return results
 
-            results.append(item)
-            page_results.append(item)
+            if checkpoint_path:
+                save_checkpoint(
+                    checkpoint_path,
+                    {
+                        "category": category,
+                        "last_page": page,
+                        "total_items": len(seen_urls),
+                        "updated_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                    },
+                )
+            log_track(
+                track_log_path,
+                f"[PAGE COMPLETED] Hoàn tất Trang {page}/{pages} | Lưu mới: {page_saved_count} tin | Bỏ qua: {page_skipped_count} tin | Tổng DB hiện tại: {len(seen_urls)} tin",
+            )
 
-            if max_items > 0 and len(results) >= max_items:
-                break
+            time.sleep(delay)
 
-        # Ghi ngay sau mỗi trang
-        if output_path and page_results:
-            rows = to_dict_rows(page_results, include_snippet=include_snippet, vi_columns=vi_columns)
-            append_to_json(output_path, rows)
-            print(f"  → Saved {len(rows)} items from page {page} (total: {len(results)})")
+        log_track(
+            track_log_path,
+            f"[SESSION SUCCESS] Hoàn thành trọn vẹn tất cả {pages} trang. Tổng DB hiện tại: {len(seen_urls)} tin.",
+        )
 
-        if max_items > 0 and len(results) >= max_items:
-            return results
+    except KeyboardInterrupt:
+        msg = f"[CRASH / INTERRUPTED] Người dùng bấm Ctrl+C dừng tiến trình tại Trang {current_page}/{pages} (đang xử lý tin thứ {current_item_index}/{total_page_items}). Tổng DB đã lưu an toàn: {len(seen_urls)} tin."
+        print(f"\n{msg}")
+        log_track(track_log_path, msg)
+        raise
 
-        time.sleep(delay)
+    except Exception as e:
+        msg = f"[CRASH / ERROR] Tiến trình bị lỗi đột ngột tại Trang {current_page}/{pages} (đang xử lý tin thứ {current_item_index}/{total_page_items}) | Nguyên nhân: {e}. Tổng DB đã lưu an toàn: {len(seen_urls)} tin."
+        print(f"\n{msg}")
+        log_track(track_log_path, msg)
+        raise
 
     return results
 
 
-def to_dict_rows(items: Iterable[Listing], include_snippet: bool, vi_columns: bool) -> List[dict]:
+def to_dict_rows(items: Iterable[Listing], include_snippet: bool) -> List[dict]:
     rows = []
     for item in items:
         row = asdict(item)
@@ -879,9 +906,6 @@ def to_dict_rows(items: Iterable[Listing], include_snippet: bool, vi_columns: bo
             row.pop("snippet", None)
         rows.append(row)
 
-    if vi_columns:
-        rows = rename_row_keys_to_vi(rows)
-
     return rows
 
 
@@ -895,32 +919,94 @@ def collect_fieldnames(rows: List[dict]) -> List[str]:
             seen.add(key)
             fieldnames.append(key)
 
-    if "Tiêu đề" in fieldnames:
-        ordered: List[str] = []
-        used = set()
+    ordered: List[str] = []
+    used = set()
 
-        for key in VI_PREFERRED_COLUMN_ORDER:
-            if key in seen and key not in used:
-                ordered.append(key)
-                used.add(key)
+    for key in PREFERRED_COLUMN_ORDER:
+        if key in seen and key not in used:
+            ordered.append(key)
+            used.add(key)
 
-        feature_columns = sorted(
-            [key for key in fieldnames if key.startswith("Đặc điểm - ")]
-        )
-        project_columns = sorted([key for key in fieldnames if key.startswith("Dự án - ")])
+    feature_columns = sorted([key for key in fieldnames if key.startswith("dac_diem_")])
+    project_columns = sorted([key for key in fieldnames if key.startswith("du_an_")])
 
-        for key in feature_columns + project_columns:
-            if key not in used:
-                ordered.append(key)
-                used.add(key)
+    for key in feature_columns + project_columns:
+        if key not in used:
+            ordered.append(key)
+            used.add(key)
 
-        for key in fieldnames:
-            if key not in used:
-                ordered.append(key)
+    for key in fieldnames:
+        if key not in used:
+            ordered.append(key)
 
-        return ordered
+    return ordered
 
-    return fieldnames
+
+def append_jsonl(path: Path, row: dict) -> None:
+    """Ghi 1 dòng JSON vào file jsonl (streaming append) và flush ngay xuống đĩa."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as file:
+        file.write(json.dumps(row, ensure_ascii=False) + "\n")
+        file.flush()
+
+
+def load_seen_urls(jsonl_path: Path) -> set:
+    """Nạp danh sách URL đã cào từ file jsonl để tránh cào trùng lặp."""
+    seen = set()
+    if not jsonl_path.exists():
+        return seen
+    try:
+        with jsonl_path.open("r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    record = json.loads(line)
+                    url = record.get("URL tin") or record.get("url")
+                    if url:
+                        seen.add(url)
+                except Exception:
+                    pass
+    except Exception as e:
+        print(f"[WARN] Khong the doc seen_urls tu {jsonl_path}: {e}")
+    return seen
+
+
+def load_checkpoint(checkpoint_path: Path) -> dict:
+    """Đọc thông tin checkpoint tiến độ cào."""
+    if checkpoint_path.exists():
+        try:
+            with checkpoint_path.open("r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {}
+
+
+def save_checkpoint(checkpoint_path: Path, state: dict) -> None:
+    """Lưu thông tin checkpoint tiến độ cào."""
+    checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        with checkpoint_path.open("w", encoding="utf-8") as f:
+            json.dump(state, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"[WARN] Khong the ghi checkpoint vao {checkpoint_path}: {e}")
+
+
+def log_track(log_file: Optional[Path], message: str) -> None:
+    """Ghi nhật ký tiến độ vào file track log và flush ngay lập tức."""
+    if not log_file:
+        return
+    log_file.parent.mkdir(parents=True, exist_ok=True)
+    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+    line = f"[{timestamp}] {message}\n"
+    try:
+        with log_file.open("a", encoding="utf-8") as f:
+            f.write(line)
+            f.flush()
+    except Exception:
+        pass
 
 
 def save_json(path: Path, rows: List[dict]) -> None:
@@ -981,34 +1067,99 @@ def save_xlsx(path: Path, rows: List[dict]) -> None:
     workbook.save(path)
 
 
+def export_data(
+    category: str,
+    target_format: str,
+    output_path: Optional[Path] = None,
+    jsonl_path: Optional[Path] = None,
+) -> Optional[Path]:
+    """Chuyển đổi dữ liệu từ data.jsonl sang Excel (.xlsx), .json hoặc .csv"""
+    if jsonl_path is None:
+        jsonl_path = Path("data") / category / "data.jsonl"
+
+    if not jsonl_path.exists():
+        print(f"[EXPORT ERROR] Không tìm thấy file dữ liệu: {jsonl_path}")
+        return None
+
+    rows = []
+    with jsonl_path.open("r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                try:
+                    rows.append(json.loads(line))
+                except Exception:
+                    pass
+
+    if not rows:
+        print(f"[EXPORT WARN] File {jsonl_path} không có bản ghi nào.")
+        return None
+
+    if output_path is None:
+        output_dir = Path("data") / category
+        output_path = output_dir / f"{category}.{target_format}"
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    if target_format == "xlsx":
+        save_xlsx(output_path, rows)
+    elif target_format == "json":
+        save_json(output_path, rows)
+    elif target_format == "csv":
+        save_csv(output_path, rows)
+    else:
+        print(f"[EXPORT ERROR] Định dạng không hợp lệ: {target_format}")
+        return None
+
+    print(f"[EXPORT OK] Đã xuất {len(rows)} bản ghi từ {jsonl_path.name} sang -> {output_path}")
+    return output_path
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Crawl dữ liệu nhà đất bán từ batdongsan.com.vn"
+    )
+    parser.add_argument(
+        "--category",
+        choices=VALID_CATEGORIES,
+        default=DEFAULT_CATEGORY,
+        help=f"Phân khúc BĐS cần cào ({', '.join(VALID_CATEGORIES)})",
     )
     parser.add_argument("--pages", type=int, default=1, help="Số trang cần crawl")
     parser.add_argument(
         "--max-items",
         type=int,
-        default=100,
-        help="Giới hạn số bản ghi (0 = không giới hạn)",
+        default=0,
+        help="Giới hạn số bản ghi (mặc định: 0 = không giới hạn, cào trọn vẹn theo số trang)",
     )
     parser.add_argument(
         "--format",
-        choices=["json", "csv", "xlsx"],
-        default="json",
-        help="Định dạng output",
+        choices=["jsonl", "json", "csv", "xlsx"],
+        default="jsonl",
+        help="Định dạng output (mặc định: jsonl)",
     )
     parser.add_argument(
         "--output",
-        default="data/batdongsan_nha_dat_ban.json",
-        help="Đường dẫn file output",
+        default="",
+        help="Đường dẫn file output (tùy chọn)",
     )
-    parser.add_argument("--timeout", type=int, default=25, help="Timeout request (giây)")
+    parser.add_argument(
+        "--resume",
+        action="store_true",
+        help="Tiếp tục cào từ checkpoint (không xóa file cũ, bỏ qua tin đã có)",
+    )
+    parser.add_argument(
+        "--start-page",
+        type=int,
+        default=None,
+        help="Trang bắt đầu cào (mặc định: tự động lấy từ checkpoint hoặc 1)",
+    )
+    parser.add_argument("--timeout", type=int, default=30, help="Timeout request (giây)")
     parser.add_argument("--retries", type=int, default=3, help="Số lần retry")
     parser.add_argument(
         "--delay",
         type=float,
-        default=1.2,
+        default=1.5,
         help="Khoảng nghỉ giữa request/trang (giây)",
     )
     parser.add_argument(
@@ -1022,52 +1173,91 @@ def main() -> None:
         help="Bỏ qua crawl trang chi tiết, chỉ lấy dữ liệu từ trang danh sách",
     )
     parser.add_argument(
-        "--vi-columns",
-        dest="vi_columns",
-        action="store_true",
-        default=True,
-        help="Đổi tên cột output sang tiếng Việt (mặc định: bật)",
-    )
-    parser.add_argument(
-        "--raw-columns",
-        dest="vi_columns",
-        action="store_false",
-        help="Giữ tên cột gốc (không đổi sang tiếng Việt)",
+        "--export",
+        choices=["xlsx", "json", "csv"],
+        default=None,
+        help="Xuất toàn bộ dữ liệu data.jsonl của category đã chọn sang file xlsx/json/csv mà không cần cào lại",
     )
 
     args = parser.parse_args()
 
-    output_path = Path(args.output)
-    
-    # Xóa file cũ nếu có (để bắt đầu mới)
-    if output_path.exists():
-        output_path.unlink()
+    # Xử lý lệnh xuất dữ liệu độc lập
+    if args.export:
+        output_dir = Path("data") / args.category
+        out_file = Path(args.output) if args.output else output_dir / f"{args.category}.{args.export}"
+        export_data(category=args.category, target_format=args.export, output_path=out_file)
+        return
+
+    output_dir = Path("data") / args.category
+    output_dir.mkdir(parents=True, exist_ok=True)
+    checkpoint_path = output_dir / "checkpoint.json"
+
+    if args.output:
+        output_path = Path(args.output)
+    else:
+        if args.format == "jsonl":
+            output_path = output_dir / "data.jsonl"
+        else:
+            output_path = output_dir / f"{args.category}.{args.format}"
+
+    # Luôn xác định jsonl_path để stream dữ liệu chống crash
+    if output_path.suffix == ".jsonl":
+        jsonl_path = output_path
+    else:
+        jsonl_path = output_dir / "data.jsonl"
+
+    start_page = 1
+    seen_urls = set()
+
+    # Tạo đường dẫn file track log theo thời gian bắt đầu
+    current_time_str = time.strftime("%Y%m%d_%H%M%S")
+    track_log_path = output_dir / f"track_{current_time_str}_{args.category}.log"
+    print(f"[TRACK LOG] File nhat ky tien do: {track_log_path}")
+
+    if args.resume:
+        checkpoint = load_checkpoint(checkpoint_path)
+        last_page = checkpoint.get("last_page", 1)
+        start_page = args.start_page if args.start_page is not None else last_page
+        seen_urls = load_seen_urls(jsonl_path)
+        print(f"[RESUME] Tiếp tục cào cho phân khúc '{args.category}':")
+        print(f"  - Dữ liệu đã có: {len(seen_urls)} tin")
+        print(f"  - Bắt đầu từ trang: {start_page}")
+    else:
+        start_page = args.start_page if args.start_page is not None else 1
+        # Xóa file cũ nếu có khi chạy lượt mới hoàn toàn
+        if output_path.exists():
+            output_path.unlink()
+        if jsonl_path.exists() and jsonl_path != output_path:
+            jsonl_path.unlink()
+        if checkpoint_path.exists():
+            checkpoint_path.unlink()
 
     items = crawl(
-        pages=max(args.pages, 1),
+        category=args.category,
+        pages=max(args.pages, start_page),
+        start_page=start_page,
         timeout=max(args.timeout, 5),
         retries=max(args.retries, 1),
         delay=max(args.delay, 0.0),
         max_items=max(args.max_items, 0),
         with_detail=not args.skip_detail,
-        output_path=output_path if args.format == "json" else None,
+        jsonl_path=jsonl_path,
+        checkpoint_path=checkpoint_path,
+        track_log_path=track_log_path,
+        seen_urls=seen_urls,
         include_snippet=args.include_snippet,
-        vi_columns=args.vi_columns,
     )
 
-    # Nếu không phải JSON thì mới cần save (JSON đã save incremental)
-    if args.format != "json":
-        rows = to_dict_rows(
-            items,
-            include_snippet=args.include_snippet,
-            vi_columns=args.vi_columns,
+    # Nếu format không phải jsonl, tự động xuất thêm file theo định dạng người dùng chọn
+    if args.format != "jsonl":
+        export_data(
+            category=args.category,
+            target_format=args.format,
+            output_path=output_path,
+            jsonl_path=jsonl_path,
         )
-        if args.format == "csv":
-            save_csv(output_path, rows)
-        else:
-            save_xlsx(output_path, rows)
 
-    print(f"Done. Crawled {len(items)} listings -> {output_path}")
+    print(f"\nDone. Tổng cộng {len(seen_urls)} listings trong database -> {output_path}")
 
 
 if __name__ == "__main__":

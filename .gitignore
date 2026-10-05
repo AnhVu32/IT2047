@@ -1,1 +1,7 @@
 .DS_Store
+
+# Crawler track logs & checkpoints
+*.log
+**/track_*.log
+checkpoint.json
+**/checkpoint.json
