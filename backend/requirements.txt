@@ -61,3 +61,7 @@ loguru>=0.7.2
 celery==5.3.6
 pytz
 cent==5.0.0
+
+# Price prediction ML
+joblib>=1.3.0
+scikit-learn>=1.3.0

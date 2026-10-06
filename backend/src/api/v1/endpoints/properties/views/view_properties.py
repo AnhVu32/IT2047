@@ -9,11 +9,14 @@ from src.api.v1.endpoints.properties.controllers.controller_properties import (
 )
 from src.api.v1.endpoints.properties.schemas.properties import (
     AISearchRequestModel,
+    PricePredictionRequest,
 )
 from src.search.service import hybrid_search_service
+from src.services.inference.price_prediction import price_prediction_service
 from src.settings.event import minio_client
 
 router = APIRouter()
+
 
 
 @router.get("/image", summary="Read a property image from private MinIO storage")
@@ -256,7 +259,26 @@ async def view_get_ai_search(
     )
 
 
+@router.post("/predict-price", summary="Predict property price using ML valuation model")
+async def view_predict_property_price(data: PricePredictionRequest):
+    """Estimate property price and confidence interval in billion VND."""
+    try:
+        result = price_prediction_service.predict(
+            property_type=data.property_type,
+            area=data.area,
+            bedrooms=data.bedrooms,
+            latitude=data.latitude,
+            longitude=data.longitude,
+            district=data.district,
+            legal_status=data.legal_status or "Sổ hồng riêng",
+        )
+        return {"data": result, "errors": [], "status": "success"}
+    except Exception as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+
 @router.get("/{property_id}/similar", summary="Get similar properties from pgvector")
+
 async def view_get_similar_properties(property_id: str, limit: int = Query(default=10, ge=1, le=50)):
     result = await hybrid_search_service.similar(property_id, limit)
     return {"data": result, "errors": [], "status": "success"}
