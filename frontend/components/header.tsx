@@ -1,81 +1,89 @@
 "use client"
 
-import { Home, Upload, LogOut } from "lucide-react"
+import { Building2, LogIn, LogOut, Search, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useAuth } from "@/lib/auth-context"
+import { cn } from "@/lib/utils"
+
+const NAV_ITEMS = [
+  { href: "/", label: "Tìm nhà", icon: Search },
+  { href: "/tim-kiem-chuyen-sau", label: "Tư vấn AI", icon: Sparkles },
+]
+
+export function Logo() {
+  return (
+    <Link href="/" className="flex items-center gap-2 shrink-0">
+      <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+        <Building2 className="h-5 w-5" />
+      </span>
+      <span className="leading-tight">
+        <span className="block font-bold tracking-tight text-foreground">BATDONGSAN AI</span>
+        <span className="hidden sm:block text-[11px] text-muted-foreground">Tư vấn bất động sản TP.HCM</span>
+      </span>
+    </Link>
+  )
+}
 
 export function Header() {
   const pathname = usePathname()
   const { user, logout, loading } = useAuth()
 
-  const isActive = (href: string) => {
-    return pathname === href
-  }
-
-  const getLinkClassName = (href: string) => {
-    const base = "text-sm font-medium transition-colors rounded-md px-3 py-2"
-    if (isActive(href)) {
-      return `${base} bg-red-50 text-red-600 font-semibold`
-    }
-    return `${base} text-foreground hover:text-[#E03C31]`
-  }
-
   return (
-    <div className="border-b border-border bg-background">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <div className="p-1.5 bg-[#E03C31] rounded">
-            <Home className="h-5 w-5 text-white" />
-          </div>
-          <span className="font-bold text-lg text-foreground">BATDONGSAN AI</span>
-        </Link>
+    <div className="border-b border-border bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
+      <div className="container mx-auto px-4 h-16 flex items-center justify-between gap-2 sm:gap-4">
+        <Logo />
 
-        {/* Navigation */}
-        <nav className="hidden md:flex items-center gap-2">
-          <Link href="/" className={getLinkClassName("/")}>
-            Tìm kiếm thủ công
-          </Link>
-          <Link href="/tim-kiem-chuyen-sau" className={getLinkClassName("/tim-kiem-chuyen-sau")}>
-            Tìm kiếm chuyên sâu
-          </Link>
-          <Link href="/tin-tuc" className={getLinkClassName("/tin-tuc")}>
-            Tin tức
-          </Link>
+        <nav className="flex items-center gap-1 rounded-full bg-muted p-1">
+          {NAV_ITEMS.map(({ href, label, icon: Icon }) => {
+            const active = pathname === href
+            return (
+              <Link
+                key={href}
+                href={href}
+                aria-current={active ? "page" : undefined}
+                className={cn(
+                  "flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition-colors",
+                  active
+                    ? "bg-card text-primary shadow-sm"
+                    : "text-muted-foreground hover:text-foreground",
+                )}
+              >
+                <Icon className="h-4 w-4" />
+                <span className="hidden sm:inline">{label}</span>
+              </Link>
+            )
+          })}
         </nav>
 
-        {/* Auth Buttons */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 shrink-0">
           {loading ? null : user ? (
             <>
-              <span className="text-sm font-medium text-foreground">
-                Xin chào, {user.display_name || user.username}
+              <span className="hidden md:flex items-center gap-2 text-sm text-foreground">
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-xs font-semibold uppercase text-secondary-foreground">
+                  {(user.display_name || user.username).slice(0, 1)}
+                </span>
+                <span className="max-w-32 truncate font-medium">{user.display_name || user.username}</span>
               </span>
-              <Button
-                variant="ghost"
-                className="text-sm font-medium text-foreground"
-                onClick={logout}
-              >
-                <LogOut className="h-4 w-4 mr-2" />
-                Đăng xuất
+              <Button variant="ghost" size="sm" onClick={logout} aria-label="Đăng xuất">
+                <LogOut className="h-4 w-4" />
+                <span className="hidden lg:inline">Đăng xuất</span>
               </Button>
             </>
           ) : (
             <>
-              <Button asChild variant="ghost" className="text-sm font-medium text-foreground">
-                <Link href="/dang-nhap">Đăng nhập</Link>
-              </Button>
-              <Button asChild variant="outline" className="text-sm font-medium text-[#E03C31] border-[#E03C31] hover:bg-[#E03C31]/10">
+              <Button asChild variant="ghost" size="sm" className="hidden sm:inline-flex">
                 <Link href="/dang-ky">Đăng ký</Link>
+              </Button>
+              <Button asChild size="sm">
+                <Link href="/dang-nhap" aria-label="Đăng nhập">
+                  <LogIn className="h-4 w-4 sm:hidden" />
+                  <span className="hidden sm:inline">Đăng nhập</span>
+                </Link>
               </Button>
             </>
           )}
-          <Button className="bg-[#E03C31] hover:bg-[#c43428] text-white text-sm font-medium">
-            <Upload className="h-4 w-4 mr-2" />
-            Đăng tin
-          </Button>
         </div>
       </div>
     </div>

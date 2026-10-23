@@ -4,7 +4,12 @@ from unittest.mock import AsyncMock, patch
 
 from langchain_core.messages import AIMessage, HumanMessage, ToolMessage
 
-from src.services.agent.chat_graph import ChatAgentService, _fallback_route, _has_meaningful_filters
+from src.services.agent.chat_graph import (
+    ChatAgentService,
+    _fallback_route,
+    _has_meaningful_filters,
+    _message_window,
+)
 
 
 class ChatGraphRoutingTests(unittest.IsolatedAsyncioTestCase):
@@ -172,6 +177,53 @@ class ChatGraphRoutingTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(result["mode"], "chat")
         self.assertFalse(result["search_performed"])
         self.assertEqual(result["results"], [])
+
+
+def _search_turn(index):
+    return [
+        HumanMessage(content=f"tìm nhà {index}"),
+        AIMessage(content="", tool_calls=[{"id": f"call{index}", "name": "search_properties", "args": {"query": "q"}}]),
+        ToolMessage(content="{}", tool_call_id=f"call{index}"),
+        AIMessage(content=f"kết quả {index}"),
+    ]
+
+
+class MessageWindowTests(unittest.TestCase):
+    def test_long_search_history_never_starts_with_orphan_tool_message(self):
+        history = [message for index in range(10) for message in _search_turn(index)]
+        window = _message_window([*history, HumanMessage(content="căn rẻ hơn?")])
+
+        self.assertFalse(any(isinstance(message, ToolMessage) for message in window))
+        self.assertFalse(any(getattr(message, "tool_calls", None) for message in window))
+        self.assertEqual(window[-1].content, "căn rẻ hơn?")
+        # Only conversational messages count toward the limit, so more user turns survive.
+        self.assertEqual(sum(isinstance(message, HumanMessage) for message in window), 10)
+
+    def test_current_turn_tool_exchange_is_kept_whole(self):
+        history = [message for index in range(10) for message in _search_turn(index)]
+        current = _search_turn(99)[:3]  # human, tool call, tool result: what the finalizer sees
+        window = _message_window([*history, *current])
+
+        self.assertEqual(window[-3:], current)
+        self.assertEqual(len(window), 20)
+
+
+class ChatRequestBoundsTests(unittest.TestCase):
+    def test_oversized_guest_context_is_rejected(self):
+        from pydantic import ValidationError
+
+        from src.api.v1.endpoints.chat.view_chat import ChatRequest
+
+        with self.assertRaises(ValidationError):
+            ChatRequest(message="x", filters={"note": "a" * 5000})
+        with self.assertRaises(ValidationError):
+            ChatRequest(message="x", context_parsed_query={"note": "a" * 21000})
+
+    def test_normal_context_is_accepted(self):
+        from src.api.v1.endpoints.chat.view_chat import ChatRequest
+
+        request = ChatRequest(message="x", filters={"district": "Quận 7"}, context_parsed_query={"a": 1})
+        self.assertEqual(request.filters["district"], "Quận 7")
 
 
 if __name__ == "__main__":

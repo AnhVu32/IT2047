@@ -1,6 +1,6 @@
 'use client'
 
-import { CheckCircle } from 'lucide-react'
+import { DetailSection } from '@/components/property-detail/section'
 import {
   Waves,
   Dumbbell,
@@ -22,7 +22,7 @@ import {
   Leaf,
   Sprout,
   Building2,
-  Music,
+  DoorOpen,
   Trees,
   Warehouse,
   LayoutGrid,
@@ -80,7 +80,7 @@ const amenityMap = [
   { key: 'river_view', label: 'View sông', icon: Waves },
   { key: 'park_view', label: 'View công viên', icon: Sprout },
   { key: 'city_view', label: 'View thành phố', icon: Building2 },
-  { key: 'balcony', label: 'Ban công', icon: Music },
+  { key: 'balcony', label: 'Ban công', icon: DoorOpen },
   { key: 'garden', label: 'Vườn', icon: Trees },
   { key: 'garage', label: 'Garage', icon: Warehouse },
   { key: 'terrace', label: 'Sân thượng', icon: LayoutGrid },
@@ -92,20 +92,18 @@ export function AmenitiesSection({ property }: AmenitiesSectionProps) {
   if (activeAmenities.length === 0) return null
 
   return (
-    <div className="space-y-3 pb-4 border-b border-border">
-      <h2 className="text-xl font-bold text-foreground">Tiện ích nội/ngoại khu</h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+    <DetailSection title="Tiện ích nội/ngoại khu" description={`${activeAmenities.length} tiện ích nổi bật`}>
+      <ul className="grid grid-cols-2 gap-2 md:grid-cols-3">
         {activeAmenities.map((amenity) => {
           const Icon = amenity.icon
           return (
-            <div key={amenity.key} className="flex items-center gap-2 p-2 rounded-lg bg-card hover:bg-muted/50 transition-colors">
-              <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
-              <Icon className="h-4 w-4 text-[#E03C31]" />
+            <li key={amenity.key} className="flex items-center gap-2.5 rounded-lg bg-muted/60 px-3 py-2.5">
+              <Icon className="h-4 w-4 flex-shrink-0 text-primary" />
               <span className="text-sm font-medium text-foreground">{amenity.label}</span>
-            </div>
+            </li>
           )
         })}
-      </div>
-    </div>
+      </ul>
+    </DetailSection>
   )
 }

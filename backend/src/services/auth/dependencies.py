@@ -34,6 +34,10 @@ async def _user_from_credentials(
     user = await run_in_threadpool(repository.get_by_id, user_id)
     if not user or not user.get("is_active", True):
         return None
+    # ids are reissued after a DB reset; binding the token to the username stops a
+    # still-valid token from resolving to a different, newly created account.
+    if payload.get("username") != user["username"]:
+        return None
     return user
 
 

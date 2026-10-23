@@ -678,18 +678,18 @@ export function KnowledgeGraphSection({ propertyId }: KnowledgeGraphSectionProps
   }
 
   return (
-    <section className="space-y-4 pb-6 border-b border-border" aria-labelledby="knowledge-graph-title">
-      <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+    <section className="space-y-4 rounded-xl border border-border bg-card p-5 md:p-6" aria-labelledby="knowledge-graph-title">
+      <div className="flex flex-col gap-3 xl:flex-row xl:items-start xl:justify-between">
         <div>
-          <h2 id="knowledge-graph-title" className="text-xl font-bold text-foreground">
-            Knowledge Graph khu vực
+          <h2 id="knowledge-graph-title" className="text-lg font-bold text-foreground">
+            Bản đồ liên kết khu vực
           </h2>
           <p className="text-sm text-muted-foreground">
             Khám phá các địa điểm và tiện ích liên kết với bất động sản này.
           </p>
         </div>
         {graph?.state === 'ready' && (
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <Button type="button" variant="outline" size="sm" onClick={() => void loadRelatedProperties()} disabled={relatedLoading}>
               {relatedLoading ? <Loader2 className="h-4 w-4 mr-1.5 animate-spin" /> : <ExternalLink className="h-4 w-4 mr-1.5" />}
               {showRelated ? 'Ẩn BĐS liên quan' : relatedLoaded ? `Hiện BĐS liên quan (${relatedProperties.length})` : 'Hiện BĐS liên quan'}
@@ -736,7 +736,7 @@ export function KnowledgeGraphSection({ propertyId }: KnowledgeGraphSectionProps
 
       {loading && (
         <div className="h-[400px] sm:h-[480px] rounded-lg border border-border bg-muted/40 flex flex-col items-center justify-center gap-3">
-          <Loader2 className="h-7 w-7 animate-spin text-[#E03C31]" />
+          <Loader2 className="h-7 w-7 animate-spin text-primary" />
           <p className="text-sm text-muted-foreground">Đang tải knowledge graph...</p>
         </div>
       )}
@@ -805,7 +805,7 @@ export function KnowledgeGraphSection({ propertyId }: KnowledgeGraphSectionProps
                     aria-pressed={active}
                     onClick={() => setLabelMode(option.value)}
                     className={`rounded px-2.5 py-1 text-xs transition-colors ${
-                      active ? 'bg-[#E03C31] text-white' : 'text-muted-foreground hover:bg-muted'
+                      active ? 'bg-primary text-primary-foreground' : 'text-muted-foreground hover:bg-muted'
                     }`}
                   >
                     {option.label}
@@ -843,7 +843,7 @@ export function KnowledgeGraphSection({ propertyId }: KnowledgeGraphSectionProps
           {selected && (
             <div className="rounded-lg border border-border bg-card p-4" aria-live="polite">
               <div className="flex items-center gap-2 mb-3">
-                <Info className="h-4 w-4 text-[#E03C31]" />
+                <Info className="h-4 w-4 text-primary" />
                 <p className="font-semibold text-foreground">{selected.label}</p>
                 {selected.listingId && (
                   <Button

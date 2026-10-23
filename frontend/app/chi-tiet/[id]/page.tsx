@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { Phone } from 'lucide-react'
 import { useParams } from 'next/navigation'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
@@ -13,12 +14,12 @@ import { DescriptionSection } from '@/components/property-detail/description-sec
 import { AmenitiesSection } from '@/components/property-detail/amenities-section'
 import { LocationSection } from '@/components/property-detail/location-section'
 import { KnowledgeGraphSection } from '@/components/property-detail/knowledge-graph-section'
-import { SellerCard } from '@/components/property-detail/seller-card'
 import { ContactForm } from '@/components/property-detail/contact-form'
 import { SimilarProperties } from '@/components/property-detail/similar-properties'
 import { Button } from '@/components/ui/button'
 import { Skeleton } from '@/components/ui/skeleton'
 import { sendInteraction } from '@/lib/feedback'
+import { formatPrice, formatPricePerM2 } from '@/lib/format'
 
 interface PropertyData {
   id: string
@@ -138,111 +139,92 @@ export default function PropertyDetailPage() {
     }
   }, [propertyListingKey])
 
+  const shell = (content: React.ReactNode) => (
+    <div className="min-h-screen flex flex-col bg-background">
+      <header className="sticky top-0 z-40 w-full">
+        <Header />
+      </header>
+      {content}
+      <Footer />
+    </div>
+  )
+
   if (isLoading) {
-    return (
-      <div className="min-h-screen flex flex-col bg-background">
-        <header className="sticky top-0 z-50 w-full bg-background shadow-sm">
-          <Header />
-        </header>
-
-        <main className="flex-1 container mx-auto px-4 py-6">
-          <div className="space-y-6">
-            <Skeleton className="h-8 w-1/3" />
-            <Skeleton className="h-96 w-full" />
-            <Skeleton className="h-40 w-full" />
+    return shell(
+      <main className="flex-1 container mx-auto px-4 py-6">
+        <Skeleton className="h-5 w-40 mb-4" />
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
+          <div className="space-y-4">
+            <Skeleton className="aspect-[16/10] w-full rounded-xl" />
+            <Skeleton className="h-40 w-full rounded-xl" />
           </div>
-        </main>
-
-        <Footer />
-      </div>
+          <Skeleton className="h-80 w-full rounded-xl" />
+        </div>
+      </main>,
     )
   }
 
   if (!property) {
-    return (
-      <div className="min-h-screen flex flex-col bg-background">
-        <header className="sticky top-0 z-50 w-full bg-background shadow-sm">
-          <Header />
-        </header>
-
-        <main className="flex-1 container mx-auto px-4 py-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-2xl font-bold text-foreground">Không tìm thấy dữ liệu</h2>
-            <p className="text-muted-foreground">Vui lòng quay lại trang chủ và chọn một bất động sản khác.</p>
-            <Link href="/">
-              <Button className="bg-[#E03C31] hover:bg-[#c43428] text-white">
-                Quay lại trang chủ
-              </Button>
-            </Link>
-          </div>
-        </main>
-
-        <Footer />
-      </div>
+    return shell(
+      <main className="flex-1 container mx-auto px-4 py-16">
+        <div className="mx-auto max-w-md text-center space-y-3">
+          <h2 className="text-2xl font-bold text-foreground">Không tìm thấy bất động sản</h2>
+          <p className="text-muted-foreground">Tin đăng có thể đã hết hạn hoặc bị gỡ. Hãy quay lại danh sách để xem các lựa chọn khác.</p>
+          <Button asChild className="mt-2">
+            <Link href="/">Quay lại danh sách</Link>
+          </Button>
+        </div>
+      </main>,
     )
   }
 
-  return (
-    <div className="min-h-screen flex flex-col bg-background">
-      <header className="sticky top-0 z-50 w-full bg-background shadow-sm">
-        <Header />
-      </header>
+  const pricePerM2 = formatPricePerM2(property.price_range, property.area)
 
-      <main className="flex-1 container mx-auto px-4 py-6">
-        <div className="space-y-6">
-          {/* Breadcrumb */}
-          <PropertyDetailBreadcrumb property={property} />
+  return shell(
+    <>
+      <main className="flex-1 container mx-auto px-4 py-6 pb-28 lg:pb-6">
+        <PropertyDetailBreadcrumb property={property} />
 
-          {/* Main 2-Column Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* Left Column - Main Content (70%) */}
-            <div className="lg:col-span-2 space-y-6">
-              {/* Image Gallery */}
-              <ImageGallery images={property.images} title={property.title} />
-
-              {/* Property Header Info */}
-              <PropertyHeader property={property} />
-
-              {/* Quick Specs Grid */}
-              <QuickSpecsGrid property={property} />
-
-              {/* Description Section */}
-              <DescriptionSection description={property.description} />
-
-              {/* Amenities Section */}
-              <AmenitiesSection property={property} />
-
-              {/* Location Map Section */}
-              <LocationSection
-                address={property.address}
-                locationLink={property.location_link}
-                latitudeLongitude={property.latitude_longitude}
-              />
-
-              {/* Knowledge Graph Section */}
-              <KnowledgeGraphSection propertyId={String(propertyId || property.listing_id || property.id)} />
-
-              {/* Similar Properties */}
-              <SimilarProperties />
-            </div>
-
-            {/* Right Column - Sidebar (30%) */}
-            <div className="lg:col-span-1">
-              <div className="sticky top-24">
-                <div className="space-y-4">
-                  {/* Seller Contact Card */}
-                  <SellerCard />
-
-                  {/* Contact Form */}
-                  <ContactForm listingId={property.listing_id ?? property.id} />
-                </div>
-              </div>
-            </div>
+        <div className="mt-4 grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
+          <div className="min-w-0 space-y-6">
+            <ImageGallery images={property.images} title={property.title} />
+            <PropertyHeader property={property} />
+            <QuickSpecsGrid property={property} />
+            <DescriptionSection description={property.description} />
+            <AmenitiesSection property={property} />
+            <LocationSection
+              address={property.address}
+              locationLink={property.location_link}
+              latitudeLongitude={property.latitude_longitude}
+            />
+            <KnowledgeGraphSection propertyId={String(propertyId || property.listing_id || property.id)} />
           </div>
+
+          <aside className="lg:sticky lg:top-20 lg:self-start">
+            <ContactForm listingId={property.listing_id ?? property.id} />
+          </aside>
+        </div>
+
+        <div className="mt-10">
+          <SimilarProperties />
         </div>
       </main>
 
-      <Footer />
-    </div>
+      {/* Mobile: keep price and the contact action reachable while scrolling. */}
+      <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-card/95 px-4 py-3 backdrop-blur lg:hidden">
+        <div className="flex items-center gap-3">
+          <div className="min-w-0 flex-1">
+            <p className="text-lg font-bold leading-tight text-price">{formatPrice(property.price_range)}</p>
+            {pricePerM2 && <p className="text-xs text-muted-foreground">{pricePerM2}</p>}
+          </div>
+          <Button asChild className="h-11 px-5">
+            <a href="#lien-he">
+              <Phone className="h-4 w-4" />
+              Liên hệ tư vấn
+            </a>
+          </Button>
+        </div>
+      </div>
+    </>,
   )
 }

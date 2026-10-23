@@ -88,16 +88,22 @@ SET n.centroid_latitude = toFloatOrNull(row.`centroid_latitude:float`),
     n.location = CASE WHEN row.`centroid_latitude:float` IS NULL OR row.`centroid_latitude:float` = '' OR row.`centroid_longitude:float` IS NULL OR row.`centroid_longitude:float` = ''
                       THEN null ELSE point({latitude: toFloat(row.`centroid_latitude:float`), longitude: toFloat(row.`centroid_longitude:float`)}) END;
 
+// Top-5 edges are ~260k rows: commit in batches to stay under dbms.memory.transaction.total.max.
 LOAD CSV WITH HEADERS FROM 'file:///real_estate_graph_ready/neo4j_listing_near_amenity_relationships.csv' AS row
-MATCH (l:Listing {listing_node_id: row.`:START_ID(Listing)`})
-MATCH (a:Amenity {amenity_id: row.`:END_ID(Amenity)`})
-MERGE (l)-[r:NEAR_AMENITY]->(a)
-SET r.category = row.`category:string`, r.rank = toIntegerOrNull(row.`rank:int`),
-    r.driving_distance_km = toFloatOrNull(row.`driving_distance_km:float`),
-    r.driving_duration_min = toFloatOrNull(row.`driving_duration_min:float`),
-    r.is_nearest = toBooleanOrNull(row.`is_nearest:boolean`),
-    r.within_threshold = toBooleanOrNull(row.`within_threshold:boolean`),
-    r.threshold_km = toFloatOrNull(row.`threshold_km:float`);
+CALL {
+  WITH row
+  MATCH (l:Listing {listing_node_id: row.`:START_ID(Listing)`})
+  MATCH (a:Amenity {amenity_id: row.`:END_ID(Amenity)`})
+  MERGE (l)-[r:NEAR_AMENITY]->(a)
+  SET r.category = row.`category:string`, r.rank = toIntegerOrNull(row.`rank:int`),
+      r.straight_line_km = toFloatOrNull(row.`straight_line_km:float`),
+      r.driving_distance_km = toFloatOrNull(row.`driving_distance_km:float`),
+      r.driving_duration_min = toFloatOrNull(row.`driving_duration_min:float`),
+      r.is_nearest = toBooleanOrNull(row.`is_nearest:boolean`),
+      r.within_threshold = toBooleanOrNull(row.`within_threshold:boolean`),
+      r.threshold_km = toFloatOrNull(row.`threshold_km:float`),
+      r.route_status = row.`route_status:string`
+} IN TRANSACTIONS OF 10000 ROWS;
 
 LOAD CSV WITH HEADERS FROM 'file:///real_estate_graph_ready/neo4j_listing_in_ward_relationships.csv' AS row
 MATCH (l:Listing {listing_node_id: row.`:START_ID(Listing)`}) MATCH (w:Ward {ward_id: row.`:END_ID(Ward)`}) MERGE (l)-[:IN_WARD]->(w);

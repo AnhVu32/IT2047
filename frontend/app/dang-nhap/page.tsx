@@ -7,6 +7,7 @@ import { Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useAuth } from "@/lib/auth-context"
+import { AuthShell } from "@/components/auth-shell"
 
 export default function LoginPage() {
   const { login } = useAuth()
@@ -31,28 +32,25 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-muted/30 px-4">
-      <div className="w-full max-w-sm bg-card border border-border rounded-xl p-6 shadow-sm">
-        <h1 className="text-xl font-bold text-foreground mb-1">Đăng nhập</h1>
-        <p className="text-sm text-muted-foreground mb-6">Đăng nhập để lưu lịch sử trò chuyện và nhận gợi ý cá nhân hóa.</p>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
-            <label className="text-sm font-medium text-foreground">Tên đăng nhập</label>
-            <Input value={username} onChange={(e) => setUsername(e.target.value)} className="mt-1" autoFocus required />
-          </div>
-          <div>
-            <label className="text-sm font-medium text-foreground">Mật khẩu</label>
-            <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="mt-1" required />
-          </div>
-          {error && <p className="text-sm text-red-600">{error}</p>}
-          <Button type="submit" disabled={loading || !username.trim() || !password} className="w-full bg-[#E03C31] hover:bg-[#c43428] text-white">
-            {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Đăng nhập"}
-          </Button>
-        </form>
-        <p className="text-sm text-muted-foreground mt-4 text-center">
-          Chưa có tài khoản? <Link href="/dang-ky" className="text-[#E03C31] font-medium">Đăng ký</Link>
-        </p>
-      </div>
-    </div>
+    <AuthShell
+      title="Đăng nhập"
+      subtitle="Chào mừng bạn quay lại."
+      footer={<>Chưa có tài khoản? <Link href="/dang-ky" className="font-medium text-primary hover:underline">Đăng ký</Link></>}
+    >
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <label className="block">
+          <span className="text-sm font-medium text-foreground">Tên đăng nhập</span>
+          <Input value={username} onChange={(e) => setUsername(e.target.value)} className="mt-1.5 h-11" autoFocus required />
+        </label>
+        <label className="block">
+          <span className="text-sm font-medium text-foreground">Mật khẩu</span>
+          <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="mt-1.5 h-11" required />
+        </label>
+        {error && <p role="alert" className="rounded-lg bg-destructive/10 px-3 py-2 text-sm text-destructive">{error}</p>}
+        <Button type="submit" disabled={loading || !username.trim() || !password} className="h-11 w-full">
+          {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Đăng nhập"}
+        </Button>
+      </form>
+    </AuthShell>
   )
 }

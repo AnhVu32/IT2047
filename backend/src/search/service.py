@@ -16,7 +16,24 @@ from src.search.query_parser import LLMQueryParser, RuleBasedQueryParser
 from src.search.ranker import diversify, rank_candidates
 from src.search.repository import search_repository
 from src.search.schemas import ParsedSearchQuery, SearchRequest
+from src.settings.config import config_value
 from src.settings.event import llm_model
+
+
+# Optional stages (LLM parse, embedding, LLM answer) get their own budget so a slow
+# provider degrades to the deterministic path instead of consuming the whole
+# chat tool timeout (CHAT_TOOL_TIMEOUT_SECONDS) and losing already-found results.
+DEFAULT_PARSER_TIMEOUT_SECONDS = 20.0
+DEFAULT_EMBEDDING_TIMEOUT_SECONDS = 20.0
+DEFAULT_ANSWER_TIMEOUT_SECONDS = 25.0
+
+
+def _stage_timeout(name: str, default: float) -> float:
+    try:
+        value = float(config_value(name, default))
+    except (TypeError, ValueError):
+        return default
+    return value if value > 0 else default
 
 
 class HybridSearchService:
@@ -29,7 +46,14 @@ class HybridSearchService:
         # Parse natural language without UI filters so the LLM can never mistake
         # their source. Only the explicit filter payload is strict.
         deterministic = self.rule_parser.parse(query, top_k=top_k)
-        parsed = await self.llm_parser.parse(query, deterministic)
+        try:
+            parsed = await asyncio.wait_for(
+                self.llm_parser.parse(query, deterministic),
+                timeout=_stage_timeout("SEARCH_PARSER_TIMEOUT_SECONDS", DEFAULT_PARSER_TIMEOUT_SECONDS),
+            )
+        except asyncio.TimeoutError:
+            logger.warning("LLM query parser timed out; using the deterministic parse")
+            parsed = deterministic
         # Explicit UI/API filters have the highest priority, including over an LLM
         # location correction.
         self.rule_parser.apply_explicit_filters(parsed, filters or {})
@@ -47,7 +71,15 @@ class HybridSearchService:
         embedded_count, property_count = await run_in_threadpool(search_repository.embedding_coverage)
         vector = None
         if property_count > 0 and embedded_count == property_count:
-            vector = await run_in_threadpool(embedding_model.encode_query, parsed.semantic_query)
+            try:
+                vector = await asyncio.wait_for(
+                    run_in_threadpool(embedding_model.encode_query, parsed.semantic_query),
+                    timeout=_stage_timeout(
+                        "SEARCH_EMBEDDING_STAGE_TIMEOUT_SECONDS", DEFAULT_EMBEDDING_TIMEOUT_SECONDS
+                    ),
+                )
+            except asyncio.TimeoutError:
+                logger.warning("Query embedding timed out; continuing without vector search")
         query_embedding = None if vector is None else vector.tolist()
         candidate_limit = max(500, request.top_k * request.page * 5)
         postgres_task = run_in_threadpool(search_repository.search, parsed, query_embedding, candidate_limit)
@@ -103,12 +135,18 @@ class HybridSearchService:
         # Skip the LLM round-trip (and its retries) when disabled or no key is set,
         # so keyless deployments fall back cleanly to the deterministic explanation.
         if generate_llm_answer and self.llm_answer.enabled() and llm_model.has_credentials():
-            assistant_answer, llm_answer_generated = await self.llm_answer.generate(
-                request.query,
-                parsed.model_dump(mode="json"),
-                results,
-                history=history,
-            )
+            try:
+                assistant_answer, llm_answer_generated = await asyncio.wait_for(
+                    self.llm_answer.generate(
+                        request.query,
+                        parsed.model_dump(mode="json"),
+                        results,
+                        history=history,
+                    ),
+                    timeout=_stage_timeout("SEARCH_ANSWER_TIMEOUT_SECONDS", DEFAULT_ANSWER_TIMEOUT_SECONDS),
+                )
+            except asyncio.TimeoutError:
+                logger.warning("LLM search answer timed out; keeping deterministic explanations")
         # Log impressions for authenticated users only, so the anonymous /v1/search
         # path is unchanged. Best-effort: never let logging break a search response.
         if user_id is not None and results:

@@ -2,11 +2,12 @@
 
 from __future__ import annotations
 
+import json
 from typing import Any, Dict, List, Literal, Optional
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from loguru import logger
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 from starlette.concurrency import run_in_threadpool
 
 from src.services.agent import chat_agent_service
@@ -17,6 +18,15 @@ from src.services.chat import repository
 router = APIRouter()
 _HISTORY_MESSAGES = 20
 _CONTEXT_LISTINGS = 20
+# These dicts are interpolated into the LLM prompt, so bound their serialized size.
+_MAX_FILTERS_CHARS = 4000
+_MAX_PARSED_QUERY_CHARS = 20000
+
+
+def _bounded_json(value: Optional[Dict[str, Any]], limit: int, name: str) -> Optional[Dict[str, Any]]:
+    if value is not None and len(json.dumps(value, ensure_ascii=False, default=str)) > limit:
+        raise ValueError(f"{name} is too large (max {limit} characters)")
+    return value
 
 
 class ClientHistoryTurn(BaseModel):
@@ -38,6 +48,16 @@ class ChatRequest(BaseModel):
     history: List[ClientHistoryTurn] = Field(default_factory=list, max_length=_HISTORY_MESSAGES)
     context_listing_ids: List[str] = Field(default_factory=list, max_length=_CONTEXT_LISTINGS)
     context_parsed_query: Optional[Dict[str, Any]] = None
+
+    @field_validator("filters")
+    @classmethod
+    def _limit_filters(cls, value):
+        return _bounded_json(value, _MAX_FILTERS_CHARS, "filters")
+
+    @field_validator("context_parsed_query")
+    @classmethod
+    def _limit_parsed_query(cls, value):
+        return _bounded_json(value, _MAX_PARSED_QUERY_CHARS, "context_parsed_query")
 
 
 def _history_from_messages(messages: list[dict]) -> list[dict]:

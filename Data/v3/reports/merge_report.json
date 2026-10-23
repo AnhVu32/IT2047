@@ -1,0 +1,82 @@
+{
+  "osm_snapshot_at": "2026-10-21T03:07:35Z",
+  "legacy_rows": 3037,
+  "legacy_unique": 3030,
+  "legacy_duplicate_ids_collapsed": 7,
+  "legacy_title_mismatch_between_final_and_graph": 0,
+  "restored_columns_wiped_in_live_package": [
+    "park_view"
+  ],
+  "address_normalizer_matches_legacy": "3030/3030",
+  "listings": {
+    "total": 6703,
+    "new_only": 3673,
+    "legacy_only": 2846,
+    "both": 184
+  },
+  "clusters": {
+    "listings_clustered": 6676,
+    "clusters": 1609,
+    "singletons": 728
+  },
+  "legacy_only_edges": {
+    "listings_with_coordinates": 2846,
+    "edges": 111961,
+    "listings_without_coordinates": 0
+  },
+  "canonical_ids_reproduce_new_package": {
+    "wards": "121/121",
+    "former_areas": "40/40"
+  },
+  "admin": {
+    "listings_without_ward": 0,
+    "listings_without_former_area": 0,
+    "legacy_ward_ids": 112,
+    "new_ward_ids": 121,
+    "ward_ids_merged_by_canonical_form": 132,
+    "former_ids_merged_by_canonical_form": 43
+  },
+  "images": {
+    "files_indexed": 60395,
+    "content_types": {
+      "jpeg": 59127,
+      "png": 1215,
+      "webp": 61,
+      "jpeg_truncated": 1
+    },
+    "listings_with_images": 6703,
+    "listings_without_images": 0,
+    "excluded_files": 9
+  },
+  "graph": {
+    "listings": 6703,
+    "amenities": 12340,
+    "near_amenity_edges": 262274,
+    "wards": 132,
+    "wards_generated_for_new_only": 20,
+    "former_areas": 43,
+    "former_areas_generated_for_new_only": 11,
+    "streets": 2326,
+    "clusters": 1609,
+    "ward_former_mappings": 143
+  },
+  "overlap": {
+    "listings": 184,
+    "price_changed": 100,
+    "area_changed": 25
+  },
+  "routes": {
+    "legacy_only_batches": 258,
+    "batches_without_cache": 0,
+    "edge_status": {
+      "ok": 262074,
+      "snapped_far": 200
+    },
+    "edges_by_origin": {
+      "live_package": 150313,
+      "v3_recomputed": 111961
+    }
+  },
+  "listings_without_coordinates": 27,
+  "generated_at": "2026-10-21T06:39:31.354453+00:00"
+}

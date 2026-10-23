@@ -3,12 +3,11 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Heart, MapPin, Camera, Bed, Bath } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
+import { Heart, MapPin, Camera, Bed, Bath, Maximize, ArrowRight } from "lucide-react"
 import { useAuth } from "@/lib/auth-context"
 import { getSavedListingIds, setSavedListing } from "@/lib/feedback"
 import { getPropertyImageSrc, PROPERTY_IMAGE_FALLBACK } from "@/lib/property-images"
+import { formatDate, formatPrice, formatPricePerM2, getListingBadge } from "@/lib/format"
 import { cn } from "@/lib/utils"
 
 interface PropertyCardProps {
@@ -29,43 +28,16 @@ interface PropertyCardProps {
   variant?: "list" | "compact"
 }
 
-const getBadgeStyle = (listingType?: string | null) => {
-  if (listingType === "VIP Kim Cương") {
-    return { bg: "bg-[#E03C31]", text: "VIP KIM CƯƠNG" }
-  } else if (listingType === "VIP Vàng") {
-    return { bg: "bg-orange-500", text: "VIP VÀNG" }
-  }
-  return null
-}
-
-const formatDate = (dateString?: string | null) => {
-  if (!dateString) return "Chưa cập nhật"
-
-  try {
-    const date = new Date(dateString)
-    if (Number.isNaN(date.getTime())) return dateString
-    const day = String(date.getDate()).padStart(2, "0")
-    const month = String(date.getMonth() + 1).padStart(2, "0")
-    const year = date.getFullYear()
-    return `${day}/${month}/${year}`
-  } catch {
-    return dateString
-  }
-}
-
-const formatPrice = (price?: string | number | null) => {
-  if (price === null || price === undefined || price === "") return "Liên hệ"
-  return `${price} Tỷ VNĐ`
-}
-
 export function PropertyCard({ property, variant = "list" }: PropertyCardProps) {
   const hasPropertyImage = Boolean(property.images?.[0]?.trim())
   const imageUrl = getPropertyImageSrc(property.images?.[0])
-  const badgeStyle = getBadgeStyle(property.listing_type)
+  const badge = getListingBadge(property.listing_type)
   const { user } = useAuth()
   const [saved, setSaved] = useState(false)
   const [imageFailed, setImageFailed] = useState(!hasPropertyImage)
   const isCompact = variant === "compact"
+  const pricePerM2 = formatPricePerM2(property.price_range, property.area)
+  const postedDate = formatDate(property.posted_date)
 
   const listingId = property.listing_id ?? property.id
 
@@ -81,7 +53,7 @@ export function PropertyCard({ property, variant = "list" }: PropertyCardProps) 
   }, [user, listingId])
 
   const handleCardClick = () => {
-    // Save full property data to sessionStorage
+    // Lets the detail page paint instantly from the card payload.
     sessionStorage.setItem('selectedProperty', JSON.stringify(property))
   }
 
@@ -93,123 +65,98 @@ export function PropertyCard({ property, variant = "list" }: PropertyCardProps) 
     setSavedListing(listingId, next, "search_bar")
   }
 
+  const specs = [
+    property.area !== null && property.area !== undefined && { icon: Maximize, text: `${property.area} m²` },
+    property.bedrooms !== null && property.bedrooms !== undefined && { icon: Bed, text: `${property.bedrooms} PN` },
+    property.bathrooms !== null && property.bathrooms !== undefined && { icon: Bath, text: `${property.bathrooms} WC` },
+  ].filter(Boolean) as { icon: typeof Bed; text: string }[]
+
   return (
-    <Link href={`/chi-tiet/${property.id}`} onClick={handleCardClick} className="block h-full">
-      <article className="h-full bg-card border border-border rounded-lg overflow-hidden hover:shadow-md transition-shadow cursor-pointer">
-        <div className={cn("flex h-full flex-col", !isCompact && "md:flex-row")}>
-          {/* Image Section - Left Side */}
+    // The card adapts to its container (not the viewport) so it also fits inside chat bubbles.
+    <Link href={`/chi-tiet/${property.id}`} onClick={handleCardClick} className="@container group block h-full">
+      <article className="h-full overflow-hidden rounded-xl border border-border bg-card transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-lg">
+        <div className={cn("flex h-full flex-col", !isCompact && "@lg:flex-row")}>
           <div
             className={cn(
-              "relative w-full flex-shrink-0",
-              isCompact
-                ? "h-48 sm:h-52"
-                : "h-[200px] md:h-auto md:min-h-[220px] md:w-[280px] lg:w-[320px]",
+              "relative w-full flex-shrink-0 overflow-hidden bg-muted",
+              isCompact ? "aspect-[4/3]" : "aspect-[16/10] @lg:aspect-auto @lg:min-h-[210px] @lg:w-[42%] @3xl:w-[300px]",
             )}
           >
             <Image
               src={imageFailed ? PROPERTY_IMAGE_FALLBACK : imageUrl}
               alt={property.title || "Hình ảnh bất động sản"}
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
               onError={() => setImageFailed(true)}
             />
-            
-            {/* Badge - Only show if not "Tin thường" */}
-            {badgeStyle && (
-              <div className="absolute top-3 left-3">
-                <Badge className={`${badgeStyle.bg} hover:${badgeStyle.bg} text-white text-xs font-medium px-2 py-1`}>
-                  {badgeStyle.text}
-                </Badge>
-              </div>
+
+            {badge && (
+              <span className={cn("absolute left-3 top-3 rounded-md px-2 py-0.5 text-xs font-semibold shadow-sm", badge.className)}>
+                {badge.text}
+              </span>
             )}
 
-            {/* Make it clear that the repeated fallback is not a MinIO image. */}
-            {imageFailed && (
-              <div className="absolute bottom-3 left-3 rounded bg-black/60 px-2 py-1 text-xs text-white">
-                Ảnh minh họa
-              </div>
-            )}
+            <button
+              type="button"
+              aria-label={saved ? "Bỏ lưu tin" : "Lưu tin"}
+              aria-pressed={saved}
+              className="absolute right-3 top-3 rounded-full bg-white/90 p-2 shadow-sm transition-colors hover:bg-white"
+              onClick={handleSave}
+            >
+              <Heart className={cn("h-4 w-4", saved ? "fill-price text-price" : "text-slate-600")} />
+            </button>
 
-            {/* Photo Count */}
-            {!imageFailed && property.images && property.images.length > 0 && (
-              <div className="absolute bottom-3 right-3 bg-black/60 text-white text-xs px-2 py-1 rounded flex items-center gap-1">
-                <Camera className="h-3 w-3" />
-                <span>{property.images.length}</span>
-              </div>
+            {/* Make it clear that the repeated fallback is not a real photo of the listing. */}
+            {imageFailed ? (
+              <span className="absolute bottom-3 left-3 rounded bg-black/60 px-2 py-0.5 text-xs text-white">Ảnh minh họa</span>
+            ) : (
+              property.images && property.images.length > 1 && (
+                <span className="absolute bottom-3 right-3 flex items-center gap-1 rounded bg-black/60 px-2 py-0.5 text-xs text-white">
+                  <Camera className="h-3 w-3" />
+                  {property.images.length}
+                </span>
+              )
             )}
           </div>
 
-          {/* Content Section - Right Side */}
           <div className="flex min-w-0 flex-1 flex-col p-4">
-            {/* Title & Favorite */}
-            <div className="flex items-start justify-between gap-2 mb-2">
-              <h3 className="font-semibold text-foreground line-clamp-2 flex-1">
-                {property.title || "Bất động sản chưa cập nhật tiêu đề"}
-              </h3>
-              <button
-                type="button"
-                aria-label="Lưu tin"
-                className="p-1.5 hover:bg-muted rounded-full transition-colors flex-shrink-0"
-                onClick={handleSave}
-              >
-                <Heart className={`h-5 w-5 ${saved ? "fill-[#E03C31] text-[#E03C31]" : "text-muted-foreground"}`} />
-              </button>
-            </div>
+            <h3 className="line-clamp-2 font-semibold leading-snug text-foreground transition-colors group-hover:text-primary">
+              {property.title || "Bất động sản chưa cập nhật tiêu đề"}
+            </h3>
 
-            {/* Price & Area */}
-            <div className={cn("mb-2 flex items-center", isCompact ? "gap-2" : "gap-3")}>
-              <span className={cn("font-bold text-[#E03C31]", isCompact ? "text-base" : "text-lg")}>
+            <div className="mt-2 flex flex-wrap items-baseline gap-x-2">
+              <span className={cn("font-bold text-price", isCompact ? "text-lg" : "text-xl")}>
                 {formatPrice(property.price_range)}
               </span>
-              {property.area !== null && property.area !== undefined && (
-                <>
-                  <span className="text-muted-foreground">|</span>
-                  <span className="whitespace-nowrap text-muted-foreground">{property.area} m²</span>
-                </>
-              )}
+              {pricePerM2 && <span className="text-xs text-muted-foreground">~{pricePerM2}</span>}
             </div>
 
-            {/* Location */}
-            <div className="flex items-center gap-1.5 text-sm text-muted-foreground mb-3">
-              <MapPin className="h-4 w-4 flex-shrink-0" />
-              <span className="line-clamp-1">{property.address || "Địa chỉ đang cập nhật"}</span>
-            </div>
-
-            {/* Description */}
-            {!isCompact && (
-              <p className="mb-4 line-clamp-2 flex-1 text-sm text-muted-foreground">
-                {property.description || "Thông tin mô tả đang được cập nhật."}
-              </p>
+            {specs.length > 0 && (
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                {specs.map(({ icon: Icon, text }) => (
+                  <span key={text} className="flex items-center gap-1 rounded-md bg-muted px-2 py-1 text-xs font-medium text-foreground">
+                    <Icon className="h-3.5 w-3.5 text-muted-foreground" />
+                    {text}
+                  </span>
+                ))}
+              </div>
             )}
 
-            {/* Specs - Bedrooms & Bathrooms */}
-            <div className="mb-3 flex min-h-5 items-center gap-4">
-              {property.bedrooms !== null && property.bedrooms !== undefined && (
-                <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
-                  <Bed className="h-4 w-4" />
-                  <span>{property.bedrooms} phòng</span>
-                </div>
-              )}
-              {property.bathrooms !== null && property.bathrooms !== undefined && (
-                <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
-                  <Bath className="h-4 w-4" />
-                  <span>{property.bathrooms} phòng tắm</span>
-                </div>
-              )}
-            </div>
+            <p className="mt-2.5 flex items-start gap-1.5 text-sm text-muted-foreground">
+              <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0" />
+              <span className="line-clamp-1">{property.address || "Địa chỉ đang cập nhật"}</span>
+            </p>
 
-            {/* Footer - Posted Date or View Details Button */}
-            <div className="flex items-center justify-between pt-3 border-t border-border">
-              <p className="text-xs text-muted-foreground">
-                {formatDate(property.posted_date)}
-              </p>
-              {isCompact ? (
-                <span className="text-sm font-medium text-[#E03C31]">Xem chi tiết</span>
-              ) : (
-                <Button className="bg-[#E03C31] hover:bg-[#c43428] text-white h-9 px-4 text-sm">
-                  Xem chi tiết
-                </Button>
-              )}
+            {!isCompact && property.description && (
+              <p className="mt-2 hidden text-sm text-muted-foreground @lg:line-clamp-2">{property.description}</p>
+            )}
+
+            <div className="mt-auto flex items-center justify-between pt-3 text-xs text-muted-foreground">
+              <span>{postedDate ? `Đăng ${postedDate}` : ""}</span>
+              <span className="flex items-center gap-1 font-medium text-primary">
+                Xem chi tiết
+                <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+              </span>
             </div>
           </div>
         </div>

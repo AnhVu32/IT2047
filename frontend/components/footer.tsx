@@ -1,56 +1,25 @@
-"use client"
-
-import { Home, Phone, Mail, Globe, Share2 } from "lucide-react"
 import Link from "next/link"
+import { Logo } from "@/components/header"
 
 export function Footer() {
   return (
-    <footer className="bg-muted/50 border-t border-border mt-12">
-      <div className="container mx-auto px-4 py-10">
-        {/* Main Footer Content */}
-        <div className="flex flex-col items-center text-center">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 mb-4">
-            <div className="p-1.5 bg-[#E03C31] rounded">
-              <Home className="h-5 w-5 text-white" />
-            </div>
-            <span className="font-bold text-lg text-foreground">BATDONGSAN AI</span>
-          </Link>
-
-          {/* Description */}
-          <p className="text-sm text-muted-foreground max-w-md mb-6">
-            Nền tảng bất động sản hàng đầu để mua, bán và cho thuê nhà đất trên khắp Việt Nam.
+    <footer className="border-t border-border bg-card mt-12">
+      <div className="container mx-auto px-4 py-8 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+        <div className="space-y-2">
+          <Logo />
+          <p className="text-sm text-muted-foreground max-w-md">
+            Tìm kiếm và nhận tư vấn bất động sản tại TP.HCM với trợ lý AI dựa trên dữ liệu tin đăng và tiện ích khu vực.
           </p>
-
-          {/* Contact Info */}
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <Phone className="h-4 w-4 text-[#E03C31]" />
-              <span>Hotline: 1900 xxxx</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Mail className="h-4 w-4 text-[#E03C31]" />
-              <span>Email: cskh@batdongsanai.vn</span>
-            </div>
-          </div>
         </div>
+        <nav className="flex gap-6 text-sm text-muted-foreground">
+          <Link href="/" className="hover:text-foreground transition-colors">Tìm nhà</Link>
+          <Link href="/tim-kiem-chuyen-sau" className="hover:text-foreground transition-colors">Tư vấn AI</Link>
+        </nav>
       </div>
-
-      {/* Bottom Bar */}
       <div className="border-t border-border">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-            <p>© 2024 Cổng thông tin BATDONGSAN AI. Tất cả quyền được bảo lưu.</p>
-            <div className="flex items-center gap-4">
-              <button className="hover:text-foreground transition-colors">
-                <Globe className="h-5 w-5" />
-              </button>
-              <button className="hover:text-foreground transition-colors">
-                <Share2 className="h-5 w-5" />
-              </button>
-            </div>
-          </div>
-        </div>
+        <p className="container mx-auto px-4 py-4 text-xs text-muted-foreground">
+          © {new Date().getFullYear()} BATDONGSAN AI. Thông tin chỉ mang tính tham khảo.
+        </p>
       </div>
     </footer>
   )

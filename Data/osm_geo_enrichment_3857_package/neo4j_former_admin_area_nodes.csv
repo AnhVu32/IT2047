@@ -1,0 +1,41 @@
+﻿former_area_id:ID(FormerAdminArea),name:string,former_city_province:string,:LABEL
+former-area|ba-ria-vung-tau|huyen-long-dien,Huyện Long Điền,Bà Rịa Vũng Tàu,FormerAdminArea
+former-area|ba-ria-vung-tau|thanh-pho-vung-tau,Thành Phố Vũng Tàu,Bà Rịa Vũng Tàu,FormerAdminArea
+former-area|binh-duong|huyen-bau-bang,Huyện Bàu Bàng,Bình Dương,FormerAdminArea
+former-area|binh-duong|thanh-pho-ben-cat,Thành Phố Bến Cát,Bình Dương,FormerAdminArea
+former-area|binh-duong|thanh-pho-di-an,Thành Phố Dĩ An,Bình Dương,FormerAdminArea
+former-area|binh-duong|thanh-pho-tan-uyen,Thành Phố Tân Uyên,Bình Dương,FormerAdminArea
+former-area|binh-duong|thanh-pho-thu-dau-mot,Thành Phố Thủ Dầu Một,Bình Dương,FormerAdminArea
+former-area|binh-duong|thanh-pho-thuan-an,Thành Phố Thuận An,Bình Dương,FormerAdminArea
+former-area|ho-chi-minh-moi|phuong-chanh-hung,Phường Chánh Hưng,Hồ Chí Minh mới,FormerAdminArea
+former-area|ho-chi-minh-moi|phuong-hiep-binh,Phường Hiệp Bình,Hồ Chí Minh mới,FormerAdminArea
+former-area|ho-chi-minh-moi|phuong-long-binh,Phường Long Bình,Hồ Chí Minh mới,FormerAdminArea
+former-area|ho-chi-minh-moi|phuong-long-truong,Phường Long Trường,Hồ Chí Minh mới,FormerAdminArea
+former-area|ho-chi-minh-moi|phuong-nhieu-loc,Phường Nhiêu Lộc,Hồ Chí Minh mới,FormerAdminArea
+former-area|ho-chi-minh-moi|phuong-tan-binh,Phường Tân Bình,Hồ Chí Minh mới,FormerAdminArea
+former-area|ho-chi-minh-moi|phuong-thanh-my-tay,Phường Thạnh Mỹ Tây,Hồ Chí Minh mới,FormerAdminArea
+former-area|ho-chi-minh-moi|xa-tan-vinh-loc,Xã Tân Vĩnh Lộc,Hồ Chí Minh mới,FormerAdminArea
+former-area|ho-chi-minh|huyen-binh-chanh,Huyện Bình Chánh,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|huyen-can-gio,Huyện Cần Giờ,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|huyen-cu-chi,Huyện Củ Chi,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|huyen-hoc-mon,Huyện Hóc Môn,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|huyen-nha-be,Huyện Nhà Bè,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-1,Quận 1,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-10,Quận 10,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-11,Quận 11,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-12,Quận 12,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-2,Quận 2,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-3,Quận 3,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-4,Quận 4,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-5,Quận 5,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-6,Quận 6,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-7,Quận 7,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-8,Quận 8,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-9,Quận 9,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-binh-tan,Quận Bình Tân,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-binh-thanh,Quận Bình Thạnh,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-go-vap,Quận Gò Vấp,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-phu-nhuan,Quận Phú Nhuận,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-tan-binh,Quận Tân Bình,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|quan-tan-phu,Quận Tân Phú,Hồ Chí Minh,FormerAdminArea
+former-area|ho-chi-minh|thanh-pho-thu-duc,Thành Phố Thủ Đức,Hồ Chí Minh,FormerAdminArea

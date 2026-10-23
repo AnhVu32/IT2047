@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(cd -- "$SCRIPT_DIR/.." && pwd)"
-DATA_DIR="$PROJECT_DIR/Data/real_estate_graph_ready_v2_address_mapping"
+DATA_DIR="$PROJECT_DIR/Data/v3/graph"
 CONTAINER_DATA_DIR="/csv/real_estate_graph_ready"
 
 force=false

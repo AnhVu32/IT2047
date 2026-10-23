@@ -91,13 +91,15 @@ def import_properties(csv_path: Path) -> None:
                 "balcony_direction": row.get("balcony_direction") or None,
                 "house_direction": row.get("house_direction") or None,
                 "frontage": as_float(row.get("frontage")), "access_road": as_float(row.get("access_road")),
+                "images": row.get("images") or "[]",
             }
             params.update({field: as_bool(row.get(field)) for field in boolean_fields})
             if params["listing_id"] is None:
                 continue
             columns = list(params)
             postgres_client.execute_write(
-                f"INSERT INTO properties ({', '.join(columns)}) VALUES ({', '.join(':' + key for key in columns)})",
+                f"INSERT INTO properties ({', '.join(columns)}) VALUES "
+                f"({', '.join('CAST(:images AS jsonb)' if key == 'images' else ':' + key for key in columns)})",
                 **params,
             )
             imported += 1
@@ -222,9 +224,9 @@ def main():
     postgres_client.start()
     try:
         if not args.skip_catalog_import:
-            import_properties(DATA_DIR / "Final_Data.csv")
+            import_properties(DATA_DIR / "v3" / "master_v3.csv")
         if not args.skip_graph_metadata:
-            import_graph_metadata(DATA_DIR / "real_estate_graph_ready_v2_address_mapping")
+            import_graph_metadata(DATA_DIR / "v3" / "graph")
         backfill(args.batch_size, args.skip_embeddings, args.force)
     finally:
         postgres_client.stop()

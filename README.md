@@ -25,7 +25,7 @@ Prepare a fresh local database (run from the repository root):
 ```bash
 docker compose up -d --build backend
 
-# Imports Final_Data.csv, graph-ready amenity distances and builds search_text.
+# Imports Data/v3/master_v3.csv (incl. image keys), Data/v3/graph amenity distances and builds search_text.
 docker compose exec backend \
   python scripts/build_search_index.py --skip-embeddings
 

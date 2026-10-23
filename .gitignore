@@ -1,1 +1,48 @@
+# macOS
 .DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
+
+# Node
+node_modules/
+
+# Environment / secrets
+.env
+*.env
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+logs/
+
+# Binary data
+*.pkl
+*.npy
+
+# Docker
+docker-compose.override.yml
+
+# Third-party reference repo (clone riêng, không commit vào repo này)
+Evaluation-Metrics-for-Recommendation-Systems/
+
+# Không push tài liệu nội bộ / nhật ký công việc
+gen_user_data/recsys_kg_rag_guide.md
+gen_user_data/work_log.html
+
+# Build artifact (tái tạo được; DB nhị phân / graph pickle / cache precompute)
+*.sqlite
+gen_user_data/data/graph/
+gen_user_data/data/precomputed/
+
+gen_user_data/scratchpad/
+images/*

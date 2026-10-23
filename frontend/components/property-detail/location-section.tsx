@@ -1,6 +1,7 @@
 'use client'
 
-import { MapPin } from 'lucide-react'
+import { ExternalLink, MapPin } from 'lucide-react'
+import { DetailSection } from '@/components/property-detail/section'
 
 interface LocationSectionProps {
   address: string
@@ -48,31 +49,41 @@ export function LocationSection({ address, locationLink, latitudeLongitude }: Lo
     ? `https://www.google.com/maps/embed/v1/place?key=${encodeURIComponent(apiKey)}&q=${encodeURIComponent(coordinateQuery)}`
     : `https://www.google.com/maps?q=${encodeURIComponent(coordinateQuery)}&z=16&output=embed`
 
+  const externalMapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(coordinateQuery)}`
+
   return (
-    <div className="space-y-3 pb-4 border-b border-border">
-      <h2 className="text-xl font-bold text-foreground">Vị trí trên bản đồ</h2>
-      <div className="relative w-full aspect-video rounded-lg overflow-hidden bg-muted border border-border group">
+    <DetailSection
+      title="Vị trí"
+      id="vi-tri"
+      action={
+        <a
+          href={externalMapUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+        >
+          Mở Google Maps
+          <ExternalLink className="h-3.5 w-3.5" />
+        </a>
+      }
+    >
+      <p className="mb-3 flex items-start gap-1.5 text-sm text-muted-foreground">
+        <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
+        {address}
+      </p>
+      <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg border border-border bg-muted">
         <iframe
           src={mapSrc}
           width="100%"
           height="100%"
-          style={{ border: 0, borderRadius: '8px' }}
+          style={{ border: 0 }}
           allowFullScreen={true}
           loading="lazy"
           referrerPolicy="strict-origin-when-cross-origin"
           title={`Bản đồ vị trí: ${address}`}
-          className="w-full h-full"
+          className="h-full w-full"
         />
       </div>
-
-      {/* Address Info */}
-      <div className="flex items-start gap-2 p-3 bg-card rounded-lg">
-        <MapPin className="h-5 w-5 text-[#E03C31] flex-shrink-0 mt-0.5" />
-        <div>
-          <p className="text-sm font-semibold text-foreground">Địa chỉ</p>
-          <p className="text-sm text-muted-foreground">{address}</p>
-        </div>
-      </div>
-    </div>
+    </DetailSection>
   )
 }

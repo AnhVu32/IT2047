@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checks": {
+    "listing_ids_unique": true,
+    "edge_endpoints_exist": true,
+    "no_duplicate_edges": true,
+    "ranks_contiguous": true,
+    "edges_within_radius": true,
+    "no_pending_routes": true,
+    "route_values_paired": true,
+    "recomputed_distances_match_haversine": true,
+    "images_exist_on_disk": true,
+    "images_column_matches_manifest": true,
+    "neo4j_listing_nodes_ids_unique": true,
+    "neo4j_ward_nodes_ids_unique": true,
+    "neo4j_former_admin_area_nodes_ids_unique": true,
+    "neo4j_street_nodes_ids_unique": true,
+    "neo4j_geo_cluster_nodes_ids_unique": true,
+    "neo4j_amenity_nodes_ids_unique": true,
+    "closure_listing_in_ward": true,
+    "closure_listing_in_former": true,
+    "closure_listing_on_street": true,
+    "closure_listing_in_cluster": true,
+    "closure_street_in_ward": true,
+    "closure_ward_from_former": true,
+    "closure_near_amenity": true,
+    "every_listing_has_ward_and_former_area": true
+  }
+}

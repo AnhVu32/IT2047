@@ -4,16 +4,17 @@ import { useState } from "react"
 import { Header } from "@/components/header"
 import { SidebarFilter } from "@/components/SidebarFilter"
 import { AIChat } from "@/components/ai-chat"
+import { cn } from "@/lib/utils"
+
+const DEFAULT_PROPERTY_TYPE = "Căn hộ,Nhà đất"
 
 export default function AdvancedSearchPage() {
   // State lifting: track filters from SidebarFilter and pass to AIChat
   const [currentFilters, setCurrentFilters] = useState<any>({})
-  const [showFilterPopup, setShowFilterPopup] = useState(false)
+  const [filtersOpen, setFiltersOpen] = useState(false)
 
   const handleApplyFilters = (filters: any) => {
-    console.log("[v0] Page received filters:", filters)
     setCurrentFilters(filters)
-    setShowFilterPopup(true)
   }
 
   // Helper function to format filter summary in Vietnamese
@@ -24,24 +25,24 @@ export default function AdvancedSearchPage() {
     if (filters.min_price || filters.max_price) {
       const minPrice = filters.min_price || 0
       const maxPrice = filters.max_price || "Không giới hạn"
-      summary.push(`Mức giá: Từ ${minPrice.toLocaleString("vi-VN")} đến ${maxPrice === 999999 ? "Không giới hạn" : maxPrice.toLocaleString("vi-VN")}`)
+      summary.push(`Giá: ${minPrice.toLocaleString("vi-VN")} – ${maxPrice === 999999 ? "Không giới hạn" : maxPrice.toLocaleString("vi-VN")} tỷ`)
     }
 
     // Area range
     if (filters.min_area || filters.max_area) {
       const minArea = filters.min_area || 0
       const maxArea = filters.max_area || "Không giới hạn"
-      summary.push(`Diện tích: Từ ${minArea} đến ${maxArea === 999999 ? "Không giới hạn" : maxArea} m²`)
+      summary.push(`Diện tích: ${minArea} – ${maxArea === 999999 ? "Không giới hạn" : maxArea} m²`)
     }
 
     // Bedrooms
     if (filters.bedrooms && filters.bedrooms !== "0") {
-      summary.push(`Số phòng ngủ: ${filters.bedrooms}`)
+      summary.push(`${filters.bedrooms}+ phòng ngủ`)
     }
 
     // Bathrooms
     if (filters.bathrooms && filters.bathrooms !== "0") {
-      summary.push(`Số phòng tắm: ${filters.bathrooms}`)
+      summary.push(`${filters.bathrooms}+ phòng tắm`)
     }
 
     // District
@@ -50,7 +51,7 @@ export default function AdvancedSearchPage() {
     }
 
     // Property type
-    if (filters.property_type && filters.property_type.trim() !== "") {
+    if (filters.property_type && filters.property_type.trim() !== "" && filters.property_type !== DEFAULT_PROPERTY_TYPE) {
       summary.push(`Loại BĐS: ${filters.property_type}`)
     }
 
@@ -114,60 +115,43 @@ export default function AdvancedSearchPage() {
       summary.push(`Tiện ích: ${amenities.join(", ")}`)
     }
 
-    return summary.length > 0 ? summary : ["Không có bộ lọc được chọn"]
+    return summary
   }
 
   const filterSummary = formatFilterSummary(currentFilters)
 
   return (
-    <div className="h-screen overflow-hidden flex flex-col bg-background">
-      {/* Fixed height header - only top navigation */}
+    <div className="h-dvh overflow-hidden flex flex-col bg-background">
       <div className="shrink-0">
         <Header />
       </div>
-      
-      {/* Main content - grid layout with independently scrollable columns */}
-      <main className="flex-1 min-h-0 grid grid-cols-12 overflow-hidden">
-        {/* Left Column - Complex Filter (col-span-5) */}
-        <aside className="col-span-12 lg:col-span-5 h-full min-h-0 overflow-y-auto border-r border-border p-6">
-          <SidebarFilter onApplyFilters={handleApplyFilters} showSupportCard={false} />
+
+      <main className="flex-1 min-h-0 flex overflow-hidden">
+        {/* Criteria panel: a drawer on mobile, a fixed-width column on desktop. */}
+        <aside
+          className={cn(
+            "lg:static lg:block lg:w-[340px] lg:shrink-0 lg:border-r lg:border-border lg:bg-transparent lg:p-4",
+            filtersOpen ? "fixed inset-0 z-50 bg-black/40" : "hidden",
+          )}
+          onClick={(e) => {
+            if (e.target === e.currentTarget) setFiltersOpen(false)
+          }}
+        >
+          <div className="absolute inset-y-0 left-0 w-[88%] max-w-sm p-3 lg:static lg:h-full lg:w-auto lg:max-w-none lg:p-0">
+            <SidebarFilter
+              onApplyFilters={handleApplyFilters}
+              onClose={() => setFiltersOpen(false)}
+              showSupportCard={false}
+              title="Tiêu chí tư vấn"
+              applyLabel="Áp dụng cho trợ lý"
+            />
+          </div>
         </aside>
-        
-        {/* Right Column - AI Chat (col-span-7) */}
-        <section className="col-span-12 lg:col-span-7 h-full min-h-0 overflow-hidden bg-muted/30">
-          <AIChat filters={currentFilters} />
+
+        <section className="flex-1 min-w-0 h-full overflow-hidden">
+          <AIChat filters={currentFilters} criteria={filterSummary} onEditCriteria={() => setFiltersOpen(true)} />
         </section>
       </main>
-      
-      {/* Success Popup - Filter Applied */}
-      {showFilterPopup && (
-        <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
-          onClick={() => setShowFilterPopup(false)}
-        >
-          <div 
-            className="bg-background p-6 rounded-lg shadow-lg max-w-md w-full mx-4"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <h3 className="text-lg font-bold text-green-600 mb-4">✅ Đã áp dụng bộ lọc</h3>
-            
-            <div className="space-y-2 mb-4">
-              {filterSummary.map((item, index) => (
-                <div 
-                  key={index} 
-                  className="inline-block bg-muted px-3 py-1.5 rounded-md text-sm text-foreground mr-2 mb-2"
-                >
-                  {item}
-                </div>
-              ))}
-            </div>
-
-            <p className="text-xs text-muted-foreground text-center">Nhấn ra ngoài để tiếp tục chat</p>
-          </div>
-        </div>
-      )}
-      
-      {/* NO FOOTER */}
     </div>
   )
 }

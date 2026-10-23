@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "original_matrices_checked": 289,
+  "submatrices_checked_against_raw_merged_responses": 201,
+  "exported_route_edges_checked": 150313,
+  "status_counts": {
+    "ok": 150193,
+    "snapped_far": 120
+  }
+}

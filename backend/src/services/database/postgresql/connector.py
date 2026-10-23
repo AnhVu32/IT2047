@@ -1,6 +1,15 @@
 from loguru import logger
 from sqlalchemy import create_engine
+from sqlalchemy.engine import URL
 from sqlalchemy.sql import text
+
+from src.settings.config import config_value
+
+
+# Postgres defaults to max_connections=100, shared with the LangGraph checkpointer
+# pool, so keep this pool small. Overridable via DB_POOL_SIZE / DB_MAX_OVERFLOW.
+DEFAULT_POOL_SIZE = 10
+DEFAULT_MAX_OVERFLOW = 10
 
 
 class PostgresConnector:
@@ -19,8 +28,22 @@ class PostgresConnector:
             self.config[
                 "password_db"], \
             self.config["host_db"], self.config["port_db"], self.config["database"], 100
-        self.connection_string = f'postgresql://{self.username}:{self.password}@{self.host}:{self.port}/{self.dbname}'
-        self.engine = create_engine(self.connection_string, pool_size=5000, max_overflow=12000)
+        # URL.create escapes special characters (@, /, :) in the password.
+        url = URL.create(
+            "postgresql",
+            username=self.username,
+            password=self.password,
+            host=self.host,
+            port=int(self.port) if self.port else None,
+            database=self.dbname,
+        )
+        self.connection_string = url.render_as_string(hide_password=True)
+        self.engine = create_engine(
+            url,
+            pool_size=int(config_value("DB_POOL_SIZE", DEFAULT_POOL_SIZE)),
+            max_overflow=int(config_value("DB_MAX_OVERFLOW", DEFAULT_MAX_OVERFLOW)),
+            pool_pre_ping=True,
+        )
 
     def execute_raw_query(self, raw_query: str, **kwargs):
         try:

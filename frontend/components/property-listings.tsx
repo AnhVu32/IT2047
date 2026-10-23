@@ -1,7 +1,7 @@
 "use client"
 
-import { useEffect, useState } from "react"
-import { ChevronDown, ChevronLeft, ChevronRight, Loader2 } from "lucide-react"
+import { useEffect, useRef, useState } from "react"
+import { ChevronLeft, ChevronRight, SearchX, SlidersHorizontal, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   Select,
@@ -11,6 +11,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { PropertyCard } from "@/components/property-card"
+import { cn } from "@/lib/utils"
 
 interface Property {
   id: string
@@ -32,29 +33,62 @@ interface PropertyListingsProps {
   onSortChange?: (value: string) => void
   currentPage?: number
   onPageChange?: (page: number) => void
+  searchQuery?: string
+  onClearSearch?: () => void
+  activeFilterCount?: number
+  onOpenFilters?: () => void
 }
 
 const SKELETON_COUNT = 5
 
+const SORT_PARAMS: Record<string, { sort_by: string; sort_order: string }> = {
+  newest: { sort_by: "newest", sort_order: "desc" },
+  oldest: { sort_by: "oldest", sort_order: "asc" },
+  price_asc: { sort_by: "price_asc", sort_order: "asc" },
+  price_desc: { sort_by: "price_desc", sort_order: "desc" },
+}
+
 function PropertyCardSkeleton() {
   return (
-    <div className="bg-card border border-border rounded-lg overflow-hidden animate-pulse">
+    <div className="bg-card border border-border rounded-xl overflow-hidden animate-pulse">
       <div className="flex flex-col md:flex-row">
-        {/* Image Skeleton */}
-        <div className="w-full md:w-[280px] lg:w-[320px] h-[200px] md:min-h-[220px] bg-muted flex-shrink-0" />
-        
-        {/* Content Skeleton */}
+        <div className="w-full md:w-[260px] lg:w-[300px] h-[200px] md:h-[210px] bg-muted flex-shrink-0" />
         <div className="flex-1 p-4 flex flex-col space-y-3">
-          <div className="h-6 bg-muted rounded w-3/4" />
-          <div className="h-4 bg-muted rounded w-1/2" />
+          <div className="h-5 bg-muted rounded w-3/4" />
+          <div className="h-6 bg-muted rounded w-1/3" />
           <div className="h-4 bg-muted rounded w-2/3" />
           <div className="h-4 bg-muted rounded w-full" />
-          <div className="h-4 bg-muted rounded w-full" />
-          <div className="mt-auto h-10 bg-muted rounded w-full" />
+          <div className="mt-auto h-4 bg-muted rounded w-1/4" />
         </div>
       </div>
     </div>
   )
+}
+
+// Page numbers with a sliding window of 5 and ellipses towards the first/last page.
+function getPageNumbers(page: number, totalPages: number) {
+  const pages: (number | string)[] = []
+  const maxVisible = 5
+
+  if (totalPages <= maxVisible) {
+    for (let i = 1; i <= totalPages; i++) pages.push(i)
+    return pages
+  }
+
+  let start = Math.max(1, page - Math.floor(maxVisible / 2))
+  const end = Math.min(totalPages, start + maxVisible - 1)
+  if (end === totalPages) start = Math.max(1, end - maxVisible + 1)
+
+  if (start > 1) {
+    pages.push(1)
+    if (start > 2) pages.push("...")
+  }
+  for (let i = start; i <= end; i++) pages.push(i)
+  if (end < totalPages) {
+    if (end < totalPages - 1) pages.push("...")
+    pages.push(totalPages)
+  }
+  return pages
 }
 
 export function PropertyListings({
@@ -63,155 +97,100 @@ export function PropertyListings({
   onSortChange = () => {},
   currentPage = 1,
   onPageChange = () => {},
+  searchQuery,
+  onClearSearch,
+  activeFilterCount = 0,
+  onOpenFilters,
 }: PropertyListingsProps) {
   const [properties, setProperties] = useState<Property[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [totalCount, setTotalCount] = useState(0)
   const [totalPages, setTotalPages] = useState(1)
-  const [internalPage, setInternalPage] = useState(currentPage)
-
-  // Build query parameters from activeFilters and sortOption
-  const buildQueryParams = () => {
-    const searchParams = new URLSearchParams()
-
-    // Add page
-    searchParams.append("page", internalPage.toString())
-
-    // Map sortOption to API parameters
-    if (sortOption === "newest") {
-      searchParams.append("sort_by", "newest")
-      searchParams.append("sort_order", "desc")
-    } else if (sortOption === "oldest") {
-      searchParams.append("sort_by", "oldest")
-      searchParams.append("sort_order", "asc")
-    } else if (sortOption === "price_asc") {
-      searchParams.append("sort_by", "price_asc")
-      searchParams.append("sort_order", "asc")
-    } else if (sortOption === "price_desc") {
-      searchParams.append("sort_by", "price_desc")
-      searchParams.append("sort_order", "desc")
-    }
-
-    // Add all active filters
-    Object.entries(activeFilters).forEach(([key, value]) => {
-      if (value !== null && value !== undefined && value !== "") {
-        searchParams.append(key, String(value))
-      }
-    })
-
-    // Fix URL encoding: replace + with %20 for proper space encoding
-    return searchParams.toString().replace(/\+/g, '%20')
-  }
+  const topRef = useRef<HTMLDivElement>(null)
+  const isFirstLoad = useRef(true)
 
   useEffect(() => {
+    const controller = new AbortController()
+
     const fetchProperties = async () => {
       try {
         setLoading(true)
         setError(null)
 
-        const queryString = buildQueryParams()
-        console.log("[v0] Fetching with query:", queryString)
-        
-        const response = await fetch(`/api/properties?${queryString}`)
-        
+        const searchParams = new URLSearchParams()
+        searchParams.append("page", currentPage.toString())
+        const sort = SORT_PARAMS[sortOption]
+        if (sort) {
+          searchParams.append("sort_by", sort.sort_by)
+          searchParams.append("sort_order", sort.sort_order)
+        }
+        Object.entries(activeFilters).forEach(([key, value]) => {
+          if (value !== null && value !== undefined && value !== "") {
+            searchParams.append(key, String(value))
+          }
+        })
+        // Encode spaces as %20 rather than "+" for the backend's query parser.
+        const queryString = searchParams.toString().replace(/\+/g, "%20")
+
+        const response = await fetch(`/api/properties?${queryString}`, { signal: controller.signal })
         if (!response.ok) {
           throw new Error(`API Error: ${response.status}`)
         }
 
         const data = await response.json()
-        console.log("[v0] API Response:", data)
-        
         const fetchedProperties = data.data?.properties || []
         const total = data.data?.total || data.total || fetchedProperties.length
-        
+
         setProperties(fetchedProperties)
         setTotalCount(total)
         setTotalPages(data.data?.num_pages || 1)
-        
-        console.log("[v0] Loaded", fetchedProperties.length, "properties. Total:", total)
-        
-        // Scroll to top smoothly
-        window.scrollTo({ top: 0, behavior: 'smooth' })
+
+        // Bring the top of the results into view after paging/filtering, but not on first paint.
+        if (!isFirstLoad.current) {
+          topRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })
+        }
+        isFirstLoad.current = false
       } catch (err) {
-        console.error("[v0] Fetch error:", err)
+        if (err instanceof DOMException && err.name === "AbortError") return
         setError(err instanceof Error ? err.message : "Failed to fetch properties")
         setProperties([])
       } finally {
-        setLoading(false)
+        if (!controller.signal.aborted) setLoading(false)
       }
     }
 
     fetchProperties()
-  }, [internalPage, activeFilters, sortOption])
-
-  // Helper function to generate page numbers with sliding window
-  const getPageNumbers = () => {
-    const pages: (number | string)[] = []
-    const maxVisible = 5
-    
-    if (totalPages <= maxVisible) {
-      // Show all pages if totalPages is small
-      for (let i = 1; i <= totalPages; i++) {
-        pages.push(i)
-      }
-    } else {
-      // Calculate the sliding window
-      let start = Math.max(1, internalPage - Math.floor(maxVisible / 2))
-      let end = Math.min(totalPages, start + maxVisible - 1)
-      
-      // Adjust start if end is at totalPages
-      if (end === totalPages) {
-        start = Math.max(1, end - maxVisible + 1)
-      }
-      
-      // Add first page if not in range
-      if (start > 1) {
-        pages.push(1)
-        if (start > 2) pages.push('...')
-      }
-      
-      // Add page numbers in range
-      for (let i = start; i <= end; i++) {
-        pages.push(i)
-      }
-      
-      // Add last page if not in range
-      if (end < totalPages) {
-        if (end < totalPages - 1) pages.push('...')
-        pages.push(totalPages)
-      }
-    }
-    
-    return pages
-  }
-
-  const handleSortChange = (value: string) => {
-    onSortChange(value)
-  }
+    return () => controller.abort()
+  }, [currentPage, activeFilters, sortOption])
 
   const handlePageChange = (page: number) => {
-    setInternalPage(page)
+    if (page < 1 || page > totalPages || page === currentPage) return
     onPageChange(page)
   }
 
   return (
-    <div>
-      {/* Header with sort */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+    <div ref={topRef} className="scroll-mt-24">
+      <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h1 className="text-xl font-bold text-foreground">
-            Mua bán Bất động sản ở Thành phố Hồ Chí Minh
-          </h1>
-          <p className="text-sm text-muted-foreground mt-1">
-            Hiển thị {totalCount.toLocaleString('vi-VN')} bất động sản đã xác thực
+          <h2 className="text-lg font-bold text-foreground">Bất động sản đang bán tại TP.HCM</h2>
+          <p className="mt-0.5 text-sm text-muted-foreground">
+            {loading ? "Đang tải..." : `${totalCount.toLocaleString("vi-VN")} kết quả`}
           </p>
         </div>
 
         <div className="flex items-center gap-2">
-          <span className="text-sm text-muted-foreground">Sắp xếp:</span>
-          <Select value={sortOption} onValueChange={handleSortChange}>
-            <SelectTrigger className="w-[180px] h-10">
+          {onOpenFilters && (
+            <Button variant="outline" className="h-10 lg:hidden" onClick={onOpenFilters}>
+              <SlidersHorizontal className="h-4 w-4" />
+              Bộ lọc
+              {activeFilterCount > 0 && (
+                <span className="rounded-full bg-primary px-1.5 text-xs text-primary-foreground">{activeFilterCount}</span>
+              )}
+            </Button>
+          )}
+          <Select value={sortOption} onValueChange={onSortChange}>
+            <SelectTrigger className="h-10 w-[170px] bg-card" aria-label="Sắp xếp">
               <SelectValue placeholder="Sắp xếp theo" />
             </SelectTrigger>
             <SelectContent>
@@ -224,14 +203,27 @@ export function PropertyListings({
         </div>
       </div>
 
-      {/* Error State */}
-      {error && (
-        <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6 text-red-700">
-          <p>Không thể tải bất động sản: {error}</p>
+      {searchQuery && (
+        <div className="mb-4 flex items-center gap-2 text-sm">
+          <span className="text-muted-foreground">Từ khóa:</span>
+          <button
+            type="button"
+            onClick={onClearSearch}
+            className="flex items-center gap-1 rounded-full bg-secondary px-3 py-1 font-medium text-secondary-foreground hover:bg-secondary/80"
+            aria-label={`Bỏ từ khóa ${searchQuery}`}
+          >
+            “{searchQuery}”
+            <X className="h-3.5 w-3.5" />
+          </button>
         </div>
       )}
 
-      {/* Loading State */}
+      {error && (
+        <div className="mb-4 rounded-xl border border-destructive/30 bg-destructive/5 p-4 text-sm text-destructive">
+          Không thể tải danh sách bất động sản. Vui lòng thử lại sau. <span className="opacity-70">({error})</span>
+        </div>
+      )}
+
       {loading && (
         <div className="space-y-4">
           {Array.from({ length: SKELETON_COUNT }).map((_, i) => (
@@ -240,14 +232,21 @@ export function PropertyListings({
         </div>
       )}
 
-      {/* Empty State */}
       {!loading && properties.length === 0 && !error && (
-        <div className="text-center py-12">
-          <p className="text-muted-foreground">Không có bất động sản nào</p>
+        <div className="flex flex-col items-center rounded-xl border border-dashed border-border bg-card px-6 py-14 text-center">
+          <SearchX className="h-10 w-10 text-muted-foreground" />
+          <p className="mt-3 font-semibold text-foreground">Không có bất động sản phù hợp</p>
+          <p className="mt-1 max-w-sm text-sm text-muted-foreground">
+            Thử nới rộng khoảng giá, diện tích hoặc bỏ bớt tiêu chí lọc.
+          </p>
+          {searchQuery && onClearSearch && (
+            <Button variant="outline" className="mt-4" onClick={onClearSearch}>
+              Bỏ từ khóa “{searchQuery}”
+            </Button>
+          )}
         </div>
       )}
 
-      {/* Property Cards */}
       {!loading && properties.length > 0 && (
         <div className="space-y-4">
           {properties.map((property) => (
@@ -256,60 +255,48 @@ export function PropertyListings({
         </div>
       )}
 
-      {/* Pagination */}
       {!loading && properties.length > 0 && totalPages > 1 && (
-        <div className="flex items-center justify-center gap-1 mt-8">
-          {/* Previous Button */}
-          <Button 
-            variant="outline" 
-            size="icon" 
+        <nav className="mt-8 flex items-center justify-center gap-1" aria-label="Phân trang">
+          <Button
+            variant="outline"
+            size="icon"
             className="h-10 w-10"
-            disabled={internalPage === 1}
-            onClick={() => handlePageChange(Math.max(internalPage - 1, 1))}
+            disabled={currentPage === 1}
+            onClick={() => handlePageChange(currentPage - 1)}
+            aria-label="Trang trước"
           >
             <ChevronLeft className="h-4 w-4" />
           </Button>
 
-          {/* Page Numbers */}
-          {getPageNumbers().map((page, idx) => {
-            if (page === '...') {
-              return (
-                <span key={`ellipsis-${idx}`} className="px-2 text-muted-foreground">
-                  ...
-                </span>
-              )
-            }
-            
-            const pageNum = page as number
-            const isActive = internalPage === pageNum
-            
-            return (
+          {getPageNumbers(currentPage, totalPages).map((page, idx) =>
+            page === "..." ? (
+              <span key={`ellipsis-${idx}`} className="px-2 text-muted-foreground">
+                …
+              </span>
+            ) : (
               <Button
-                key={pageNum}
-                variant={isActive ? "default" : "outline"}
-                className={`h-10 w-10 ${
-                  isActive 
-                    ? "bg-[#E03C31] hover:bg-[#c43428] text-white" 
-                    : ""
-                }`}
-                onClick={() => handlePageChange(pageNum)}
+                key={page}
+                variant={currentPage === page ? "default" : "outline"}
+                className={cn("h-10 w-10", currentPage !== page && "bg-card")}
+                aria-current={currentPage === page ? "page" : undefined}
+                onClick={() => handlePageChange(page as number)}
               >
-                {pageNum}
+                {page}
               </Button>
-            )
-          })}
+            ),
+          )}
 
-          {/* Next Button */}
-          <Button 
-            variant="outline" 
-            size="icon" 
+          <Button
+            variant="outline"
+            size="icon"
             className="h-10 w-10"
-            disabled={internalPage === totalPages}
-            onClick={() => handlePageChange(Math.min(internalPage + 1, totalPages))}
+            disabled={currentPage === totalPages}
+            onClick={() => handlePageChange(currentPage + 1)}
+            aria-label="Trang sau"
           >
             <ChevronRight className="h-4 w-4" />
           </Button>
-        </div>
+        </nav>
       )}
     </div>
   )

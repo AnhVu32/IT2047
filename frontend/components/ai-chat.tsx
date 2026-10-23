@@ -1,14 +1,14 @@
 "use client"
 
 import { useState, useRef, useEffect, useCallback } from "react"
-import { Send, Bot, User, Loader2, Sparkles, Plus, MessageSquare, ThumbsUp, ThumbsDown } from "lucide-react"
+import { Send, Loader2, Sparkles, Plus, MessageSquare, ThumbsUp, ThumbsDown, SlidersHorizontal, Lightbulb, Scale } from "lucide-react"
 import ReactMarkdown, { type Components } from "react-markdown"
 import remarkGfm from "remark-gfm"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 import { PropertyCard } from "@/components/property-card"
 import { useAuth, authHeaders } from "@/lib/auth-context"
 import { sendInteraction } from "@/lib/feedback"
+import { cn } from "@/lib/utils"
 
 interface PropertyResult {
   id: string
@@ -23,6 +23,8 @@ interface ChatMessage {
   content?: string
   properties?: PropertyResult[]
   timestamp: string
+  // Client-side error notices are UI only and must not be replayed as history.
+  isError?: boolean
 }
 
 interface ConversationSummary {
@@ -30,9 +32,50 @@ interface ConversationSummary {
   title: string | null
 }
 
+// Mirrors ClientHistoryTurn.content max_length in the backend chat endpoint.
+const HISTORY_CONTENT_MAX = 4000
+
+// Chat survives reloads and navigating to a listing and back (per tab).
+const STORAGE_PREFIX = "ai-chat:v1:"
+const STORED_MESSAGES_MAX = 30
+
+interface StoredChat {
+  conversationId?: number | null
+  messages?: ChatMessage[]
+  guestContextListingIds?: string[]
+  guestContextParsedQuery?: any
+}
+
+function readStoredChat(key: string): StoredChat | null {
+  try {
+    const raw = window.sessionStorage.getItem(key)
+    return raw ? (JSON.parse(raw) as StoredChat) : null
+  } catch {
+    return null
+  }
+}
+
+function writeStoredChat(key: string, value: StoredChat) {
+  try {
+    window.sessionStorage.setItem(key, JSON.stringify(value))
+  } catch {
+    // Storage may be full or blocked; the chat still works without persistence.
+  }
+}
+
 interface AIChatProps {
   filters?: any
+  /** Human-readable summary of the applied criteria, shown above the conversation. */
+  criteria?: string[]
+  onEditCriteria?: () => void
 }
+
+const SUGGESTED_PROMPTS = [
+  "Căn hộ 2 phòng ngủ dưới 4 tỷ, gần metro",
+  "Nhà phố sổ hồng riêng ở Gò Vấp, khoảng 60–80 m²",
+  "Căn hộ có hồ bơi, gym, phù hợp gia đình có trẻ nhỏ",
+  "Ngân sách 5 tỷ nên mua căn hộ hay nhà đất?",
+]
 
 const WELCOME: ChatMessage = {
   role: "ai",
@@ -60,13 +103,13 @@ const markdownComponents: Components = {
       {...props}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-[#C9342A] underline underline-offset-2 hover:text-[#A92A22]"
+      className="font-medium text-primary underline underline-offset-2 hover:opacity-80"
     >
       {children}
     </a>
   ),
   blockquote: ({ children, ...props }) => (
-    <blockquote {...props} className="border-l-2 border-[#E03C31]/50 pl-3 italic text-muted-foreground">
+    <blockquote {...props} className="border-l-2 border-primary/50 pl-3 italic text-muted-foreground">
       {children}
     </blockquote>
   ),
@@ -119,8 +162,8 @@ function MarkdownMessage({ content }: { content: string }) {
   )
 }
 
-export function AIChat({ filters: propFilters = {} }: AIChatProps) {
-  const { user } = useAuth()
+export function AIChat({ filters: propFilters = {}, criteria = [], onEditCriteria }: AIChatProps) {
+  const { user, loading: authLoading } = useAuth()
   const [messages, setMessages] = useState<ChatMessage[]>([{ ...WELCOME, timestamp: nowTime() }])
   const [inputValue, setInputValue] = useState("")
   const [isLoading, setIsLoading] = useState(false)
@@ -129,7 +172,13 @@ export function AIChat({ filters: propFilters = {} }: AIChatProps) {
   const [guestContextListingIds, setGuestContextListingIds] = useState<string[]>([])
   const [guestContextParsedQuery, setGuestContextParsedQuery] = useState<any>(null)
   const currentFilters = propFilters
-  const messagesEndRef = useRef<HTMLDivElement>(null)
+  // Logged-in and guest chats are stored separately so switching account never leaks one into the other.
+  const identity = user ? `user:${user.id}` : "guest"
+  const storageKey = STORAGE_PREFIX + identity
+  const [hydratedIdentity, setHydratedIdentity] = useState<string | null>(null)
+  const messagesContainerRef = useRef<HTMLDivElement>(null)
+  // Per-listing thumbs state so the user sees their feedback was recorded.
+  const [thumbs, setThumbs] = useState<Record<string, "up" | "down">>({})
 
   const loadConversations = useCallback(async () => {
     if (!user) return
@@ -156,7 +205,9 @@ export function AIChat({ filters: propFilters = {} }: AIChatProps) {
 
   // Auto scroll to bottom
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
+    // Scroll only the message list; scrollIntoView would also shift the page's overflow-hidden ancestors.
+    const container = messagesContainerRef.current
+    container?.scrollTo({ top: container.scrollHeight, behavior: "smooth" })
   }, [messages])
 
   const startNewChat = () => {
@@ -183,6 +234,44 @@ export function AIChat({ filters: propFilters = {} }: AIChatProps) {
       // ignore
     }
   }
+
+  // Restore the saved chat once auth is known, and start clean when the account changes.
+  useEffect(() => {
+    if (authLoading || hydratedIdentity === identity) return
+    if (hydratedIdentity !== null) {
+      setConversationId(null)
+      setGuestContextListingIds([])
+      setGuestContextParsedQuery(null)
+      setMessages([{ ...WELCOME, timestamp: nowTime() }])
+    }
+    const saved = readStoredChat(storageKey)
+    if (saved) {
+      if (user) {
+        if (saved.conversationId) openConversation(saved.conversationId)
+      } else {
+        if (saved.messages?.length) setMessages(saved.messages)
+        setGuestContextListingIds(saved.guestContextListingIds || [])
+        setGuestContextParsedQuery(saved.guestContextParsedQuery ?? null)
+      }
+    }
+    setHydratedIdentity(identity)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [authLoading, identity])
+
+  // Persist after each completed turn (never the transient "Đang xử lý..." placeholder).
+  useEffect(() => {
+    if (authLoading || hydratedIdentity !== identity || isLoading) return
+    writeStoredChat(
+      storageKey,
+      user
+        ? { conversationId }
+        : {
+            messages: messages.slice(-STORED_MESSAGES_MAX),
+            guestContextListingIds,
+            guestContextParsedQuery,
+          },
+    )
+  }, [authLoading, hydratedIdentity, identity, isLoading, user, storageKey, conversationId, messages, guestContextListingIds, guestContextParsedQuery])
 
   const applyResponse = (data: any) => {
     const properties: PropertyResult[] = data.data?.results || []
@@ -214,15 +303,17 @@ export function AIChat({ filters: propFilters = {} }: AIChatProps) {
     }
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!inputValue.trim()) return
+  const sendMessage = async (text: string) => {
+    if (!text.trim() || isLoading) return
 
-    const userQuestion = inputValue
+    const userQuestion = text
     const guestHistory = messages
-      .filter((item) => item.content && !(item.role === "ai" && item.content === WELCOME.content))
+      .filter((item) => item.content && !item.isError && !(item.role === "ai" && item.content === WELCOME.content))
       .slice(-20)
-      .map((item) => ({ role: item.role === "ai" ? "assistant" : "user", content: item.content! }))
+      .map((item) => ({
+        role: item.role === "ai" ? "assistant" : "user",
+        content: item.content!.slice(0, HISTORY_CONTENT_MAX),
+      }))
     setMessages((prev) => [
       ...prev,
       { role: "user", content: userQuestion, timestamp: nowTime() },
@@ -259,6 +350,7 @@ export function AIChat({ filters: propFilters = {} }: AIChatProps) {
           role: "ai",
           content: "Xin lỗi, đã xảy ra lỗi khi xử lý tin nhắn. Vui lòng thử lại sau.",
           timestamp: nowTime(),
+          isError: true,
         }
         return updated
       })
@@ -267,7 +359,21 @@ export function AIChat({ filters: propFilters = {} }: AIChatProps) {
     }
   }
 
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    sendMessage(inputValue)
+  }
+
+  const handleInputKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    // Enter sends, Shift+Enter inserts a newline; ignore Enter while composing Vietnamese IME input.
+    if (e.key === "Enter" && !e.shiftKey && !e.nativeEvent.isComposing) {
+      e.preventDefault()
+      sendMessage(inputValue)
+    }
+  }
+
   const handleThumb = (property: PropertyResult, up: boolean) => {
+    setThumbs((prev) => ({ ...prev, [String(property.listing_id ?? property.id)]: up ? "up" : "down" }))
     sendInteraction({
       listing_id: property.listing_id ?? property.id,
       action_type: up ? "thumbs_up" : "thumbs_down",
@@ -276,167 +382,235 @@ export function AIChat({ filters: propFilters = {} }: AIChatProps) {
     })
   }
 
+  const isFreshChat = messages.length === 1 && messages[0].role === "ai" && messages[0].content === WELCOME.content
+
   return (
     <div className="h-full flex flex-col overflow-hidden">
       {/* Chat Header */}
-      <div className="shrink-0 flex items-center gap-3 px-4 py-3 bg-background border-b border-border">
-        <div className="w-10 h-10 rounded-full bg-[#E03C31]/10 flex items-center justify-center">
-          <Bot className="w-5 h-5 text-[#E03C31]" />
+      <div className="shrink-0 flex items-center gap-3 px-4 py-3 bg-card border-b border-border">
+        <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center">
+          <Sparkles className="w-5 h-5" />
         </div>
-        <div className="flex-1">
-          <h3 className="font-semibold text-foreground">AI Real Estate Assistant</h3>
-          <div className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-            <span className="text-xs text-emerald-600">Đang trực tuyến</span>
-          </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="font-semibold text-foreground leading-tight">Trợ lý tư vấn bất động sản</h3>
+          <p className="text-xs text-muted-foreground truncate">Mô tả nhu cầu, trợ lý sẽ gợi ý và giải thích lý do</p>
         </div>
-        {user && (
-          <Button type="button" variant="outline" size="sm" onClick={startNewChat} className="text-xs">
-            <Plus className="h-3.5 w-3.5 mr-1" />
-            Cuộc trò chuyện mới
+        {onEditCriteria && (
+          <Button type="button" variant="outline" size="sm" onClick={onEditCriteria} className="lg:hidden">
+            <SlidersHorizontal className="h-4 w-4" />
+            <span className="hidden sm:inline">Tiêu chí</span>
+            {criteria.length > 0 && (
+              <span className="rounded-full bg-primary px-1.5 text-xs text-primary-foreground">{criteria.length}</span>
+            )}
+          </Button>
+        )}
+        {!isFreshChat && (
+          <Button type="button" variant="outline" size="sm" onClick={startNewChat} disabled={isLoading} aria-label="Cuộc trò chuyện mới">
+            <Plus className="h-4 w-4" />
+            <span className="hidden sm:inline">Cuộc trò chuyện mới</span>
           </Button>
         )}
       </div>
 
       {/* Conversation history (logged-in only) */}
       {user && conversations.length > 0 && (
-        <div className="shrink-0 flex gap-2 overflow-x-auto px-4 py-2 border-b border-border bg-muted/30">
+        <div className="shrink-0 flex gap-2 overflow-x-auto px-4 py-2 border-b border-border bg-card">
           {conversations.map((c) => (
             <button
               key={c.id}
               type="button"
               onClick={() => openConversation(c.id)}
-              className={`flex items-center gap-1.5 whitespace-nowrap text-xs px-2.5 py-1.5 rounded-full border transition-colors ${
+              // A pending reply is written into the last visible message, so switching
+              // conversations mid-request would attach it to the wrong thread.
+              disabled={isLoading}
+              className={`flex max-w-56 items-center gap-1.5 whitespace-nowrap text-xs px-2.5 py-1.5 rounded-full border transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
                 c.id === conversationId
-                  ? "bg-[#E03C31] text-white border-[#E03C31]"
+                  ? "bg-primary text-primary-foreground border-primary"
                   : "bg-background text-foreground border-border hover:bg-muted"
               }`}
             >
-              <MessageSquare className="h-3 w-3" />
-              {c.title || `Cuộc trò chuyện ${c.id}`}
+              <MessageSquare className="h-3 w-3 shrink-0" />
+              <span className="truncate">{c.title || `Cuộc trò chuyện ${c.id}`}</span>
             </button>
           ))}
         </div>
       )}
 
+      {/* Applied criteria */}
+      {criteria.length > 0 && (
+        <div className="shrink-0 flex items-center gap-2 overflow-x-auto px-4 py-2 border-b border-border bg-accent/60 text-xs">
+          <span className="shrink-0 font-medium text-accent-foreground">Tiêu chí:</span>
+          {criteria.map((item) => (
+            <span key={item} className="shrink-0 rounded-full border border-primary/20 bg-card px-2.5 py-1 text-foreground">
+              {item}
+            </span>
+          ))}
+        </div>
+      )}
+
       {/* Chat Messages */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
-        {messages.map((message, idx) => (
-          <div key={idx} className={`flex gap-3 ${message.role === "user" ? "justify-end" : "justify-start"}`}>
-            {message.role === "ai" && (
-              <div className="w-8 h-8 rounded-full bg-[#E03C31]/10 flex items-center justify-center flex-shrink-0">
-                <Bot className="w-4 h-4 text-[#E03C31]" />
-              </div>
-            )}
-
-            <div className={`max-w-[75%] ${message.role === "user" ? "order-1" : ""}`}>
-              <div
-                className={`rounded-2xl px-4 py-3 ${
-                  message.role === "user"
-                    ? "bg-[#E03C31] text-white rounded-tr-sm"
-                    : "bg-muted text-foreground rounded-tl-sm"
-                }`}
-              >
-                {message.role === "ai" ? (
-                  <MarkdownMessage content={message.content || ""} />
-                ) : (
-                  <p className="whitespace-pre-wrap text-sm leading-relaxed">{message.content}</p>
+      <div ref={messagesContainerRef} className="flex-1 overflow-y-auto">
+        <div className="mx-auto w-full max-w-3xl space-y-5 px-4 py-6">
+          {messages.map((message, idx) => {
+            const isPending = isLoading && message.role === "ai" && idx === messages.length - 1
+            return (
+              <div key={idx} className={`flex gap-3 ${message.role === "user" ? "justify-end" : "justify-start"}`}>
+                {message.role === "ai" && (
+                  <div className="mt-0.5 w-8 h-8 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
+                    <Sparkles className="w-4 h-4 text-primary" />
+                  </div>
                 )}
-              </div>
 
-              {/* Properties Grid */}
-              {message.properties && message.properties.length > 0 && (
-                <div className="mt-3 space-y-3 pr-2">
-                  {message.properties.slice(0, 3).map((property) => (
-                    <div key={property.id} className="flex flex-col gap-3 mb-6">
-                      <PropertyCard property={property as any} />
+                <div className={cn("min-w-0", message.role === "user" ? "max-w-[85%] sm:max-w-[75%]" : "flex-1")}>
+                  <div
+                    className={cn(
+                      "rounded-2xl px-4 py-3",
+                      message.role === "user"
+                        ? "ml-auto w-fit bg-primary text-primary-foreground rounded-tr-sm"
+                        : "w-fit max-w-full bg-card border border-border text-foreground rounded-tl-sm",
+                      message.isError && "border-destructive/30 bg-destructive/5",
+                    )}
+                  >
+                    {isPending ? (
+                      <span className="flex items-center gap-2 py-0.5 text-sm text-muted-foreground" role="status">
+                        <span className="flex gap-1">
+                          <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-primary [animation-delay:-0.3s]" />
+                          <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-primary [animation-delay:-0.15s]" />
+                          <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-primary" />
+                        </span>
+                        Đang tìm và phân tích...
+                      </span>
+                    ) : message.role === "ai" ? (
+                      <MarkdownMessage content={message.content || ""} />
+                    ) : (
+                      <p className="whitespace-pre-wrap text-sm leading-relaxed">{message.content}</p>
+                    )}
+                  </div>
 
-                      {(property.explanation || property.comparison) && (
-                        <div className="bg-muted/50 rounded-lg p-4 text-sm text-foreground border border-border">
-                          <div className="flex items-center justify-between mb-3">
-                            <div className="flex items-center gap-2">
-                              <Sparkles className="w-4 h-4 text-[#E03C31]" />
-                              <span className="font-semibold">AI Insights</span>
+                  {/* Recommended properties */}
+                  {message.properties && message.properties.length > 0 && (
+                    <div className="mt-3 space-y-4">
+                      {message.properties.slice(0, 3).map((property, rank) => {
+                        const thumb = thumbs[String(property.listing_id ?? property.id)]
+                        return (
+                          <div key={property.id} className="overflow-hidden rounded-xl border border-border bg-card shadow-sm">
+                            <div className="flex items-center justify-between gap-2 border-b border-border px-4 py-2">
+                              <span className="text-xs font-semibold uppercase tracking-wide text-primary">Gợi ý #{rank + 1}</span>
+                              {/* Explicit feedback on this recommendation */}
+                              <div className="flex items-center gap-1">
+                                <span className="mr-1 hidden text-xs text-muted-foreground sm:inline">
+                                  {thumb ? "Cảm ơn phản hồi của bạn" : "Gợi ý này có phù hợp?"}
+                                </span>
+                                <button
+                                  type="button"
+                                  aria-label="Hữu ích"
+                                  aria-pressed={thumb === "up"}
+                                  className={cn("rounded-md p-1.5 transition-colors hover:bg-muted", thumb === "up" ? "text-primary" : "text-muted-foreground")}
+                                  onClick={() => handleThumb(property, true)}
+                                >
+                                  <ThumbsUp className={cn("h-4 w-4", thumb === "up" && "fill-current")} />
+                                </button>
+                                <button
+                                  type="button"
+                                  aria-label="Không phù hợp"
+                                  aria-pressed={thumb === "down"}
+                                  className={cn("rounded-md p-1.5 transition-colors hover:bg-muted", thumb === "down" ? "text-destructive" : "text-muted-foreground")}
+                                  onClick={() => handleThumb(property, false)}
+                                >
+                                  <ThumbsDown className={cn("h-4 w-4", thumb === "down" && "fill-current")} />
+                                </button>
+                              </div>
                             </div>
-                            {/* Explicit feedback on this recommendation */}
-                            <div className="flex items-center gap-1">
-                              <button
-                                type="button"
-                                aria-label="Hữu ích"
-                                className="p-1 rounded hover:bg-muted"
-                                onClick={() => handleThumb(property, true)}
-                              >
-                                <ThumbsUp className="w-4 h-4 text-muted-foreground hover:text-emerald-600" />
-                              </button>
-                              <button
-                                type="button"
-                                aria-label="Không phù hợp"
-                                className="p-1 rounded hover:bg-muted"
-                                onClick={() => handleThumb(property, false)}
-                              >
-                                <ThumbsDown className="w-4 h-4 text-muted-foreground hover:text-[#E03C31]" />
-                              </button>
+
+                            <div className="p-2 [&_article]:border-0 [&_article]:hover:translate-y-0 [&_article]:hover:shadow-none">
+                              <PropertyCard property={property as any} />
                             </div>
+
+                            {(property.explanation || property.comparison) && (
+                              <div className="space-y-3 border-t border-border bg-accent/40 px-4 py-3 text-sm">
+                                {property.explanation && (
+                                  <div className="flex gap-2.5">
+                                    <Lightbulb className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
+                                    <div>
+                                      <p className="font-semibold text-foreground">Lý do đề xuất</p>
+                                      <p className="mt-0.5 text-muted-foreground">{property.explanation}</p>
+                                    </div>
+                                  </div>
+                                )}
+                                {property.comparison && (
+                                  <div className="flex gap-2.5">
+                                    <Scale className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
+                                    <div>
+                                      <p className="font-semibold text-foreground">Đánh giá</p>
+                                      <p className="mt-0.5 text-muted-foreground">{property.comparison}</p>
+                                    </div>
+                                  </div>
+                                )}
+                              </div>
+                            )}
                           </div>
-
-                          {property.explanation && (
-                            <div className="mb-3">
-                              <span className="font-semibold">💡 Lý do đề xuất:</span>
-                              <p className="mt-1 text-muted-foreground">{property.explanation}</p>
-                            </div>
-                          )}
-
-                          {property.comparison && (
-                            <div>
-                              <span className="font-semibold">⚖️ Đánh giá:</span>
-                              <p className="mt-1 text-muted-foreground">{property.comparison}</p>
-                            </div>
-                          )}
-                        </div>
-                      )}
+                        )
+                      })}
                     </div>
-                  ))}
+                  )}
+
+                  {!isPending && (
+                    <p className={`text-[10px] mt-1 text-muted-foreground ${message.role === "user" ? "text-right" : ""}`}>
+                      {message.timestamp}
+                    </p>
+                  )}
                 </div>
-              )}
-
-              <p
-                className={`text-[10px] mt-1 ${
-                  message.role === "user" ? "text-right text-muted-foreground" : "text-muted-foreground"
-                }`}
-              >
-                {message.timestamp}
-              </p>
-            </div>
-
-            {message.role === "user" && (
-              <div className="w-8 h-8 rounded-full bg-[#E03C31] flex items-center justify-center flex-shrink-0">
-                <User className="w-4 h-4 text-white" />
               </div>
-            )}
-          </div>
-        ))}
-        <div ref={messagesEndRef} />
+            )
+          })}
+
+          {isFreshChat && (
+            <div className="grid gap-2 pl-11 sm:grid-cols-2">
+              {SUGGESTED_PROMPTS.map((prompt) => (
+                <button
+                  key={prompt}
+                  type="button"
+                  onClick={() => sendMessage(prompt)}
+                  disabled={isLoading}
+                  className="rounded-xl border border-border bg-card px-4 py-3 text-left text-sm text-foreground transition-colors hover:border-primary/40 hover:bg-accent disabled:opacity-50"
+                >
+                  {prompt}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Input Area */}
-      <div className="shrink-0 border-t border-border p-4 bg-background">
-        <form onSubmit={handleSubmit} className="flex items-center gap-2">
-          <Input
-            placeholder="Hỏi AI bất cứ điều gì về nhà đất..."
-            className="flex-1 h-10"
+      <div className="shrink-0 border-t border-border bg-card px-4 pt-3 pb-2">
+        <form
+          onSubmit={handleSubmit}
+          className="mx-auto flex max-w-3xl items-end gap-2 rounded-2xl border border-input bg-background p-1.5 pl-4 focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20"
+        >
+          <textarea
+            rows={1}
+            aria-label="Tin nhắn cho trợ lý"
+            placeholder="Ví dụ: căn hộ 2PN ở Thủ Đức dưới 4 tỷ, gần trường học..."
+            className="max-h-36 min-h-9 flex-1 resize-none bg-transparent py-2 text-sm outline-none [field-sizing:content] placeholder:text-muted-foreground disabled:opacity-50"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
+            onKeyDown={handleInputKeyDown}
             disabled={isLoading}
           />
           <Button
             type="submit"
             size="icon"
-            className="h-10 w-10 bg-[#E03C31] hover:bg-[#c43428] flex-shrink-0 disabled:opacity-50"
+            className="h-9 w-9 rounded-xl flex-shrink-0"
             disabled={isLoading || !inputValue.trim()}
+            aria-label="Gửi"
           >
             {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
           </Button>
         </form>
+        <p className="mx-auto mt-1.5 max-w-3xl text-center text-[11px] text-muted-foreground">
+          Trợ lý AI có thể sai sót. Hãy kiểm tra pháp lý và thông tin thực tế trước khi giao dịch.
+        </p>
       </div>
     </div>
   )

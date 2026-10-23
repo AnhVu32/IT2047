@@ -1,0 +1,12 @@
+{
+  "master_rows": 3857,
+  "master_columns": 209,
+  "input_50_columns_preserved": true,
+  "unique_listing_ids": 3857,
+  "amenity_nodes": 1896,
+  "top5_edges": 143411,
+  "invalid_coord_unresolved": 27,
+  "coordinates_valid_or_imputed": 3830,
+  "routed_edges_count": 1028,
+  "ready_for_neo4j_import": true
+}

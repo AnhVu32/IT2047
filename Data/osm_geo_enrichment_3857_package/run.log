@@ -1,0 +1,68 @@
+{
+  "input_listings": 3857,
+  "input_columns": 50,
+  "output_master_columns": 209,
+  "unique_osm_poi": 1896,
+  "poi_by_category": {
+    "hospital": 95,
+    "school": 586,
+    "college_university": 139,
+    "metro": 14,
+    "mall": 44,
+    "market": 195,
+    "supermarket": 209,
+    "park": 181,
+    "bus_stop": 433
+  },
+  "edges_top5_in_radius": 143411,
+  "edges_by_category": {
+    "hospital": 17688,
+    "school": 18502,
+    "college_university": 18698,
+    "metro": 7056,
+    "mall": 16081,
+    "market": 14757,
+    "supermarket": 15259,
+    "park": 18404,
+    "bus_stop": 16966
+  },
+  "listings_with_any_amenity": 3825,
+  "listings_without_safe_coordinates": 27,
+  "coordinate_status_counts": {
+    "original_valid": 3724,
+    "unresolved_coordinates": 27,
+    "original_out_of_region": 27,
+    "imputed_exact_address": 103,
+    "imputed_same_listing_id": 3
+  },
+  "edge_route_reuse_count": 1028,
+  "hard_radius_km": {
+    "hospital": 7,
+    "school": 3,
+    "college_university": 7,
+    "metro": 5,
+    "mall": 7,
+    "market": 3,
+    "supermarket": 3,
+    "park": 5,
+    "bus_stop": 2
+  },
+  "no_nearby_poi_cached_by_category": {
+    "metro": 2081,
+    "supermarket": 126,
+    "market": 331,
+    "mall": 223,
+    "park": 70,
+    "bus_stop": 123,
+    "school": 18,
+    "hospital": 45,
+    "college_university": 9
+  },
+  "geo_cluster_nodes": 1255,
+  "ward_nodes": 121,
+  "former_area_nodes": 40,
+  "ward_former_area_mappings": 130,
+  "cache_provenance": "POIs from historical Final_Data_full_amenities_enriched.csv where source is OpenStreetMap_Overpass; no new OSM fetch.",
+  "distance_scope": "straight_line_km is computed haversine, not route distance; no fabricated driving values",
+  "created_from": "cleaned_master_data_50cols_enriched.csv"
+}

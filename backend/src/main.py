@@ -12,6 +12,7 @@ from fastapi.responses import ORJSONResponse
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import JSONResponse
 
+from src.api.base.http_exception import http_except_custom
 from src.api.v1.endpoints import router as v1_router
 
 from src.settings.config import APPLICATION
@@ -92,22 +93,7 @@ async def request_validation_except_custom(request: Request, exc: RequestValidat
     )
 
 
-@app.exception_handler(HTTPException)
-async def http_except_custom(request: Request, exc: HTTPException) -> JSONResponse:
-    errors = [
-        {
-            "loc": None,
-            "msg": None,
-            "detail": f"{exc.detail}",
-        }
-    ]
-
-    response_body = {"data": None, "errors": errors}
-
-    return JSONResponse(
-        content=response_body,
-        status_code=status.HTTP_400_BAD_REQUEST,
-    )
+app.add_exception_handler(HTTPException, http_except_custom)
 
 
 utils.HTTP_422_UNPROCESSABLE_ENTITY = status.HTTP_400_BAD_REQUEST

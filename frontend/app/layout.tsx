@@ -1,16 +1,20 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Be_Vietnam_Pro } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { AuthProvider } from '@/lib/auth-context'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+// Be Vietnam Pro is designed for Vietnamese diacritics, which Latin-only fonts render with fallbacks.
+const beVietnam = Be_Vietnam_Pro({
+  subsets: ['vietnamese', 'latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-be-vietnam',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
-  title: 'BATDONGSAN AI - Nền tảng bất động sản hàng đầu Việt Nam',
-  description: 'Mua bán, cho thuê nhà đất trên khắp Việt Nam với BATDONGSAN AI',
-  generator: 'v0.app',
+  title: 'BATDONGSAN AI - Tư vấn bất động sản thông minh',
+  description: 'Tìm nhà và nhận tư vấn bất động sản TP.HCM với trợ lý AI',
   icons: {
     icon: [
       {
@@ -36,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="vi" className={beVietnam.variable}>
       <body className="font-sans antialiased">
         <AuthProvider>
           {children}

@@ -124,15 +124,29 @@ def _text(message: BaseMessage) -> str:
 
 
 def _message_window(messages: list[BaseMessage], limit: int = _MESSAGE_LIMIT) -> list[BaseMessage]:
-    """Bound prompt history while retaining only valid, completed tool exchanges."""
-    window = list(messages[-limit:])
-    while window and isinstance(window[0], ToolMessage):
-        window.pop(0)
-    # A tool-call AI message needs its matching ToolMessage. If the truncation
-    # boundary cut the pair, drop that incomplete leading AI message as well.
-    if window and isinstance(window[0], AIMessage) and getattr(window[0], "tool_calls", None):
-        window.pop(0)
-    return window
+    """Bound prompt history without ever splitting a tool exchange.
+
+    Earlier turns are reduced to user messages and final assistant answers: their
+    tool-call/ToolMessage pairs are bulky JSON, and cutting through one leaves an
+    orphan ToolMessage that OpenAI-compatible APIs reject. The current turn (from
+    the latest user message on) is kept whole so the finalizer still sees the
+    tool observation it must answer from.
+    """
+    last_human = next(
+        (index for index in range(len(messages) - 1, -1, -1) if isinstance(messages[index], HumanMessage)),
+        None,
+    )
+    if last_human is None:
+        return []
+    earlier = [
+        message
+        for message in messages[:last_human]
+        if isinstance(message, HumanMessage)
+        or (isinstance(message, AIMessage) and not getattr(message, "tool_calls", None) and _text(message))
+    ]
+    current = list(messages[last_human:])
+    budget = max(limit - len(current), 0)
+    return [*(earlier[-budget:] if budget else []), *current]
 
 
 def _compact_listing(item: dict[str, Any]) -> dict[str, Any]:

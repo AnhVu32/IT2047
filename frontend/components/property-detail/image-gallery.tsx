@@ -2,9 +2,9 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { ChevronLeft, ChevronRight, Images } from 'lucide-react'
 import { getPropertyImageSrc, PROPERTY_IMAGE_FALLBACK } from '@/lib/property-images'
+import { cn } from '@/lib/utils'
 
 interface ImageGalleryProps {
   images: string[]
@@ -26,71 +26,72 @@ export function ImageGallery({ images, title }: ImageGalleryProps) {
     setMainImageIndex((prev) => (prev === imageList.length - 1 ? 0 : prev + 1))
   }
 
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    e.currentTarget.src = PROPERTY_IMAGE_FALLBACK
+  }
+
   return (
-    <div className="space-y-4">
-      {/* Main Image */}
-      <div className="relative w-full aspect-video bg-muted rounded-lg overflow-hidden group">
+    <div className="space-y-2">
+      <div
+        className="group relative aspect-[16/10] w-full overflow-hidden rounded-xl bg-muted"
+        onKeyDown={(e) => {
+          if (e.key === 'ArrowLeft') goToPrevious()
+          if (e.key === 'ArrowRight') goToNext()
+        }}
+        tabIndex={imageList.length > 1 ? 0 : undefined}
+        aria-label="Thư viện ảnh, dùng phím mũi tên để chuyển ảnh"
+      >
         <Image
           src={imageList[mainImageIndex]}
           alt={title}
           fill
           className="object-cover"
           priority
-          onError={(e) => {
-            const img = e.target as HTMLImageElement
-            img.src = PROPERTY_IMAGE_FALLBACK
-          }}
+          onError={handleImageError}
         />
 
-        {/* Navigation Arrows */}
         {imageList.length > 1 && (
           <>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+            <button
+              type="button"
+              aria-label="Ảnh trước"
+              className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 text-slate-800 shadow-md transition-opacity hover:bg-white md:opacity-0 md:group-hover:opacity-100"
               onClick={goToPrevious}
             >
-              <ChevronLeft className="h-6 w-6" />
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+              <ChevronLeft className="h-5 w-5" />
+            </button>
+            <button
+              type="button"
+              aria-label="Ảnh sau"
+              className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 text-slate-800 shadow-md transition-opacity hover:bg-white md:opacity-0 md:group-hover:opacity-100"
               onClick={goToNext}
             >
-              <ChevronRight className="h-6 w-6" />
-            </Button>
+              <ChevronRight className="h-5 w-5" />
+            </button>
           </>
         )}
 
-        {/* Image Counter */}
-        <div className="absolute bottom-3 right-3 bg-black/60 text-white text-xs px-2 py-1 rounded">
+        <span className="absolute bottom-3 right-3 flex items-center gap-1.5 rounded-full bg-black/60 px-3 py-1 text-xs font-medium text-white">
+          <Images className="h-3.5 w-3.5" />
           {mainImageIndex + 1} / {imageList.length}
-        </div>
+        </span>
       </div>
 
-      {/* Thumbnail Grid */}
       {imageList.length > 1 && (
-        <div className="grid grid-cols-6 gap-2">
-          {imageList.slice(0, 6).map((img, index) => (
+        <div className="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:thin]">
+          {imageList.map((img, index) => (
             <button
               key={index}
+              type="button"
               onClick={() => setMainImageIndex(index)}
-              className={`relative aspect-square rounded-lg overflow-hidden border-2 transition-all ${
-                mainImageIndex === index ? 'border-[#E03C31]' : 'border-border hover:border-muted-foreground'
-              }`}
+              aria-label={`Xem ảnh ${index + 1}`}
+              aria-current={mainImageIndex === index}
+              className={cn(
+                'relative h-16 w-24 flex-shrink-0 overflow-hidden rounded-lg transition-all md:h-20 md:w-28',
+                mainImageIndex === index ? 'ring-2 ring-primary ring-offset-2 ring-offset-background' : 'opacity-70 hover:opacity-100',
+              )}
             >
-              <Image
-                src={img}
-                alt={`Thumbnail ${index + 1}`}
-                fill
-                className="object-cover"
-                onError={(e) => {
-                  const img = e.target as HTMLImageElement
-                  img.src = PROPERTY_IMAGE_FALLBACK
-                }}
-              />
+              <Image src={img} alt="" fill className="object-cover" onError={handleImageError} />
             </button>
           ))}
         </div>

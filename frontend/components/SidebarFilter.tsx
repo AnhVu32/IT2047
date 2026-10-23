@@ -1,37 +1,52 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { ArrowRight, Sparkles } from "lucide-react"
 import { AdvancedFilter } from "@/components/advanced-filter"
 
 interface SidebarFilterProps {
   onApplyFilters?: (filters: any) => void
+  onClose?: () => void
   showSupportCard?: boolean
+  title?: string
+  applyLabel?: string
 }
 
-export function SidebarFilter({ onApplyFilters, showSupportCard = true }: SidebarFilterProps) {
-  const handleApplyFilters = (filters: any) => {
-    console.log("[v0] SidebarFilter received filters:", filters)
-    onApplyFilters?.(filters)
-  }
-
+export function SidebarFilter({
+  onApplyFilters,
+  onClose,
+  showSupportCard = true,
+  title,
+  applyLabel,
+}: SidebarFilterProps) {
   return (
-    <div className="space-y-6 sticky top-24">
-      {/* Filter Form - Rendered directly in sidebar */}
-      <AdvancedFilter onApplyFilters={handleApplyFilters} />
+    <div className="flex h-full flex-col gap-4">
+      <div className="min-h-0 flex-1">
+        <AdvancedFilter
+          onApplyFilters={(filters) => onApplyFilters?.(filters)}
+          onClose={onClose}
+          title={title}
+          applyLabel={applyLabel}
+        />
+      </div>
 
-      {/* Support CTA Card - Conditional rendering */}
       {showSupportCard && (
-        <div className="bg-[#FFF5F4] border border-[#E03C31]/20 rounded-lg p-5">
-          <h3 className="font-semibold text-[#E03C31] mb-2">
-            Bạn cần hỗ trợ chuyên nghiệp?
-          </h3>
-          <p className="text-sm text-muted-foreground mb-4">
-            Các chuyên viên của chúng tôi luôn sẵn sàng hỗ trợ bạn tìm thấy ngôi nhà mơ ước.
+        <Link
+          href="/tim-kiem-chuyen-sau"
+          className="group hidden lg:block shrink-0 rounded-xl border border-primary/20 bg-accent p-4 transition-colors hover:border-primary/40"
+        >
+          <div className="flex items-center gap-2 font-semibold text-accent-foreground">
+            <Sparkles className="h-4 w-4 text-primary" />
+            Chưa rõ nên chọn gì?
+          </div>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Mô tả nhu cầu, trợ lý AI sẽ gợi ý và so sánh các căn phù hợp.
           </p>
-          <Button className="w-full bg-[#E03C31] hover:bg-[#c43428] text-white h-11">
-            Tìm môi giới
-          </Button>
-        </div>
+          <span className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-primary">
+            Trò chuyện với trợ lý
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+          </span>
+        </Link>
       )}
     </div>
   )

@@ -17,7 +17,7 @@ BACKEND_ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = BACKEND_ROOT.parent
 DEFAULT_DATA_DIR = (
     (BACKEND_ROOT / "Data") if (BACKEND_ROOT / "Data").is_dir() else (REPO_ROOT / "Data")
-) / "real_estate_graph_ready_v2_address_mapping"
+) / "v3" / "graph"
 
 NODE_FILES = (
     ("neo4j_listing_nodes.csv", "Listing", "listing_node_id:ID(Listing)", "listing_node_id"),

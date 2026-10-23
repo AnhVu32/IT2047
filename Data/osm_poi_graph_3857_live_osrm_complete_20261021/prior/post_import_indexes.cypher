@@ -1,0 +1,12 @@
+CREATE CONSTRAINT listing_node_id_unique IF NOT EXISTS FOR (l:Listing) REQUIRE l.listing_node_id IS UNIQUE;
+CREATE CONSTRAINT amenity_osm_id_unique IF NOT EXISTS FOR (a:Amenity) REQUIRE a.osm_id IS UNIQUE;
+CREATE CONSTRAINT geocluster_id_unique IF NOT EXISTS FOR (c:GeoCluster) REQUIRE c.cluster_id IS UNIQUE;
+CREATE CONSTRAINT ward_node_id_unique IF NOT EXISTS FOR (w:Ward) REQUIRE w.ward_id IS UNIQUE;
+CREATE CONSTRAINT former_area_node_id_unique IF NOT EXISTS FOR (f:FormerAdminArea) REQUIRE f.former_area_id IS UNIQUE;
+CREATE INDEX listing_price IF NOT EXISTS FOR (l:Listing) ON (l.price_range);
+CREATE INDEX listing_area IF NOT EXISTS FOR (l:Listing) ON (l.area);
+CREATE INDEX listing_bedrooms IF NOT EXISTS FOR (l:Listing) ON (l.bedrooms);
+CREATE INDEX listing_property_type IF NOT EXISTS FOR (l:Listing) ON (l.property_type);
+CREATE FULLTEXT INDEX listing_address IF NOT EXISTS FOR (l:Listing) ON EACH [l.title,l.address_new,l.address_old];
+CREATE INDEX ward_by_name IF NOT EXISTS FOR (w:Ward) ON (w.name);
+CREATE INDEX former_area_by_name IF NOT EXISTS FOR (f:FormerAdminArea) ON (f.name);

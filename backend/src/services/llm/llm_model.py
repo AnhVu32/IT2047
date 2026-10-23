@@ -7,7 +7,21 @@ from loguru import logger
 from openai import AsyncOpenAI
 
 from src.services.llm.const.list_models import GEMINI_MODELS
-from src.settings.config import APPLICATION
+from src.settings.config import APPLICATION, config_value
+
+
+# A single LLM call (retries included) must finish well inside the gunicorn
+# worker timeout and the user's patience; both are overridable via env.
+DEFAULT_REQUEST_TIMEOUT_SECONDS = 45
+DEFAULT_MAX_RETRIES = 2
+
+
+def _int_setting(name: str, default: int) -> int:
+    try:
+        value = int(config_value(name, default))
+    except (TypeError, ValueError):
+        return default
+    return value if value > 0 else default
 
 
 OPENAI_COMPATIBLE_DEFAULTS = {
@@ -129,8 +143,8 @@ class LLModel:
         system_prompt: str,
         user_prompt: str,
         model: Optional[str] = None,
-        retries: int = 3,
-        timeout_seconds: int = 60 * 10,
+        retries: Optional[int] = None,
+        timeout_seconds: Optional[int] = None,
         history: Optional[List[dict]] = None,
         *,
         json_mode: bool = False,
@@ -147,6 +161,12 @@ class LLModel:
         this call only (e.g. a low value for grounded/extractive answers).
         """
         selected_model = model or self.model_name
+        if retries is None:
+            retries = _int_setting("LLM_MAX_RETRIES", DEFAULT_MAX_RETRIES)
+        if timeout_seconds is None:
+            timeout_seconds = _int_setting(
+                "LLM_REQUEST_TIMEOUT_SECONDS", DEFAULT_REQUEST_TIMEOUT_SECONDS
+            )
         if self.provider == "gemini":
             return await self._ask_gemini(
                 system_prompt, user_prompt, selected_model, retries, timeout_seconds,
