@@ -17,7 +17,7 @@ các tiêu chí khác) thay vì trả 0 kết quả, và trả lời trung thự
 động sản thoả các tiêu chí khác như..., đây là một số bất động sản tôi gợi
 ý:..."*
 
-(Xem thêm [`Plan A - Ground Truth.md`](Plan%20A%20-%20Ground%20Truth.md) —
+(Xem thêm [Plan A — `02_GROUND_TRUTH_THEO_PHUONG.md`](../Evaluation/docs/02_GROUND_TRUTH_THEO_PHUONG.md) —
 ground truth phía eval được thiết kế theo đúng tinh thần 2 tầng tương tự.
 Plan này **độc lập**, không cần chờ Plan A, có thể làm trước.)
 
@@ -131,7 +131,7 @@ là cải tiến tuỳ chọn, không bắt buộc cho mục tiêu hiện tại 
   như không có listing thoả tiêu chí khác, kiểm tra `relaxations`,
   `results[].district_relaxed`, `assistant_answer` — cả 2 trường hợp
   `SEARCH_USE_LLM_ANSWER=true/false`.
-- End-to-end với Plan A: sau khi cả 2 plan + fix `Evaluation/adapters.py`
-  xong, chạy lại `Evaluation/run_eval.py --limit 100` — không còn query nào
+- End-to-end với Plan A: sau khi cả 2 plan + fix `Evaluation/live_replay/adapters.py`
+  xong, chạy lại `Evaluation/live_replay/run_eval.py --limit 100` — không còn query nào
   rỗng vì lệch khu vực (trước đây im lặng trả 0 dòng, giờ trả kết quả
   fallback).

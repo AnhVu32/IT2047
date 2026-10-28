@@ -1,0 +1,138 @@
+{
+  "n_queries": 600,
+  "n_docs": 3037,
+  "seed": 20261010,
+  "by_split": {
+    "train": 360,
+    "val": 120,
+    "test": 120
+  },
+  "by_split_family": {
+    "train": {
+      "F1_structured": 102,
+      "F2_structured_plus": 36,
+      "F3_proximity": 72,
+      "F4_aspect": 90,
+      "F5_landmark": 30,
+      "F6_subtype": 30
+    },
+    "val": {
+      "F1_structured": 34,
+      "F2_structured_plus": 12,
+      "F3_proximity": 24,
+      "F4_aspect": 30,
+      "F5_landmark": 10,
+      "F6_subtype": 10
+    },
+    "test": {
+      "F1_structured": 34,
+      "F2_structured_plus": 12,
+      "F3_proximity": 24,
+      "F4_aspect": 30,
+      "F5_landmark": 10,
+      "F6_subtype": 10
+    }
+  },
+  "by_split_style": {
+    "train": {
+      "S3": 81,
+      "S4": 86,
+      "S1": 115,
+      "S2": 78
+    },
+    "val": {
+      "S4": 33,
+      "S2": 24,
+      "S1": 38,
+      "S3": 25
+    },
+    "test": {
+      "S1": 35,
+      "S2": 24,
+      "S4": 23,
+      "S3": 38
+    }
+  },
+  "label_distribution": {
+    "train": {
+      "0": 1083771,
+      "1": 5155,
+      "2": 4394
+    },
+    "val": {
+      "0": 361489,
+      "1": 1397,
+      "2": 1554
+    },
+    "test": {
+      "0": 361489,
+      "1": 1604,
+      "2": 1347
+    }
+  },
+  "n_exact": {
+    "train": {
+      "mean": 12.205555555555556,
+      "median": 8.0,
+      "min": 1,
+      "max": 50,
+      "partial_mean": 14.319444444444445
+    },
+    "val": {
+      "mean": 12.95,
+      "median": 8.0,
+      "min": 1,
+      "max": 47,
+      "partial_mean": 11.641666666666667
+    },
+    "test": {
+      "mean": 11.225,
+      "median": 7.0,
+      "min": 1,
+      "max": 42,
+      "partial_mean": 13.366666666666667
+    }
+  },
+  "frames": {
+    "S1-7": "train",
+    "S1-4": "train",
+    "S1-1": "train",
+    "S1-8": "train",
+    "S1-6": "train",
+    "S1-2": "train",
+    "S1-9": "val",
+    "S1-0": "val",
+    "S1-3": "test",
+    "S1-5": "test",
+    "S3-9": "train",
+    "S3-5": "train",
+    "S3-1": "train",
+    "S3-7": "train",
+    "S3-0": "train",
+    "S3-6": "train",
+    "S3-3": "val",
+    "S3-8": "val",
+    "S3-2": "test",
+    "S3-4": "test",
+    "S4-1": "train",
+    "S4-4": "train",
+    "S4-7": "train",
+    "S4-0": "train",
+    "S4-5": "train",
+    "S4-6": "train",
+    "S4-8": "val",
+    "S4-3": "val",
+    "S4-2": "test",
+    "S4-9": "test",
+    "S2-0": "val",
+    "S2-1": "train",
+    "S2-2": "train",
+    "S2-3": "test",
+    "S2-4": "train",
+    "S2-5": "test",
+    "S2-6": "train",
+    "S2-7": "train",
+    "S2-8": "train",
+    "S2-9": "val"
+  }
+}

@@ -103,12 +103,12 @@ Data/Final_Data.csv   (~3.037 listing, NGUỒN CHUẨN DUY NHẤT — mọi nơi
       │      Import bằng cypher-shell (server-side LOAD CSV) hoặc script client
       │      (import_neo4j_v2.py cho Neo4j từ xa) — idempotent (MERGE theo listing_node_id)
       │
-      └──► gen_user_data/  ──► dữ liệu người dùng & tương tác MÔ PHỎNG có kiểm soát
+      └──► Evaluation/gen_user_data/  ──► dữ liệu người dùng & tương tác MÔ PHỎNG có kiểm soát
                 (giải bài toán cold-start: hệ thống thật chưa có đủ user thật)
                 ──► Knowledge Graph phụ (Neo4j/NetworkX) + Evaluation/ (đo chất lượng ranking)
 ```
 
-**Nguyên tắc bất biến**: listing = dữ liệu thật 100% (giá, diện tích, tiện ích, địa chỉ...). Chỉ **user & interaction** trong `gen_user_data/` là mô phỏng — dùng để có đủ tín hiệu đánh giá trước khi hệ thống có traffic thật.
+**Nguyên tắc bất biến**: listing = dữ liệu thật 100% (giá, diện tích, tiện ích, địa chỉ...). Chỉ **user & interaction** trong `Evaluation/gen_user_data/` là mô phỏng — dùng để có đủ tín hiệu đánh giá trước khi hệ thống có traffic thật.
 
 ---
 
@@ -119,7 +119,7 @@ Hệ thống có **2 cơ chế tìm/liệt kê bất động sản đang thực 
 | Endpoint | Cơ chế | Được gọi từ đâu trong hệ thống thật |
 |---|---|---|
 | `GET /v1/properties` | SQL filter cổ điển (WHERE + ORDER BY + LIMIT/OFFSET trực tiếp trên PostgreSQL), không dùng AI | Thanh tìm kiếm từ khoá + sidebar bộ lọc trên **trang chủ** (`property-listings.tsx`) |
-| `POST /v1/search` | Hybrid Search Engine đầy đủ (mục 5): parse NL + Postgres FTS/vector + Neo4j + ranking + LLM answer | (1) **Chatbot AI** (`ai-chat.tsx` → `/v1/chat` → LangGraph gọi thẳng `hybrid_search_service.search()` trong tiến trình backend, không qua lại HTTP); (2) **Hệ thống đánh giá offline** (`Evaluation/live_client.py`) gọi trực tiếp qua HTTP để đo chất lượng ranking |
+| `POST /v1/search` | Hybrid Search Engine đầy đủ (mục 5): parse NL + Postgres FTS/vector + Neo4j + ranking + LLM answer | (1) **Chatbot AI** (`ai-chat.tsx` → `/v1/chat` → LangGraph gọi thẳng `hybrid_search_service.search()` trong tiến trình backend, không qua lại HTTP); (2) **Hệ thống đánh giá offline** (`Evaluation/live_replay/live_client.py`) gọi trực tiếp qua HTTP để đo chất lượng ranking |
 
 **Lưu ý quan trọng**: trang chủ **không** có một ô "tìm kiếm AI" gọi thẳng `/v1/search` — muốn dùng tìm kiếm hybrid (hiểu câu tự nhiên, xếp hạng đa tiêu chí, giải thích kết quả) người dùng phải vào **chatbot** ở trang `/tim-kiem-chuyen-sau`. Thanh tìm kiếm ở trang chủ chỉ lọc theo từ khoá qua `GET /v1/properties`.
 
@@ -333,7 +333,7 @@ Index đáng chú ý: GIN full-text trên `search_text`, HNSW cho `embedding` (c
 
 | Nhóm | Endpoint | Method | Mô tả | Gọi từ đâu |
 |---|---|---|---|---|
-| Search | `/v1/search` | POST | **Tìm kiếm hybrid chính** (mục 5) | Tool `search_properties` của chatbot (in-process) + `Evaluation/live_client.py` (đo chất lượng) |
+| Search | `/v1/search` | POST | **Tìm kiếm hybrid chính** (mục 5) | Tool `search_properties` của chatbot (in-process) + `Evaluation/live_replay/live_client.py` (đo chất lượng) |
 | Search | `/v1/search/parse` | POST | Parse truy vấn tự nhiên → JSON có cấu trúc, không truy xuất dữ liệu | Debug/kiểm thử thủ công qua Swagger (`/docs`) |
 | Search | `/v1/search/similar/{listing_id}` | POST | Cùng logic với `GET /v1/properties/{id}/similar` bên dưới | Route API tương đương; UI hiện dùng bản GET |
 | Properties | `/v1/properties` | GET | Danh sách BĐS lọc/sort/phân trang cổ điển | Trang chủ (`property-listings.tsx`) |
@@ -449,13 +449,13 @@ Kết quả tìm kiếm lần sau được cá nhân hoá nhẹ theo hành vi qu
 
 ## 11. Dữ liệu mô phỏng & Hệ thống đánh giá (offline lab)
 
-Vì hệ thống **chưa có đủ dữ liệu hành vi người dùng thật**, một hệ thống phụ trợ độc lập (`gen_user_data/`, `Evaluation/`) được xây riêng:
+Vì hệ thống **chưa có đủ dữ liệu hành vi người dùng thật**, một hệ thống phụ trợ độc lập (`Evaluation/`, gồm cả `Evaluation/gen_user_data/`) được xây riêng:
 
 ```
 Data/Final_Data.csv (listing thật) + embeddings.pkl
       │
       ▼
-gen_user_data/catalog.py ──► data/listings.json (thuộc tính + địa chỉ thật)
+Evaluation/gen_user_data/catalog.py ──► data/listings.json (thuộc tính + địa chỉ thật)
       │
 generate_users.py ──► data/users.json (phân phối ép: 60% affordable/30% mid/10% luxury)
       │
@@ -463,14 +463,14 @@ generate_interactions.py ──► data/interactions.json (tín hiệu ground-tr
       │
       ├──► kg/build_kg.py ──► nodes.csv/edges.csv/import.cypher (Knowledge Graph phụ, ~7.081 node/~33.169 edge)
       │
-      └──► Evaluation/run_eval.py ──► replay raw_query THẬT qua POST /v1/search đang chạy
+      └──► Evaluation/live_replay/run_eval.py ──► replay raw_query THẬT qua POST /v1/search đang chạy
              so khớp với ground truth mô phỏng, tính 5 nhóm chỉ số chuẩn ngành:
              NDCG, MRR, Recall, Precision, MAP, HitRate @10
 ```
 
-**Điểm thiết kế quan trọng của phép đánh giá**: khác với benchmark tĩnh (so 2 tập dữ liệu với nhau), `Evaluation/run_eval.py` **gọi thẳng vào hệ thống sản phẩm thật đang chạy** (`POST /v1/search`) để lấy `pred`, rồi so với ground truth mô phỏng — đo đúng chất lượng của thuật toán ranking thật, không phải một bản mô phỏng riêng.
+**Điểm thiết kế quan trọng của phép đánh giá**: khác với benchmark tĩnh (so 2 tập dữ liệu với nhau), `Evaluation/live_replay/run_eval.py` **gọi thẳng vào hệ thống sản phẩm thật đang chạy** (`POST /v1/search`) để lấy `pred`, rồi so với ground truth mô phỏng — đo đúng chất lượng của thuật toán ranking thật, không phải một bản mô phỏng riêng.
 
-**Kết quả benchmark 3 recommender nền tảng** (đo trong `gen_user_data/run_eval.py`, tập offline riêng, 193 user có tín hiệu tích cực):
+**Kết quả benchmark 3 recommender nền tảng** (đo trong `Evaluation/gen_user_data/run_baselines.py`, tập offline riêng, 193 user có tín hiệu tích cực):
 
 | Recommender | NDCG@10 | Recall@10 | HitRate@10 | Precision@10 | MAP@10 |
 |---|---|---|---|---|---|
@@ -478,7 +478,7 @@ generate_interactions.py ──► data/interactions.json (tín hiệu ground-tr
 | embedding cosine | 0.062 | 0.101 | 0.161 | 0.016 | 0.042 |
 | popularity (độ phổ biến) | 0.045 | 0.092 | 0.140 | 0.015 | 0.027 |
 
-→ Content-based vượt trội rõ rệt các baseline khác — xác nhận bộ chỉ số đánh giá **phân biệt đúng** ranking tốt/xấu, làm cơ sở tin cậy để đánh giá hệ thống hybrid search thật qua `Evaluation/run_eval.py`.
+→ Content-based vượt trội rõ rệt các baseline khác — xác nhận bộ chỉ số đánh giá **phân biệt đúng** ranking tốt/xấu, làm cơ sở tin cậy để đánh giá hệ thống hybrid search thật qua `Evaluation/live_replay/run_eval.py`.
 
 Đây là lớp "phòng thí nghiệm" độc lập với hệ thống sản phẩm — dùng để kiểm chứng và cải thiện thuật toán ranking trước khi có đủ dữ liệu người dùng thật, không ảnh hưởng tới luồng người dùng thật.
 

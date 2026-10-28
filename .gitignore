@@ -36,13 +36,13 @@ docker-compose.override.yml
 Evaluation-Metrics-for-Recommendation-Systems/
 
 # Không push tài liệu nội bộ / nhật ký công việc
-gen_user_data/recsys_kg_rag_guide.md
-gen_user_data/work_log.html
+Evaluation/gen_user_data/recsys_kg_rag_guide.md
+Evaluation/gen_user_data/work_log.html
 
 # Build artifact (tái tạo được; DB nhị phân / graph pickle / cache precompute)
 *.sqlite
-gen_user_data/data/graph/
-gen_user_data/data/precomputed/
+Evaluation/gen_user_data/data/graph/
+Evaluation/gen_user_data/data/precomputed/
 
-gen_user_data/scratchpad/
+Evaluation/gen_user_data/scratchpad/
 images/*

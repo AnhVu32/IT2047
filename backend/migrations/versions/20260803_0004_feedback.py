@@ -4,7 +4,7 @@ Revision ID: 20260803_0004
 Revises: 20260803_0003
 Create Date: 2026-08-03
 
-Column shapes mirror gen_user_data/data/csv/{interactions,recommendation_events_v2}.csv
+Column shapes mirror Evaluation/gen_user_data/data/csv/{interactions,recommendation_events_v2}.csv
 so the offline eval tooling stays compatible, but these tables hold live data.
 """
 

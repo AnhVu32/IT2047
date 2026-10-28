@@ -81,4 +81,4 @@ Các chỗ sau đã trỏ sang v3, nên lần dựng mới (DB trống, volume m
 `docker-compose.yml` (service `neo4j-import-init` chép `Data/v3/graph`), `backend/scripts/build_search_index.py`
 (`Data/v3/master_v3.csv`, gồm cả cột `images`, và `Data/v3/graph`), `backend/scripts/import_neo4j_v2.py`,
 `scripts/build_real_estate_graph.sh`. `import_search_graph.cypher` nạp cạnh `NEAR_AMENITY` theo lô 10.000 dòng.
-`gen_user_data/` và `Evaluation/` vẫn gắn với bộ 3.037 tin cũ (`Data/Final_Data.csv`) và không bị đổi.
+`Evaluation/` (gồm `Evaluation/gen_user_data/` và `Evaluation/hcmre_q/`) vẫn gắn với bộ 3.037 tin cũ (`Data/Final_Data.csv`) và không bị đổi.
