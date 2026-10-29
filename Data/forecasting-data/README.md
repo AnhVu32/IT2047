@@ -1,4 +1,4 @@
-forecasting-data input: Final_Data.xlsx
+forecasting-data input: Data/v3/master_v3.csv (6,703 listings; replaces Final_Data.xlsx, 3,037 listings)
 
 forecasting-data output: Processed and usable data for forecasting
 
@@ -41,6 +41,8 @@ by their role in the forecasting pipeline.
 
 ## 2. Data processing pipeline
 ### Step 1: Remove unreliable features
+
+v3 changes: reads `Data/v3/master_v3.csv`, uses its corrected `latitude`/`longitude`, collapses the 7 raw `property_type` values into `Căn hộ` (Căn hộ, Căn hộ chung cư) / `Nhà đất` (the rest), and normalizes free-text `legal_status` into `Sổ hồng riêng`, `Sổ chung`, `Đang chờ sổ`, `Hợp đồng mua bán`, `Không rõ`.
 
 Keeping only:
 

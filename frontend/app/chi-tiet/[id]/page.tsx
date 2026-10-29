@@ -13,6 +13,7 @@ import { QuickSpecsGrid } from '@/components/property-detail/quick-specs-grid'
 import { DescriptionSection } from '@/components/property-detail/description-section'
 import { AmenitiesSection } from '@/components/property-detail/amenities-section'
 import { LocationSection } from '@/components/property-detail/location-section'
+import { PriceEstimateSection } from '@/components/property-detail/price-estimate-section'
 import { KnowledgeGraphSection } from '@/components/property-detail/knowledge-graph-section'
 import { ContactForm } from '@/components/property-detail/contact-form'
 import { SimilarProperties } from '@/components/property-detail/similar-properties'
@@ -197,6 +198,7 @@ export default function PropertyDetailPage() {
               locationLink={property.location_link}
               latitudeLongitude={property.latitude_longitude}
             />
+            <PriceEstimateSection propertyId={String(propertyId || property.listing_id || property.id)} />
             <KnowledgeGraphSection propertyId={String(propertyId || property.listing_id || property.id)} />
           </div>
 

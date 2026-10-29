@@ -6,12 +6,36 @@ with confidence bounds based on property type segment.
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 from typing import Any, Dict, Optional
 
 import joblib
 import numpy as np
 import pandas as pd
+
+
+# shortcut: label rules duplicated from Data/forecasting-data/step-1/remove-unreliable-features.py
+# (DB stores the raw v3 labels, the model was trained on the normalized ones); keep in sync on retrain.
+_APARTMENT_TYPES = {"Căn hộ", "Căn hộ chung cư"}
+_COORDINATES = re.compile(r"(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)")
+# Training domain: step-2 coordinate box and step-3 outlier rules.
+_LAT_RANGE, _LON_RANGE = (10.3, 11.6), (106.3, 107.6)
+# Per type: (min area, max area, max bedrooms, min price tỷ, max price tỷ, min tr/m2, max tr/m2).
+_DOMAIN = {"Căn hộ": (25, 150, 4, 1.0, 20.0, 20, 180), "Nhà đất": (20, 350, 8, 1.5, 40.0, 30, 350)}
+
+
+def normalize_legal_status(value: Optional[str]) -> str:
+    text = (value or "").lower()
+    if re.search(r"chờ|làm sổ|nộp hồ sơ", text):
+        return "Đang chờ sổ"
+    if re.search(r"chung|sdc", text):
+        return "Sổ chung"
+    if re.search(r"hợp đồng|hđmb|hdmb", text):
+        return "Hợp đồng mua bán"
+    if re.search(r"sổ|hồng|đỏ|shr", text):
+        return "Sổ hồng riêng"
+    return "Không rõ"
 
 
 class PricePredictionService:
@@ -102,6 +126,58 @@ class PricePredictionService:
             "district": district,
             "model_name": bundle.get("model_name", "HistGradientBoosting"),
         }
+
+    def estimate_listing(self, item: Dict[str, Any]) -> Dict[str, Any]:
+        """Compare a stored listing's asking price with the model estimate.
+
+        Raises ValueError (user-facing, Vietnamese) when the listing cannot be scored reliably.
+        """
+        coords = _COORDINATES.search(item.get("latitude_longitude") or "")
+        area, bedrooms, asking = item.get("area"), item.get("bedrooms"), item.get("price_range")
+        if not (coords and area and bedrooms and asking):
+            raise ValueError("Tin đăng thiếu diện tích, số phòng ngủ, giá hoặc toạ độ để định giá.")
+
+        latitude, longitude = float(coords.group(1)), float(coords.group(2))
+        property_type = "Căn hộ" if item.get("property_type") in _APARTMENT_TYPES else "Nhà đất"
+        min_area, max_area, max_bedrooms, min_price, max_price, min_m2, max_m2 = _DOMAIN[property_type]
+        per_m2 = float(asking) * 1000 / float(area)
+        district = item.get("district")
+        # First failing check wins; the message is shown to users, so say which limit was hit.
+        checks = [
+            (_LAT_RANGE[0] <= latitude <= _LAT_RANGE[1] and _LON_RANGE[0] <= longitude <= _LON_RANGE[1],
+             "Toạ độ của tin nằm ngoài khu vực TP.HCM."),
+            (f"district_{district}" in self._get_bundle()["feature_names"],
+             "Khu vực (phường/xã) của tin chưa có trong dữ liệu huấn luyện."),
+            (min_area <= float(area) <= max_area,
+             f"Diện tích {float(area):g} m² nằm ngoài khoảng {min_area}–{max_area} m² mô hình được huấn luyện."),
+            (1 <= int(bedrooms) <= max_bedrooms,
+             f"Số phòng ngủ ({int(bedrooms)}) nằm ngoài khoảng 1–{max_bedrooms} mô hình được huấn luyện."),
+            # Asking price outside the trained price band: the comparison would be meaningless.
+            (min_price <= float(asking) <= max_price,
+             f"Giá rao nằm ngoài khoảng {min_price:g}–{max_price:g} tỷ mô hình được huấn luyện."),
+            (min_m2 <= per_m2 <= max_m2,
+             f"Đơn giá {per_m2:.0f} triệu/m² nằm ngoài khoảng {min_m2}–{max_m2} triệu/m² mô hình được huấn luyện."),
+        ]
+        for ok, reason in checks:
+            if not ok:
+                raise ValueError(reason)
+
+        result = self.predict(
+            property_type=property_type,
+            area=float(area),
+            bedrooms=int(bedrooms),
+            latitude=latitude,
+            longitude=longitude,
+            district=district,
+            legal_status=normalize_legal_status(item.get("legal_status")),
+        )
+        asking = float(asking)
+        result["asking_price"] = asking
+        result["diff_pct"] = round((asking / result["estimated_price"] - 1.0) * 100.0, 1)
+        result["verdict"] = (
+            "below" if asking < result["lower_bound"] else "above" if asking > result["upper_bound"] else "within"
+        )
+        return result
 
 
 # Singleton service instance
