@@ -1,11 +1,11 @@
 # Real Estate Price Prediction Module
 
-This module trains, evaluates, and serves the price prediction model using the processed and encoded dataset from `Data/forecasting-data/step-4/encoded_data.xlsx`.
+This module trains, evaluates, and serves the price prediction model using the processed and encoded dataset from `Data/forecasting-data/step-4/encoded_data.xlsx` (built from `Data/v3/master_v3.csv`, 6,703 listings → 5,009 after cleaning).
 
 ## 1. Structure
 
 - `train-models.py`:
-  - Splits data into 80% train (1,849 records) and 20% test (463 records), stratified by property type.
+  - Splits data into 80% train (4,007 records) and 20% test (1,002 records), stratified by property type.
   - Benchmarks 3 models: Ridge Regression, Random Forest, and HistGradientBoosting.
   - Evaluates models overall and by segment (`Căn hộ` vs `Nhà đất`).
   - Exports a multi-sheet benchmark report to `model_evaluation.xlsx` (Sheets: `Overall` and `By Segment`).
@@ -21,21 +21,23 @@ This module trains, evaluates, and serves the price prediction model using the p
 
 ## 2. Benchmark Results
 
-### Overall Benchmark (N = 463 test samples)
+### Overall Benchmark (N = 1,002 test samples, data v3)
 
 | Model | R2 Score | RMSE (log) | MAE (billion VND) | Median AE (billion VND) | MAPE (%) |
 |---|---|---|---|---|---|
-| **HistGradientBoosting** | **0.7971** | **0.2350** | **1.773** | **0.931** | **19.91%** |
-| Random Forest | 0.7923 | 0.2378 | 1.736 | 0.856 | 19.98% |
-| Ridge Regression | 0.6942 | 0.2886 | 2.346 | 1.271 | 26.31% |
+| **HistGradientBoosting** | **0.8330** | **0.2174** | 1.560 | 0.820 | 19.21% |
+| Random Forest | 0.8321 | 0.2180 | **1.508** | **0.712** | **18.23%** |
+| Ridge Regression | 0.7480 | 0.2671 | 2.111 | 1.116 | 25.10% |
 
 ### Segment Breakdown for Best Model (HistGradientBoosting)
 
 | Segment | Sample Count | R2 Score | RMSE (log) | MAE (billion VND) | Median AE (billion VND) | MAPE (%) |
 |---|---|---|---|---|---|---|
-| **Căn hộ** *(Apartments)* | 83 | **0.8507** | **0.1622** | **0.665** | **0.358** | **14.89%** |
-| **Nhà đất** *(Houses)* | 380 | **0.7321** | **0.2481** | **2.015** | **1.113** | **21.01%** |
-| **Combined** | 463 | **0.7971** | **0.2350** | **1.773** | **0.931** | **19.91%** |
+| **Căn hộ** *(Apartments)* | 279 | **0.9005** | **0.1362** | **0.599** | **0.375** | **13.56%** |
+| **Nhà đất** *(Houses)* | 723 | **0.7398** | **0.2416** | **1.931** | **1.127** | **21.39%** |
+| **Combined** | 1,002 | **0.8330** | **0.2174** | **1.560** | **0.820** | **19.21%** |
+
+*Not directly comparable with the previous run (3,037-listing `Final_Data`, 463 test samples, R2 0.7971): different data and a different random test split.*
 
 ## 3. How to Run Locally
 

@@ -292,6 +292,18 @@ async def view_get_property_graph(property_id: str):
     return {"data": result, "errors": [], "status": "success"}
 
 
+@router.get("/{property_id}/price-estimate", summary="Compare a listing's asking price with the ML estimate")
+async def view_get_price_estimate(property_id: str):
+    item = await hybrid_search_service.get_property(property_id)
+    if item is None:
+        raise HTTPException(status_code=404, detail="Property not found")
+    try:
+        data = await run_in_threadpool(price_prediction_service.estimate_listing, item)
+    except ValueError as exc:
+        return {"data": None, "errors": [{"detail": str(exc)}], "status": "unavailable"}
+    return {"data": data, "errors": [], "status": "success"}
+
+
 @router.get("/{property_id}", summary="Get a property by internal or listing ID")
 async def view_get_property(property_id: str):
     item = await hybrid_search_service.get_property(property_id)

@@ -1,3 +1,4 @@
+import json
 import unittest
 from types import SimpleNamespace
 from unittest.mock import AsyncMock, patch
@@ -186,6 +187,23 @@ def _search_turn(index):
         ToolMessage(content="{}", tool_call_id=f"call{index}"),
         AIMessage(content=f"kết quả {index}"),
     ]
+
+
+class InspectPriceEstimateTests(unittest.IsolatedAsyncioTestCase):
+    async def test_inspect_attaches_price_estimate_or_reason(self):
+        scorable = {
+            "id": 1, "listing_id": 111, "title": "Căn hộ A", "property_type": "Căn hộ",
+            "district": "Phường Tân Hưng", "area": 70.0, "bedrooms": 2, "price_range": 4.0,
+            "legal_status": "Sổ hồng riêng", "latitude_longitude": "q=10.745,106.705",
+        }
+        too_big = {**scorable, "id": 2, "listing_id": 222, "area": 900.0}
+        state = {"latest_results": [scorable, too_big]}
+        command = await ChatAgentService()._inspect_previous_recommendations_impl(
+            ["1", "2"], SimpleNamespace(state=state, tool_call_id="call-inspect")
+        )
+        listings = json.loads(command.update["messages"][0].content)["listings"]
+        self.assertIn(listings[0]["price_estimate"]["verdict"], {"below", "within", "above"})
+        self.assertIn("unavailable", listings[1]["price_estimate"])
 
 
 class MessageWindowTests(unittest.TestCase):
