@@ -1,0 +1,174 @@
+{
+ "B1_round_trip": {
+  "passed": true,
+  "queries": 1000,
+  "failed": 0,
+  "examples": []
+ },
+ "B4_diversity": {
+  "distinct_1": 0.0502,
+  "distinct_2": 0.2605,
+  "unique_texts": 1000,
+  "frames_used": 36,
+  "length_words": {
+   "mean": 15.72,
+   "p10": 8.0,
+   "p90": 25.0
+  }
+ },
+ "C1_disjointness": {
+  "passed": true,
+  "duplicate_qids": 0,
+  "duplicate_texts": 0,
+  "seed_overlap": 0,
+  "test_frames_in_train_or_val": 0,
+  "val_frames_in_train": 0
+ },
+ "C2_near_duplicates": {
+  "queries_with_near_duplicate_in_earlier_split": 0,
+  "rate": 0.0,
+  "passed": true
+ },
+ "C3_independence": {
+  "passed": true,
+  "backend_imports": {
+   "Evaluation/hcmre_q_v2/corpus.py": [],
+   "Evaluation/hcmre_q_v2/build_benchmark.py": [],
+   "Evaluation/hcmre_q_v2/check_labels.py": [],
+   "Data/v3/pipeline/price_text.py": []
+  }
+ },
+ "C4_balance": {
+  "family": {
+   "chi2": 0.0,
+   "dof": 10,
+   "p": 1.0,
+   "table": {
+    "test": {
+     "F1_structured": 56,
+     "F2_structured_plus": 20,
+     "F3_proximity": 40,
+     "F4_aspect": 48,
+     "F5_landmark": 16,
+     "F6_subtype": 20
+    },
+    "train": {
+     "F1_structured": 168,
+     "F2_structured_plus": 60,
+     "F3_proximity": 120,
+     "F4_aspect": 144,
+     "F5_landmark": 48,
+     "F6_subtype": 60
+    },
+    "val": {
+     "F1_structured": 56,
+     "F2_structured_plus": 20,
+     "F3_proximity": 40,
+     "F4_aspect": 48,
+     "F5_landmark": 16,
+     "F6_subtype": 20
+    }
+   }
+  },
+  "style": {
+   "chi2": 8.638,
+   "dof": 6,
+   "p": 0.195,
+   "table": {
+    "test": {
+     "S1": 63,
+     "S2": 36,
+     "S3": 50,
+     "S4": 51
+    },
+    "train": {
+     "S1": 155,
+     "S2": 122,
+     "S3": 160,
+     "S4": 163
+    },
+    "val": {
+     "S1": 62,
+     "S2": 51,
+     "S3": 42,
+     "S4": 45
+    }
+   }
+  },
+  "loc_kind": {
+   "chi2": 0.022,
+   "dof": 4,
+   "p": 0.9999,
+   "table": {
+    "test": {
+     "former_area": 32,
+     "none": 27,
+     "ward": 141
+    },
+    "train": {
+     "former_area": 98,
+     "none": 80,
+     "ward": 422
+    },
+    "val": {
+     "former_area": 32,
+     "none": 27,
+     "ward": 141
+    }
+   }
+  }
+ },
+ "label_statistics": {
+  "qrels_rows": 40459,
+  "grade_counts": {
+   "1": 14991,
+   "2": 10315,
+   "3": 15153
+  },
+  "share_of_relevant_pairs_using_text_fallback": {
+   "price_src": 0.0145,
+   "bedrooms_src": 0.0021,
+   "has_title_src": 0.0016,
+   "full_furniture_src": 0.0051
+  },
+  "share_of_relevant_pairs_on_ward_coord_outlier": 0.0228,
+  "share_of_relevant_pairs_from_new_crawl": 0.5715,
+  "corpus_share_new_crawl": 0.5754,
+  "queries_by_location_kind": {
+   "ward": 704,
+   "former_area": 162,
+   "none": 134
+  },
+  "ward_share": 0.704,
+  "ward_share_of_located": 0.8129
+ },
+ "E1_determinism": {
+  "passed": true,
+  "runs": {
+   "0": {
+    "queries.jsonl": true,
+    "qrels.tsv": true,
+    "corpus_attributes.csv": true,
+    "stats.json": true
+   },
+   "1": {
+    "queries.jsonl": true,
+    "qrels.tsv": true,
+    "corpus_attributes.csv": true,
+    "stats.json": true
+   },
+   "12345": {
+    "queries.jsonl": true,
+    "qrels.tsv": true,
+    "corpus_attributes.csv": true,
+    "stats.json": true
+   }
+  },
+  "sha256": {
+   "queries.jsonl": "4084fdf1d94871c98d8c19a02cbf0fce784978bc5a6b875a1c946894efad8d57",
+   "qrels.tsv": "7e2ab59c99ae1892ec0831df790f97c68852b12e63dbced23db52908c50c694f",
+   "corpus_attributes.csv": "55b9e4911812437e0ff3532a685b17e8cb98b0a2214d5e9b1b7f02f87131b21c",
+   "stats.json": "02a5b2a7d7df7d4ca51e6ce1247143f0c314829f24ca4e0903f7c1924a26f186"
+  }
+ }
+}

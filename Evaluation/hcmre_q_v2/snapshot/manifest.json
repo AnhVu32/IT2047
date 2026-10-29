@@ -1,0 +1,12 @@
+{
+ "inputs": {
+  "Data/v3/postgres/properties_v3.csv": "6c35c12d0ba48d227f1ff2dfcc3683f2be055f31d9cd9e7ba521416775a25033",
+  "Data/v3/postgres/listing_amenity_distances_v3.csv": "f770a1f0933a2b226396112afdeb7205d6f7bb57abff7e6a28e090fc8f083a14",
+  "backend/src/search/text_builder.py": "3a602f5f44cf86fc67e60abafbc58ca0710b68922d69ebdfe1746b101c2cb3a7"
+ },
+ "outputs": {
+  "amenity_evidence.csv.gz": "ceb5874101e13c4391691fa3e948f0e546fb88ba318841ed8bf444f3351f3705",
+  "fts_scores.csv": "59a51650eb699cdfe3660dc07d59e02f7504ad33efa43ba3bb106e1f60fe7e0f",
+  "properties.csv.gz": "c4a0b234b75793efa59887c55b65a656b5fe31eb32a06f84c103a23606d20e9e"
+ }
+}

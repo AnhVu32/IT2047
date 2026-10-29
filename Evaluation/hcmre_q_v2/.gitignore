@@ -1,0 +1,9 @@
+# Vector embedding do embed_benchmark.py ghi ra: lớn (6.703 × 1.024 float32 ≈ 27 MB) và sinh lại được từ model.
+# Nếu cần lưu để tái lập kết quả DL, hãy lưu ngoài git (Git LFS, bản phát hành) và ghi hash vào META_EVAL.md.
+snapshot/query_embeddings_*.npy
+snapshot/doc_embeddings_*.npy
+__pycache__/
+
+# Log của các script (runlog.py) và file giải thích nhãn: sinh lại được bằng explain_qrels.py, khoảng 20 MB.
+logs/
+data/qrels_explained.csv

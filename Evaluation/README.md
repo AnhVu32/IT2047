@@ -1,16 +1,24 @@
 # Evaluation
 
-Mọi phần đánh giá hệ thống tìm kiếm bất động sản nằm trong thư mục này. Có **ba hướng đánh giá**, mỗi hướng một thư mục; hướng 2 và 3 dùng chung dữ liệu mô phỏng trong `gen_user_data/`.
+Mọi phần đánh giá hệ thống tìm kiếm bất động sản nằm trong thư mục này. Có **ba hướng đánh giá**, mỗi hướng một thư mục; hướng 2 và 3 dùng chung dữ liệu mô phỏng trong `gen_user_data/`. Hướng 1 có hai phiên bản: **v2 cho dữ liệu hiện hành `Data/v3`** và v1 cho bộ 3.037 tin cũ.
 
 ## 1. Ba hướng đánh giá
 
 | Hướng | Thư mục | Ground truth | Vai trò |
 |---|---|---|---|
-| 1. Benchmark HCMRE-Q | [`hcmre_q/`](hcmre_q/README.md) | 600 truy vấn tiếng Việt, nhãn 0/1/2 độc lập với `ranker.py` | **Số liệu chính cho báo cáo** |
+| 1. Benchmark HCMRE-Q v2 | [`hcmre_q_v2/`](hcmre_q_v2/README.md) | 1.000 truy vấn tiếng Việt trên 6.703 tin `Data/v3` (errata v3.1), nhãn 0–3 ưu tiên phường mới, độc lập với `ranker.py`; giao thức đăng ký trước và đánh giá chính bộ dữ liệu | **Số liệu chính cho báo cáo** |
+| 1'. HCMRE-Q v1 | [`hcmre_q/`](hcmre_q/README.md) | 600 truy vấn trên 3.037 tin cũ, nhãn 0/1/2 | Giữ để so sánh với kết quả cũ |
 | 2. Live replay | [`live_replay/`](live_replay/README.md) | Ground truth v4, chọn bằng hàm chấm điểm của `ranker.py` | Kiểm tra tự nhất quán, bắt lỗi hồi quy |
 | 3. Baseline offline | [`gen_user_data/`](gen_user_data/README.md) (`run_baselines.py`) | Tương tác mô phỏng v1 | Tham khảo |
 
-**1. HCMRE-Q.** Nhãn liên quan tính từ thuộc tính tin đăng, khoảng cách lái xe thực đo và các hàm gán nhãn đã kiểm định, không dùng công thức xếp hạng của hệ thống. Câu truy vấn có 4 phong cách gõ (có dấu, không dấu, viết tắt, hội thoại) và không viết theo regex của parser. Có chia train/val/test. Kết quả ở `hcmre_q/results/`; diễn giải ở mục 6.9 và Phụ lục A của `Documentation/DL_Proposal_BDS_HCM.md`.
+**1. HCMRE-Q.** Nhãn liên quan tính từ thuộc tính tin đăng, khoảng cách lái xe thực đo và các hàm gán nhãn đã kiểm định, không dùng công thức xếp hạng của hệ thống. Câu truy vấn có 4 phong cách gõ (có dấu, không dấu, viết tắt, hội thoại) và không viết theo regex của parser. Có chia train/val/test. **v2** (`hcmre_q_v2/`):
+- chấm cho cả 6.703 tin;
+- 70% câu nêu phường mới;
+- thang 0–3: đúng phường > đúng phường lệch nhẹ > sát phường;
+- có giao thức đăng ký trước (`PROTOCOL.md`), 13 phép kiểm tự động, bộ chấm tay H1–H5 có ngưỡng đạt, và cách chạy hệ thống thật (offline với embedding, hoặc gọi API live);
+- kết quả đánh giá chính bộ dữ liệu nằm ở `META_EVAL.md`, mô tả bộ dữ liệu ở `DATASET_CARD.md`. Các phép kiểm bằng người (A2–A6, B2, B3) **vẫn chờ người chấm**; trong lúc chờ, `META_EVAL.md` có dự báo từ bản tự kiểm của trợ lý AI.
+
+v1 (`hcmre_q/`) là kết quả cũ, diễn giải ở mục 6.9 và Phụ lục A của `Documentation/DL_Proposal_BDS_HCM.md`.
 
 **2. Live replay.** Gửi lại câu hỏi mô phỏng qua `POST /v1/search` của backend đang chạy và tính 25 metric (nhóm A–G). Ground truth v4 dùng chung công thức với ranker và câu hỏi được viết khớp parser, nên con số chỉ cho biết hệ thống có nhất quán với chính nó hay không. Đọc [`docs/04_KET_QUA_V4_VA_HAN_CHE.md`](docs/04_KET_QUA_V4_VA_HAN_CHE.md) mục 5 trước khi trích dẫn. Kết quả 488 event ở `live_replay/results/Final/`.
 
@@ -22,7 +30,8 @@ Mọi phần đánh giá hệ thống tìm kiếm bất động sản nằm tron
 Evaluation/
 ├── README.md            file này
 ├── docs/                tài liệu phương pháp, đọc theo số thứ tự (mục 4)
-├── hcmre_q/             hướng 1: dữ liệu benchmark, script, kết quả
+├── hcmre_q_v2/          hướng 1 (hiện hành): benchmark trên Data/v3, giao thức, meta-eval, bộ chấm tay
+├── hcmre_q/             hướng 1, bản v1 trên 3.037 tin cũ
 ├── live_replay/         hướng 2: replay qua POST /v1/search
 │   ├── run_validate.py, run_eval.py, recompute_from_cache.py
 │   ├── config.py, adapters.py, live_client.py, reco_metrics_lib/
@@ -57,10 +66,14 @@ Hướng 2 khai báo các file nó đọc tại một chỗ: `live_replay/config
 
 ## 5. Chạy nhanh
 
+Người mới chạy hướng 1 lần đầu: đọc [`hcmre_q_v2/HUONG_DAN_CHAY.md`](hcmre_q_v2/HUONG_DAN_CHAY.md).
+
 ```bash
-# Hướng 1 — HCMRE-Q, không cần backend
-cd Evaluation/hcmre_q
-python eval_benchmark.py --repo ../.. --bench data --snapshot snapshot --out results
+# Hướng 1 — HCMRE-Q v2, không cần backend (dữ liệu phải ở v3.1: python Data/v3/pipeline/fix_v3_quality.py --apply)
+cd Evaluation/hcmre_q_v2
+pip install -r requirements.txt
+python eval_benchmark.py --data data --snapshot snapshot --out results
+python run_live.py --base-url http://localhost:8001 --split test --out results/live_test   # hệ thống thật, cần backend
 
 # Hướng 2 — live replay
 cd Evaluation/live_replay

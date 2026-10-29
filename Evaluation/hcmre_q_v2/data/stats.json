@@ -1,0 +1,225 @@
+{
+ "n_queries": 1000,
+ "n_docs": 6703,
+ "seed": 20261028,
+ "by_split": {
+  "train": 600,
+  "val": 200,
+  "test": 200
+ },
+ "by_split_family": {
+  "train": {
+   "F1_structured": 168,
+   "F2_structured_plus": 60,
+   "F3_proximity": 120,
+   "F4_aspect": 144,
+   "F5_landmark": 48,
+   "F6_subtype": 60
+  },
+  "val": {
+   "F1_structured": 56,
+   "F2_structured_plus": 20,
+   "F3_proximity": 40,
+   "F4_aspect": 48,
+   "F5_landmark": 16,
+   "F6_subtype": 20
+  },
+  "test": {
+   "F1_structured": 56,
+   "F2_structured_plus": 20,
+   "F3_proximity": 40,
+   "F4_aspect": 48,
+   "F5_landmark": 16,
+   "F6_subtype": 20
+  }
+ },
+ "by_split_style": {
+  "train": {
+   "S1": 155,
+   "S3": 160,
+   "S2": 122,
+   "S4": 163
+  },
+  "val": {
+   "S2": 51,
+   "S4": 45,
+   "S1": 62,
+   "S3": 42
+  },
+  "test": {
+   "S3": 50,
+   "S4": 51,
+   "S1": 63,
+   "S2": 36
+  }
+ },
+ "by_split_location": {
+  "train": {
+   "ward": 422,
+   "former_area": 98,
+   "none": 80
+  },
+  "val": {
+   "ward": 141,
+   "former_area": 32,
+   "none": 27
+  },
+  "test": {
+   "ward": 141,
+   "former_area": 32,
+   "none": 27
+  }
+ },
+ "dual_mention": 120,
+ "label_distribution": {
+  "train": {
+   "0": 3997619,
+   "1": 8549,
+   "2": 6543,
+   "3": 9089
+  },
+  "val": {
+   "0": 1332146,
+   "1": 3381,
+   "2": 1915,
+   "3": 3158
+  },
+  "test": {
+   "0": 1332776,
+   "1": 3061,
+   "2": 1857,
+   "3": 2906
+  }
+ },
+ "relevant_per_query": {
+  "train": {
+   "n3": {
+    "mean": 15.15,
+    "median": 11.0,
+    "min": 1,
+    "max": 50
+   },
+   "n2": {
+    "mean": 10.9,
+    "median": 5.0,
+    "min": 0,
+    "max": 151
+   },
+   "n1": {
+    "mean": 14.25,
+    "median": 5.0,
+    "min": 0,
+    "max": 162
+   }
+  },
+  "val": {
+   "n3": {
+    "mean": 15.79,
+    "median": 10.0,
+    "min": 1,
+    "max": 50
+   },
+   "n2": {
+    "mean": 9.57,
+    "median": 4.0,
+    "min": 0,
+    "max": 115
+   },
+   "n1": {
+    "mean": 16.91,
+    "median": 5.5,
+    "min": 0,
+    "max": 119
+   }
+  },
+  "test": {
+   "n3": {
+    "mean": 14.53,
+    "median": 10.0,
+    "min": 1,
+    "max": 50
+   },
+   "n2": {
+    "mean": 9.29,
+    "median": 3.0,
+    "min": 0,
+    "max": 101
+   },
+   "n1": {
+    "mean": 15.3,
+    "median": 4.0,
+    "min": 0,
+    "max": 160
+   }
+  }
+ },
+ "frames": {
+  "S1-0": "val",
+  "S1-1": "train",
+  "S1-2": "train",
+  "S1-3": "val",
+  "S1-4": "train",
+  "S1-5": "train",
+  "S1-6": "train",
+  "S1-7": "train",
+  "S1-8": "test",
+  "S1-9": "test",
+  "S1-10": "train",
+  "S1-11": "test",
+  "S2-0": "val",
+  "S2-1": "train",
+  "S2-2": "train",
+  "S2-3": "val",
+  "S2-4": "train",
+  "S2-5": "train",
+  "S2-6": "train",
+  "S2-7": "train",
+  "S2-8": "test",
+  "S2-9": "test",
+  "S2-10": "train",
+  "S2-11": "test",
+  "S3-0": "val",
+  "S3-1": "train",
+  "S3-2": "train",
+  "S3-3": "test",
+  "S3-4": "train",
+  "S3-5": "train",
+  "S3-6": "train",
+  "S3-7": "test",
+  "S3-8": "train",
+  "S3-9": "test",
+  "S3-10": "val",
+  "S3-11": "train",
+  "S4-0": "train",
+  "S4-1": "train",
+  "S4-2": "train",
+  "S4-3": "test",
+  "S4-4": "train",
+  "S4-5": "train",
+  "S4-6": "train",
+  "S4-7": "val",
+  "S4-8": "train",
+  "S4-9": "val",
+  "S4-10": "test",
+  "S4-11": "test"
+ },
+ "name_collisions": [
+  "Bàu Bàng",
+  "Bình Chánh",
+  "Bình Thạnh",
+  "Bình Tân",
+  "Củ Chi",
+  "Dĩ An",
+  "Gò Vấp",
+  "Hóc Môn",
+  "Long Điền",
+  "Nhà Bè",
+  "Phú Nhuận",
+  "Thuận An",
+  "Thủ Dầu Một",
+  "Thủ Đức",
+  "Tân Bình",
+  "Tân Phú",
+  "Vũng Tàu"
+ ]
+}

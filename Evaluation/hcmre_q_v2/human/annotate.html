@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HCMRE-Q v2 — Chấm tay</title>
+<style>
+  :root { --bg:#f7f7f5; --card:#ffffff; --ink:#1d1d1b; --muted:#6b6b66; --line:#deddd8; --accent:#1f5f8b;
+          --ok:#2e7d4f; --bad:#b3412e; --sel:#e6eef5; --mark:#fff3bf; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#171716; --card:#22221f; --ink:#ecebe6; --muted:#a3a29b; --line:#3a3935; --accent:#7fb3d9;
+            --ok:#74c69d; --bad:#e8806c; --sel:#2b3a46; --mark:#4a4320; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { position:sticky; top:0; z-index:2; background:var(--card); border-bottom:1px solid var(--line); padding:10px 16px;
+           display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+  header h1 { font-size:16px; margin:0 12px 0 0; }
+  header input[type=text] { width:150px; }
+  input, select, textarea, button { font:inherit; color:inherit; }
+  input[type=text], textarea { background:var(--bg); border:1px solid var(--line); border-radius:6px; padding:5px 8px; }
+  button { background:var(--card); border:1px solid var(--line); border-radius:6px; padding:6px 12px; cursor:pointer; }
+  button:hover { border-color:var(--accent); }
+  button.primary { background:var(--accent); color:#fff; border-color:var(--accent); }
+  button.choice.on { background:var(--sel); border-color:var(--accent); font-weight:600; }
+  main { max-width:1180px; margin:0 auto; padding:16px; }
+  .progress { color:var(--muted); font-variant-numeric:tabular-nums; }
+  .bar { height:4px; background:var(--line); border-radius:2px; overflow:hidden; width:180px; }
+  .bar > div { height:100%; background:var(--accent); width:0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px; margin-bottom:14px; }
+  .label { font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); margin:10px 0 2px; }
+  .query { font-size:18px; font-weight:600; background:var(--mark); padding:8px 10px; border-radius:6px; }
+  .text { white-space:pre-wrap; }
+  .desc { white-space:pre-wrap; max-height:340px; overflow:auto; border-left:3px solid var(--line); padding-left:10px; }
+  .facts { font-variant-numeric:tabular-nums; }
+  .pair { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:820px) { .pair { grid-template-columns:1fr; } }
+  .answers { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+  .rubric { color:var(--muted); font-size:13px; margin-top:8px; }
+  .nav { display:flex; gap:8px; flex-wrap:wrap; }
+  .empty { color:var(--muted); text-align:center; padding:60px 0; }
+  kbd { border:1px solid var(--line); border-bottom-width:2px; border-radius:4px; padding:0 5px; font-size:12px; }
+  .done { color:var(--ok); } .todo { color:var(--bad); }
+</style>
+</head>
+<body>
+<header>
+  <h1>HCMRE-Q v2 · chấm tay</h1>
+  <label>Người chấm <input type="text" id="who" placeholder="tên viết liền"></label>
+  <label><input type="file" id="file" accept=".csv"> </label>
+  <span class="progress" id="progress"></span>
+  <div class="bar"><div id="barfill"></div></div>
+  <span style="flex:1"></span>
+  <button id="exportBtn">Xuất kết quả (.csv)</button>
+  <label title="Nạp lại file kết quả đã xuất để chấm tiếp trên máy khác"><input type="file" id="resume" accept=".csv" hidden>
+    <button onclick="document.getElementById('resume').click()">Nạp kết quả cũ</button></label>
+</header>
+<main id="main"><div class="empty">Nhập tên người chấm, rồi chọn một file trong <b>human/tasks/</b>.<br>
+  Đọc <b>human/GUIDELINES.md</b> trước khi chấm. Không mở thư mục <b>human/keys/</b>.</div></main>
+<script>
+"use strict";
+const $ = (id) => document.getElementById(id);
+let rows = [], fileName = "", idx = 0, answers = {};
+
+function parseCSV(text) {
+  if (text.charCodeAt(0) === 0xFEFF) text = text.slice(1);
+  const out = []; let row = [], field = "", q = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (q) {
+      if (c === '"') { if (text[i + 1] === '"') { field += '"'; i++; } else q = false; }
+      else field += c;
+    } else if (c === '"') q = true;
+    else if (c === ",") { row.push(field); field = ""; }
+    else if (c === "\n" || c === "\r") {
+      if (c === "\r" && text[i + 1] === "\n") i++;
+      row.push(field); field = ""; if (row.length > 1 || row[0] !== "") out.push(row); row = [];
+    } else field += c;
+  }
+  if (field !== "" || row.length) { row.push(field); out.push(row); }
+  const head = out.shift();
+  return out.map(r => Object.fromEntries(head.map((h, i) => [h, r[i] ?? ""])));
+}
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const storeKey = () => `hcmreq2|${fileName}|${$("who").value.trim()}`;
+function save() { try { localStorage.setItem(storeKey(), JSON.stringify(answers)); } catch (e) {} }
+function load() { try { answers = JSON.parse(localStorage.getItem(storeKey()) || "{}"); } catch (e) { answers = {}; } }
+
+const TASKS = {
+  H1: { q: (r) => r.show_question, choices: [["1", "Có"], ["0", "Không"], ["?", "Không rõ"]],
+        rubric: "Chỉ dựa vào tiêu đề và mô tả. “Có” khi tin khẳng định đặc điểm đó cho CHÍNH bất động sản này." },
+  H1r:{ q: (r) => r.show_question, choices: [["1", "Có"], ["0", "Không"], ["?", "Không rõ"]],
+        rubric: "Chỉ dựa vào tiêu đề và mô tả. “Có” khi tin khẳng định đặc điểm đó cho CHÍNH bất động sản này." },
+  H2: { q: () => "Câu truy vấn có diễn đạt ĐÚNG và ĐỦ các tiêu chí bên dưới không (không thiếu, không thừa, không sai số)?",
+        choices: [["1", "Đúng và đủ"], ["0", "Sai / thiếu / thừa"]], natural: true,
+        rubric: "Độ tự nhiên: 1 = không ai viết thế, 3 = hơi gượng nhưng chấp nhận được, 5 = rất tự nhiên." },
+  H3: { q: () => "Tin đăng này phù hợp với câu tìm kiếm ở mức nào?",
+        choices: [["3", "3 · Đúng ý"], ["2", "2 · Gần đúng, lệch nhẹ 1 tiêu chí"], ["1", "1 · Chấp nhận được (ví dụ sát vị trí)"], ["0", "0 · Không phù hợp"]],
+        rubric: "Xem mục H3 trong GUIDELINES.md. Chấm như một người đang thật sự tìm mua theo câu đó." },
+  H4: { q: () => "Với người gõ câu này, tin nào phù hợp HƠN?", choices: [["A", "A phù hợp hơn"], ["B", "B phù hợp hơn"], ["=", "Như nhau"]],
+        rubric: "Hai tin đều gần đúng. Hãy chọn tin bạn sẽ đưa lên trước nếu bạn là môi giới của người hỏi." },
+  H5: { q: (r) => r.show_question, choices: [["1", "Đúng"], ["0", "Sai"], ["?", "Không rõ"]], value: true,
+        rubric: "Đọc kỹ cả tiêu đề và mô tả. Nếu Sai, ghi giá bán đúng (tỷ) vào ô bên dưới nếu tin có nêu." },
+};
+
+function fieldBlock(label, value, cls) {
+  if (!value) return "";
+  return `<div class="label">${esc(label)}</div><div class="${cls || "text"}">${esc(value)}</div>`;
+}
+function listingBlock(r, p) {
+  return fieldBlock("Tiêu đề", r[p + "title"]) + fieldBlock("Thông tin", r[p + "facts"], "facts text") +
+         fieldBlock("Đo trên bản đồ", r[p + "measured"]) + fieldBlock("Mô tả", r[p + "description"], "desc");
+}
+function render() {
+  if (!rows.length) return;
+  const r = rows[idx], t = TASKS[r.task], a = answers[r.item_id] || {};
+  let body = `<div class="card"><div class="label">${esc(r.task)} · ${esc(r.item_id)}</div>`;
+  if (r.show_query) body += `<div class="label">Câu tìm kiếm</div><div class="query">${esc(r.show_query)}</div>`;
+  if (r.task === "H2") body += fieldBlock("Tiêu chí vàng", r.show_criteria.split(" | ").join("\n"));
+  if (r.task === "H1" || r.task === "H1r" || r.task === "H5") {
+    body += fieldBlock("Tiêu đề", r.show_title) + fieldBlock("Mô tả", r.show_description, "desc");
+    if (r.task === "H5") body += fieldBlock("Giá cũ trong dữ liệu", r.show_old_price) + fieldBlock("Giá MỚI (sau sửa)", r.show_new_price);
+  }
+  if (r.task === "H3") body += listingBlock(r, "show_");
+  if (r.task === "H4") body += `<div class="pair"><div><h3>A</h3>${listingBlock(r, "show_A_")}</div><div><h3>B</h3>${listingBlock(r, "show_B_")}</div></div>`;
+  body += `</div><div class="card"><div class="text"><b>${esc(t.q(r))}</b></div><div class="answers" style="margin-top:10px">`;
+  t.choices.forEach(([v, label], i) => {
+    body += `<button class="choice ${a.answer === v ? "on" : ""}" data-v="${esc(v)}">${esc(label)} <kbd>${i + 1}</kbd></button>`;
+  });
+  body += `</div>`;
+  if (t.natural) {
+    body += `<div class="label">Độ tự nhiên (1–5)</div><div class="answers">` + [1, 2, 3, 4, 5].map(n =>
+      `<button class="nat choice ${a.naturalness == n ? "on" : ""}" data-n="${n}">${n}</button>`).join("") + `</div>`;
+  }
+  if (t.value) body += `<div class="label">Giá đúng (tỷ), nếu biết</div><input type="text" id="value" value="${esc(a.value || "")}">`;
+  body += `<div class="label">Ghi chú</div><textarea id="note" rows="2" style="width:100%">${esc(a.note || "")}</textarea>
+    <div class="rubric">${esc(t.rubric)}</div></div>
+    <div class="nav"><button id="prev">← Trước <kbd>←</kbd></button><button id="next" class="primary">Tiếp <kbd>→</kbd></button>
+    <button id="nextTodo">Câu chưa chấm kế tiếp</button></div>`;
+  $("main").innerHTML = body;
+  document.querySelectorAll("button.choice[data-v]").forEach(b => b.onclick = () => { setAnswer({answer: b.dataset.v}); });
+  document.querySelectorAll("button.nat").forEach(b => b.onclick = () => { setAnswer({naturalness: b.dataset.n}); });
+  $("note").oninput = (e) => setAnswer({note: e.target.value}, false);
+  if ($("value")) $("value").oninput = (e) => setAnswer({value: e.target.value}, false);
+  $("prev").onclick = () => go(idx - 1);
+  $("next").onclick = () => go(idx + 1);
+  $("nextTodo").onclick = () => { const j = rows.findIndex((x, k) => k > idx && !done(x)); go(j >= 0 ? j : rows.findIndex(x => !done(x))); };
+  progress();
+}
+function done(r) { const a = answers[r.item_id]; return a && a.answer !== undefined && (!TASKS[r.task].natural || a.naturalness); }
+function setAnswer(patch, rerender = true) {
+  if (!$("who").value.trim()) { alertOnce(); return; }
+  const r = rows[idx];
+  answers[r.item_id] = Object.assign({}, answers[r.item_id], patch, {ts: new Date().toISOString()});
+  save();
+  if (rerender) render(); else progress();
+}
+let warned = false;
+function alertOnce() { if (!warned) { warned = true; $("who").focus(); $("who").style.borderColor = "var(--bad)"; } }
+function go(j) { if (j >= 0 && j < rows.length) { idx = j; render(); window.scrollTo(0, 0); } }
+function progress() {
+  const n = rows.filter(done).length;
+  $("progress").innerHTML = `${fileName} · câu ${idx + 1}/${rows.length} · đã chấm <span class="${n === rows.length ? "done" : "todo"}">${n}</span>`;
+  $("barfill").style.width = (100 * n / rows.length) + "%";
+}
+function exportCSV() {
+  const who = $("who").value.trim();
+  if (!rows.length || !who) { alertOnce(); return; }
+  const cols = ["item_id", "annotator", "answer", "naturalness", "value", "note", "ts"];
+  const lines = [cols.join(",")];
+  rows.forEach(r => {
+    const a = answers[r.item_id] || {};
+    const vals = [r.item_id, who, a.answer, a.naturalness, a.value, a.note, a.ts].map(v => `"${String(v ?? "").replace(/"/g, '""')}"`);
+    lines.push(vals.join(","));
+  });
+  const blob = new Blob(["﻿" + lines.join("\n")], {type: "text/csv;charset=utf-8"});
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `answers_${fileName.replace(/\.csv$/, "")}_${who}.csv`;
+  link.click();
+}
+$("file").onchange = async (e) => {
+  const f = e.target.files[0]; if (!f) return;
+  rows = parseCSV(await f.text()); fileName = f.name; load();
+  if (document.activeElement) document.activeElement.blur();
+  idx = Math.max(0, rows.findIndex(r => !done(r))); render();
+};
+$("resume").onchange = async (e) => {
+  const f = e.target.files[0]; if (!f || !rows.length) return;
+  parseCSV(await f.text()).forEach(a => { if (a.answer) answers[a.item_id] = a; });
+  save(); render();
+};
+$("who").oninput = () => { $("who").style.borderColor = ""; if (rows.length) { load(); render(); } };
+try { $("who").value = localStorage.getItem("hcmreq2|who") || ""; } catch (e) {}
+$("who").onchange = () => { try { localStorage.setItem("hcmreq2|who", $("who").value.trim()); } catch (e) {} };
+$("exportBtn").onclick = exportCSV;
+document.addEventListener("keydown", (e) => {
+  if (!rows.length || ["TEXTAREA", "INPUT"].includes(document.activeElement.tagName)) return;
+  if (e.key === "ArrowRight") go(idx + 1);
+  else if (e.key === "ArrowLeft") go(idx - 1);
+  else {
+    const t = TASKS[rows[idx].task], k = parseInt(e.key, 10);
+    if (k >= 1 && k <= t.choices.length) setAnswer({answer: t.choices[k - 1][0]});
+  }
+});
+</script>
+</body>
+</html>

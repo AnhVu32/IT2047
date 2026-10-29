@@ -1,0 +1,10 @@
+# HCMRE-Q v2 — đánh giá offline (Python >= 3.10). Cài: pip install -r requirements.txt
+numpy
+pandas
+scipy
+scikit-learn        # hệ thống tfidf_char
+pydantic>=2         # bản sao production import parser và ranker của backend
+python-dotenv       # (backend/src/settings đọc .env khi được import)
+
+# Tuỳ chọn
+psycopg2-binary     # make_snapshot.py --dsn và embed_benchmark.py --doc-vectors-from-db

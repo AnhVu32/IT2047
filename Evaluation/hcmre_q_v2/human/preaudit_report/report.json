@@ -1,0 +1,180 @@
+{
+ "annotators": {
+  "H1": [
+   "claude-preaudit"
+  ],
+  "H2": [
+   "claude-preaudit"
+  ],
+  "H3": [
+   "claude-preaudit"
+  ],
+  "H4": [
+   "claude-preaudit"
+  ],
+  "H5": [
+   "claude-preaudit"
+  ]
+ },
+ "A2_aspect_precision": {
+  "annotator": "claude-preaudit",
+  "precision": 0.9688,
+  "n": 96,
+  "wilson95": [
+   0.9121,
+   0.9893
+  ],
+  "per_aspect": {
+   "can_goc": "12/12",
+   "dong_tien": "11/12",
+   "hem_xe_hoi": "12/12",
+   "ho_boi": "12/12",
+   "nha_moi": "11/12",
+   "san_vuon": "12/12",
+   "thang_may_nha": "11/12",
+   "view_song": "12/12"
+  },
+  "aspects_to_drop": [],
+  "passed": true
+ },
+ "A3_aspect_misses": {
+  "annotator": "claude-preaudit",
+  "n": 96,
+  "share_of_keyword_negatives_that_are_positive": 0.1146,
+  "per_aspect": {
+   "can_goc": "0/12",
+   "dong_tien": "0/12",
+   "hem_xe_hoi": "5/12",
+   "ho_boi": "0/12",
+   "nha_moi": "6/12",
+   "san_vuon": "0/12",
+   "thang_may_nha": "0/12",
+   "view_song": "0/12"
+  }
+ },
+ "A4_graded_agreement": {
+  "annotator": "claude-preaudit",
+  "n": 131,
+  "weighted_kappa": 0.9408,
+  "confusion_human_x_auto": {
+   "0": {
+    "0": 59,
+    "1": 0,
+    "2": 2,
+    "3": 1
+   },
+   "1": {
+    "0": 0,
+    "1": 20,
+    "2": 0,
+    "3": 0
+   },
+   "2": {
+    "0": 1,
+    "1": 0,
+    "2": 19,
+    "3": 2
+   },
+   "3": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 27
+   }
+  },
+  "false_negative_rate": 0.0167,
+  "false_negative_wilson95": [
+   0.0029,
+   0.0886
+  ],
+  "by_stratum_mean_human": {
+   "grade0_bm25_top": 0.0,
+   "grade0_same_area": 0.067,
+   "grade1": 1.0,
+   "grade2": 1.81,
+   "grade3": 2.833
+  },
+  "exact_agreement": 0.9542,
+  "large_disagreements_(|human-auto|>=2)": [
+   "H3-v2q0965-45906638: người 0 / máy 2",
+   "H3-v2q0831-46326245: người 2 / máy 0",
+   "H3-v2q0874-42009237: người 0 / máy 2",
+   "H3-v2q0864-31235417: người 0 / máy 3"
+  ],
+  "passed": true,
+  "exploratory_without_lf_dev_listings": {
+   "n": 107,
+   "weighted_kappa": 0.9386
+  }
+ },
+ "A5_ward_priority": {
+  "annotator": "claude-preaudit",
+  "pairs": 60,
+  "ties": 0,
+  "prefer_in_ward": 40,
+  "decisive": 60,
+  "share": 0.6667,
+  "wilson95": [
+   0.5406,
+   0.7727
+  ],
+  "sign_test_p_one_sided": 0.00674,
+  "passed": false,
+  "decision": "đổi chỗ mức 1 ↔ 2 cho thước đo chính, báo cáo cả hai",
+  "exploratory_by_in_ward_off": {
+   "area_short": "0/2 chọn tin trong phường",
+   "beds_extra": "8/8 chọn tin trong phường",
+   "beds_short": "0/5 chọn tin trong phường",
+   "distance": "8/9 chọn tin trong phường",
+   "price_over": "16/28 chọn tin trong phường",
+   "price_under": "8/8 chọn tin trong phường"
+  },
+  "exploratory_without_lf_dev_listings": {
+   "pairs": 48,
+   "prefer_in_ward": 34,
+   "decisive": 48,
+   "share": 0.7083
+  }
+ },
+ "A6_price_corrections": {
+  "annotator": "claude-preaudit",
+  "n": 60,
+  "precision": 1.0,
+  "wilson95": [
+   0.9398,
+   1.0
+  ],
+  "by_rule": {
+   "price_R1_recover": "40/40",
+   "price_R2_unknown": "13/13",
+   "price_manual": "7/7"
+  },
+  "wrong_items": [],
+  "passed": true
+ },
+ "B2_faithfulness": {
+  "annotator": "claude-preaudit",
+  "n": 100,
+  "faithful": 1.0,
+  "wilson95": [
+   0.963,
+   1.0
+  ],
+  "unfaithful_items": [],
+  "passed": true
+ },
+ "B3_naturalness": {
+  "n": 100,
+  "share_ge_3": 1.0,
+  "mean": 4.33,
+  "mean_by_style": {
+   "S1": 4.2,
+   "S2": 3.96,
+   "S3": 4.88,
+   "S4": 4.28
+  },
+  "passed": true
+ },
+ "inter_annotator": {},
+ "title": "TIỀN KIỂM ĐỊNH BỞI AI (claude-preaudit) — tạm thời, KHÔNG thay thế người chấm"
+}

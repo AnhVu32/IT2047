@@ -2,6 +2,26 @@
 
 Sinh bởi `pipeline/build_v3.py`. Không file nào trong hai gói nguồn bị sửa.
 
+> **Errata v3.1 (28/10/2026).** Bốn loại lỗi dữ liệu được sửa bằng `pipeline/fix_v3_quality.py`. Script sửa tại
+> chỗ từng ô; mọi byte khác giữ nguyên. Chạy lại không đổi gì thêm.
+>
+> | Lỗi | Số ô | Ảnh hưởng tới hệ thống |
+> |---|---|---|
+> | `property_type` của crawl 2026 dùng 5 tên chi tiết ("Căn hộ chung cư", "Nhà riêng"…) thay vì 2 tên app dùng (`Căn hộ`, `Nhà đất`) | 3.857 | Bộ lọc loại BĐS trên giao diện (khớp chính xác) loại **mọi tin mới**; ranker cho 0 điểm loại BĐS |
+> | Giá bán là số đầu tiên trong tiêu đề, kể cả khi đó là số tiền giảm ("Giảm 1 tỷ"), tiền thuê ("HĐT 70 triệu"), đơn giá/m² hay giá cũ ("18 tỷ về 15,7 tỷ"), hoặc bị rơi phần lẻ ("2tỷ330" → 2) | 392 | Lọc và xếp hạng theo giá sai. 13 tin không nêu giá bán nào được để trống |
+> | 8 tin bị đảo phường ↔ quận cũ (`district` = "Quận Bình Thạnh") | 8 tin | Tạo 7 node phường rác ("Phường 22"…) và 8 node khu vực rác trong graph |
+> | Diện tích viết kiểu "1.038" (= 1.038 m²) hoặc không phải số | 5 | Lọc diện tích sai |
+>
+> - **Bằng chứng từng ô:** `reports/v3_1_corrections.csv`.
+> - **DB đã nạp v3:** chạy `patches/v3_1_postgres.sql`, rồi `build_search_index.py --skip-catalog-import
+>   --skip-graph-metadata` để tạo lại `search_text` và embedding của 3.861 tin bị sửa. Sau đó chạy
+>   `patches/v3_1_neo4j.cypher`, hoặc nạp lại graph từ `graph/`.
+> - **Kiểm định:** bộ trích giá khớp 99,2% giá đã lưu của 2.596 tin cũ. Độ chính xác của chính các sửa đổi được kiểm
+>   bằng người ở bộ H5 của `Evaluation/hcmre_q_v2/`.
+> - **sha256 `master_v3.csv`:**
+>   - v3: `d98518e7…`
+>   - v3.1: `5b65c94d…`
+
 | Nguồn | Vai trò |
 |---|---|
 | `../osm_poi_graph_3857_live_osrm_complete_20261021/` | Tập **mới** (3.857 tin, POI live 12.340 điểm, snapshot 21/10/2026 03:07Z) |
@@ -81,4 +101,5 @@ Các chỗ sau đã trỏ sang v3, nên lần dựng mới (DB trống, volume m
 `docker-compose.yml` (service `neo4j-import-init` chép `Data/v3/graph`), `backend/scripts/build_search_index.py`
 (`Data/v3/master_v3.csv`, gồm cả cột `images`, và `Data/v3/graph`), `backend/scripts/import_neo4j_v2.py`,
 `scripts/build_real_estate_graph.sh`. `import_search_graph.cypher` nạp cạnh `NEAR_AMENITY` theo lô 10.000 dòng.
-`Evaluation/` (gồm `Evaluation/gen_user_data/` và `Evaluation/hcmre_q/`) vẫn gắn với bộ 3.037 tin cũ (`Data/Final_Data.csv`) và không bị đổi.
+`Evaluation/gen_user_data/` và `Evaluation/hcmre_q/` (v1) vẫn gắn với bộ 3.037 tin cũ (`Data/Final_Data.csv`) và
+không bị đổi. `Evaluation/hcmre_q_v2/` đánh giá trên v3.1 (6.703 tin).

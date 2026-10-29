@@ -1,0 +1,101 @@
+﻿task,item_id,show_query,show_criteria
+H2,H2-v2q0775,"nha gan cho ben thanh gia tu 3,5 den 5,5 ty",Loại: nhà (nhà riêng/nhà phố/nhà đất) | Giá: từ 3.5 đến 5.5 tỷ | Gần chợ Bến Thành
+H2,H2-v2q0395,Danh sách nhà mới 100% tại phường Vũng Tàu,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Vũng Tàu | Đặc điểm: nhà mới xây / mới hoàn thiện / mới bàn giao
+H2,H2-v2q0514,Gợi ý căn hộ cách sân bay Tân Sơn Nhất không quá 2km,"Loại: căn hộ chung cư | Gần sân bay Tân Sơn Nhất, cách không quá 2 km"
+H2,H2-v2q0813,Mua nhà phố ở Xóm Chiếu 11 - 17 tỷ,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Xóm Chiếu | Giá: từ 11 đến 17 tỷ
+H2,H2-v2q0007,"Anh chị tư vấn giúp em căn hộ chung cư ở khu An Lạc, quận Bình Tân cũ giá loanh quanh bốn tỷ rưỡi tối thiểu hai phòng ngủ với ạ.",Loại: căn hộ chung cư | Vị trí: Phường An Lạc (câu có nhắc thêm Quận Bình Tân cũ — chỉ để mô tả) | Giá: khoảng 4.5 tỷ | Phòng ngủ: ít nhất 2
+H2,H2-v2q0543,"Mình đang tìm nhà mặt tiền đường để kinh doanh, ở khu Hiệp Bình, ngân sách trong vòng 17 tỷ.",Loại: nhà mặt phố/mặt tiền | Vị trí: Phường Hiệp Bình | Giá: tối đa 17 tỷ
+H2,H2-v2q0725,nha rieng dang khai thac can ho dich vu o p. hoa hung gia tu 22 den 29 ty,"Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Hòa Hưng | Giá: từ 22 đến 29 tỷ | Đặc điểm: đang có dòng tiền cho thuê (đang cho thuê, có hợp đồng thuê) hoặc là CHDV / nhà trọ"
+H2,H2-v2q0633,Bán căn hộ ở P. Long Trường giá quanh 3 tỷ,Loại: căn hộ chung cư | Vị trí: Phường Long Trường | Giá: khoảng 3 tỷ
+H2,H2-v2q0460,nhà - sân vườn - Q12,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: quận/huyện/thành phố cũ Quận 12 | Đặc điểm: có sân vườn
+H2,H2-v2q0784,"Đang cần mua nhà mặt tiền đường để kinh doanh, ở khu Bến Thành, vốn tầm 65 tỷ, ai có giới thiệu giúp.",Loại: nhà mặt phố/mặt tiền | Vị trí: Phường Bến Thành | Giá: khoảng 65 tỷ
+H2,H2-v2q0986,xin thong tin nha mat tien duong tai phuong ben thanh rong tu 70 m2 tro len gia co 65 ty.,Loại: nhà mặt phố/mặt tiền | Vị trí: Phường Bến Thành | Giá: khoảng 65 tỷ | Diện tích: ít nhất 70 m²
+H2,H2-v2q0689,"nhà phố ở P. An Phú Đông gần trạm bus giá không quá 7,5 tỷ",Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường An Phú Đông | Giá: tối đa 7.5 tỷ | Gần trạm xe buýt
+H2,H2-v2q0700,"Đang cần mua một căn nhà, ở khu Bàn Cờ, quận 3 cũ, đi chưa tới 3 cây số là tới ga metro, ai có giới thiệu giúp.","Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Bàn Cờ (câu có nhắc thêm Quận 3 cũ — chỉ để mô tả) | Gần ga metro, cách không quá 3 km"
+H2,H2-v2q0600,"Cần gấp biệt thự, dt 70m2+, 2 ty đổ lại",Loại: biệt thự/liền kề | Giá: tối đa 2 tỷ | Diện tích: ít nhất 70 m²
+H2,H2-v2q0658,ban nha pho o cho quan da co so gia toi da 20 ty,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Chợ Quán | Giá: tối đa 20 tỷ | Pháp lý: đã có sổ
+H2,H2-v2q0819,"Nhà mình đang tìm một căn chung cư, tối thiểu một phòng ngủ, quanh khu Xuân Hòa, ngân sách dưới hai tỷ, nhờ mọi người giới thiệu.",Loại: căn hộ chung cư | Vị trí: Phường Xuân Hòa | Giá: tối đa 2 tỷ | Phòng ngủ: ít nhất 1
+H2,H2-v2q0510,Gợi ý căn hộ chung cư 1 phòng ngủ gần tòa Landmark 81,Loại: căn hộ chung cư | Phòng ngủ: đúng 1 | Gần Landmark 81
+H2,H2-v2q0144,nhà - Q.Bình Thạnh - 4PN+ - tầm 8ty5,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: quận/huyện/thành phố cũ Quận Bình Thạnh | Giá: khoảng 8.5 tỷ | Phòng ngủ: ít nhất 4
+H2,H2-v2q0272,Có căn hộ chung cư nào ở khu Hiệp Bình đi chưa tới 1 cây số là tới trường học mà giá từ ba tỷ tới năm tỷ không ạ?,"Loại: căn hộ chung cư | Vị trí: Phường Hiệp Bình | Giá: từ 3 đến 5 tỷ | Gần trường học, cách không quá 1 km"
+H2,H2-v2q0714,nhà riêng cách trường học dưới 2km giá không quá 2.5 tỷ,"Loại: nhà (nhà riêng/nhà phố/nhà đất) | Giá: tối đa 2.5 tỷ | Gần trường học, cách không quá 2 km"
+H2,H2-v2q0431,Cần tìm nhà phố căn góc P.Cầu Kiệu khoảng 4 tỷ 5,"Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Cầu Kiệu | Giá: khoảng 4.5 tỷ | Đặc điểm: căn góc / lô góc, hai mặt tiền hoặc hai mặt thoáng"
+H2,H2-v2q0659,CHCC 2PN+ P Long Bình 2.5ty sổ hồng,Loại: căn hộ chung cư | Vị trí: Phường Long Bình | Giá: khoảng 2.5 tỷ | Phòng ngủ: ít nhất 2 | Pháp lý: đã có sổ
+H2,H2-v2q0719,nhà phố có vườn ở An Phú Đông,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường An Phú Đông | Đặc điểm: có sân vườn
+H2,H2-v2q0735,nhà phố hẻm oto p.Cầu Kiệu từ 10 đến 16tỷ,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Cầu Kiệu | Giá: từ 10 đến 16 tỷ | Đặc điểm: hẻm xe hơi / ô tô vào tới cửa nhà
+H2,H2-v2q0388,"Gợi ý căn hộ chung cư mới 100% ở Lái Thiêu giá cỡ 2,5 tỷ",Loại: căn hộ chung cư | Vị trí: Phường Lái Thiêu | Giá: khoảng 2.5 tỷ | Đặc điểm: nhà mới xây / mới hoàn thiện / mới bàn giao
+H2,H2-v2q0368,"toi muon mua can ho chung cu, goc, o phuong long binh, 3.5 ty do lai.","Loại: căn hộ chung cư | Vị trí: Phường Long Bình | Giá: tối đa 3.5 tỷ | Đặc điểm: căn góc / lô góc, hai mặt tiền hoặc hai mặt thoáng"
+H2,H2-v2q0465,nhà phố mới xây Q.8,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: quận/huyện/thành phố cũ Quận 8 | Đặc điểm: nhà mới xây / mới hoàn thiện / mới bàn giao
+H2,H2-v2q0722,Ai có nhà phố P An Phú Đông (Q12 cũ) mới xây ib,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường An Phú Đông (câu có nhắc thêm Quận 12 cũ — chỉ để mô tả) | Đặc điểm: nhà mới xây / mới hoàn thiện / mới bàn giao
+H2,H2-v2q0145,"Mình đang tìm căn hộ chung cư, ở quận 12, đủ hai phòng ngủ trở lên, ngân sách dưới ba tỷ.",Loại: căn hộ chung cư | Vị trí: quận/huyện/thành phố cũ Quận 12 | Giá: tối đa 3 tỷ | Phòng ngủ: ít nhất 2
+H2,H2-v2q0760,"Nhờ tìm giúp nhà, có khoảng sân vườn trồng cây, giá không quá bảy tỷ rưỡi nha.",Loại: nhà (nhà riêng/nhà phố/nhà đất) | Giá: tối đa 7.5 tỷ | Đặc điểm: có sân vườn
+H2,H2-v2q0936,Xin thông tin nhà phố hẻm xe hơi tại Diên Hồng giá 20 tỷ đổ lại.,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Diên Hồng | Giá: tối đa 20 tỷ | Đặc điểm: hẻm xe hơi / ô tô vào tới cửa nhà
+H2,H2-v2q0163,Gợi ý nhà riêng 2 PN ở huyện Hóc Môn cũ trong tầm 3 tỷ,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: quận/huyện/thành phố cũ Huyện Hóc Môn | Giá: khoảng 3 tỷ | Phòng ngủ: đúng 2
+H2,H2-v2q0265,"can mua can ho chung cu, khu vuc phuong binh thanh, co metro trong vong 3 km, gia khong qua 5.5 ty","Loại: căn hộ chung cư | Vị trí: Phường Bình Thạnh | Giá: tối đa 5.5 tỷ | Gần ga metro, cách không quá 3 km"
+H2,H2-v2q0572,"Vợ chồng mình muốn mua nhà mặt tiền đường để kinh doanh, ở phường Tân Mỹ, giá không quá mười bốn tỷ.",Loại: nhà mặt phố/mặt tiền | Vị trí: Phường Tân Mỹ | Giá: tối đa 14 tỷ
+H2,H2-v2q0830,"Nhà mình đang tìm nhà, quanh khu Đức Nhuận, ngân sách loanh quanh hai mươi lăm tỷ, nhờ mọi người giới thiệu.",Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Đức Nhuận | Giá: khoảng 25 tỷ
+H2,H2-v2q0309,"Cần gấp căn hộ, P.Xóm Chiếu, gần bệnh viện 2 km, 6 tỷ 5 đổ lại","Loại: căn hộ chung cư | Vị trí: Phường Xóm Chiếu | Giá: tối đa 6.5 tỷ | Gần bệnh viện, cách không quá 2 km"
+H2,H2-v2q0890,"Em cần một căn nhà, bên phường Tây Thạnh, gần trường học cho con đi học ạ.",Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Tây Thạnh | Gần trường học
+H2,H2-v2q0446,tim nha o co thang may tai an hoi tay (quan go vap cu) khong qua 10 ty,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường An Hội Tây (câu có nhắc thêm Quận Gò Vấp cũ — chỉ để mô tả) | Giá: tối đa 10 tỷ | Đặc điểm: nhà có thang máy
+H2,H2-v2q0349,Cần tìm nhà phố hẻm oto P An Nhơn khoảng 8 tỏi,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường An Nhơn | Giá: khoảng 8 tỷ | Đặc điểm: hẻm xe hơi / ô tô vào tới cửa nhà
+H2,H2-v2q0430,Cho mình xem nhà riêng đang có người thuê sẵn khu xã Hiệp Phước nhé.,"Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Xã Hiệp Phước | Đặc điểm: đang có dòng tiền cho thuê (đang cho thuê, có hợp đồng thuê) hoặc là CHDV / nhà trọ"
+H2,H2-v2q0702,căn hộ ở Phường Vĩnh Hội gần trường đại học,Loại: căn hộ chung cư | Vị trí: Phường Vĩnh Hội | Gần trường đại học
+H2,H2-v2q0397,"toi muon mua nha pho, moi 100%, o p. cau kieu.",Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Cầu Kiệu | Đặc điểm: nhà mới xây / mới hoàn thiện / mới bàn giao
+H2,H2-v2q0296,"Cần tìm căn hộ chung cư, thuộc Sài Gòn (quận 1 cũ), cách siêu thị dưới 1km, giá từ 65 tỷ trở xuống","Loại: căn hộ chung cư | Vị trí: Phường Sài Gòn (câu có nhắc thêm Quận 1 cũ — chỉ để mô tả) | Giá: tối đa 65 tỷ | Gần siêu thị, cách không quá 1 km"
+H2,H2-v2q0001,Tìm căn hộ 2 phòng ngủ tại phường Cát Lái (quận 2 cũ) 9 - 12 tỷ,Loại: căn hộ chung cư | Vị trí: Phường Cát Lái (câu có nhắc thêm Quận 2 cũ — chỉ để mô tả) | Giá: từ 9 đến 12 tỷ | Phòng ngủ: đúng 2
+H2,H2-v2q0200,Cần tìm CH 3PN full NT Long Bình (Q9 cũ) dưới 4 ty,Loại: căn hộ chung cư | Vị trí: Phường Long Bình (câu có nhắc thêm Quận 9 cũ — chỉ để mô tả) | Giá: tối đa 4 tỷ | Phòng ngủ: đúng 3 | Nội thất: đầy đủ
+H2,H2-v2q0073,2.2ty cc 2PN Lái Thiêu,Loại: căn hộ chung cư | Vị trí: Phường Lái Thiêu | Giá: khoảng 2.2 tỷ | Phòng ngủ: đúng 2
+H2,H2-v2q0845,xin thong tin can ho chung cu tai thanh my tay 2 phong ngu gia 5 ty do lai.,Loại: căn hộ chung cư | Vị trí: Phường Thạnh Mỹ Tây | Giá: tối đa 5 tỷ | Phòng ngủ: đúng 2
+H2,H2-v2q0528,CH gần sân bay TSN,Loại: căn hộ chung cư | Gần sân bay Tân Sơn Nhất
+H2,H2-v2q0923,"Mua chung cư có bể bơi ở P. Đức Nhuận quanh 8.5 tỷ, 2 PN",Loại: căn hộ chung cư | Vị trí: Phường Đức Nhuận | Giá: khoảng 8.5 tỷ | Phòng ngủ: đúng 2 | Đặc điểm: có hồ bơi (của căn nhà hoặc của dự án)
+H2,H2-v2q0074,"co nha nao o cau kieu (quan phu nhuan cu) gia quanh 9,5 ty khong?",Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Cầu Kiệu (câu có nhắc thêm Quận Phú Nhuận cũ — chỉ để mô tả) | Giá: khoảng 9.5 tỷ
+H2,H2-v2q0943,xin thong tin can ho chung cu view song tai phuong an khanh 2 phong ngu.,"Loại: căn hộ chung cư | Vị trí: Phường An Khánh | Phòng ngủ: đúng 2 | Đặc điểm: view sông, nhìn ra sông"
+H2,H2-v2q0676,"Nhờ tìm giúp một căn chung cư, khu quận 1 cũ, đủ hai phòng ngủ trở lên, giấy tờ đầy đủ, đã có sổ hồng, giá năm tỷ đổ lại nha.",Loại: căn hộ chung cư | Vị trí: quận/huyện/thành phố cũ Quận 1 | Giá: tối đa 5 tỷ | Phòng ngủ: ít nhất 2 | Pháp lý: đã có sổ
+H2,H2-v2q0781,"Nhờ tìm giúp nhà mặt tiền đường để kinh doanh, khu xã Nhà Bè, diện tích không dưới 35 mét vuông nha.",Loại: nhà mặt phố/mặt tiền | Vị trí: Xã Nhà Bè | Diện tích: ít nhất 35 m²
+H2,H2-v2q0571,Có biệt thự nào ở Bình Hưng tối thiểu 290 m² giá trong khoảng 30 tới 45 tỷ không?,Loại: biệt thự/liền kề | Vị trí: Xã Bình Hưng | Giá: từ 30 đến 45 tỷ | Diện tích: ít nhất 290 m²
+H2,H2-v2q0710,Ai có CHCC Q.1 cách ga metro <1 km ib,"Loại: căn hộ chung cư | Vị trí: quận/huyện/thành phố cũ Quận 1 | Gần ga metro, cách không quá 1 km"
+H2,H2-v2q0469,"Tôi muốn mua nhà phố, có thang máy, ở Quận Gò Vấp, không quá 9 tỷ.",Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: quận/huyện/thành phố cũ Quận Gò Vấp | Giá: tối đa 9 tỷ | Đặc điểm: nhà có thang máy
+H2,H2-v2q0329,tầm 4 tỷ 5 nhà phố TP.Thủ Đức gần công viên,"Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: quận/huyện/thành phố cũ Thành Phố Thủ Đức (gồm Quận 2, Quận 9 cũ) | Giá: khoảng 4.5 tỷ | Gần công viên"
+H2,H2-v2q0948,xin thong tin nha rieng dang co dong tien cho thue tai phuong binh thanh (quan binh thanh cu) gia tu 9 den 14 ty.,"Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Bình Thạnh (câu có nhắc thêm Quận Bình Thạnh cũ — chỉ để mô tả) | Giá: từ 9 đến 14 tỷ | Đặc điểm: đang có dòng tiền cho thuê (đang cho thuê, có hợp đồng thuê) hoặc là CHDV / nhà trọ"
+H2,H2-v2q0973,Mua nhà ở quanh 12 tỷ cách khu Phú Mỹ Hưng không quá 1km,"Loại: nhà (nhà riêng/nhà phố/nhà đất) | Giá: khoảng 12 tỷ | Gần Phú Mỹ Hưng, cách không quá 1 km"
+H2,H2-v2q0917,xin thong tin chung cu can goc tai phuong long binh.,"Loại: căn hộ chung cư | Vị trí: Phường Long Bình | Đặc điểm: căn góc / lô góc, hai mặt tiền hoặc hai mặt thoáng"
+H2,H2-v2q0680,can ho chung cu o phuong an khanh co cong vien trong vong 1.5 km gia 11 - 14 ty,"Loại: căn hộ chung cư | Vị trí: Phường An Khánh | Giá: từ 11 đến 14 tỷ | Gần công viên, cách không quá 1.5 km"
+H2,H2-v2q0614,"Nhờ tìm giúp căn hộ chung cư, khu Long Trường, giá không quá bốn tỷ rưỡi nha.",Loại: căn hộ chung cư | Vị trí: Phường Long Trường | Giá: tối đa 4.5 tỷ
+H2,H2-v2q0637,"Nhờ tìm giúp nhà, khu Tân Hưng, giá trong khoảng 5 tỷ đến 8 tỷ nha.",Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Tân Hưng | Giá: từ 5 đến 8 tỷ
+H2,H2-v2q0897,Phú Thạnh (Q.Tân Phú cũ) nhà phố gần BV 3 km,"Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Phú Thạnh (câu có nhắc thêm Quận Tân Phú cũ — chỉ để mô tả) | Gần bệnh viện, cách không quá 3 km"
+H2,H2-v2q0215,"Có nhà nào ở phường Thông Tây Hội ba phòng ngủ rộng tầm năm mươi mét vuông trở lên giấy tờ đầy đủ, đã có sổ hồng mà giá dưới mười tỷ không ạ?",Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Thông Tây Hội | Giá: tối đa 10 tỷ | Phòng ngủ: đúng 3 | Diện tích: ít nhất 50 m² | Pháp lý: đã có sổ
+H2,H2-v2q0589,danh sach nha mat tien tai quan phu nhuan tam 16 ty,Loại: nhà mặt phố/mặt tiền | Vị trí: quận/huyện/thành phố cũ Quận Phú Nhuận | Giá: khoảng 16 tỷ
+H2,H2-v2q0550,Bán BT liền kề P.Tam Thắng ~22 ty,Loại: biệt thự/liền kề | Vị trí: Phường Tam Thắng | Giá: khoảng 22 tỷ
+H2,H2-v2q0762,"ban can ho huong song gia 3,5 ty do lai","Loại: căn hộ chung cư | Giá: tối đa 3.5 tỷ | Đặc điểm: view sông, nhìn ra sông"
+H2,H2-v2q0844,mua nha pho o tang nhon phu khong qua 5 ty,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Tăng Nhơn Phú | Giá: tối đa 5 tỷ
+H2,H2-v2q0801,"Tìm cc Nhiêu Lộc, Q3 cũ <3ty5",Loại: căn hộ chung cư | Vị trí: Phường Nhiêu Lộc (câu có nhắc thêm Quận 3 cũ — chỉ để mô tả) | Giá: tối đa 3.5 tỷ
+H2,H2-v2q0937,"mua nha co vuon o phuong thoi an 7,5 - 9,5 ty",Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Thới An | Giá: từ 7.5 đến 9.5 tỷ | Đặc điểm: có sân vườn
+H2,H2-v2q0595,"can mua biet thu lien ke, gia toi da 2 ty",Loại: biệt thự/liền kề | Giá: tối đa 2 tỷ
+H2,H2-v2q0202,"can tim nha, thuoc cau kieu, toi thieu 30 m², co so hong, gia tam 15 ty",Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Cầu Kiệu | Giá: khoảng 15 tỷ | Diện tích: ít nhất 30 m² | Pháp lý: đã có sổ
+H2,H2-v2q0479,danh sach nha rieng co vuon quanh 29 ty,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Giá: khoảng 29 tỷ | Đặc điểm: có sân vườn
+H2,H2-v2q0205,Anh chị tư vấn giúp em một căn nhà ở khu An Hội Đông giá cỡ sáu tỷ rộng tầm bốn mươi lăm mét vuông trở lên với ạ.,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường An Hội Đông | Giá: khoảng 6 tỷ | Diện tích: ít nhất 45 m²
+H2,H2-v2q0022,"Cần mua nhà ở, khu vực phường Gia Định, 4 PN, giá quanh 8,5 tỷ",Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Gia Định | Giá: khoảng 8.5 tỷ | Phòng ngủ: đúng 4
+H2,H2-v2q0018,Bán nhà phố 4pn P.An Phú Đông tầm 7 tỷ,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường An Phú Đông | Giá: khoảng 7 tỷ | Phòng ngủ: đúng 4
+H2,H2-v2q0513,Có căn nhà nào cách sân bay Tân Sơn Nhất chừng 1 cây số trở lại mà giá trong vòng 7 tỷ không ạ?,"Loại: nhà (nhà riêng/nhà phố/nhà đất) | Giá: tối đa 7 tỷ | Gần sân bay Tân Sơn Nhất, cách không quá 1 km"
+H2,H2-v2q0125,Có nhà nào ở Xã Trừ Văn Thố giá dưới 3 tỷ không?,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Xã Trừ Văn Thố | Giá: tối đa 3 tỷ
+H2,H2-v2q0062,"Tôi muốn mua căn hộ, 2 PN, ở P. Phú Lợi, trong khoảng 2 tới 3 tỷ.",Loại: căn hộ chung cư | Vị trí: Phường Phú Lợi | Giá: từ 2 đến 3 tỷ | Phòng ngủ: đúng 2
+H2,H2-v2q0606,"nha 2 pn o p. vinh hoi gia duoi 4,5 ty",Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Vĩnh Hội | Giá: tối đa 4.5 tỷ | Phòng ngủ: đúng 2
+H2,H2-v2q0645,nhà 4PN+ P Vườn Lài (Q10 cũ) tầm 21 ty,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Vườn Lài (câu có nhắc thêm Quận 10 cũ — chỉ để mô tả) | Giá: khoảng 21 tỷ | Phòng ngủ: ít nhất 4
+H2,H2-v2q0023,"tim can ho chung cu 3 pn tai phuong thu dau mot (thanh pho thu dau mot cu) toi da 4,5 ty",Loại: căn hộ chung cư | Vị trí: Phường Thủ Dầu Một (câu có nhắc thêm Thành Phố Thủ Dầu Một cũ — chỉ để mô tả) | Giá: tối đa 4.5 tỷ | Phòng ngủ: đúng 3
+H2,H2-v2q0647,"Bán căn hộ 2 PN ở TP Thủ Đức giá 3,5 tỷ","Loại: căn hộ chung cư | Vị trí: quận/huyện/thành phố cũ Thành Phố Thủ Đức (gồm Quận 2, Quận 9 cũ) | Giá: khoảng 3.5 tỷ | Phòng ngủ: đúng 2"
+H2,H2-v2q0904,p.An Khánh cc 25-40 ty gần siêu thị,Loại: căn hộ chung cư | Vị trí: Phường An Khánh | Giá: từ 25 đến 40 tỷ | Gần siêu thị
+H2,H2-v2q0560,Cho mình xem nhà mặt tiền đường để kinh doanh khu phường An Lạc giá trong vòng 9 tỷ nhé.,Loại: nhà mặt phố/mặt tiền | Vị trí: Phường An Lạc | Giá: tối đa 9 tỷ
+H2,H2-v2q0930,"Em cần nhà riêng, xe hơi đậu được trước cửa, bên khu Tân Hưng, dưới 5 tỷ rưỡi ạ.",Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Tân Hưng | Giá: tối đa 5.5 tỷ | Đặc điểm: hẻm xe hơi / ô tô vào tới cửa nhà
+H2,H2-v2q0677,ban nha pho o phuong tan son nhi cach cho khong qua 1.5km gia quanh 5.5 ty,"Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Tân Sơn Nhì | Giá: khoảng 5.5 tỷ | Gần chợ, cách không quá 1.5 km"
+H2,H2-v2q0850,Quận Phú Nhuận nhà riêng quanh 350 tỷ,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: quận/huyện/thành phố cũ Quận Phú Nhuận | Giá: khoảng 350 tỷ
+H2,H2-v2q0817,"Nhà mình đang tìm nhà riêng, quanh phường Phú Thuận, ngân sách không quá sáu tỷ, nhờ mọi người giới thiệu.",Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Phú Thuận | Giá: tối đa 6 tỷ
+H2,H2-v2q0048,Cần tìm nhà P Bảy Hiền khoảng 22 tỏi,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Bảy Hiền | Giá: khoảng 22 tỷ
+H2,H2-v2q0856,"Xin thông tin chung cư tại Quận 6 2 phòng ngủ giá từ 4,5 đến 6 tỷ.",Loại: căn hộ chung cư | Vị trí: quận/huyện/thành phố cũ Quận 6 | Giá: từ 4.5 đến 6 tỷ | Phòng ngủ: đúng 2
+H2,H2-v2q0804,P Tân Thuận nhà 14ty,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Tân Thuận | Giá: khoảng 14 tỷ
+H2,H2-v2q0228,Cần tìm nhà DT>105m2 Q1 ~65tỷ,Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: quận/huyện/thành phố cũ Quận 1 | Giá: khoảng 65 tỷ | Diện tích: ít nhất 105 m²
+H2,H2-v2q0095,"danh sach can ho chung cu tai phuong long binh quanh 3.5 ty, 2 phong ngu tro len",Loại: căn hộ chung cư | Vị trí: Phường Long Bình | Giá: khoảng 3.5 tỷ | Phòng ngủ: ít nhất 2
+H2,H2-v2q0706,nhà phố ở phường Chánh Hưng có trung tâm thương mại trong vòng 3km,"Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Chánh Hưng | Gần trung tâm thương mại, cách không quá 3 km"
+H2,H2-v2q0591,Có nhà mặt tiền đường để kinh doanh nào ở quận Tân Bình diện tích không dưới 85 mét vuông không ạ?,Loại: nhà mặt phố/mặt tiền | Vị trí: quận/huyện/thành phố cũ Quận Tân Bình | Diện tích: ít nhất 85 m²
+H2,H2-v2q0535,Cần tìm nhà cách PMH <1km <10ty,"Loại: nhà (nhà riêng/nhà phố/nhà đất) | Giá: tối đa 10 tỷ | Gần Phú Mỹ Hưng, cách không quá 1 km"
+H2,H2-v2q0273,Tôi muốn tìm một căn nhà ở phường Bàn Cờ với mức giá cỡ mười tám tỷ có siêu thị cách nhà tầm năm trăm mét thôi.,"Loại: nhà (nhà riêng/nhà phố/nhà đất) | Vị trí: Phường Bàn Cờ | Giá: khoảng 18 tỷ | Gần siêu thị, cách không quá 0.5 km"
+H2,H2-v2q0105,Anh chị tư vấn giúp em căn hộ ở khu Tân Sơn Nhì giá tầm mười sáu tỷ đổ xuống tối thiểu bốn phòng ngủ với ạ.,Loại: căn hộ chung cư | Vị trí: Phường Tân Sơn Nhì | Giá: tối đa 16 tỷ | Phòng ngủ: ít nhất 4
