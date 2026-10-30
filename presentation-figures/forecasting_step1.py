@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+from matplotlib.patches import FancyBboxPatch
+fig, ax = plt.subplots(figsize=(16, 7), facecolor='white')
+ax.set_xlim(0,16); ax.set_ylim(0,7); ax.axis('off')
+ax.text(.55,6.45,'Step 1: Select and normalize',fontsize=25,weight='bold',color='#172b3a')
+ax.text(.55,6.03,'From raw records to a focused forecasting dataset',fontsize=13,color='#617483')
+for x, color, label, sub in [(0.55,'#3277a8','BEFORE','Raw records'),(8.65,'#167d8d','AFTER','Step 1 output')]:
+    ax.add_patch(FancyBboxPatch((x,1.05),6.8,4.45,boxstyle='round,pad=0.02,rounding_size=0.12',facecolor='#f7f9fa',edgecolor='#dbe4e8',linewidth=1.2))
+    ax.text(x+.3,5.08,label,fontsize=13,weight='bold',color=color)
+    ax.text(x+.3,4.63,sub,fontsize=18,weight='bold',color='#172b3a')
+ax.text(.85,4.05,'Many listing fields',fontsize=14,weight='bold',color='#344e5c')
+ax.text(.85,3.68,'Property details, location, price, legal text,\namenities, descriptions and collection metadata',fontsize=12.5,linespacing=1.6,color='#465d6b',va='top')
+ax.text(.85,2.55,'Raw categories and free-text legal status',fontsize=12.5,color='#465d6b')
+ax.text(.85,2.15,'Corrected latitude and longitude',fontsize=12.5,color='#465d6b')
+ax.text(8.95,4.05,'10 selected columns',fontsize=14,weight='bold',color='#344e5c')
+ax.text(8.95,3.68,'listing_id, property_type, area, latitude, longitude,\ndistrict, bedrooms, legal_status, furnishing, price_range',fontsize=12,linespacing=1.6,color='#465d6b',va='top')
+ax.text(8.95,2.55,'Property type → apartment or house/land',fontsize=12.5,color='#465d6b')
+ax.text(8.95,2.15,'Legal text → standardized categories',fontsize=12.5,color='#465d6b')
+ax.annotate('',xy=(8.42,3.25),xytext=(7.55,3.25),arrowprops=dict(arrowstyle='->',color='#97aab3',lw=2.5))
+ax.text(.55,.48,'Step 1 retains records; later steps clean and filter them. Furnishing is removed in Step 2.',fontsize=11,color='#718691')
+fig.savefig('presentation-figures/forecasting-step1-before-after.png',dpi=200,bbox_inches='tight',facecolor='white')
+fig.savefig('presentation-figures/forecasting-step1-before-after.svg',bbox_inches='tight',facecolor='white')
